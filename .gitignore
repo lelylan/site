@@ -3,5 +3,3 @@ tmp/**/*
 *.DS_Store
 *.swp
 .rvmrc
-public
-public/**/*
