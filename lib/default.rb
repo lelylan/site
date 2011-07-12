@@ -25,4 +25,3 @@ class Nanoc3::Item
     identifier.split("/").last 
   end
 end
-

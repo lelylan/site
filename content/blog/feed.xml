@@ -1,0 +1,8 @@
+---
+title: Lelylan - reThink your house
+author_name: Lelylan Team
+author_uri: http://lelylan.com
+is_hidden: true
+---
+<%= atom_feed %>
+

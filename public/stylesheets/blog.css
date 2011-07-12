@@ -1,5 +1,5 @@
 #main { float:left; width:640px; margin: 20px 10px 20px 0px; }
-#main h1 { margin: 10px 0 10px 0; }
+#main h1 { margin: 10px 0 10px 0; font-weight: normal; }
 #main p { margin-bottom: 10px; }
 #main div.article { margin: 15px 0px; }
 #main div.summary { margin-bottom: 30px; }
