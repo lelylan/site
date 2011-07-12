@@ -15,6 +15,7 @@
     <link href="/stylesheets/boxes.css" type="text/css" rel="stylesheet" media="screen">
     <link href="/stylesheets/gh-buttons.css" type="text/css" rel="stylesheet" media="screen">
     <link href="/stylesheets/titles.css" type="text/css" rel="stylesheet" media="screen">
+    <link href="/stylesheets/blog.css" type="text/css" rel="stylesheet" media="screen">
     <!--[if IE 6]><link href="/stylesheets/screen-ie6.css" type="text/css" rel="stylesheet" media="screen" /><![endif]-->
     <!--[if IE 7]><link href="/stylesheets/screen-ie7.css" type="text/css" rel="stylesheet" media="screen" /><![endif]-->
     <!--[if IE 8]><link href="/stylesheets/screen-ie8.css" type="text/css" rel="stylesheet" media="screen" /><![endif]-->
@@ -29,13 +30,30 @@
   <body class="home">
     <%= render 'partials/menu' %>
     <div id="page">
-      <div id="sidebar">
-        <div>&nbsp;</div>
+      <div id="main">
         <h1><%= @item[:title] %></h1>
-        <h2>Written at: <%= @item[:created_at] %></h2>
+        <b><%= @item[:created_at] %></b>
         <%= yield %>
       </div>
-
+      <div id="sidebar">
+        <div id="subscriptions">
+          <h3>Subscribe to</h3>
+          <%# atom_feed :limit => 25 %>
+          
+          <p class="rss"><a href="/">RSS Feed</a></p>
+          <p class="twitter"><a href="/">Twitter</a></p>
+          <p class="ml"><a href="/">Mailing list</a></p>
+        </div>
+        <div id="tags">
+          <h3>Read more about</h3>
+          <ul>
+            <li><a href="/" class="button big">Energy saving</a></li>
+            <li><a href="/" class="button big">Phylosophy</a></li>
+            <li><a href="/" class="button big">Technical solutions</a></li>
+            <li><a href="/" class="button big">User interfaces</a></li>
+        </div>
+      </div>
+      <%= render 'partials/footer' %> 
     </div>
   </body>
 </html>

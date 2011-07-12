@@ -1,0 +1,11 @@
+<% @site.sorted_articles[0, 10].each do |post| %>
+  <div class="summary">
+    <h1><%= link_to(post[:title], post.path)%></h1>
+    <b><%= post[:created_at] %></b>
+    <div class="article">
+      <p><%= post[:excerpt] %></p>
+      <%# post.compiled_content :rep => :default %>
+    </div>
+  </div>
+<% end %>
+

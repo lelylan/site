@@ -14,6 +14,18 @@ compile '/stylesheet/' do
   # don’t filter or layout
 end
 
+route '/blog/feed/' do
+  '/blog/feed.xml'
+end
+
+route '/blogs/*', :rep => :summary do
+  nil # Don't create files for summaries
+end
+
+compile '/blogs/*', :rep => :summary do
+  rep.layout 'blog_summary'
+end
+
 compile '/blog/*' do
   filter :erb
   layout 'blog'
