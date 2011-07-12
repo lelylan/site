@@ -79,6 +79,8 @@ module TaggingExtra
     ranks
   end
 
+
+  # Create a human friendly name
   def capitalize_tag(tag)
     tag.gsub(/-/, " ").gsub(/_/, " ").capitalize
   end

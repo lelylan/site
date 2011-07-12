@@ -1,5 +1,14 @@
 #!/usr/bin/env ruby
 
+# General
+preprocess do
+  items.delete_if { |item| item[:publish] == false } # allow to make unpublished articles
+  copy_static # add assets to the output directory
+  create_tag_pages # create tag pages
+  #add_update_item_attributes # add update time to items
+end
+
+
 # RSS feed
 compile '/blog/feed/' do
   filter :erb
@@ -11,10 +20,6 @@ end
 
 
 # Blog
-compile '/blogs/*', :rep => :summary do
-  rep.layout 'blog_summary'
-end
-
 compile '/blog/*' do
   filter :erb
   layout 'blog'
