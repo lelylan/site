@@ -9,7 +9,7 @@
     <meta name="copyright" content="Copyright © Lelylan">
     <meta name="viewport" content="width=device-width">
 
-    <title>Lelylan | reThink your house</title>
+    <title>Lelylan Blog | What is Lelylan</title>
 
     <link href="/stylesheets/screen.css" type="text/css" rel="stylesheet" media="screen">
     <link href="/stylesheets/boxes.css" type="text/css" rel="stylesheet" media="screen">
@@ -27,10 +27,28 @@
   </head>
   
   <body class="home">
-    <%= render 'partials/menu' %>
+        <div id="header">
+      <div id="content-header">
+        <div class="logo"><a href="/"><img src="/images/logo.png"/></a></div>
+        <div class="menu">
+          <a href="/blog/">Blog</a>
+          <a href="/apps">App Store</a>
+          <a href="/collaborations/">Collaborations</a>
+          <a href="/jobs/">Jobs</a>
+          <a href="/about_us/">About us</a> |
+          <a href="/developers/">Developers</a> 
+        </div>
+      </div>
+    </div>
+
     <div id="page">
       <div>&nbsp;</div>
-      <%= yield %>
+      <h1>What is Lelylan</h1>
+      <h2>Written at: 15/08/2011</h2>
+      <p>
+  Connect your house to the web using a consistent and clear REST API
+  and start building mashups and services for home automation
+</p>
     </div>
   </body>
 </html>

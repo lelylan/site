@@ -9,7 +9,7 @@
     <meta name="copyright" content="Copyright © Lelylan">
     <meta name="viewport" content="width=device-width">
 
-    <title>Lelylan | reThink your house</title>
+    <title>Lelylan Blog | <%= @item[:title] %></title>
 
     <link href="/stylesheets/screen.css" type="text/css" rel="stylesheet" media="screen">
     <link href="/stylesheets/boxes.css" type="text/css" rel="stylesheet" media="screen">
@@ -29,8 +29,13 @@
   <body class="home">
     <%= render 'partials/menu' %>
     <div id="page">
-      <div>&nbsp;</div>
-      <%= yield %>
+      <div id="sidebar">
+        <div>&nbsp;</div>
+        <h1><%= @item[:title] %></h1>
+        <h2>Written at: <%= @item[:created_at] %></h2>
+        <%= yield %>
+      </div>
+
     </div>
   </body>
 </html>
