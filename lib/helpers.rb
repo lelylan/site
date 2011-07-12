@@ -175,6 +175,10 @@ def to_month_s(month)
   Date.new(2010, month).strftime("%B")
 end
 
+def name(item)
+  item.identifier.split("/").last 
+end
+
 private
 
 def derive_created_at(item)

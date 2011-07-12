@@ -38,7 +38,6 @@
       <div id="sidebar">
         <div id="subscriptions">
           <h3>Subscribe to</h3>
-          
           <p class="rss"><a href="/blog/feed.xml">RSS Feed</a></p>
           <p class="twitter"><a href="http://twitter.com/lelylan">Twitter</a></p>
           <p class="ml"><a href="/">Mailing list</a></p>
@@ -47,7 +46,7 @@
           <h3>Read more about</h3>
           <ul>
             <% tag_set.each do |tag| %>
-            <li><a href="/blog/tags/<%= tag%>/" class="button big"><%= capitalize_tag(tag) %></a></li>
+            <li><a href="/blog/tags/<%= tag %>/" class="button big <%= 'active' if name(@item)==tag%>"><%= capitalize_tag(tag) %></a></li>
             <% end %>
           </ul>
         </div>
