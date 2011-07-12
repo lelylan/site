@@ -46,10 +46,10 @@
         <div id="tags">
           <h3>Read more about</h3>
           <ul>
-            <li><a href="/" class="button big">Energy saving</a></li>
-            <li><a href="/" class="button big">Phylosophy</a></li>
-            <li><a href="/" class="button big">Technical solutions</a></li>
-            <li><a href="/" class="button big">User interfaces</a></li>
+            <% tag_set.each do |tag| %>
+            <li><a href="/blog/<%= tag%>" class="button big"><%= capitalize_tag(tag) %></a></li>
+            <% end %>
+          </ul>
         </div>
       </div>
       <%= render 'partials/footer' %> 
