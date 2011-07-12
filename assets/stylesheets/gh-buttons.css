@@ -43,7 +43,7 @@ http://github.com/necolas/css3-github-buttons
     border-color: #006458;
     border-bottom-color: #006458;
     text-decoration: none; 
-    text-shadow: -1px -1px 0 rgba(0,0,0,0.3); 
+    /*text-shadow: -1px -1px 0 rgba(0,0,0,0.3); */
     color: #fff; 
     background-color: #006458;
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#00907e), to(#087));

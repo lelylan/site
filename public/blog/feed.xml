@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://lelylan.com/</id>
   <title>Lelylan - reThink your house</title>
-  <updated>2011-07-14T22:00:00Z</updated>
+  <updated>2011-09-08T22:00:00Z</updated>
   <link rel="alternate" href="http://lelylan.com/"/>
   <link rel="self" href="http://lelylan.com/blog/feed.xml"/>
   <author>
@@ -10,10 +10,10 @@
     <uri>http://lelylan.com</uri>
   </author>
   <entry>
-    <id>tag:lelylan.com,2011-07-15:/blog/what-is-lelylan/</id>
+    <id>tag:lelylan.com,2011-09-09:/blog/what-is-lelylan/</id>
     <title type="html">What is Lelylan</title>
-    <published>2011-07-14T22:00:00Z</published>
-    <updated>2011-07-14T22:00:00Z</updated>
+    <published>2011-09-08T22:00:00Z</published>
+    <updated>2011-09-08T22:00:00Z</updated>
     <link rel="alternate" href="http://lelylan.com/blog/what-is-lelylan/"/>
     <content type="html">&lt;div class="article"&gt;
   &lt;p&gt;
@@ -32,10 +32,10 @@
     <summary type="html">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took  a galley of type and scrambled it to make a type specimen book. It has survived not only</summary>
   </entry>
   <entry>
-    <id>tag:lelylan.com,2011-07-15:/blog/techy/</id>
+    <id>tag:lelylan.com,2011-09-01:/blog/techy/</id>
     <title type="html">This is something else</title>
-    <published>2011-07-14T22:00:00Z</published>
-    <updated>2011-07-14T22:00:00Z</updated>
+    <published>2011-08-31T22:00:00Z</published>
+    <updated>2011-08-31T22:00:00Z</updated>
     <link rel="alternate" href="http://lelylan.com/blog/techy/"/>
     <content type="html">&lt;div class="article"&gt;
   &lt;p&gt;

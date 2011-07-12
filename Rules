@@ -20,9 +20,18 @@ end
 
 
 # Blog
-compile '/blog/*' do
-  filter :erb
+compile '/blog/' do
+  filter :erb  
   layout 'blog'
+end
+
+compile '/blog/tags/*' do
+  filter :erb  
+  layout 'blog'
+end
+
+compile '/blog/*' do
+  layout 'blog_article'
 end
 
 
