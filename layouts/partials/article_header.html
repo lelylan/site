@@ -1,0 +1,9 @@
+        <h1><%= link_to(item[:title], item.path)%></h1>
+        <b class="time">(<%= pretty_time(item[:created_at]) %>)</b>
+        <div class="tag-buttons">
+          <% if @item[:tags] %>
+            <% @item[:tags].each do |tag| %>
+              <a href="/blog/tags/<%= tag %>/" class="button big"><%= capitalize_tag(tag) %></a>
+            <% end %>
+          <% end %>
+        </div>
