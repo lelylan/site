@@ -18,5 +18,5 @@ google_analytics:
   site_id: UA-9655468-1
 
 # DISQUS Site Shortname. Comment out to disable.
-disqus_shortname: nanoc3-blog
+disqus_shortname: lelylan
 

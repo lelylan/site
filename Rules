@@ -19,6 +19,16 @@ route '/blog/feed/' do
 end
 
 
+# Sitemap
+compile '/sitemap/' do
+  filter :erb
+end
+
+route '/sitemap/' do
+  '/sitemap.xml'
+end
+
+
 # Blog
 compile '/blog/' do
   filter :erb  

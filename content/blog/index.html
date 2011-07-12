@@ -1,4 +1,4 @@
-<% @site.sorted_articles[0, 10].each do |post| %>
+<% @site.sorted_articles[0, 1000].each do |post| %>
   <div class="summary">
     <%= render 'partials/article_header', :item => post %>
     <div class="article">
