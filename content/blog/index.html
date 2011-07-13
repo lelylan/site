@@ -1,3 +1,7 @@
+--- 
+priority: 0.8
+---
+
 <% @site.sorted_articles[0, 1000].each do |post| %>
   <div class="summary">
     <%= render 'partials/article_header', :item => post %>
@@ -7,4 +11,3 @@
     </div>
   </div>
 <% end %>
-
