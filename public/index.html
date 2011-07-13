@@ -24,17 +24,18 @@
     <script type="text/javascript" src="/javascripts/scrollto.js"></script>
     <!--[if IE 6]><script type="text/javascript" src="/javascripts/belatedpng-0.0.7a.js"></script><![endif]-->
     <!--[if IE 6]><script type="text/javascript" src="/javascripts/ie6.js"></script><![endif]-->
-    
+
     <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-12181910-2']);
-      _gaq.push(['_trackPageview']);
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12181910-2']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
   </head>
   
   <body class="home">
@@ -53,9 +54,7 @@
     </div>
 
     <div id="page">
-      <div>
-  <h2 id="what-is-lelylan" class="ext-dests"><a class="why" href="/features/">Why to be a Lelylan developer</a></h2>
-  <!--<h2 id="what-is-lelylan" class="title"><a href="/">What is Lelylan</a></h2>-->
+      <div id="presentation">
   <div class="disclaimer">
     <p>
       Connect your house to the web using a consistent and clear REST API
@@ -64,6 +63,7 @@
     </p>
   </div>
 </div>
+
 
 <div id="features">
   <ul id="content">
@@ -106,6 +106,30 @@
   </ul>
 </div>
 
+<!-- AddThis Button BEGIN -->
+
+<div class="addthis_toolbox addthis_default_style" 
+  style="float: right"
+  addthis:url="http://lelylan.com"
+  addthis:title="Lelylan - REST API for the connected home">
+  <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+  <a class="addthis_button_tweet" tw:via="lelylan"></a>
+  <a class="addthis_counter addthis_pill_style"></a>
+</div>
+
+<script type="text/javascript">
+var addthis_share = {
+  templates: {
+   twitter: '{{title}} {{url}} (via @lelylan)'
+  }
+};
+</script>
+<script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e1da33f6bf19888"></script>
+<!-- AddThis Button END --> 
+
+<h2 id="what-is-lelylan" class="ext-dests"><a class="why" href="/features/">Why to be a Lelylan developer</a></h2>
+
 <script type="text/javascript">
   var prefineryJsHost = ("https:" == document.location.protocol) ? 'https://www.prefinery.com/' : 'http://www.prefinery.com/';
   if (document.location != 'http://localhost:3000/') {
@@ -120,6 +144,8 @@
   };
   Prefinery.apply(prefinery_apply_options);
 </script>
+
+
             <div id="siteinfo">
         <p>Copyright © Lelylan 2011. Protected and licensed under 
         <a href="http://creativecommons.org/licenses/by/1.0/">Creative Commons License</a>. 
