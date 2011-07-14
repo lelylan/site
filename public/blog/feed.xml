@@ -32,11 +32,77 @@
     <summary type="html">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took  a galley of type and scrambled it to make a type specimen book. It has survived not only</summary>
   </entry>
   <entry>
-    <id>tag:lelylan.com,2011-09-01:/blog/techy/</id>
+    <id>tag:lelylan.com,2011-09-01:/blog/techyx/</id>
     <title type="html">This is something else</title>
     <published>2011-08-31T22:00:00Z</published>
     <updated>2011-08-31T22:00:00Z</updated>
-    <link rel="alternate" href="http://lelylan.com/blog/techy/"/>
+    <link rel="alternate" href="http://lelylan.com/blog/techyx/"/>
+    <content type="html">&lt;div class="article"&gt;
+  &lt;p&gt;
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+    been the industry's standard dummy text ever since the 1500s, when an unknown printer took 
+    a galley of type and scrambled it to make a type specimen book. It has survived not only 
+    five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    It was popularised in the 1970s with the release of Letraset sheets containing Lorem Ipsum 
+    passages, and more recently with desktop publishing software like Aldus PageMaker including 
+    versions of Lorem Ipsum.
+  &lt;/p&gt;
+&lt;/div&gt;</content>
+    <summary type="html">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took  a galley of type and scrambled it to make a type specimen book. It has survived not only</summary>
+  </entry>
+  <entry>
+    <id>tag:lelylan.com,2011-09-01:/blog/techyz/</id>
+    <title type="html">This is something else</title>
+    <published>2011-08-31T22:00:00Z</published>
+    <updated>2011-08-31T22:00:00Z</updated>
+    <link rel="alternate" href="http://lelylan.com/blog/techyz/"/>
+    <content type="html">&lt;div class="article"&gt;
+  &lt;p&gt;
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+    been the industry's standard dummy text ever since the 1500s, when an unknown printer took 
+    a galley of type and scrambled it to make a type specimen book. It has survived not only 
+    five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    It was popularised in the 1970s with the release of Letraset sheets containing Lorem Ipsum 
+    passages, and more recently with desktop publishing software like Aldus PageMaker including 
+    versions of Lorem Ipsum.
+  &lt;/p&gt;
+&lt;/div&gt;</content>
+    <summary type="html">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took  a galley of type and scrambled it to make a type specimen book. It has survived not only</summary>
+  </entry>
+  <entry>
+    <id>tag:lelylan.com,2011-09-01:/blog/techyt/</id>
+    <title type="html">This is something else</title>
+    <published>2011-08-31T22:00:00Z</published>
+    <updated>2011-08-31T22:00:00Z</updated>
+    <link rel="alternate" href="http://lelylan.com/blog/techyt/"/>
+    <content type="html">&lt;div class="article"&gt;
+  &lt;p&gt;
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+    been the industry's standard dummy text ever since the 1500s, when an unknown printer took 
+    a galley of type and scrambled it to make a type specimen book. It has survived not only 
+    five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    It was popularised in the 1970s with the release of Letraset sheets containing Lorem Ipsum 
+    passages, and more recently with desktop publishing software like Aldus PageMaker including 
+    versions of Lorem Ipsum.
+  &lt;/p&gt;
+&lt;/div&gt;</content>
+    <summary type="html">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took  a galley of type and scrambled it to make a type specimen book. It has survived not only</summary>
+  </entry>
+  <entry>
+    <id>tag:lelylan.com,2011-09-01:/blog/techyl/</id>
+    <title type="html">This is something else</title>
+    <published>2011-08-31T22:00:00Z</published>
+    <updated>2011-08-31T22:00:00Z</updated>
+    <link rel="alternate" href="http://lelylan.com/blog/techyl/"/>
     <content type="html">&lt;div class="article"&gt;
   &lt;p&gt;
     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has

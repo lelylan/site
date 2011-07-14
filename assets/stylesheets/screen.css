@@ -54,9 +54,11 @@ ul li.last {margin:0;}
 ul li.large {width: 926px;}
 ul li.social {margin-top:10px; padding-bottom: 0;}
 ul li.social a.twitter-link:before {content:url(/images/twitter.png);}
-ul li.text-box {line-height:20px; float:left; width:446px; color:#333; margin:0 30px 0 0; }
-ul li.text-box p.title {letter-spacing: 1px; line-height: 32px; font-size: 26px; color: #087; margin: 0 0 26px 0; }
+ul li.text-box {line-height:20px; float:right; width:446px; color:#333; margin:0 0 0 20px; }
+ul li.text-box p.title {letter-spacing: 1px; line-height: 32px; font-size: 26px; color: #087; margin-left: 0px; }
 ul li.text-box p.description {font-size:15px; color: #333; margin: 12px 0px; }
+ul li.post a span.label {padding: 0;}
+ul li.post {margin-top: 10px;}
 
 /* 6.NAVIGATION
 ---------------------------------------------------------------------- */
