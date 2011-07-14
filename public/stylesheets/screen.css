@@ -48,21 +48,22 @@ a.arch { line-height:22px; }
 /* 5.B. BOX STRUCTURE
 ---------------------------------------------------------------------- */
 
-ul li.box {line-height:22px; float:left; width:207px; padding:10px; border:1px solid #DDD; color:#333; margin:0 10px 0 0; -webkit-box-shadow: 1px 1px 7px rgba(153, 153, 153, 0.2); -moz-box-shadow: 1px 1px 7px rgba(153, 153, 153, 0.2); box-shadow: 1px 1px 7px rgba(153, 153, 153, 0.2); border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px; }
+ul li.box {line-height:20px; float:left; width:207px; padding:10px; border:1px solid #DDD; color:#333; margin:0 10px 0 0; -webkit-box-shadow: 1px 1px 7px rgba(153, 153, 153, 0.2); -moz-box-shadow: 1px 1px 7px rgba(153, 153, 153, 0.2); box-shadow: 1px 1px 7px rgba(153, 153, 153, 0.2); border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px; }
 ul li.box:hover {background-color: rgb(255, 255, 255); opacity:1.0; background-position:center -30px; }
 ul li.last {margin:0;}
 ul li.large {width: 926px;}
 ul li.social {margin-top:10px; padding-bottom: 0;}
 ul li.social a.twitter-link:before {content:url(/images/twitter.png);}
-
-
+ul li.text-box {line-height:20px; float:left; width:446px; color:#333; margin:0 30px 0 0; }
+ul li.text-box p.title {letter-spacing: 1px; line-height: 32px; font-size: 26px; color: #087; margin: 0 0 26px 0; }
+ul li.text-box p.description {font-size:15px; color: #333; margin: 12px 0px; }
 
 /* 6.NAVIGATION
 ---------------------------------------------------------------------- */
 
-ul#content { clear:both; float:left; list-style-type:none; margin:12px 0 30px 0; padding:0px 0 58px 0;}
-.home ul#content { margin:12px 0 0 0; padding:0 0 20px 0; background:transparent; }
-.external ul#content { margin:12px 0 10px 0; padding:0; background:transparent; }
+ul.content { clear:both; float:left; list-style-type:none; margin:12px 0 30px 0; padding:0px 0 58px 0;}
+.home ul.content { margin:12px 0 10px 0; padding:0 0 30px 0; background:transparent; }
+.external ul.content { margin:12px 0 10px 0; padding:0; background:transparent; }
 
 /* 7.SITEINFO/FOOTER
 ---------------------------------------------------------------------- */
@@ -88,6 +89,6 @@ ul li.mf a { background:url(../images/site/hcard.gif) no-repeat center right; pa
 /* 10.TITLES
 ---------------------------------------------------------------------- */
 h2.title { clear:both; text-indent:-9999px; }
-h2.title a { display:block; height:20px; margin:16px 0 10px 0; padding:0; }
+h2.title a { display:block; height:20px; margin:20px 0 10px 0; padding:0; }
 div.disclaimer p {text-align: center; letter-spacing: 1px; line-height: 34px; font-size: 26px; color: #087; margin: 14px 0 10px 0; }
 div.disclaimer a {font-size: 20px; margin-left: 4px; }
