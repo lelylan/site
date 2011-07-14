@@ -48,7 +48,7 @@ a.arch { line-height:22px; }
 /* 5.B. BOX STRUCTURE
 ---------------------------------------------------------------------- */
 
-ul li.box {line-height:18px; float:left; width:207px; padding:10px; border:1px solid #DDD; color:#333; margin:0 10px 0 0; -webkit-box-shadow: 1px 1px 7px rgba(153, 153, 153, 0.2); -moz-box-shadow: 1px 1px 7px rgba(153, 153, 153, 0.2); box-shadow: 1px 1px 7px rgba(153, 153, 153, 0.2); border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px; }
+ul li.box {line-height:22px; float:left; width:207px; padding:10px; border:1px solid #DDD; color:#333; margin:0 10px 0 0; -webkit-box-shadow: 1px 1px 7px rgba(153, 153, 153, 0.2); -moz-box-shadow: 1px 1px 7px rgba(153, 153, 153, 0.2); box-shadow: 1px 1px 7px rgba(153, 153, 153, 0.2); border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px; }
 ul li.box:hover {background-color: rgb(255, 255, 255); opacity:1.0; background-position:center -30px; }
 ul li.last {margin:0;}
 ul li.large {width: 926px;}
