@@ -7,3 +7,7 @@
             <% end %>
           <% end %>
         </div>
+        <%= render 'partials/addthis', 
+            :title => @item[:title] + ' | ' + @item[:subtitle],
+            :path => 'http://lelylan.com/' + @item.path %>
+ 

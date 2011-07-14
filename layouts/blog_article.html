@@ -35,6 +35,9 @@
       <div id="main">
         <%= render 'partials/article_header', :item => @item %>
         <%= yield %>
+        <%= render 'partials/addthis', 
+            :title => @item[:title] + ' | ' + @item[:subtitle],
+            :path => 'http://lelylan.com/' + @item.path %>
         <div id="disqus_thread"></div>
 
         <script type="text/javascript">

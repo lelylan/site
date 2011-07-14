@@ -54,11 +54,16 @@ priority: 1.0
       your future house. <a href="/features/" class="dest">More →</a>
     </li>
 
-    <li class="box large social">
-      <i><a class="twitter-link" href="http://twitter.com/lelylan">Follow us on Twitter</a>
-      and if you believe in our ideas share your thoughts with the crowd</i>
-      <%= render 'partials/addthis' %>
+    <li class="large social">
+<a href="http://twitter.com/lelylan" class="twitter-follow-button" data-show-count="false">Follow @andreareginato</a>
+    
+      <div class="social-icons">
+        <%= render 'partials/addthis',
+            :path => 'http://lelylan.com',
+            :title => 'REST services to connect your house to the web. #lelylan reThink your house'%>
+        </div>
     </li>
+<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
 
   </ul>
 </div>
