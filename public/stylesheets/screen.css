@@ -58,7 +58,7 @@ ul li.text-box {line-height:20px; float:right; width:446px; color:#333; margin:0
 ul li.text-box p.title {letter-spacing: 1px; line-height: 32px; font-size: 26px; color: #087; margin-left: 0px; }
 ul li.text-box p.description {font-size:15px; color: #333; margin: 12px 0px; }
 ul li.post a span.label {padding: 0;}
-ul li.post {margin-bottom: 10px;}
+ul li.post, ul li.resume {margin-bottom: 10px;}
 ul li div.social-icons {float: right; padding-left: 15px;}
 div#features ul.content {padding-bottom: 0px;}
 
@@ -96,3 +96,12 @@ h2.title { clear:both; text-indent:-9999px; }
 h2.title a { display:block; height:20px; margin:20px 0 10px 0; padding:0; }
 div.disclaimer p {text-align: center; letter-spacing: 1px; line-height: 34px; font-size: 26px; color: #087; margin: 14px 0 10px 0; }
 div.disclaimer a {font-size: 20px; margin-left: 4px; }
+
+/* 11.A. SECTION JOBS
+----------------------------------------------------------------------- */
+div#send h2 {font-weight: normal; letter-spacing: 1px; line-height: 34px; font-size: 32px; color: #087; margin-bottom: 15px;}
+div#send p, div#send li {margin-bottom: 12px;}
+div#send div.block {margin-top: 30px;}
+div#send ol {margin: 0 0 30px 0;}
+div#send li {margin-left: 15px;}
+
