@@ -33,7 +33,7 @@ div#content-header { width:946px; margin:0px auto; padding:0px 15px 10px 15px; }
 ---------------------------------------------------------------------- */
 
 ul li a span.strap { display:block; text-align:center; font-style:italic; }
-ul li a span.label { display:block; text-align:center; padding:2px 0 105px 0; font-size:12px; font-weight:normal; font-style:normal; text-transform:uppercase; letter-spacing:1px; color:#000; }
+ul li a span.label { display:block; text-align:center; padding:2px 0 87px 0; font-size:12px; font-weight:normal; font-style:normal; text-transform:uppercase; letter-spacing:1px; color:#000; margin-bottom:10px; }
 ul li span.label span { display:inline; font-size:15px; }
 ul li span.label span.kern-a { display:inline; font-size:15px; letter-spacing:0px; }
 ul li span.label span.kern { display:inline; font-size:12px; letter-spacing:0px; }
