@@ -56,7 +56,7 @@ ul li.social {margin-top:10px; float:left; padding:10px; padding-bottom: 0; }
 ul li.social a.twitter-link:before {content:url(/images/twitter.png);}
 ul li.text-box {line-height:20px; float:right; width:446px; color:#333; margin:0 0 0 20px; }
 ul li.text-box p.title {letter-spacing: 1px; line-height: 32px; font-size: 26px; color: #087; margin-left: 0px; }
-ul li.text-box p.description {font-size:15px; color: #333; margin: 12px 0px; }
+ul li.text-box p.description {font-size:15px; color: #333; margin: 20px 0px; }
 ul li.post a span.label {padding: 0;}
 ul li.post, ul li.resume {margin-bottom: 10px;}
 ul li div.social-icons {float: right; padding-left: 15px;}
