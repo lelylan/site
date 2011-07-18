@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.google.com/schemas/sitemap/0.84">
   <url>
+    <loc>http://lelylan.com/about/</loc>
+    <lastmod>2011-07-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>http://lelylan.com/blog/</loc>
     <lastmod>2011-07-15</lastmod>
     <priority>0.8</priority>
@@ -28,6 +33,11 @@
   <url>
     <loc>http://lelylan.com/blog/what-is-lelylan/</loc>
     <lastmod>2011-07-14</lastmod>
+  </url>
+  <url>
+    <loc>http://lelylan.com/features/</loc>
+    <lastmod>2011-07-18</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>http://lelylan.com/feed/</loc>

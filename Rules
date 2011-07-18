@@ -45,13 +45,24 @@ end
 
 
 # Jobs careers
-
 compile '/jobs/' do
   layout 'default'
 end
 
 compile '/jobs/*' do
   layout 'jobs'
+end
+
+
+# About
+compile '/about/' do
+  layout 'about'
+end
+
+
+# Features
+compile '/features/' do
+  layout 'features'
 end
 
 
