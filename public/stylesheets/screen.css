@@ -113,7 +113,7 @@ div.team img.last {margin-right: 0}
 
 
 #textual h2 {font-size: 40px; font-weight: normal; line-height: 40px; padding: 0 0 20px 0; color: #000;}
-#textual p  {padding-bottom: 0; margin: 0; font-size: 15px; line-height: 20px;}
+#textual p  {padding-bottom: 0; margin: 0; font-size: 15px; line-height: 22px;}
 #textual div {margin-bottom: 40px;}
 #textual ul {margin: 0 0 10px 0;}
-#textual li {margin-left: 18px;}
+#textual li {margin-left: 18px; line-height: 22px;}
