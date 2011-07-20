@@ -30,4 +30,10 @@ class Nanoc3::Item
    # <span class="label"><span>C</span>onnect <span>A</span>ll <span>D</span>evices</span></a> 
    self[:subtitle].split(' ').map {|w| '<span>' + w[0] + '</span>' + w[1..-1] }.join(' ')
   end
+
+  # Prettify the name for the home page box system
+  def title
+   # <span class="label"><span>C</span>onnect <span>A</span>ll <span>D</span>evices</span></a> 
+   self[:title].split(' ').map {|w| '<span>' + w[0] + '</span>' + w[1..-1] }.join(' ')
+  end
 end

@@ -1,7 +1,7 @@
         <%# link_to(item[:title], item.path)%>
         <h1><%= item[:title] %></h1>
         <p>
-          Written by <%= item[:author] %>, <%= pretty_time(item[:created_at]) %>
+          Written by <%= item[:author] %> - <%= pretty_time(item[:created_at]) %>
         </p>
         <%= render 'partials/addthis', 
             :title => @item[:title] + ' - ' + @item[:subtitle],

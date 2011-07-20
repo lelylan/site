@@ -1,9 +1,16 @@
+---
+title: Latest news
+menu: blog
+priority: 0.8
+---
+
+<h2>Latest on <%= capitalize_tag(tag).downcase %></h2>
+
 <% items_with_tag(tag).each do |post| %>
-  <div class="summary">
-    <%= render 'partials/article_header', :item => post %>
-    <div class="article">
-      <p><%= post[:excerpt] %></p>
-      <%# post.compiled_content :rep => :default %>
-    </div>
-  </div>
+  <ul>
+    <li>
+      <span class="title"><a href="#"><%= post.title %></a></span> -
+      <span class="subtitle"><a href="#"><%= post.subtitle %></a></span>
+    </li>
+  </ul>
 <% end %>
