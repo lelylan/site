@@ -35,6 +35,14 @@
       <div id="main">
         <%= render 'partials/article_header', :item => @item %>
         <%= yield %>
+        <p>Read more about related topics:</p>
+        <div class="tag-buttons">
+          <% if @item[:tags] %>
+            <% @item[:tags].each do |tag| %>
+              <a href="/blog/tags/<%= tag %>/" class="button big"><%= capitalize_tag(tag) %></a>
+            <% end %>
+          <% end %>
+        </div>
         <%= render 'partials/disquis' %> 
       </div>
       <div id="sidebar">
