@@ -44,12 +44,12 @@
       <div id="content-header">
         <div class="logo"><a href="/"><img src="/images/logo.png"/></a></div>
         <div class="menu">
-          <a href="/features/">Features</a>
-          <a href="/blog/">Blog</a>
+          <a href="/features/" class="">Features</a>
+          <a href="/blog/" class="">Blog</a>
           <!--<a href="/apps/">App Store</a>-->
-          <a href="/collaborations/">Collaborations</a>
-          <a href="/jobs/">Jobs</a>
-          <a href="/about/">About us</a> |
+          <a href="/collaborations/" class="selected">Collaborations</a>
+          <a href="/jobs/" class="">Jobs</a>
+          <a href="/about/" class="">About us</a> |
           <a href="http://dev.lelylan.com">Developers</a> 
         </div>
       </div>
@@ -116,7 +116,7 @@
   </div>
 </div>
       </div>
-      <div id="sidebar">
+            <div id="sidebar">
         <div id="subscriptions">
           <h3>Build your own ideas</h3>
           <p><a href="#developers">Developers, designers and more</a></p>
@@ -125,6 +125,7 @@
           <p><a href="#venture">Venture Capitalist</a></p>
         </div>
       </div>
+ 
             <div id="siteinfo">
         <div>
           <span>© Lelylan 2011</span>
@@ -134,5 +135,21 @@
       </div>
  
     </div>
+      <script type="text/javascript" charset="utf-8">
+    var is_ssl = ("https:" == document.location.protocol);
+    var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "http://s3.amazonaws.com/getsatisfaction.com/";
+    document.write(unescape("%3Cscript src='" + asset_host + "javascripts/feedback-v2.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+
+  <script type="text/javascript" charset="utf-8">
+    var feedback_widget_options = {};
+    feedback_widget_options.display = "overlay";  
+    feedback_widget_options.company = "lelylan";
+    feedback_widget_options.placement = "left";
+    feedback_widget_options.color = "#087";
+    feedback_widget_options.style = "idea";
+    var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
+  </script>
+
   </body>
 </html>
