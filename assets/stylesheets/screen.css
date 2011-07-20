@@ -74,6 +74,7 @@ ul.content { clear:both; float:left; list-style-type:none; margin:12px 0 30px 0;
 
 div#siteinfo { position:relative; clear:both; text-align:center; padding:25px 0 0px 0; color:#333;}
 div#siteinfo p { margin:0; padding:0; }
+div#siteinfo a {margin-left: 15px;}
 
 /* 8.FORMS
 ---------------------------------------------------------------------- */
@@ -117,3 +118,4 @@ div.team img.last {margin-right: 0}
 #textual div {margin-bottom: 40px;}
 #textual ul {margin: 0 0 10px 0;}
 #textual li {margin-left: 18px; line-height: 22px;}
+#textual .button {margin: 0 !important;}
