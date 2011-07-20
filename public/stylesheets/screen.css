@@ -28,7 +28,7 @@ div#content-header { width:946px; margin:0px auto; padding:0px 15px 10px 15px; }
 #content-header div.menu a { margin: 0px 5px; color: #FFF; }
 #content-header div.menu a:link, #header-header div.menu a:visited { color: #FFF; }
 #content-header img { border: none; }
-#content-header div.menu a.selected {padding-bottom:2px; border-bottom: 1px solid #CCC;}
+#content-header div.menu a.selected {padding-bottom:2px; border-bottom: 1px solid #FFF;}
 
 /* 5.A. BOX CONTENTS
 ---------------------------------------------------------------------- */
