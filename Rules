@@ -66,6 +66,12 @@ compile '/features/' do
 end
 
 
+# Collaborations
+compile '/collaborations/' do
+  layout 'collaborations'
+end
+
+
 # General 
 compile '*' do
   filter :erb
