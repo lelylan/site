@@ -50,25 +50,25 @@ compile '/jobs/' do
 end
 
 compile '/jobs/*' do
-  layout 'jobs'
+  layout 'two_columns'
 end
 
 
 # About
 compile '/about/' do
-  layout 'about'
+  layout 'two_columns'
 end
 
 
 # Features
 compile '/features/' do
-  layout 'features'
+  layout 'two_columns'
 end
 
 
 # Collaborations
 compile '/collaborations/' do
-  layout 'collaborations'
+  layout 'two_columns'
 end
 
 

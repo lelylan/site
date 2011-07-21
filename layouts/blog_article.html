@@ -35,25 +35,15 @@
       <div id="main">
         <%= render 'partials/article_header', :item => @item %>
         <%= yield %>
-        <%= render 'partials/addthis', 
-            :title => @item[:title] + ' | ' + @item[:subtitle],
-            :path => 'http://lelylan.com/' + @item.path %>
-        <div id="disqus_thread"></div>
-
-        <script type="text/javascript">
-            var disqus_shortname = 'lelylan'; 
-            //var disqus_identifier = '<%= name(@item)%>';
-            var disqus_url = '<%= item.identifier %>';
-
-            (function() {
-                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-            })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-        
+        <p>Read more about related topics:</p>
+        <div class="tag-buttons">
+          <% if @item[:tags] %>
+            <% @item[:tags].each do |tag| %>
+              <a href="/blog/tags/<%= tag %>/" class="button big"><%= capitalize_tag(tag) %></a>
+            <% end %>
+          <% end %>
+        </div>
+        <%= render 'partials/disquis' %> 
       </div>
       <div id="sidebar">
         <div id="subscriptions">

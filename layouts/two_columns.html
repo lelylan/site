@@ -9,7 +9,7 @@
     <meta name="copyright" content="Copyright © Lelylan">
     <meta name="viewport" content="width=device-width">
 
-    <title>Lelylan Jobs | <%= @item[:title] %></title>
+    <title>Lelylan | <%= @item[:title] %></title>
 
     <link href="/stylesheets/screen.css" type="text/css" rel="stylesheet" media="screen">
     <link href="/stylesheets/boxes.css" type="text/css" rel="stylesheet" media="screen">
@@ -35,20 +35,9 @@
       <div id="main">
         <%= yield %>
       </div>
-      <div id="sidebar">
-        <div id="subscriptions">
-          <h3>Open positions right now</h3>
-          <p><i>Front-End Developer</i></p>
-          <p><i>Back-End Developer</i></p>
-          <p><i>Device Integrator</i></p>
-          <p><i>Creative Thinker</i></p>
-          <p><i>User Interaction Hacker</i></p>
-          <p><i>Data Analyst</i></p>
-          <p><i>Security Engineer</i></p>
-          <p><i>Energy Saver</i></p>
-        </div>
-      </div>
+      <%= render 'sidebars/' + @item[:sidebar] %> 
       <%= render 'partials/footer' %> 
     </div>
+    <%= render 'partials/getsatisfaction' %>
   </body>
 </html>

@@ -9,7 +9,7 @@
     <meta name="copyright" content="Copyright © Lelylan">
     <meta name="viewport" content="width=device-width">
 
-    <title>Lelylan Jobs | Send your resume</title>
+    <title>Lelylan | Send your resume</title>
 
     <link href="/stylesheets/screen.css" type="text/css" rel="stylesheet" media="screen">
     <link href="/stylesheets/boxes.css" type="text/css" rel="stylesheet" media="screen">
@@ -44,12 +44,12 @@
       <div id="content-header">
         <div class="logo"><a href="/"><img src="/images/logo.png"/></a></div>
         <div class="menu">
-          <a href="/features/">Features</a>
-          <a href="/blog/">Blog</a>
+          <a href="/features/" class="">Features</a>
+          <a href="/blog/" class="">Blog</a>
           <!--<a href="/apps/">App Store</a>-->
-          <a href="/collaborations/">Collaborations</a>
-          <a href="/jobs/">Jobs</a>
-          <a href="/about/">About us</a> |
+          <a href="/collaborations/" class="">Collaborations</a>
+          <a href="/jobs/" class="selected">Jobs</a>
+          <a href="/about/" class="">About us</a> |
           <a href="http://dev.lelylan.com">Developers</a> 
         </div>
       </div>
@@ -131,7 +131,7 @@
 
     <p>
       If you arrived till here, you must be interested enough to send us you resume, so write us a mail to
-      <a href="mailto:jobs@lelylan.com">jobs@lelylan.com</a> completing this simple template.
+      <b>jobs@lelylan.com</b> completing this simple template.
     </p>
 
     <ul>
@@ -155,7 +155,7 @@
   </div>
 </div>
       </div>
-      <div id="sidebar">
+            <div id="sidebar">
         <div id="subscriptions">
           <h3>Open positions right now</h3>
           <p><i>Front-End Developer</i></p>
@@ -168,11 +168,31 @@
           <p><i>Energy Saver</i></p>
         </div>
       </div>
+ 
             <div id="siteinfo">
-        <p>Copyright © Lelylan 2011. Protected and licensed under 
-        <a href="http://creativecommons.org/licenses/by/1.0/">Creative Commons License</a>. 
+        <div>
+          <span>© Lelylan 2011</span>
+          <a href="/tos/">TOS</a>
+          <a href="/privacy/">Privacy</a>
+        </div>
       </div>
  
     </div>
+      <script type="text/javascript" charset="utf-8">
+    var is_ssl = ("https:" == document.location.protocol);
+    var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "http://s3.amazonaws.com/getsatisfaction.com/";
+    document.write(unescape("%3Cscript src='" + asset_host + "javascripts/feedback-v2.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+
+  <script type="text/javascript" charset="utf-8">
+    var feedback_widget_options = {};
+    feedback_widget_options.display = "overlay";  
+    feedback_widget_options.company = "lelylan";
+    feedback_widget_options.placement = "left";
+    feedback_widget_options.color = "#087";
+    feedback_widget_options.style = "idea";
+    var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
+  </script>
+
   </body>
 </html>
