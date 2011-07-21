@@ -7,18 +7,21 @@ priority: 1.0
   <img src="/images/presentation.png"/>
 </div>
 
-<div>
+<div id="social">
   <div class="social-icons" style="float:left;">
     <%= render 'partials/addthis',
         :path => 'http://lelylan.com',
         :title => 'REST services to connect your house to the web - #lelylan reThink your house'%>
   </div>
-  <div style="float:right;">
-    <a href='/jobs/send/' class="button big">Register for an invitation</a>
+  <div class="disclaimer" style="float:right;">
+    <a href='#' class="button" id='prefinery_apply_link'>Register for an invitation →</a>
   </div>
 </div>
 
 <div id="features">
+  <h2 class="title what">
+    <a href="/features/">Features - What can you do with Lelylan</a>
+  </h2>
   <ul class="content">
     <li id="rethink" class="box">
       <a href="/features/#services">
@@ -66,6 +69,7 @@ priority: 1.0
     <a href="/collaborations/">Collaborate with Lelylan and innovate home automation</a>
   </h2>
 
+
   <ul class="content">
     <li id="developers" class="box">
       <a href="/collaborations/#developers"><span class="strap">Web developers</span> 
@@ -83,24 +87,19 @@ priority: 1.0
       <a href="/collaborations/#suppliers" class="dest">Join us →</a>
     </li>
     <li class="text-box">
-      <p class="title">
-        Create innovation on top of Lelylan
-      </p>
+      <img src="/images/collaborations.png"/>
       <div style="float:left; width: 210px; padding: 0 25px 0 0;">
         <p class="description">
-          Nowadays the main problem in home automation is related to the domotics companies 
-          which create devices that do not speak to each other.
-          Outcomes are visible as new complexities, few services, high prices and a big confusion 
-          for the final user. This is not what we dream for your future house.
+          Nowadays domotics companies create devices that do not speak to each other.
+          Outcomes are visible as complexities, few services, high prices and a big confusion 
+          for the final user.
         </p>
       </div>
       <div style="float:rigth">
         <p class="description">
-          We truly believe that to spread home automation, everyone should have the chance
-          to partecipate.
-          Whoever has the knowledge and the ideas for something new and cool must have the 
-          possibility to <b>enjoy, hack, experiment and have fun</b> using Lelylan.
-          <a href="/collaborations/" class="dest">Collaborate with us →</a>
+          We truly believe that to spread home automation everyone should partecipate. Whoever 
+          has the knowledge and the ideas to innovate, must be part of this game.
+          <a href="/collaborations/" class="dest">Collaborate →</a>
         </p>
       </div>
     </li>
@@ -113,10 +112,12 @@ priority: 1.0
   </h2>
   <ul class="content">
     <% @site.sorted_articles[0, 8].each_with_index do |post, i| %>
-    <li class="post box <%= 'last' if ((i+1)%4 == 0) %>">
-        <a href="<%= post.path %>"><span class="strap"><%= post[:title] %></span>
-        <span class="label"><%= post.subtitle %></a>
-      </li>
+    <li class="post two-cols box <%= 'last' if ((i+1)%2 == 0) %>">
+      <a href="<%= post.path %>">
+        <span class="strap"><%= post[:title] %></span>
+        <span class="label"><%= post.subtitle %>
+      </a>
+    </li>
     <% end %>
   </ul>
 </div>
