@@ -10,8 +10,8 @@
 #main ul {list-style-type: none;}
 #main ul li {margin-bottom: 5px;}
 #main ul li span { font-size:17px; font-weight:normal; font-style:normal;}
-#main ul li span span {font-size:15px;}
-#main ul li span.subtitle a {color:#e88801; font-size:12px; text-transform:uppercase; }
+#main ul li span span {font-size:16px;}
+#main ul li span.subtitle a {color:#e88801; font-size:13px; text-transform:uppercase; }
 #main ul li span.title a {color: #FFF; background-color:#e88801; padding: 2px 6px;}
 
 #sidebar { text-align: right; float:right; width:296px; margin: 30px 0px 20px 0px; }

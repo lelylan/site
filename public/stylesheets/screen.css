@@ -9,6 +9,7 @@ body { text-rendering:optimizeLegibility; font-size:15px; line-height:22px; colo
 ---------------------------------------------------------------------- */
 
 div#page { width:946px; margin:0px auto; padding:0px 17px 10px 17px;}
+.centered { width:946px; margin:0px auto; margin-bottom: 0px !important;  padding:0px 17px 0px 17px;}
 
 /* 3.LINKS
 ---------------------------------------------------------------------- */
@@ -114,4 +115,7 @@ div.disclaimer a {font-size: 20px; margin-top: 2px; margin-left: 4px; }
 div.image-content { clear:both; text-indent:-9999px; }
 #presentation div.headline {background:url(/images/presentation.png) center top repeat-x; height: 104px;}
 #collaborations div.headline {background:url(/images/collaborations.png) center top repeat-x; height: 105px;}
+
+.collaborations-page div.headline {background:url(/images/collaborations-page.png) center top no-repeat; height: 105px; margin-top: 20px;}
+.features-page div.headline {background:url(/images/features-page.png) center top no-repeat; height: 105px; margin-top: 20px;}
 

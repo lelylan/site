@@ -4,8 +4,6 @@ menu: blog
 priority: 0.8
 ---
 
-<h2>Latest on <%= capitalize_tag(tag).downcase %></h2>
-
 <% items_with_tag(tag).each do |post| %>
   <ul>
     <li>

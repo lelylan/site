@@ -30,7 +30,9 @@
   </head>
   
   <body class="home">
+    <div>
     <%= render 'partials/menu' %>
+    <%= render 'headers/' + @item[:header] if @item[:header] %>
     <div id="page">
       <div id="main">
         <%= yield %>
