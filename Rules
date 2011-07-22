@@ -46,6 +46,7 @@ end
 
 # Jobs careers
 compile '/jobs/' do
+  filter :erb  
   layout 'default'
 end
 

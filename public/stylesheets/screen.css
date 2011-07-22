@@ -118,4 +118,6 @@ div.image-content { clear:both; text-indent:-9999px; }
 
 .collaborations-page div.headline {background:url(/images/collaborations-page.png) center top no-repeat; height: 105px; margin-top: 20px;}
 .features-page div.headline {background:url(/images/features-page.png) center top no-repeat; height: 105px; margin-top: 20px;}
+.about-page div.headline {background:url(/images/about-page.png) center top no-repeat; height: 105px; margin-top: 20px;}
+#jobs div.headline {background:url(/images/jobs-page.png) center top no-repeat; height: 105px; margin-top: 20px;}
 

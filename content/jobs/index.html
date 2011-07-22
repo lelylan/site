@@ -4,17 +4,25 @@ menu: about
 priority: 0.8
 ---
 
-<div id="presentation">
-  <div class="disclaimer">
-    <p>
-      Lelylan is a start up trying to revolutionize home automation through innovation
-      and the insane idea that anyone can use it
-      <a href='/jobs/send/' class="button">Send us your resume</a>
-    </p>
-  </div>
-</div>
-
 <div id="jobs">
+  <div class="image-content headline">
+    <h1>We are here because of your needs</h1>
+    <p>A project based on the insane idea that home automation should be for everyone</p>
+  </div>
+
+  <div class="social-icons" style="float:left; margin-bottom: 25px;">
+    <%= render 'partials/addthis',
+        :path => 'http://lelylan.com',
+        :title => 'REST services to connect your house to the web - #lelylan reThink your house'%>
+  </div>
+  <div class="disclaimer" style="float:right;">
+      <a href='/jobs/send/' class="button">Send us your resume →</a>
+  </div>
+
+  <h2 class="title jobs">
+    <a href="/jobs/send/">Features - What can you do with Lelylan</a>
+  </h2>
+
   <ul class="content">
     <li id="frontend" class="box resume">
       <a href="/jobs/send/"><span class="strap">Font-End developer</span>
@@ -60,7 +68,8 @@ priority: 0.8
       <a href="/features/"><span class="strap">Data Analyst</span> 
         <span class="label"><span>G</span>ive <span>D</span>ata a <span>M</span>eaning</span></a>
         <span class="fl">W</span>e get lot of data which could be used to improve the way we live in our 
-        houses. If you love finding patterns, visualizing data, and move around kilos of data, 
+        houses. If you love finding patterns, visualizing data, and you feel confortable moving 
+        around lot of data, 
         <a href="/jobs/send/" class="dest">send us your resume →</a>        
     </li>
 
