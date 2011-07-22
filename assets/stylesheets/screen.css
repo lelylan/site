@@ -100,12 +100,18 @@ div.disclaimer a {font-size: 20px; margin-top: 2px; margin-left: 4px; }
 
 /* 11.A. SECTION 
 ----------------------------------------------------------------------- */
-
 #presentation {margin: 20px 0 0 0}
 #social {margin-bottom: 70px;}
-#textual h2 {font-size: 40px; font-weight: normal; line-height: 40px; padding: 0 0 20px 0; color: #000;}
+#textual h2 {font-size: 40px; font-weight: normal; line-height: 40px; padding: 0; color: #000;}
 #textual p  {padding-bottom: 0; margin: 0; font-size: 15px; line-height: 22px;}
 #textual div {margin-bottom: 40px;}
 #textual ul {margin: 0 0 10px 0;}
 #textual li {margin-left: 18px; line-height: 22px;}
 #textual .button {margin: 0 !important;}
+
+/* 12.PRESENTERS
+---------------------------------------------------------------------- */
+div.image-content { clear:both; text-indent:-9999px; }
+#presentation div.headline {background:url(/images/presentation.png) center top repeat-x; height: 104px;}
+#collaborations div.headline {background:url(/images/collaborations.png) center top repeat-x; height: 105px;}
+
