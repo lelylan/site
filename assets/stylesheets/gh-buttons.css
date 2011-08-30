@@ -40,28 +40,28 @@ http://github.com/necolas/css3-github-buttons
 .button:hover,
 .button:focus,
 .button:active {
-    border-color: #006458;
-    border-bottom-color: #006458;
+    border-color: #ea198f;
+    border-bottom-color: #ea198f;
     text-decoration: none; 
     /*text-shadow: -1px -1px 0 rgba(0,0,0,0.3); */
     color: #fff; 
-    background-color: #006458;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#00907e), to(#087));
-    background-image: -moz-linear-gradient(#00907e, #087);
-    background-image: -o-linear-gradient(#00907e, #087);
-    background-image: linear-gradient(#00907e, #087);
+    background-color: #ea198f;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ea198f), to(#ea198f));
+    background-image: -moz-linear-gradient(#ea198f, #087);
+    background-image: -o-linear-gradient(#ea198f, #087);
+    background-image: linear-gradient(#ea198f, #087);
 }
 
 .button:active,
 .button.active {
-    border-color: #006458; 
-    border-bottom-color: #006458; 
+    border-color: #ea198f; 
+    border-bottom-color: #ea198f; 
     color: #fff; 
-    background-color: #006458;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#00907e), to(#087));
-    background-image: -moz-linear-gradient(#00907e, #087);
-    background-image: -o-linear-gradient(#00907e, #087);
-    background-image: linear-gradient(#00907e, #087);
+    background-color: #ea198f;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ea198f), to(#ea198f));
+    background-image: -moz-linear-gradient(#ea198f, #087);
+    background-image: -o-linear-gradient(#ea198f, #087);
+    background-image: linear-gradient(#ea198f, #087);
 }
 
 /* overrides extra padding on button elements in Firefox */
