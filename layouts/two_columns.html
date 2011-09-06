@@ -37,7 +37,7 @@
       <div id="main">
         <%= yield %>
       </div>
-      <%= render 'sidebars/' + @item[:sidebar] %> 
+      <%= render 'sidebars/' + @item[:sidebar] if @item[:sidebar] %> 
       <%= render 'partials/footer' %> 
     </div>
     <%= render 'partials/getsatisfaction' %>

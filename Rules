@@ -73,6 +73,16 @@ compile '/collaborations/' do
 end
 
 
+# Terms
+compile '/tos/' do
+  layout 'two_columns'
+end
+
+compile '/privacy/' do
+  layout 'two_columns'
+end
+
+
 # General 
 compile '*' do
   filter :erb
