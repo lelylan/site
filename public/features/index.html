@@ -88,7 +88,8 @@
 
   </div>
   <div class="disclaimer" style="float:right;">
-    <a href='http://dev.lelylan.com' class="button">Check out Lelylan API →</a>
+    <!-- <a href='http://dev.lelylan.com' class="button">Check out Lelylan API →</a> -->
+    <a href='#' class="button" id='prefinery_apply_link'>Get your invitation →</a>
   </div>
 
   <h2 class="title separator">
@@ -103,8 +104,8 @@
   <div>
     <h2 id="services">Access your house from the web</h2>
     <p>
-      Lelylan is a platform based on a set of <a href="http://dev.lelylan.com">REST web 
-      services</a> that enable the access to all home automation resources (devices, 
+      Lelylan is a platform based on a set of REST web 
+      services that enable the access to all home automation resources (devices, 
       locations, people and more). What we aim to do is mapping every device to a unique 
       URI which will provide control over it. When such a connection is done, technological 
       limitations disappear and devices become identifiable only through their functionalities. 
@@ -211,6 +212,21 @@
     </p>
   </div>
 </div>
+
+<script type="text/javascript">
+  var prefineryJsHost = ("https:" == document.location.protocol) ? 'https://www.prefinery.com/' : 'http://www.prefinery.com/';
+  document.write(unescape("%3Cscript src='" + prefineryJsHost + "javascripts/widget.js' type='text/javascript'%3E%3C/script%3E"))
+</script>
+<script type='text/javascript' charset='utf-8'>
+  var prefinery_apply_options = {
+    account: "lelylan",
+    beta_id: "2001",
+    link_id: "prefinery_apply_link"
+  };
+  Prefinery.apply(prefinery_apply_options);
+</script>
+
+
       </div>
             <div id="sidebar">
         <div id="subscriptions">
@@ -243,7 +259,7 @@
     feedback_widget_options.display = "overlay";  
     feedback_widget_options.company = "lelylan";
     feedback_widget_options.placement = "left";
-    feedback_widget_options.color = "#087";
+    feedback_widget_options.color = "#00979d";
     feedback_widget_options.style = "idea";
     var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
   </script>

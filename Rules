@@ -57,18 +57,21 @@ end
 
 # About
 compile '/about/' do
+  filter :erb
   layout 'two_columns'
 end
 
 
 # Features
 compile '/features/' do
+  filter :erb
   layout 'two_columns'
 end
 
 
 # Collaborations
 compile '/collaborations/' do
+  filter :erb
   layout 'two_columns'
 end
 

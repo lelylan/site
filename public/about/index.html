@@ -88,7 +88,8 @@
 
   </div>
   <div class="disclaimer" style="float:right;">
-    <a href='http://dev.lelylan.com/' class="button">Check out Lelylan API →</a>
+    <!-- <a href='http://dev.lelylan.com' class="button">Check out Lelylan API →</a> -->
+    <a href='#' class="button" id='prefinery_apply_link'>Get your invitation →</a>
   </div>
 
   <h2 class="title separator">
@@ -182,6 +183,21 @@
     </p>
   </div>
 </div>
+
+<script type="text/javascript">
+  var prefineryJsHost = ("https:" == document.location.protocol) ? 'https://www.prefinery.com/' : 'http://www.prefinery.com/';
+  document.write(unescape("%3Cscript src='" + prefineryJsHost + "javascripts/widget.js' type='text/javascript'%3E%3C/script%3E"))
+</script>
+<script type='text/javascript' charset='utf-8'>
+  var prefinery_apply_options = {
+    account: "lelylan",
+    beta_id: "2001",
+    link_id: "prefinery_apply_link"
+  };
+  Prefinery.apply(prefinery_apply_options);
+</script>
+
+
       </div>
             <div id="sidebar">
         <div id="subscriptions">
