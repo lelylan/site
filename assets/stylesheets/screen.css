@@ -8,21 +8,51 @@ body { text-rendering:optimizeLegibility; font-size:15px; line-height:22px; colo
 /* 2.LAYOUT
 ---------------------------------------------------------------------- */
 
-div#page { width:946px; margin:0px auto; padding:0px 17px 10px 17px;}
+div#page { width:946px; margin:0px auto; padding:0px 17px 0px 17px;}
 .centered { width:946px; margin:0px auto; margin-bottom: 0px !important;  padding:0px 17px 0px 17px;}
+span.magenta {color: #ea198f; }
+span.green {color: #00979d; }
 
 /* 3.LINKS
 ---------------------------------------------------------------------- */
 
 a { text-decoration: none; }
 a:link, a:visited { color: #ea198f; }
-/*a:hover { color: #00979d; }*/
 
-/* 4.HEADER
+
+
+/* MENU
 ---------------------------------------------------------------------- */
 
 div#header { background-color: #00979d; }
 div#content-header { width:946px; margin:0px auto; padding:0px 15px 10px 15px; }
+#content-header { height: 56px; width: 100%; background-color: #00979d; color: #FFF;}
+#content-header div.logo { float: left; padding-top: 10px; }
+#content-header div.menu { float: right; font-size: 15px; margin-top: 30px; }
+#content-header div.menu a { margin: 0px 5px; color: #FFF; }
+#content-header div.menu a:link, #header-header div.menu a:visited { color: #FFF; }
+#content-header img { border: none; }
+#content-header div.menu a.selected {background-color: #03acb3; padding:4px 10px; -moz-border-radius: 2px; border-radius: 3px;}
+
+
+
+/* OVERVIEW 
+---------------------------------------------------------------------- */
+
+div#overview div.container { padding: 40px 0 0 0; }
+div#overview div.container #headline { clear:both; text-indent:-9999px; }
+div#overview div.home {background:url(/images/home.png) center top repeat-x; height: 160px; }
+div#advertise { width: 892px; }
+div#advertise { font-size: 13px; }
+
+
+
+/* INVITATION + SOCIAL
+---------------------------------------------------------------------- */
+div#invitation { padding: 25px 0 80px 0;}
+div#invitation div.container { padding: 0 25px; }
+
+
 
 #content-header { height: 56px; width: 100%; background-color: #00979d; color: #FFF;}
 #content-header div.logo { float: left; padding-top: 10px; }
@@ -31,6 +61,8 @@ div#content-header { width:946px; margin:0px auto; padding:0px 15px 10px 15px; }
 #content-header div.menu a:link, #header-header div.menu a:visited { color: #FFF; }
 #content-header img { border: none; }
 #content-header div.menu a.selected {background-color: #03acb3; padding:4px 10px; -moz-border-radius: 2px; border-radius: 3px;}
+
+
 
 /* 5.A. BOX CONTENTS
 ---------------------------------------------------------------------- */
@@ -54,13 +86,13 @@ ul li.box:hover {background-color: #f5fbfb; opacity:1.0; background-position:cen
 ul li.large {width: 926px;}
 ul li.two-cols {width: 446px !important;}
 ul li.last {margin-right: 0;}
-ul li.social {margin-top:10px; float:left; padding:10px; padding-bottom: 0; }
-ul li.social a.twitter-link:before {content:url(/images/twitter.png);}
+/*ul li.social {margin-top:10px; float:left; padding:10px; padding-bottom: 0; }*/
+/*ul li.social a.twitter-link:before {content:url(/images/twitter.png);}*/
 ul li.text-box {line-height:20px; float:right; width:446px; color:#333; margin:12px 0 0 25px; }
 ul li.text-box p.description {font-size:15px; color: #333; margin: 24px 0px; }
 ul li.post a span.label {padding: 0; margin-bottom: 0;}
 ul li.post a span {text-align: left}
-ul li div.social-icons {float: right; padding-left: 15px;}
+/*ul li div.social-icons {float: right; padding-left: 15px;}*/
 div#features ul.content {padding-bottom: 0px;}
 
 /* 6.NAVIGATION
@@ -102,7 +134,6 @@ div.disclaimer a {font-size: 20px; margin-top: 2px; margin-left: 4px; }
 /* 11.A. SECTION 
 ----------------------------------------------------------------------- */
 #presentation {margin: 20px 0 0 0}
-#social {margin-bottom: 85px;}
 #textual h2 {font-size: 40px; font-weight: normal; line-height: 40px; padding: 0; color: #000;}
 #textual h3 {font-size: 24px; font-weight: normal; line-height: 40px; padding: 0; color: #000;}
 #textual p  {padding-bottom: 0; margin: 0; font-size: 15px; line-height: 22px;}

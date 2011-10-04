@@ -47,9 +47,9 @@ http://github.com/necolas/css3-github-buttons
     color: #fff; 
     background-color: #ea198f;
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ea198f), to(#ea198f));
-    background-image: -moz-linear-gradient(#ea198f, #087);
-    background-image: -o-linear-gradient(#ea198f, #087);
-    background-image: linear-gradient(#ea198f, #087);
+    background-image: -moz-linear-gradient(#ea198f, #ea198f);
+    background-image: -o-linear-gradient(#ea198f, #ea198f);
+    background-image: linear-gradient(#ea198f, #ea198f);
 }
 
 .button:active,
@@ -59,9 +59,9 @@ http://github.com/necolas/css3-github-buttons
     color: #fff; 
     background-color: #ea198f;
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ea198f), to(#ea198f));
-    background-image: -moz-linear-gradient(#ea198f, #087);
-    background-image: -o-linear-gradient(#ea198f, #087);
-    background-image: linear-gradient(#ea198f, #087);
+    background-image: -moz-linear-gradient(#ea198f, #ea198f));
+    background-image: -o-linear-gradient(#ea198f, #ea198f);
+    background-image: linear-gradient(#ea198f, #ea198f);
 }
 
 /* overrides extra padding on button elements in Firefox */
@@ -287,11 +287,9 @@ http://github.com/necolas/css3-github-buttons
 
 /* ............................................................................................................. Big */
 
-.button.big {
-    font-size: 14px; 
-}
-
+.button.big { font-size: 14px; }
 .button.big.icon:before { top: 0; }
+.button.huge { font-size: 20px; }
 
 
 /* ------------------------------------------------------------------------------------------------------------- BUTTON GROUPS */
