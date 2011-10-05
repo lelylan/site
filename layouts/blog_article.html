@@ -36,20 +36,21 @@
         <%= render 'partials/article_header', :item => @item %>
         <%= yield %>
 
-        <!--<p><b>If you liked it, spread the word</b></p>-->
         <div class="tag-buttons">
           <%= render 'partials/addthis', 
               :title => @item[:title] + ' - ' + @item[:subtitle],
               :path => 'http://lelylan.com/' + @item.path %>
         </div>
-
-        <p><b>You could be interested to the following topics</b></p>
-        <div class="tag-buttons">
-          <% if @item[:tags] %>
-            <% @item[:tags].each do |tag| %>
-              <a href="/blog/tags/<%= tag %>/" class="button big"><%= capitalize_tag(tag) %></a>
+        
+        <div class="more">
+          <p><b>You could be interested to the following topics</b></p>
+          <div class="tag-buttons">
+            <% if @item[:tags] %>
+              <% @item[:tags].each do |tag| %>
+                <a href="/blog/tags/<%= tag %>/" class="button big"><%= capitalize_tag(tag) %></a>
+              <% end %>
             <% end %>
-          <% end %>
+          </div>
         </div>
 
         <%= render 'partials/disquis' %> 
