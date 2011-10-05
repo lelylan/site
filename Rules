@@ -72,7 +72,7 @@ end
 # Collaborations
 compile '/collaborations/' do
   filter :erb
-  layout 'two_columns'
+  layout 'default'
 end
 
 

@@ -33,7 +33,10 @@
     <div>
     <%= render 'partials/menu' %>
     <%= render 'headers/' + @item[:header] if @item[:header] %>
+    <%= render 'partials/invitation' %>
+    
     <div id="page">
+    <!--<h2 class="title separator"><a></a></h2>-->
       <div id="main">
         <%= yield %>
       </div>

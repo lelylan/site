@@ -30,12 +30,8 @@
   
   <body class="home">
     <%= render 'partials/menu' %>
-    <%= render 'headers/home' %>
-    <%= render 'partials/invitation' %>
-    <div id="page">
-      <%= yield %>
-      <%= render 'partials/footer' %> 
-    </div>
+    <%= yield %>
+    <%= render 'partials/prefinery' %>
     <%= render 'partials/getsatisfaction' %>
   </body>
 </html>
