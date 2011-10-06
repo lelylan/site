@@ -32,9 +32,11 @@
   <body class="home">
     <div>
     <%= render 'partials/menu' %>
-    <%= render 'headers/' + @item[:header] if @item[:header] %>
-    <%= render 'partials/invitation' %>
-    
+    <% if @item[:header] %>
+      <%= render 'headers/' + @item[:header]%>
+      <%= render 'partials/invitation' %>
+    <% end %>
+    <div style="padding: 1px;"></div>
     <div id="page">
     <!--<h2 class="title separator"><a></a></h2>-->
       <div id="main">

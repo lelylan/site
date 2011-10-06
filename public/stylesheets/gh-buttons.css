@@ -21,10 +21,10 @@ http://github.com/necolas/css3-github-buttons
     cursor: pointer; 
     outline: none; 
     background-color: #ececec;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#ececec));
-    background-image: -moz-linear-gradient(#f4f4f4, #ececec);
-    background-image: -o-linear-gradient(#f4f4f4, #ececec);
-    background-image: linear-gradient(#f4f4f4, #ececec);
+    /*background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#ececec));*/
+    /*background-image: -moz-linear-gradient(#f4f4f4, #ececec);*/
+    /*background-image: -o-linear-gradient(#f4f4f4, #ececec);*/
+    /*background-image: linear-gradient(#f4f4f4, #ececec);*/
     -webkit-background-clip: padding;
     -moz-background-clip: padding;
     -o-background-clip: padding-box; 
@@ -46,10 +46,10 @@ http://github.com/necolas/css3-github-buttons
     /*text-shadow: -1px -1px 0 rgba(0,0,0,0.3); */
     color: #fff; 
     background-color: #ea198f;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ea198f), to(#ea198f));
-    background-image: -moz-linear-gradient(#ea198f, #ea198f);
-    background-image: -o-linear-gradient(#ea198f, #ea198f);
-    background-image: linear-gradient(#ea198f, #ea198f);
+    /*background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ea198f), to(#ea198f));*/
+    /*background-image: -moz-linear-gradient(#ea198f, #ea198f);*/
+    /*background-image: -o-linear-gradient(#ea198f, #ea198f);*/
+    /*background-image: linear-gradient(#ea198f, #ea198f);*/
 }
 
 .button:active,
@@ -58,10 +58,10 @@ http://github.com/necolas/css3-github-buttons
     border-bottom-color: #ea198f; 
     color: #fff; 
     background-color: #ea198f;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ea198f), to(#ea198f));
-    background-image: -moz-linear-gradient(#ea198f, #ea198f));
-    background-image: -o-linear-gradient(#ea198f, #ea198f);
-    background-image: linear-gradient(#ea198f, #ea198f);
+    /*background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ea198f), to(#ea198f));*/
+    /*background-image: -moz-linear-gradient(#ea198f, #ea198f)) !important;*/
+    /*background-image: -o-linear-gradient(#ea198f, #ea198f) !important;*/
+    /*background-image: linear-gradient(#ea198f, #ea198f) !important;*/
 }
 
 /* overrides extra padding on button elements in Firefox */
