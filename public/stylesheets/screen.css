@@ -1,24 +1,30 @@
-/* 1.BODY and PAGE
+/* BODY and PAGE
 ---------------------------------------------------------------------- */
 
 /** { margin: 0; padding: 0; font-family: Georgia, Palatino, Times, 'Times New Roman', sans-serif;}*/
 * { margin: 0; padding: 0; font-family: Helvetica, Arial, Sans-Serif; }
 body { text-rendering:optimizeLegibility; font-size:15px; line-height:22px; color:#333; background:#FFF; }
 
-/* 2.LAYOUT
+
+/* LAYOUT
 ---------------------------------------------------------------------- */
 
 div#page { width:946px; margin:0px auto; padding:0px 17px 0px 17px;}
 .centered { width:946px; margin:0px auto; margin-bottom: 0px !important;  padding:0px 17px 0px 17px;}
+
+
+/* COLORS
+---------------------------------------------------------------------- */
+
 span.magenta {color: #ea198f; }
 span.green {color: #00979d; }
+
 
 /* 3.LINKS
 ---------------------------------------------------------------------- */
 
 a { text-decoration: none; }
 a:link, a:visited { color: #ea198f; }
-
 
 
 /* MENU
@@ -35,8 +41,7 @@ div#content-header { width:946px; margin:0px auto; padding:0px 15px 10px 15px; }
 #content-header div.menu a.selected {background-color: #03acb3; padding:4px 10px; -moz-border-radius: 2px; border-radius: 3px;}
 
 
-
-/* OVERVIEW 
+/* OVERVIEW (main title)
 ---------------------------------------------------------------------- */
 div#overview div.container { padding: 30px 0 0 0; }
 div#overview div.container #headline { clear:both; text-indent:-9999px; }
@@ -44,30 +49,21 @@ div#overview div.home {background:url(/images/home.png) center top repeat-x; hei
 div#overview div.collaborations {background:url(/images/collaborations.png) center top repeat-x; height: 160px; }
 div#overview div.features {background:url(/images/features.png) center top repeat-x; height: 160px; }
 div#overview div.about {background:url(/images/about.png) center top repeat-x; height: 160px; }
-
+/* Extra message */
 div#advertise { width: 946px; }
 div#advertise p { background-color:#F4F4F4; border: 1px #dddddd solid; padding: 3px 0px; font-size: 14px; margin-bottom: 15px; }
+/* Inner page substitutions */
+div.image-content { clear:both; text-indent:-9999px; }
+#collaborations div.headline {background:url(/images/collaborations-ann.png) center top repeat-x; height: 105px;}
 
 
-
-/* INVITATION + SOCIAL
+/* INVITATION & SOCIAL
 ---------------------------------------------------------------------- */
 div#invitation { padding: 15px 0 80px 0;}
 div#invitation div.container { padding: 0 0px; }
 
 
-
-#content-header { height: 56px; width: 100%; background-color: #00979d; color: #FFF;}
-#content-header div.logo { float: left; padding-top: 10px; }
-#content-header div.menu { float: right; font-size: 15px; margin-top: 30px; }
-#content-header div.menu a { margin: 0px 5px; color: #FFF; }
-#content-header div.menu a:link, #header-header div.menu a:visited { color: #FFF; }
-#content-header img { border: none; }
-#content-header div.menu a.selected {background-color: #03acb3; padding:4px 10px; -moz-border-radius: 2px; border-radius: 3px;}
-
-
-
-/* 5.A. BOX CONTENTS
+/* BOX CONTENT
 ---------------------------------------------------------------------- */
 
 ul li a span.strap { display:block; text-align: center; font-size:17px; text-transform:uppercase;}
@@ -81,7 +77,8 @@ a.arch { line-height:22px; }
 .fs { float:left; margin:12px 4px 10px 0; padding:0; font-size:65px; line-height:62%; color:#00979d; }
 }
 
-/* 5.B. BOX STRUCTURE
+
+/* BOX STRUCTURE
 ---------------------------------------------------------------------- */
 
 ul li.box {line-height:20px; float:left; width:207px; padding:10px; border:1px solid #DDD; color:#333; margin:10px 10px 0 0; -webkit-box-shadow: 1px 1px 7px rgba(153, 153, 153, 0.2); -moz-box-shadow: 1px 1px 7px rgba(153, 153, 153, 0.2); box-shadow: 1px 1px 7px rgba(153, 153, 153, 0.2); border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px; }
@@ -89,30 +86,30 @@ ul li.box:hover {background-color: #f5fbfb; opacity:1.0; background-position:cen
 ul li.large {width: 926px;}
 ul li.two-cols {width: 446px !important;}
 ul li.last {margin-right: 0;}
-/*ul li.social {margin-top:10px; float:left; padding:10px; padding-bottom: 0; }*/
-/*ul li.social a.twitter-link:before {content:url(/images/twitter.png);}*/
 ul li.text-box {line-height:20px; float:right; width:446px; color:#333; margin:12px 0 0 25px; }
 ul li.text-box p.description {font-size:15px; color: #333; margin: 24px 0px; }
 ul li.post a span.label {padding: 0; margin-bottom: 0;}
 ul li.post a span {text-align: left}
-/*ul li div.social-icons {float: right; padding-left: 15px;}*/
 div#features ul.content {padding-bottom: 0px;}
 
-/* 6.NAVIGATION
+
+/* NAVIGATION
 ---------------------------------------------------------------------- */
 
 ul.content { clear:both; float:left; list-style-type:none; margin:12px 0 30px 0; padding:0px 0 58px 0;}
 .home ul.content { margin:12px 0 50px 0; padding:0; background:transparent; }
 .external ul.content { margin:12px 0 10px 0; padding:0; background:transparent; }
 
-/* 7.SITEINFO/FOOTER
+
+/* SITEINFO (footer)
 ---------------------------------------------------------------------- */
 
-div#siteinfo { position:relative; clear:both; text-align:center; padding:25px 0 0px 0; color:#333;}
+div#siteinfo { position:relative; clear:both; text-align:center; padding:25px 0 20px 0; color:#333;}
 div#siteinfo p { margin:0; padding:0; }
-div#siteinfo a {margin-left: 15px;}
+div#siteinfo a {margin-left: 15px; }
 
-/* 8.FORMS
+
+/* FORMS
 ---------------------------------------------------------------------- */
 
 form { margin:0; padding:0; }
@@ -127,14 +124,16 @@ fieldset { margin: 20px 0 0 0; padding:0; border:0px solid #CCC; }
 p.vcard span.role, p.vcard span.fn { display:none; }
 ul li.mf a { background:url(../images/site/hcard.gif) no-repeat center right; padding-right:19px; }
 
-/* 10.TITLES
+
+/* TITLES
 ---------------------------------------------------------------------- */
 h2.title { clear:both; text-indent:-9999px; }
 h2.title a { display:block; height:20px; margin: 0; padding:0; }
 div.disclaimer p {text-align: center; letter-spacing: 1px; line-height: 34px; font-size: 26px; color: #00979d; margin: 22px 0 28px 0; }
 div.disclaimer a {font-size: 20px; margin-top: 2px; margin-left: 4px; }
 
-/* 11.A. SECTION 
+
+/* TEXTAL SECTIONS 
 ----------------------------------------------------------------------- */
 #presentation {margin: 20px 0 0 0}
 #textual h2 {font-size: 40px; font-weight: normal; line-height: 40px; padding: 0; color: #000;}
@@ -144,14 +143,3 @@ div.disclaimer a {font-size: 20px; margin-top: 2px; margin-left: 4px; }
 #textual ul {margin: 0 0 10px 0;}
 #textual li {margin-left: 18px; line-height: 22px;}
 #textual .button {margin: 0 !important;}
-
-/* 12.PRESENTERS
----------------------------------------------------------------------- */
-div.image-content { clear:both; text-indent:-9999px; }
-#presentation div.headline {background:url(/images/presentation.png) center top repeat-x; height: 115px;}
-#collaborations div.headline {background:url(/images/collaborations-ann.png) center top repeat-x; height: 105px;}
-
-.collaborations-page div.headline {background:url(/images/collaborations-page.png) center top no-repeat; height: 105px; margin-top: 20px;}
-.about-page div.headline {background:url(/images/about-page.png) center top no-repeat; height: 105px; margin-top: 20px;}
-#jobs div.headline {background:url(/images/jobs-page.png) center top no-repeat; height: 105px; margin-top: 20px;}
-

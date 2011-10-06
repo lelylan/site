@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://lelylan.com/</id>
   <title>Lelylan - reThink your house</title>
-  <updated>2011-09-08T22:00:00Z</updated>
+  <updated>2011-10-06T22:00:00Z</updated>
   <link rel="alternate" href="http://lelylan.com/"/>
   <link rel="self" href="http://lelylan.com/blog/feed.xml"/>
   <author>
@@ -10,10 +10,10 @@
     <uri>http://lelylan.com</uri>
   </author>
   <entry>
-    <id>tag:lelylan.com,2011-09-09:/blog/why/</id>
+    <id>tag:lelylan.com,2011-10-07:/blog/why/</id>
     <title type="html">Why Lelylan exists</title>
-    <published>2011-09-08T22:00:00Z</published>
-    <updated>2011-09-08T22:00:00Z</updated>
+    <published>2011-10-06T22:00:00Z</published>
+    <updated>2011-10-06T22:00:00Z</updated>
     <link rel="alternate" href="http://lelylan.com/blog/why/"/>
     <content type="html">&lt;div class="article"&gt;
 
@@ -54,7 +54,7 @@
   &lt;/p&gt;  
 
   &lt;p&gt;
-    For the first time you have the real chance to change home automation. If you are one 
+    For the first time you have a real chance to change how home automation works. If you are one 
     of those crazy innovators, &lt;a href="/collaborations/"&gt;write us about your ideas&lt;/a&gt;.
   &lt;/p&gt;
 
