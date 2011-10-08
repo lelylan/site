@@ -44,17 +44,6 @@ compile '/blog/*' do
 end
 
 
-# Jobs careers
-compile '/jobs/' do
-  filter :erb  
-  layout 'default'
-end
-
-compile '/jobs/*' do
-  layout 'two_columns'
-end
-
-
 # About
 compile '/about/' do
   filter :erb
