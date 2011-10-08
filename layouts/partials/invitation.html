@@ -7,7 +7,27 @@
             :title => '#lelylan reThink your house. APIs to change the way we will live tomorrow\'s house'%>
       </div>
       <div style="float: right;">
-        <a href='#' class="button huge active" id="prefinery_apply_link">Get your invitation now →</a>
+        <a href='#' rel="popover"
+                    data-original-title="Be the first of your friends"
+                    data-content="Get access to the first APIs that give you the ability to play with your house." 
+                    class="button huge active" 
+                    id="prefinery_apply_link">
+          Get your invitation now →
+        </a>
+
+          <script>
+            $(function () {
+              $("a[rel=popover]")
+                .popover({
+                  placement: 'above',
+                  offset: 10
+                })
+                .click(function(e) {
+                  e.preventDefault()
+                })
+            })
+          </script>
+
       </div>
     </div>
   </div>

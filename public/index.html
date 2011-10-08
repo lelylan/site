@@ -11,6 +11,7 @@
 
     <title>Lelylan | reThink your house</title>
 
+    <link href="/stylesheets/bootstrap.min.css" type="text/css" rel="stylesheet" media="screen">
     <link href="/stylesheets/screen.css" type="text/css" rel="stylesheet" media="screen">
     <link href="/stylesheets/boxes.css" type="text/css" rel="stylesheet" media="screen">
     <link href="/stylesheets/gh-buttons.css" type="text/css" rel="stylesheet" media="screen">
@@ -22,6 +23,8 @@
     <script type="text/javascript" src="/javascripts/jquery.min.js"></script>
     <script type="text/javascript" src="/javascripts/onload.js"></script>
     <script type="text/javascript" src="/javascripts/scrollto.js"></script>
+    <script type="text/javascript" src="/javascripts/bootstrap-twipsy.js"></script>
+    <script type="text/javascript" src="/javascripts/bootstrap-popover.js"></script>
     <!--[if IE 6]><script type="text/javascript" src="/javascripts/belatedpng-0.0.7a.js"></script><![endif]-->
     <!--[if IE 6]><script type="text/javascript" src="/javascripts/ie6.js"></script><![endif]-->
 
@@ -106,7 +109,27 @@
 
       </div>
       <div style="float: right;">
-        <a href='#' class="button huge active" id="prefinery_apply_link">Get your invitation now →</a>
+        <a href='#' rel="popover"
+                    data-original-title="Be the first of your friends"
+                    data-content="Get access to the first APIs that give you the ability to play with your house." 
+                    class="button huge active" 
+                    id="prefinery_apply_link">
+          Get your invitation now →
+        </a>
+
+          <script>
+            $(function () {
+              $("a[rel=popover]")
+                .popover({
+                  placement: 'above',
+                  offset: 10
+                })
+                .click(function(e) {
+                  e.preventDefault()
+                })
+            })
+          </script>
+
       </div>
     </div>
   </div>
