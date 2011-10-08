@@ -51,7 +51,7 @@ div#overview div.features {background:url(/images/features.png) center top repea
 div#overview div.about {background:url(/images/about.png) center top repeat-x; height: 160px; }
 /* Extra message */
 div#advertise { width: 946px; }
-div#advertise p { background-color:#F4F4F4; border: 1px #dddddd solid; padding: 3px 0px; font-size: 14px; margin-bottom: 15px; }
+div#advertise p { background-color:#F4F4F4; border: 1px #dddddd solid; padding: 3px 0px; font-size: 14px; margin: 15px 0 15px 0; }
 /* Inner page substitutions */
 div.image-content { clear:both; text-indent:-9999px; }
 #collaborations div.headline {background:url(/images/collaborations-ann.png) center top repeat-x; height: 105px;}
