@@ -143,3 +143,8 @@ div.disclaimer a {font-size: 20px; margin-top: 2px; margin-left: 4px; }
 #textual ul {margin: 0 0 10px 0;}
 #textual li {margin-left: 18px; line-height: 22px;}
 #textual .button {margin: 0 !important;}
+
+
+/* MISCELLANEUS
+----------------------------------------------------------------------- */
+.hidden {display: none;}
