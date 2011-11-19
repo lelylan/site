@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.google.com/schemas/sitemap/0.84">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://lelylan.com/about/</loc>
     <lastmod>2011-10-06</lastmod>
@@ -15,8 +15,12 @@
     <lastmod>2011-11-08</lastmod>
   </url>
   <url>
+    <loc>http://lelylan.com/blog/sucks/</loc>
+    <lastmod>2011-11-19</lastmod>
+  </url>
+  <url>
     <loc>http://lelylan.com/blog/why/</loc>
-    <lastmod>2011-10-14</lastmod>
+    <lastmod>2011-11-19</lastmod>
   </url>
   <url>
     <loc>http://lelylan.com/collaborations/</loc>

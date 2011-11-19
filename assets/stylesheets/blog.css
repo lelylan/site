@@ -2,7 +2,7 @@
 #main h1 {color: #000; font-size: 34px; line-height: 40px; margin: 0px 0 5px 0; font-weight: normal;}
 #main h2 {color: #000; font-size: 28px; line-height: 32px; margin: 0px 0 15px 0; font-weight: normal;}
 #main p { margin-bottom: 10px; }
-#main div.article { margin: 35px 0px; }
+#main div.article { margin: 20px 0 35px 0px; }
 #main div.summary { margin-bottom: 0px; }
 #main div.separator { margin-bottom: 30px }
 #main div.tag-buttons { margin: 8px 0px 25px 0px; }
