@@ -2178,7 +2178,7 @@ I"ó<div id="textual">
   Prefinery.apply(prefinery_apply_options);
 </script>
 
-;T;@&I"/feed/;T{;{	;I"¼7<!DOCTYPE HTML>
+;T;@&I"/feed/;T{;{	;I"½7<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -2290,7 +2290,7 @@ I"ó<div id="textual">
   &lt;p&gt;
     People tend to think that the cause for the low domotics penetration stays in the high 
     prices. This is both true and false. Actual domotics systems 
-    are quite expansive, but as for all technologies, when they start to spread around
+    are quite expansive, but as for all technologies, when they start to spread around,
     costs start to lower down. So why, why home automation is not a reality?
   &lt;/p&gt;
 
@@ -2320,9 +2320,9 @@ I"ó<div id="textual">
   &lt;/blockquote&gt;
 
   &lt;p&gt;
-    If you think home automation sucks, &lt;a href="/collaborations/"&gt;join us&lt;/a&gt;, because 
-    we envision a future where our houses will be the ones we have dreamed when we where 
-    child. Don't you agree?
+    If you think home automation sucks, &lt;a href="/collaborations/"&gt;join us now&lt;/a&gt;. 
+    We envision a future where our houses will be the ones we have dreamed when we where 
+    child. Don't you like this?
   &lt;/p&gt;
 &lt;/div&gt;</content>
   </entry>
@@ -2489,7 +2489,7 @@ I"ó<div id="textual">
   </body>
 </html>
 ;T;	I"<%= atom_feed %>;T;
-I"˜&<?xml version="1.0" encoding="UTF-8"?>
+I"™&<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://lelylan.com/</id>
   <title>Lelylan - reThink your house</title>
@@ -2543,7 +2543,7 @@ I"˜&<?xml version="1.0" encoding="UTF-8"?>
   &lt;p&gt;
     People tend to think that the cause for the low domotics penetration stays in the high 
     prices. This is both true and false. Actual domotics systems 
-    are quite expansive, but as for all technologies, when they start to spread around
+    are quite expansive, but as for all technologies, when they start to spread around,
     costs start to lower down. So why, why home automation is not a reality?
   &lt;/p&gt;
 
@@ -2573,9 +2573,9 @@ I"˜&<?xml version="1.0" encoding="UTF-8"?>
   &lt;/blockquote&gt;
 
   &lt;p&gt;
-    If you think home automation sucks, &lt;a href="/collaborations/"&gt;join us&lt;/a&gt;, because 
-    we envision a future where our houses will be the ones we have dreamed when we where 
-    child. Don't you agree?
+    If you think home automation sucks, &lt;a href="/collaborations/"&gt;join us now&lt;/a&gt;. 
+    We envision a future where our houses will be the ones we have dreamed when we where 
+    child. Don't you like this?
   &lt;/p&gt;
 &lt;/div&gt;</content>
   </entry>
@@ -4861,7 +4861,7 @@ I"
       <span class="subtitle"><a href="/blog/why/"><span>W</span>hy <span>L</span>elylan <span>e</span>xists</a></span>
     </li>
   </ul>
-;T;@SI"/blog/feed/;T{;{;I" &<?xml version="1.0" encoding="UTF-8"?>
+;T;@SI"/blog/feed/;T{;{;I"¡&<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://lelylan.com/</id>
   <title>Lelylan - reThink your house</title>
@@ -4915,7 +4915,7 @@ I"
   &lt;p&gt;
     People tend to think that the cause for the low domotics penetration stays in the high 
     prices. This is both true and false. Actual domotics systems 
-    are quite expansive, but as for all technologies, when they start to spread around
+    are quite expansive, but as for all technologies, when they start to spread around,
     costs start to lower down. So why, why home automation is not a reality?
   &lt;/p&gt;
 
@@ -4945,9 +4945,9 @@ I"
   &lt;/blockquote&gt;
 
   &lt;p&gt;
-    If you think home automation sucks, &lt;a href="/collaborations/"&gt;join us&lt;/a&gt;, because 
-    we envision a future where our houses will be the ones we have dreamed when we where 
-    child. Don't you agree?
+    If you think home automation sucks, &lt;a href="/collaborations/"&gt;join us now&lt;/a&gt;. 
+    We envision a future where our houses will be the ones we have dreamed when we where 
+    child. Don't you like this?
   &lt;/p&gt;
 &lt;/div&gt;</content>
   </entry>
@@ -5081,7 +5081,7 @@ I"
   </entry>
 </feed>
 ;T;	I"<%= atom_feed %>;T;
-@YI"/blog/sucks/;T{;{	;I"8%<!DOCTYPE HTML>
+@YI"/blog/sucks/;T{;{	;I"9%<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -5188,7 +5188,7 @@ I"
   <p>
     People tend to think that the cause for the low domotics penetration stays in the high 
     prices. This is both true and false. Actual domotics systems 
-    are quite expansive, but as for all technologies, when they start to spread around
+    are quite expansive, but as for all technologies, when they start to spread around,
     costs start to lower down. So why, why home automation is not a reality?
   </p>
 
@@ -5218,9 +5218,9 @@ I"
   </blockquote>
 
   <p>
-    If you think home automation sucks, <a href="/collaborations/">join us</a>, because 
-    we envision a future where our houses will be the ones we have dreamed when we where 
-    child. Don't you agree?
+    If you think home automation sucks, <a href="/collaborations/">join us now</a>. 
+    We envision a future where our houses will be the ones we have dreamed when we where 
+    child. Don't you like this?
   </p>
 </div>
 
@@ -5309,7 +5309,7 @@ I"
     </div>
   </body>
 </html>
-;T;	I"/<div class="article">
+;T;	I"0<div class="article">
 
   <ul class="media-grid">
     <li>
@@ -5346,7 +5346,7 @@ I"
   <p>
     People tend to think that the cause for the low domotics penetration stays in the high 
     prices. This is both true and false. Actual domotics systems 
-    are quite expansive, but as for all technologies, when they start to spread around
+    are quite expansive, but as for all technologies, when they start to spread around,
     costs start to lower down. So why, why home automation is not a reality?
   </p>
 
@@ -5376,9 +5376,9 @@ I"
   </blockquote>
 
   <p>
-    If you think home automation sucks, <a href="/collaborations/">join us</a>, because 
-    we envision a future where our houses will be the ones we have dreamed when we where 
-    child. Don't you agree?
+    If you think home automation sucks, <a href="/collaborations/">join us now</a>. 
+    We envision a future where our houses will be the ones we have dreamed when we where 
+    child. Don't you like this?
   </p>
 </div>;T;
 @_;@^I"/blog/tags/market/;T{;{	;I"h<!DOCTYPE HTML>
