@@ -601,7 +601,7 @@ I"$
       <span class="subtitle"><a href="/blog/why/"><span>W</span>hy <span>L</span>elylan <span>e</span>xists</a></span>
     </li>
   </ul>
-;T;@I"/blog/iot/;T{;{	;I"€%<!DOCTYPE HTML>
+;T;@I"/blog/iot/;T{;{	;I"t%<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -664,7 +664,7 @@ I"$
       <div id="main">
                 
         <h1>What the hell does #IoT means?</h1>
-        <span class="subtitle"><i>An opinionated point of view</i></span>
+        <span class="sub">An opinionated point of view</span>
         <p>
           Written by <a href="http://twitter.com/andreareginato">Lelylan Chief</a> | Nov 03, 2011
         </p>
@@ -881,7 +881,7 @@ I"$
     <a href="http://www.economist.com/blogs/schumpeter/2010/12/internet_things">The Economist</a>.
   </p>
 </div>;T;
-@;@I"/blog/why/;T{;{	;I"z!<!DOCTYPE HTML>
+@;@I"/blog/why/;T{;{	;I"n!<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -944,7 +944,7 @@ I"$
       <div id="main">
                 
         <h1>The connected house</h1>
-        <span class="subtitle"><i>Why Lelylan exists</i></span>
+        <span class="sub">Why Lelylan exists</span>
         <p>
           Written by <a href="http://twitter.com/andreareginato">Lelylan Chief</a> | Oct 16, 2011
         </p>
@@ -5081,7 +5081,7 @@ I"
   </entry>
 </feed>
 ;T;	I"<%= atom_feed %>;T;
-@YI"/blog/sucks/;T{;{	;I"9%<!DOCTYPE HTML>
+@YI"/blog/sucks/;T{;{	;I"-%<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -5144,7 +5144,7 @@ I"
       <div id="main">
                 
         <h1>Why home automation sucks</h1>
-        <span class="subtitle"><i>And why we still love it</i></span>
+        <span class="sub">And why we still love it</span>
         <p>
           Written by <a href="http://twitter.com/lelylan">Lelylan Chief</a> | Nov 18, 2011
         </p>
