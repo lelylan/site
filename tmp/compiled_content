@@ -2190,7 +2190,7 @@ I"ó<div id="textual">
   Prefinery.apply(prefinery_apply_options);
 </script>
 
-;T;@&I"/feed/;T{;{	;I"†7<!DOCTYPE HTML>
+;T;@&I"/feed/;T{;{	;I"‡7<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -2277,7 +2277,7 @@ I"ó<div id="textual">
   
   &lt;p&gt;
     When we talk about Lelylan, most of the people just tell us that domotics 
-    already exist.
+    already exists.
   &lt;/p&gt;
 
   &lt;p&gt;
@@ -2501,7 +2501,7 @@ I"ó<div id="textual">
   </body>
 </html>
 ;T;	I"<%= atom_feed %>;T;
-I"b&<?xml version="1.0" encoding="UTF-8"?>
+I"c&<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://lelylan.com/</id>
   <title>Lelylan - reThink your house</title>
@@ -2530,7 +2530,7 @@ I"b&<?xml version="1.0" encoding="UTF-8"?>
   
   &lt;p&gt;
     When we talk about Lelylan, most of the people just tell us that domotics 
-    already exist.
+    already exists.
   &lt;/p&gt;
 
   &lt;p&gt;
@@ -4877,7 +4877,7 @@ I"
       <span class="subtitle"><a href="/blog/why/"><span>W</span>hy <span>L</span>elylan <span>e</span>xists</a></span>
     </li>
   </ul>
-;T;@SI"/blog/feed/;T{;{;I"j&<?xml version="1.0" encoding="UTF-8"?>
+;T;@SI"/blog/feed/;T{;{;I"k&<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://lelylan.com/</id>
   <title>Lelylan - reThink your house</title>
@@ -4906,7 +4906,7 @@ I"
   
   &lt;p&gt;
     When we talk about Lelylan, most of the people just tell us that domotics 
-    already exist.
+    already exists.
   &lt;/p&gt;
 
   &lt;p&gt;
@@ -5097,7 +5097,7 @@ I"
   </entry>
 </feed>
 ;T;	I"<%= atom_feed %>;T;
-@YI"/blog/sucks/;T{;{	;I"X%<!DOCTYPE HTML>
+@YI"/blog/sucks/;T{;{	;I"Y%<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -5179,7 +5179,7 @@ I"
   
   <p>
     When we talk about Lelylan, most of the people just tell us that domotics 
-    already exist.
+    already exists.
   </p>
 
   <p>
@@ -5327,7 +5327,7 @@ I"
     </div>
   </body>
 </html>
-;T;	I"ù
+;T;	I"ú
 <div class="article">
 
   <ul class="media-grid">
@@ -5340,7 +5340,7 @@ I"
   
   <p>
     When we talk about Lelylan, most of the people just tell us that domotics 
-    already exist.
+    already exists.
   </p>
 
   <p>
