@@ -2190,7 +2190,7 @@ I"Û<div id="textual">
   Prefinery.apply(prefinery_apply_options);
 </script>
 
-;T;@&I"/feed/;T{;{	;I"Ω7<!DOCTYPE HTML>
+;T;@&I"/feed/;T{;{	;I"Ü7<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -2276,34 +2276,34 @@ I"Û<div id="textual">
   &lt;/ul&gt;
   
   &lt;p&gt;
-    When talking about Lelylan, most of the people we speak with, tell us that domotics 
-    already exists.
+    When we talk about Lelylan, most of the people just tell us that domotics 
+    already exist.
   &lt;/p&gt;
 
   &lt;p&gt;
-    As we try to enjoy our time around, we answer with a simple question: &lt;strong&gt;how many 
-    of you have a domotics system, today&lt;/strong&gt;? The answer is always the same, and is a 
-    clear no. To higlight this, it was fun when during a presentation in front of almost 
-    100 people just one hand raised up, even clarifying that his domotics system didn't 
+    As we try to enjoy our time around, we reply with a simple question: &lt;strong&gt;how many 
+    of you have a domotics system, today&lt;/strong&gt;? The answer is always the same, nobody. 
+    To highlight this, it was fun when during a presentation in front of almost 
+    100 people just one hand raised up, clarifying that his domotics system didn't 
     really work.
   &lt;/p&gt;
 
   &lt;p&gt;
-    It's true, there are lot of companies working on home automation from many many 
-    years. Some of them are well known names like
+    It's true, lots of companies have been working on home automation for many 
+    years. Some of them are well-known names like
     &lt;a href="http://www.crestron.com/"&gt;Creston&lt;/a&gt;, 
     &lt;a href="http://control4.com"&gt;Control4&lt;/a&gt; and
     &lt;a href="http://www.amx.com"&gt;AMX&lt;/a&gt;, 
     but there is no real market. As there are so few domotics houses, this field looks like
-    a dream for most of us. At this point, the correct question raise up: 
+    a dream for many of us. At this point, the correct question is: 
     &lt;strong&gt;why home automation sucks so much nowadays!?&lt;/strong&gt;
   &lt;/p&gt;
 
   &lt;p&gt;
-    People tend to think that the cause for the low domotics penetration stays in the high 
-    prices. This is both true and false. Actual domotics systems 
-    are quite expensive, but as for all technologies, when they start to spread around,
-    costs start to lower down. So why, why home automation is not a reality?
+    People tend to think that the cause for the low domotics penetration is 
+    price. This is both true and false. Actual domotics systems 
+    are quite expensive, but like all technologies, when they start to spread,
+    costs start to get lower and lower. So why, why home automation is not a reality?
   &lt;/p&gt;
 
   &lt;p&gt;
@@ -2312,8 +2312,8 @@ I"Û<div id="textual">
     to keep their market share.  
     The consequences are the impossibility for devices such as lights, appliances, 
     security and alarm systems, gas and smoke sensors, multimedia systems, heating 
-    systems to communicate between each other, higher complexities, fewer services, 
-    higher prices and most important lot of confusion for the final user.
+    systems to communicate with each other, higher complexities, fewer services, 
+    higher prices and more importantly lot of confusion for the final user.
   &lt;/p&gt;
 
   &lt;p&gt;
@@ -2501,7 +2501,7 @@ I"Û<div id="textual">
   </body>
 </html>
 ;T;	I"<%= atom_feed %>;T;
-I"ô&<?xml version="1.0" encoding="UTF-8"?>
+I"b&<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://lelylan.com/</id>
   <title>Lelylan - reThink your house</title>
@@ -2529,34 +2529,34 @@ I"ô&<?xml version="1.0" encoding="UTF-8"?>
   &lt;/ul&gt;
   
   &lt;p&gt;
-    When talking about Lelylan, most of the people we speak with, tell us that domotics 
-    already exists.
+    When we talk about Lelylan, most of the people just tell us that domotics 
+    already exist.
   &lt;/p&gt;
 
   &lt;p&gt;
-    As we try to enjoy our time around, we answer with a simple question: &lt;strong&gt;how many 
-    of you have a domotics system, today&lt;/strong&gt;? The answer is always the same, and is a 
-    clear no. To higlight this, it was fun when during a presentation in front of almost 
-    100 people just one hand raised up, even clarifying that his domotics system didn't 
+    As we try to enjoy our time around, we reply with a simple question: &lt;strong&gt;how many 
+    of you have a domotics system, today&lt;/strong&gt;? The answer is always the same, nobody. 
+    To highlight this, it was fun when during a presentation in front of almost 
+    100 people just one hand raised up, clarifying that his domotics system didn't 
     really work.
   &lt;/p&gt;
 
   &lt;p&gt;
-    It's true, there are lot of companies working on home automation from many many 
-    years. Some of them are well known names like
+    It's true, lots of companies have been working on home automation for many 
+    years. Some of them are well-known names like
     &lt;a href="http://www.crestron.com/"&gt;Creston&lt;/a&gt;, 
     &lt;a href="http://control4.com"&gt;Control4&lt;/a&gt; and
     &lt;a href="http://www.amx.com"&gt;AMX&lt;/a&gt;, 
     but there is no real market. As there are so few domotics houses, this field looks like
-    a dream for most of us. At this point, the correct question raise up: 
+    a dream for many of us. At this point, the correct question is: 
     &lt;strong&gt;why home automation sucks so much nowadays!?&lt;/strong&gt;
   &lt;/p&gt;
 
   &lt;p&gt;
-    People tend to think that the cause for the low domotics penetration stays in the high 
-    prices. This is both true and false. Actual domotics systems 
-    are quite expensive, but as for all technologies, when they start to spread around,
-    costs start to lower down. So why, why home automation is not a reality?
+    People tend to think that the cause for the low domotics penetration is 
+    price. This is both true and false. Actual domotics systems 
+    are quite expensive, but like all technologies, when they start to spread,
+    costs start to get lower and lower. So why, why home automation is not a reality?
   &lt;/p&gt;
 
   &lt;p&gt;
@@ -2565,8 +2565,8 @@ I"ô&<?xml version="1.0" encoding="UTF-8"?>
     to keep their market share.  
     The consequences are the impossibility for devices such as lights, appliances, 
     security and alarm systems, gas and smoke sensors, multimedia systems, heating 
-    systems to communicate between each other, higher complexities, fewer services, 
-    higher prices and most important lot of confusion for the final user.
+    systems to communicate with each other, higher complexities, fewer services, 
+    higher prices and more importantly lot of confusion for the final user.
   &lt;/p&gt;
 
   &lt;p&gt;
@@ -4877,7 +4877,7 @@ I"
       <span class="subtitle"><a href="/blog/why/"><span>W</span>hy <span>L</span>elylan <span>e</span>xists</a></span>
     </li>
   </ul>
-;T;@SI"/blog/feed/;T{;{;I"°&<?xml version="1.0" encoding="UTF-8"?>
+;T;@SI"/blog/feed/;T{;{;I"j&<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://lelylan.com/</id>
   <title>Lelylan - reThink your house</title>
@@ -4905,34 +4905,34 @@ I"
   &lt;/ul&gt;
   
   &lt;p&gt;
-    When talking about Lelylan, most of the people we speak with, tell us that domotics 
-    already exists.
+    When we talk about Lelylan, most of the people just tell us that domotics 
+    already exist.
   &lt;/p&gt;
 
   &lt;p&gt;
-    As we try to enjoy our time around, we answer with a simple question: &lt;strong&gt;how many 
-    of you have a domotics system, today&lt;/strong&gt;? The answer is always the same, and is a 
-    clear no. To higlight this, it was fun when during a presentation in front of almost 
-    100 people just one hand raised up, even clarifying that his domotics system didn't 
+    As we try to enjoy our time around, we reply with a simple question: &lt;strong&gt;how many 
+    of you have a domotics system, today&lt;/strong&gt;? The answer is always the same, nobody. 
+    To highlight this, it was fun when during a presentation in front of almost 
+    100 people just one hand raised up, clarifying that his domotics system didn't 
     really work.
   &lt;/p&gt;
 
   &lt;p&gt;
-    It's true, there are lot of companies working on home automation from many many 
-    years. Some of them are well known names like
+    It's true, lots of companies have been working on home automation for many 
+    years. Some of them are well-known names like
     &lt;a href="http://www.crestron.com/"&gt;Creston&lt;/a&gt;, 
     &lt;a href="http://control4.com"&gt;Control4&lt;/a&gt; and
     &lt;a href="http://www.amx.com"&gt;AMX&lt;/a&gt;, 
     but there is no real market. As there are so few domotics houses, this field looks like
-    a dream for most of us. At this point, the correct question raise up: 
+    a dream for many of us. At this point, the correct question is: 
     &lt;strong&gt;why home automation sucks so much nowadays!?&lt;/strong&gt;
   &lt;/p&gt;
 
   &lt;p&gt;
-    People tend to think that the cause for the low domotics penetration stays in the high 
-    prices. This is both true and false. Actual domotics systems 
-    are quite expensive, but as for all technologies, when they start to spread around,
-    costs start to lower down. So why, why home automation is not a reality?
+    People tend to think that the cause for the low domotics penetration is 
+    price. This is both true and false. Actual domotics systems 
+    are quite expensive, but like all technologies, when they start to spread,
+    costs start to get lower and lower. So why, why home automation is not a reality?
   &lt;/p&gt;
 
   &lt;p&gt;
@@ -4941,8 +4941,8 @@ I"
     to keep their market share.  
     The consequences are the impossibility for devices such as lights, appliances, 
     security and alarm systems, gas and smoke sensors, multimedia systems, heating 
-    systems to communicate between each other, higher complexities, fewer services, 
-    higher prices and most important lot of confusion for the final user.
+    systems to communicate with each other, higher complexities, fewer services, 
+    higher prices and more importantly lot of confusion for the final user.
   &lt;/p&gt;
 
   &lt;p&gt;
@@ -5097,7 +5097,7 @@ I"
   </entry>
 </feed>
 ;T;	I"<%= atom_feed %>;T;
-@YI"/blog/sucks/;T{;{	;I"è%<!DOCTYPE HTML>
+@YI"/blog/sucks/;T{;{	;I"X%<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -5178,34 +5178,34 @@ I"
   </ul>
   
   <p>
-    When talking about Lelylan, most of the people we speak with, tell us that domotics 
-    already exists.
+    When we talk about Lelylan, most of the people just tell us that domotics 
+    already exist.
   </p>
 
   <p>
-    As we try to enjoy our time around, we answer with a simple question: <strong>how many 
-    of you have a domotics system, today</strong>? The answer is always the same, and is a 
-    clear no. To higlight this, it was fun when during a presentation in front of almost 
-    100 people just one hand raised up, even clarifying that his domotics system didn't 
+    As we try to enjoy our time around, we reply with a simple question: <strong>how many 
+    of you have a domotics system, today</strong>? The answer is always the same, nobody. 
+    To highlight this, it was fun when during a presentation in front of almost 
+    100 people just one hand raised up, clarifying that his domotics system didn't 
     really work.
   </p>
 
   <p>
-    It's true, there are lot of companies working on home automation from many many 
-    years. Some of them are well known names like
+    It's true, lots of companies have been working on home automation for many 
+    years. Some of them are well-known names like
     <a href="http://www.crestron.com/">Creston</a>, 
     <a href="http://control4.com">Control4</a> and
     <a href="http://www.amx.com">AMX</a>, 
     but there is no real market. As there are so few domotics houses, this field looks like
-    a dream for most of us. At this point, the correct question raise up: 
+    a dream for many of us. At this point, the correct question is: 
     <strong>why home automation sucks so much nowadays!?</strong>
   </p>
 
   <p>
-    People tend to think that the cause for the low domotics penetration stays in the high 
-    prices. This is both true and false. Actual domotics systems 
-    are quite expensive, but as for all technologies, when they start to spread around,
-    costs start to lower down. So why, why home automation is not a reality?
+    People tend to think that the cause for the low domotics penetration is 
+    price. This is both true and false. Actual domotics systems 
+    are quite expensive, but like all technologies, when they start to spread,
+    costs start to get lower and lower. So why, why home automation is not a reality?
   </p>
 
   <p>
@@ -5214,8 +5214,8 @@ I"
     to keep their market share.  
     The consequences are the impossibility for devices such as lights, appliances, 
     security and alarm systems, gas and smoke sensors, multimedia systems, heating 
-    systems to communicate between each other, higher complexities, fewer services, 
-    higher prices and most important lot of confusion for the final user.
+    systems to communicate with each other, higher complexities, fewer services, 
+    higher prices and more importantly lot of confusion for the final user.
   </p>
 
   <p>
@@ -5327,7 +5327,8 @@ I"
     </div>
   </body>
 </html>
-;T;	I"0<div class="article">
+;T;	I"˘
+<div class="article">
 
   <ul class="media-grid">
     <li>
@@ -5338,34 +5339,34 @@ I"
   </ul>
   
   <p>
-    When talking about Lelylan, most of the people we speak with, tell us that domotics 
-    already exists.
+    When we talk about Lelylan, most of the people just tell us that domotics 
+    already exist.
   </p>
 
   <p>
-    As we try to enjoy our time around, we answer with a simple question: <strong>how many 
-    of you have a domotics system, today</strong>? The answer is always the same, and is a 
-    clear no. To higlight this, it was fun when during a presentation in front of almost 
-    100 people just one hand raised up, even clarifying that his domotics system didn't 
+    As we try to enjoy our time around, we reply with a simple question: <strong>how many 
+    of you have a domotics system, today</strong>? The answer is always the same, nobody. 
+    To highlight this, it was fun when during a presentation in front of almost 
+    100 people just one hand raised up, clarifying that his domotics system didn't 
     really work.
   </p>
 
   <p>
-    It's true, there are lot of companies working on home automation from many many 
-    years. Some of them are well known names like
+    It's true, lots of companies have been working on home automation for many 
+    years. Some of them are well-known names like
     <a href="http://www.crestron.com/">Creston</a>, 
     <a href="http://control4.com">Control4</a> and
     <a href="http://www.amx.com">AMX</a>, 
     but there is no real market. As there are so few domotics houses, this field looks like
-    a dream for most of us. At this point, the correct question raise up: 
+    a dream for many of us. At this point, the correct question is: 
     <strong>why home automation sucks so much nowadays!?</strong>
   </p>
 
   <p>
-    People tend to think that the cause for the low domotics penetration stays in the high 
-    prices. This is both true and false. Actual domotics systems 
-    are quite expensive, but as for all technologies, when they start to spread around,
-    costs start to lower down. So why, why home automation is not a reality?
+    People tend to think that the cause for the low domotics penetration is 
+    price. This is both true and false. Actual domotics systems 
+    are quite expensive, but like all technologies, when they start to spread,
+    costs start to get lower and lower. So why, why home automation is not a reality?
   </p>
 
   <p>
@@ -5374,8 +5375,8 @@ I"
     to keep their market share.  
     The consequences are the impossibility for devices such as lights, appliances, 
     security and alarm systems, gas and smoke sensors, multimedia systems, heating 
-    systems to communicate between each other, higher complexities, fewer services, 
-    higher prices and most important lot of confusion for the final user.
+    systems to communicate with each other, higher complexities, fewer services, 
+    higher prices and more importantly lot of confusion for the final user.
   </p>
 
   <p>
