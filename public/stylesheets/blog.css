@@ -22,3 +22,6 @@
 #sidebar a.button { margin: 5px 0px; }
 #sidebar ul { list-style-type: none; }
 #disqus_thread {margin-top: 50px;}
+#main .article blockquote {margin-top: 10px; }
+#main .article p {line-height: 22px;}
+#main .article ol li { color: #404040; }
