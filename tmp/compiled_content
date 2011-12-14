@@ -617,7 +617,7 @@ I"k
       <span class="subtitle"><a href="/blog/why/"><span>W</span>hy <span>L</span>elylan <span>e</span>xists</a></span>
     </li>
   </ul>
-;T;@I"/blog/iot/;T{;{	;I"Ö%<!DOCTYPE HTML>
+;T;@I"/blog/iot/;T{;{	;I"ø%<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -791,7 +791,7 @@ I"k
         <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'lelylan'; // required: replace example with your forum shortname
-
+    var disqus_url = '/blog/iot/';
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
@@ -899,7 +899,7 @@ I"k
     <a href="http://www.economist.com/blogs/schumpeter/2010/12/internet_things">The Economist</a>.
   </p>
 </div>;T;
-@;@I"/blog/why/;T{;{	;I"Ð!<!DOCTYPE HTML>
+@;@I"/blog/why/;T{;{	;I"ò!<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -1063,7 +1063,7 @@ I"k
         <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'lelylan'; // required: replace example with your forum shortname
-
+    var disqus_url = '/blog/why/';
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
@@ -5551,7 +5551,7 @@ I"
   </entry>
 </feed>
 ;T;	I"<%= atom_feed %>;T;
-@YI"/blog/sucks/;T{;{	;I"Y%<!DOCTYPE HTML>
+@YI"/blog/sucks/;T{;{	;I"}%<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -5736,7 +5736,7 @@ I"
         <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'lelylan'; // required: replace example with your forum shortname
-
+    var disqus_url = '/blog/sucks/';
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
@@ -5986,7 +5986,7 @@ I"ê
       <span class="subtitle"><a href="/blog/sucks/"><span>A</span>nd <span>w</span>hy <span>w</span>e <span>s</span>till <span>l</span>ove <span>i</span>t</a></span>
     </li>
   </ul>
-;T;@cI"/blog/experts/;T{;{	;I"Ä,<!DOCTYPE HTML>
+;T;@cI"/blog/experts/;T{;{	;I"ê,<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -6228,7 +6228,7 @@ I"ê
         <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'lelylan'; // required: replace example with your forum shortname
-
+    var disqus_url = '/blog/experts/';
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
