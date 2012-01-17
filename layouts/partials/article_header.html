@@ -5,6 +5,6 @@
           Written by <%= item[:author] || 'Lelylan' %> | <%= pretty_time(item[:created_at]) %>
         </p>
         <%# render 'partials/addthis', 
-            :title => @item[:title] + ' - ' + @item[:subtitle],
+            :title => @item[:title] + '. ' + @item[:subtitle],
             :path => 'http://lelylan.com' + @item.path %>
  
