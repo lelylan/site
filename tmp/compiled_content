@@ -2218,7 +2218,7 @@ I"Û<div id="textual">
   Prefinery.apply(prefinery_apply_options);
 </script>
 
-;T;@&I"/feed/;T{;{	;I"ãX<!DOCTYPE HTML>
+;T;@&I"/feed/;T{;{	;I"ÛW<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -2347,11 +2347,6 @@ I"Û<div id="textual">
     &lt;li&gt;
       &lt;a href="#"&gt;
         &lt;img class="thumbnail" src="/images/blog/simplify/3.png" alt=""&gt;
-      &lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="#"&gt;
-        &lt;img class="thumbnail" src="/images/blog/simplify/4.png" alt=""&gt;
       &lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
@@ -2743,7 +2738,7 @@ I"Û<div id="textual">
   </body>
 </html>
 ;T;	I"<%= atom_feed %>;T;
-I"gG<?xml version="1.0" encoding="UTF-8"?>
+I"œF<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://lelylan.com/</id>
   <title>Lelylan - reThink your house</title>
@@ -2814,11 +2809,6 @@ I"gG<?xml version="1.0" encoding="UTF-8"?>
     &lt;li&gt;
       &lt;a href="#"&gt;
         &lt;img class="thumbnail" src="/images/blog/simplify/3.png" alt=""&gt;
-      &lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="#"&gt;
-        &lt;img class="thumbnail" src="/images/blog/simplify/4.png" alt=""&gt;
       &lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
@@ -4253,7 +4243,7 @@ I"Q%    <div id="overview">
   </url>
   <url>
     <loc>http://lelylan.com/blog/simplify/</loc>
-    <lastmod>2012-01-17</lastmod>
+    <lastmod>2012-01-19</lastmod>
   </url>
   <url>
     <loc>http://lelylan.com/blog/sucks/</loc>
@@ -5411,7 +5401,7 @@ I"è
       <span class="subtitle"><a href="/blog/why/"><span>W</span>hy <span>L</span>elylan <span>e</span>xists</a></span>
     </li>
   </ul>
-;T;@SI"/blog/feed/;T{;{;I"oG<?xml version="1.0" encoding="UTF-8"?>
+;T;@SI"/blog/feed/;T{;{;I"◊F<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://lelylan.com/</id>
   <title>Lelylan - reThink your house</title>
@@ -5482,11 +5472,6 @@ I"è
     &lt;li&gt;
       &lt;a href="#"&gt;
         &lt;img class="thumbnail" src="/images/blog/simplify/3.png" alt=""&gt;
-      &lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href="#"&gt;
-        &lt;img class="thumbnail" src="/images/blog/simplify/4.png" alt=""&gt;
       &lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
@@ -6996,7 +6981,7 @@ I"Í
   </p>
 
 </div>;T;
-@o;@nI"/blog/simplify/;T{;{	;I"ã#<!DOCTYPE HTML>
+@o;@nI"/blog/simplify/;T{;{	;I"#<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -7122,11 +7107,6 @@ I"Í
         <img class="thumbnail" src="/images/blog/simplify/3.png" alt="">
       </a>
     </li>
-    <li>
-      <a href="#">
-        <img class="thumbnail" src="/images/blog/simplify/4.png" alt="">
-      </a>
-    </li>
   </ul>
 
   <p>
@@ -7225,7 +7205,7 @@ I"Í
     </div>
   </body>
 </html>
-;T;	I"≈<div class="article">
+;T;	I"K<div class="article">
   
   <p>
     One reason home automation is not getting off the ground is <strong>complexity</strong>. 
@@ -7279,11 +7259,6 @@ I"Í
     <li>
       <a href="#">
         <img class="thumbnail" src="/images/blog/simplify/3.png" alt="">
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <img class="thumbnail" src="/images/blog/simplify/4.png" alt="">
       </a>
     </li>
   </ul>
