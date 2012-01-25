@@ -2218,7 +2218,7 @@ I"Û<div id="textual">
   Prefinery.apply(prefinery_apply_options);
 </script>
 
-;T;@&I"/feed/;T{;{	;I"ÛW<!DOCTYPE HTML>
+;T;@&I"/feed/;T{;{	;I"√X<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -2294,7 +2294,15 @@ I"Û<div id="textual">
     <updated>2012-01-16T23:00:00Z</updated>
     <link rel="alternate" href="http://lelylan.com/blog/simplify/"/>
     <content type="html">&lt;div class="article"&gt;
-  
+
+  &lt;ul class="media-grid"&gt;
+    &lt;li&gt;
+      &lt;a href="#"&gt;
+        &lt;img class="thumbnail" src="/images/blog/simplify/simplify.png" alt=""&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+    
   &lt;p&gt;
     One reason home automation is not getting off the ground is &lt;strong&gt;complexity&lt;/strong&gt;. 
     I'm sure most of the experts working in the fields deny this, but they are lying :) Why? 
@@ -2738,7 +2746,7 @@ I"Û<div id="textual">
   </body>
 </html>
 ;T;	I"<%= atom_feed %>;T;
-I"œF<?xml version="1.0" encoding="UTF-8"?>
+I"üG<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://lelylan.com/</id>
   <title>Lelylan - reThink your house</title>
@@ -2756,7 +2764,15 @@ I"œF<?xml version="1.0" encoding="UTF-8"?>
     <updated>2012-01-16T23:00:00Z</updated>
     <link rel="alternate" href="http://lelylan.com/blog/simplify/"/>
     <content type="html">&lt;div class="article"&gt;
-  
+
+  &lt;ul class="media-grid"&gt;
+    &lt;li&gt;
+      &lt;a href="#"&gt;
+        &lt;img class="thumbnail" src="/images/blog/simplify/simplify.png" alt=""&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+    
   &lt;p&gt;
     One reason home automation is not getting off the ground is &lt;strong&gt;complexity&lt;/strong&gt;. 
     I'm sure most of the experts working in the fields deny this, but they are lying :) Why? 
@@ -4243,7 +4259,7 @@ I"Q%    <div id="overview">
   </url>
   <url>
     <loc>http://lelylan.com/blog/simplify/</loc>
-    <lastmod>2012-01-19</lastmod>
+    <lastmod>2012-01-25</lastmod>
   </url>
   <url>
     <loc>http://lelylan.com/blog/sucks/</loc>
@@ -5401,7 +5417,7 @@ I"è
       <span class="subtitle"><a href="/blog/why/"><span>W</span>hy <span>L</span>elylan <span>e</span>xists</a></span>
     </li>
   </ul>
-;T;@SI"/blog/feed/;T{;{;I"◊F<?xml version="1.0" encoding="UTF-8"?>
+;T;@SI"/blog/feed/;T{;{;I"ßG<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://lelylan.com/</id>
   <title>Lelylan - reThink your house</title>
@@ -5419,7 +5435,15 @@ I"è
     <updated>2012-01-16T23:00:00Z</updated>
     <link rel="alternate" href="http://lelylan.com/blog/simplify/"/>
     <content type="html">&lt;div class="article"&gt;
-  
+
+  &lt;ul class="media-grid"&gt;
+    &lt;li&gt;
+      &lt;a href="#"&gt;
+        &lt;img class="thumbnail" src="/images/blog/simplify/simplify.png" alt=""&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+    
   &lt;p&gt;
     One reason home automation is not getting off the ground is &lt;strong&gt;complexity&lt;/strong&gt;. 
     I'm sure most of the experts working in the fields deny this, but they are lying :) Why? 
@@ -6981,7 +7005,7 @@ I"Í
   </p>
 
 </div>;T;
-@o;@nI"/blog/simplify/;T{;{	;I"#<!DOCTYPE HTML>
+@o;@nI"/blog/simplify/;T{;{	;I"∑#<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -7052,7 +7076,15 @@ I"Í
  
 
         <div class="article">
-  
+
+  <ul class="media-grid">
+    <li>
+      <a href="#">
+        <img class="thumbnail" src="/images/blog/simplify/simplify.png" alt="">
+      </a>
+    </li>
+  </ul>
+    
   <p>
     One reason home automation is not getting off the ground is <strong>complexity</strong>. 
     I'm sure most of the experts working in the fields deny this, but they are lying :) Why? 
@@ -7205,8 +7237,16 @@ I"Í
     </div>
   </body>
 </html>
-;T;	I"K<div class="article">
-  
+;T;	I"Ò<div class="article">
+
+  <ul class="media-grid">
+    <li>
+      <a href="#">
+        <img class="thumbnail" src="/images/blog/simplify/simplify.png" alt="">
+      </a>
+    </li>
+  </ul>
+    
   <p>
     One reason home automation is not getting off the ground is <strong>complexity</strong>. 
     I'm sure most of the experts working in the fields deny this, but they are lying :) Why? 
