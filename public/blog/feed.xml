@@ -2,13 +2,135 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://lelylan.com/</id>
   <title>Lelylan - reThink your house</title>
-  <updated>2012-01-16T23:00:00Z</updated>
+  <updated>2012-02-28T23:00:00Z</updated>
   <link rel="alternate" href="http://lelylan.com/"/>
   <link rel="self" href="http://lelylan.com/blog/feed.xml"/>
   <author>
     <name>Lelylan Team</name>
     <uri>http://lelylan.com</uri>
   </author>
+  <entry>
+    <id>tag:lelylan.com,2012-02-29:/blog/wish/</id>
+    <title type="html">Dreaming the Connected Home</title>
+    <published>2012-02-28T23:00:00Z</published>
+    <updated>2012-02-28T23:00:00Z</updated>
+    <link rel="alternate" href="http://lelylan.com/blog/wish/"/>
+    <content type="html">&lt;div class="article"&gt;
+
+  &lt;ul class="media-grid"&gt;
+    &lt;li&gt;
+      &lt;a href="#"&gt;
+        &lt;img class="thumbnail" src="/images/blog/wish.png" alt=""&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  
+  &lt;p&gt;
+    You are sitting in front of your TV set, while watching the last fresh action movie. 
+    The hero bombs some bad guy, while your iPad is off, near the couch. Suddenly it turns 
+    on, and 3 notifications get your attention.
+  &lt;/p&gt;
+
+  &lt;ol&gt;
+    &lt;li&gt;
+      The &lt;strong&gt;air conditioning system&lt;/strong&gt; from the bedroom says it is scheduled to warm 
+      the room in 10 minutes. The movie you are watching on your tv-set would last another hour, 
+      so it is asking you "do you want me to be suspended for about 40 minutes more?"
+    &lt;/li&gt;
+    &lt;li&gt;
+      The &lt;strong&gt;coffee machine&lt;/strong&gt; sends a message saying "ready to prepare coffee, 
+      tomorrow morning at 7.00am. There is just two shots left on".
+    &lt;/li&gt;
+    &lt;li&gt;
+      The 5 &lt;strong&gt;sensors around the house&lt;/strong&gt; sent their hourly set of measures: 20 
+      degrees, 30% humidity, lights off, noise level outside about normal value.
+    &lt;/li&gt;
+  &lt;/ol&gt;
+
+  &lt;p&gt;
+    You answer to the air condition system in a few clicks, then you forward the message 
+    from coffee machine to your personal office email (remind tomorrow to buy coffee). 
+    And keep enjoying the movie. Do you like this story? Do you know it is possible at a very 
+    cheap price? Let’s dig more in.
+  &lt;/p&gt;  
+
+  &lt;h3&gt;First case: a scary future.&lt;/h3&gt;
+
+  &lt;p&gt;
+    Imagine a future where the &lt;a href="http://www.readwriteweb.com/archives/internet-of-things/"&gt;
+    Connected Home&lt;/a&gt; of our dream rest on "Manufacturer-Oriented" devices. Your devices are 
+    someway working smoothly through Internet, each one sending messages you are not allowed to 
+    access, owned by a different company (each manufacturer plans, builds and manage a different 
+    system, code and instructions set). 
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    Your neighbour has found easily your passwords, because you need to create and use so many 
+    of them, so they all look similar. Same password you submit to connect on facebook, and 
+    your neighbour’s fake online dating service. And your neighbour hates you, because you earn 
+    more than him. He just plays with you, turning on and off the air conditioning during the 
+    night, to give you some hard time. And the coffee machine spilled too much coffee out, getting everything dirty.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    When you notice what’s going on, you got fever twice, but finally the new password keeps him 
+    out of your house.
+  &lt;/p&gt;
+
+
+  &lt;h3&gt;
+    Second case: the house at your service.
+  &lt;/h3&gt;
+
+  &lt;p&gt;
+    Imagine a a future where the Internet of Things is built with privacy concerns in mind, 
+    only for you. Your devices are working smoothly, through Internet, each one sending a 
+    standard message to your account, which you read on mobile, on the tablet, on computer. 
+    Anywhere.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    You enjoy your movie. You get comfortable with the all-tech-house system. And you praise 
+    those guys who spent their time creating beautiful applications for your china-cheap devices, 
+    instead of sitting idle watching their sf-favorite movie (you know, those star trek, matrix, 
+    star wars stories).
+  &lt;/p&gt;
+
+
+  &lt;h3&gt;
+    How Is It Going To Happen and what You should do.
+  &lt;/h3&gt;
+
+  &lt;p&gt;
+    At Lelylan we are studying how to build some application to let all your devices 
+    play and talk easily, without the need to spend one cents more! If you want to speed 
+    it up, here is what you can do.
+  &lt;/p&gt;
+
+  &lt;ol&gt;
+    &lt;li&gt;
+      Leave a comment, sharing your experience. Do you have already some devices? Are you
+      planning to buy some in the next future? Which devices do you want to connect?
+    &lt;/li&gt;
+    &lt;li&gt;
+      Say aloud your ideas about How You Would Like It, if Tomorrow You Get It. Funny stories 
+      required!
+    &lt;/li&gt;
+    &lt;li&gt;
+      Check with friends how much they’ll envy you, as soon as you get it.
+    &lt;/li&gt;
+  &lt;/ol&gt;
+
+
+  &lt;h3&gt;
+    It’s all about you.
+  &lt;/h3&gt;
+
+  &lt;p&gt;
+  &lt;strong&gt;More you do, more you get.&lt;/strong&gt; Thanks a lot.
+  &lt;/p&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <id>tag:lelylan.com,2012-01-17:/blog/simplify/</id>
     <title type="html">Simplifying the connected house</title>
@@ -378,64 +500,6 @@
     &lt;a href="http://www.guardian.co.uk/technology/2011/mar/20/the-internet-of-things-john-naughton"&gt;The Guardian&lt;/a&gt; and 
     &lt;a href="http://www.economist.com/blogs/schumpeter/2010/12/internet_things"&gt;The Economist&lt;/a&gt;.
   &lt;/p&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <id>tag:lelylan.com,2011-10-16:/blog/why/</id>
-    <title type="html">The connected house</title>
-    <published>2011-10-15T22:00:00Z</published>
-    <updated>2011-10-15T22:00:00Z</updated>
-    <link rel="alternate" href="http://lelylan.com/blog/why/"/>
-    <content type="html">&lt;div class="article"&gt;
-
-  &lt;ul class="media-grid"&gt;
-    &lt;li&gt;
-      &lt;a href="#"&gt;
-        &lt;img class="thumbnail" src="/images/blog/why.png" alt=""&gt;
-      &lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-  
-  &lt;p&gt;
-    Lelylan is a project called to life by the need of solving technological limitations that 
-    home automation (aka domotics) is facing today.
-    Nowadays our houses are furnished with numerous devices like appliances, lighting systems, 
-    alarms, irrigation systems, smoke and gas detectors, heating, cooling, audio, video systems 
-    and much more. There is only a problem, well, a big problem: those devices use different 
-    standards and they can't easily communicate with each other.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-    &lt;strong&gt;Lelylan has 3 goals&lt;/strong&gt;
-  &lt;/p&gt;
-
-  &lt;blockquote&gt;
-    &lt;ol&gt;
-      &lt;li&gt;Connect your house to the web with a clear and simple set of web services.&lt;/li&gt;
-      &lt;li&gt;Enable all devices to communicate with each other.&lt;/li&gt;
-      &lt;li&gt;Allow everybody to create new services on top of Lelylan, so that we can speed 
-          up innovation in this field.&lt;/li&gt;
-    &lt;ol&gt;
-  &lt;/blockquote&gt;
-
-  &lt;p&gt;
-    To make the concept clear, let's think at some of the most important web services available 
-    today, like Facebook and Twitter. They offer APIs to access our social graph or our micro 
-    blogging data. In the same way, Lelylan wants to define a set of simple, clear and consistent
-    APIs to access all resources interacting with your house through the web.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-    What we aim to do is to map every device to a unique URI which will provide control over it. 
-    When such a connection is done, technological limitations disappear and devices become 
-    identifiable only through their functionalities.
-  &lt;/p&gt;  
-
-  &lt;p&gt;
-    For the first time you have a real chance to change how home automation works. If you are one 
-    of those crazy innovators, &lt;a href="/collaborations/"&gt;write us about your ideas&lt;/a&gt;.
-  &lt;/p&gt;
-
 &lt;/div&gt;</content>
   </entry>
 </feed>

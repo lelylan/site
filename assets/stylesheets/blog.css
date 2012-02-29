@@ -10,9 +10,9 @@
 #main a.button { margin: 0px 0px; }
 #main ul {list-style-type: none;}
 #main ul li {margin-bottom: 5px;}
-#main ul li span { font-size:17px; font-weight:normal; font-style:normal;}
-#main ul li span span {font-size:16px;}
-#main ul li span.subtitle a {color:#ea198f; font-size:13px; text-transform:uppercase; }
+#main ul li span { font-size:14px; font-weight:normal; font-style:normal;}
+/*#main ul li span span {font-size:14px;}*/
+#main ul li span.subtitle a {color:#ea198f; font-size:12px; text-transform:uppercase; }
 #main ul li span.title a {color: #FFF; background-color:#ea198f; padding: 2px 6px;}
 #main div.more { background: #F4F4F4; border-top: #ddd solid 1px; border-bottom: #ddd solid 1px; padding: 15px 0 0 5px; }
 #sidebar { text-align: right; float:right; width:296px; margin: 30px 0px 20px 0px; }
