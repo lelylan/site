@@ -450,7 +450,7 @@
 </script>
 
 ;T:	post@
-I"/blog/;T{;{	;I"4<!DOCTYPE HTML>
+I"/blog/;T{;{	;I"3<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -520,7 +520,7 @@ I"/blog/;T{;{	;I"4<!DOCTYPE HTML>
 
   <ul>
     <li>
-      <span class="title"><a href="/blog/simplify/">Simplifying the connected house</a></span> -
+      <span class="title"><a href="/blog/simplify/">Simplifying the Connected Home</a></span> -
       <span class="subtitle"><a href="/blog/simplify/"><span>U</span>se <span>t</span>he <span>w</span>eb <span>a</span>nd <span>s</span>top <span>b</span>uilding <span>s</span>tandards!</a></span>
     </li>
   </ul>
@@ -603,7 +603,7 @@ I"/blog/;T{;{	;I"4<!DOCTYPE HTML>
     </li>
   </ul>
 <% end %>;T;
-I"
+I"
   <ul>
     <li>
       <span class="title"><a href="/blog/wish/">Dreaming the Connected Home</a></span> -
@@ -613,7 +613,7 @@ I"
 
   <ul>
     <li>
-      <span class="title"><a href="/blog/simplify/">Simplifying the connected house</a></span> -
+      <span class="title"><a href="/blog/simplify/">Simplifying the Connected Home</a></span> -
       <span class="subtitle"><a href="/blog/simplify/"><span>U</span>se <span>t</span>he <span>w</span>eb <span>a</span>nd <span>s</span>top <span>b</span>uilding <span>s</span>tandards!</a></span>
     </li>
   </ul>
@@ -2232,7 +2232,7 @@ I"ó<div id="textual">
   Prefinery.apply(prefinery_apply_options);
 </script>
 
-;T;@&I"/feed/;T{;{	;I"šb<!DOCTYPE HTML>
+;T;@&I"/feed/;T{;{	;I"™b<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -2425,7 +2425,7 @@ I"ó<div id="textual">
   </entry>
   <entry>
     <id>tag:lelylan.com,2012-01-17:/blog/simplify/</id>
-    <title type="html">Simplifying the connected house</title>
+    <title type="html">Simplifying the Connected Home</title>
     <published>2012-01-16T23:00:00Z</published>
     <updated>2012-01-16T23:00:00Z</updated>
     <link rel="alternate" href="http://lelylan.com/blog/simplify/"/>
@@ -2829,7 +2829,7 @@ I"ó<div id="textual">
   </body>
 </html>
 ;T;	I"<%= atom_feed %>;T;
-I"vQ<?xml version="1.0" encoding="UTF-8"?>
+I"uQ<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://lelylan.com/</id>
   <title>Lelylan - reThink your house</title>
@@ -2964,7 +2964,7 @@ I"vQ<?xml version="1.0" encoding="UTF-8"?>
   </entry>
   <entry>
     <id>tag:lelylan.com,2012-01-17:/blog/simplify/</id>
-    <title type="html">Simplifying the connected house</title>
+    <title type="html">Simplifying the Connected Home</title>
     <published>2012-01-16T23:00:00Z</published>
     <updated>2012-01-16T23:00:00Z</updated>
     <link rel="alternate" href="http://lelylan.com/blog/simplify/"/>
@@ -3334,7 +3334,7 @@ I"vQ<?xml version="1.0" encoding="UTF-8"?>
 &lt;/div&gt;</content>
   </entry>
 </feed>
-;T;@,I"/;T{;{	;I"Ø7<!DOCTYPE HTML>
+;T;@,I"/;T{;{	;I"×7<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -3581,7 +3581,7 @@ I"vQ<?xml version="1.0" encoding="UTF-8"?>
       
       <li class="post two-cols box last">
         <a href="/blog/simplify/">
-          <span class="strap">Simplifying the connected house</span>
+          <span class="strap">Simplifying the Connected Home</span>
           <span class="label"><span>U</span>se <span>t</span>he <span>w</span>eb <span>a</span>nd <span>s</span>top <span>b</span>uilding <span>s</span>tandards!
         </a>
       </li>
@@ -3776,7 +3776,7 @@ I"vQ<?xml version="1.0" encoding="UTF-8"?>
 </div>
 
 <img src="/images/face.png" class="hidden">;T;
-I"¾&    <div id="overview">
+I"½&    <div id="overview">
       <div class="container centered">
         <div id="headline" class="home">
           <h1>Lelylan, reThink your house</h1>
@@ -3965,7 +3965,7 @@ I"¾&    <div id="overview">
       
       <li class="post two-cols box last">
         <a href="/blog/simplify/">
-          <span class="strap">Simplifying the connected house</span>
+          <span class="strap">Simplifying the Connected Home</span>
           <span class="label"><span>U</span>se <span>t</span>he <span>w</span>eb <span>a</span>nd <span>s</span>top <span>b</span>uilding <span>s</span>tandards!
         </a>
       </li>
@@ -4425,7 +4425,7 @@ I"¾&    <div id="overview">
   </url>
   <url>
     <loc>http://lelylan.com/blog/simplify/</loc>
-    <lastmod>2012-01-25</lastmod>
+    <lastmod>2012-02-29</lastmod>
   </url>
   <url>
     <loc>http://lelylan.com/blog/sucks/</loc>
@@ -5295,7 +5295,7 @@ I"g
       <span class="subtitle"><a href="/blog/iot/"><span>A</span>n <span>o</span>pinionated <span>p</span>oint <span>o</span>f <span>v</span>iew</a></span>
     </li>
   </ul>
-;T;@GI"/blog/tags/philosofy/;T{;{	;I"Œ<!DOCTYPE HTML>
+;T;@GI"/blog/tags/philosofy/;T{;{	;I"‹<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -5365,7 +5365,7 @@ I"g
 
   <ul>
     <li>
-      <span class="title"><a href="/blog/simplify/"><span>S</span>implifying <span>t</span>he <span>c</span>onnected <span>h</span>ouse</a></span> -
+      <span class="title"><a href="/blog/simplify/"><span>S</span>implifying <span>t</span>he <span>C</span>onnected <span>H</span>ome</a></span> -
       <span class="subtitle"><a href="/blog/simplify/"><span>U</span>se <span>t</span>he <span>w</span>eb <span>a</span>nd <span>s</span>top <span>b</span>uilding <span>s</span>tandards!</a></span>
     </li>
   </ul>
@@ -5427,7 +5427,7 @@ I"g
   </body>
 </html>
 ;T;	I"/<%= render('tags', :tag => 'philosofy') %>;T;
-I"y
+I"x
   <ul>
     <li>
       <span class="title"><a href="/blog/experts/"><span>H</span>ome <span>a</span>utomation: <span>e</span>xperts' <span>p</span>oint <span>o</span>f <span>v</span>iew</a></span> -
@@ -5437,7 +5437,7 @@ I"y
 
   <ul>
     <li>
-      <span class="title"><a href="/blog/simplify/"><span>S</span>implifying <span>t</span>he <span>c</span>onnected <span>h</span>ouse</a></span> -
+      <span class="title"><a href="/blog/simplify/"><span>S</span>implifying <span>t</span>he <span>C</span>onnected <span>H</span>ome</a></span> -
       <span class="subtitle"><a href="/blog/simplify/"><span>U</span>se <span>t</span>he <span>w</span>eb <span>a</span>nd <span>s</span>top <span>b</span>uilding <span>s</span>tandards!</a></span>
     </li>
   </ul>
@@ -5455,7 +5455,7 @@ I"y
       <span class="subtitle"><a href="/blog/why/"><span>W</span>hy <span>L</span>elylan <span>e</span>xists</a></span>
     </li>
   </ul>
-;T;@MI"/blog/tags/ideas/;T{;{	;I"5<!DOCTYPE HTML>
+;T;@MI"/blog/tags/ideas/;T{;{	;I"4<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -5518,7 +5518,7 @@ I"y
         
   <ul>
     <li>
-      <span class="title"><a href="/blog/simplify/"><span>S</span>implifying <span>t</span>he <span>c</span>onnected <span>h</span>ouse</a></span> -
+      <span class="title"><a href="/blog/simplify/"><span>S</span>implifying <span>t</span>he <span>C</span>onnected <span>H</span>ome</a></span> -
       <span class="subtitle"><a href="/blog/simplify/"><span>U</span>se <span>t</span>he <span>w</span>eb <span>a</span>nd <span>s</span>top <span>b</span>uilding <span>s</span>tandards!</a></span>
     </li>
   </ul>
@@ -5580,10 +5580,10 @@ I"y
   </body>
 </html>
 ;T;	I"+<%= render('tags', :tag => 'ideas') %>;T;
-I""
+I"!
   <ul>
     <li>
-      <span class="title"><a href="/blog/simplify/"><span>S</span>implifying <span>t</span>he <span>c</span>onnected <span>h</span>ouse</a></span> -
+      <span class="title"><a href="/blog/simplify/"><span>S</span>implifying <span>t</span>he <span>C</span>onnected <span>H</span>ome</a></span> -
       <span class="subtitle"><a href="/blog/simplify/"><span>U</span>se <span>t</span>he <span>w</span>eb <span>a</span>nd <span>s</span>top <span>b</span>uilding <span>s</span>tandards!</a></span>
     </li>
   </ul>
@@ -5601,7 +5601,7 @@ I""
       <span class="subtitle"><a href="/blog/wish/"><span>S</span>it <span>o</span>n <span>t</span>he <span>C</span>ouch <span>a</span>nd <span>k</span>eep <span>C</span>ontrol <span>o</span>f <span>E</span>verything</a></span>
     </li>
   </ul>
-;T;@SI"/blog/feed/;T{;{;I"~Q<?xml version="1.0" encoding="UTF-8"?>
+;T;@SI"/blog/feed/;T{;{;I"}Q<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://lelylan.com/</id>
   <title>Lelylan - reThink your house</title>
@@ -5736,7 +5736,7 @@ I""
   </entry>
   <entry>
     <id>tag:lelylan.com,2012-01-17:/blog/simplify/</id>
-    <title type="html">Simplifying the connected house</title>
+    <title type="html">Simplifying the Connected Home</title>
     <published>2012-01-16T23:00:00Z</published>
     <updated>2012-01-16T23:00:00Z</updated>
     <link rel="alternate" href="http://lelylan.com/blog/simplify/"/>
@@ -7272,7 +7272,7 @@ I"}
   </p>
 
 </div>;T;
-@o;@nI"/blog/simplify/;T{;{	;I"1$<!DOCTYPE HTML>
+@o;@nI"/blog/simplify/;T{;{	;I".$<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -7283,7 +7283,7 @@ I"}
     <meta name="copyright" content="Copyright Â© Lelylan">
     <meta name="viewport" content="width=device-width">
 
-    <title>Lelylan Blog | Simplifying the connected house</title>
+    <title>Lelylan Blog | Simplifying the Connected Home</title>
 
     <link href="/stylesheets/screen.css" type="text/css" rel="stylesheet" media="screen">
     <link href="/stylesheets/boxes.css" type="text/css" rel="stylesheet" media="screen">
@@ -7334,7 +7334,7 @@ I"}
     <div id="page">
       <div id="main">
                 
-        <h1>Simplifying the connected house</h1>
+        <h1>Simplifying the Connected Home</h1>
         <span class="sub">Use the web and stop building standards!</span>
         <p>
           Written by <a href="http://twitter.com/andreareginato">Lelylan Chief</a> | Jan 17, 2012
@@ -7426,7 +7426,7 @@ I"}
           <div class="addthis_toolbox addthis_default_style" 
   style="padding-top: 0px;"
   addthis:url="http://lelylan.com/blog/simplify/"
-  addthis:title="Simplifying the connected house. Use the web and stop building standards!">
+  addthis:title="Simplifying the Connected Home. Use the web and stop building standards!">
   <a class="addthis_button_hackernews"></a>
   <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
   <a class="addthis_button_tweet" tw:via="lelylan"></a>
