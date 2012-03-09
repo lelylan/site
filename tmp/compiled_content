@@ -2246,7 +2246,7 @@ I"ó<div id="textual">
   Prefinery.apply(prefinery_apply_options);
 </script>
 
-;T;@&I"/feed/;T{;{	;I"²{<!DOCTYPE HTML>
+;T;@&I"/feed/;T{;{	;I"Æ{<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -2547,7 +2547,8 @@ I"ó<div id="textual">
   &lt;h2&gt;Considerations&lt;/h2&gt;
   &lt;p&gt;
     This is an opinioned list with the best solutions out there. If you think we are missing
-    a good one you can head over to &lt;a href="&lt;%= item[:comments] %&gt;"&gt;Hacker News&lt;/a&gt; to discuss it.
+    a good one you can head over to &lt;a href="http://news.ycombinator.com/item?id=3683978"&gt;Hacker 
+    News&lt;/a&gt; to discuss it.
   &lt;/p&gt;
   &lt;p&gt;
     This is the first of two articles. In the next one we will be featuring 
@@ -3016,7 +3017,7 @@ I"ó<div id="textual">
   </body>
 </html>
 ;T;	I"<%= atom_feed %>;T;
-I"Žj<?xml version="1.0" encoding="UTF-8"?>
+I"¢j<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://lelylan.com/</id>
   <title>Lelylan - reThink your house</title>
@@ -3259,7 +3260,8 @@ I"Žj<?xml version="1.0" encoding="UTF-8"?>
   &lt;h2&gt;Considerations&lt;/h2&gt;
   &lt;p&gt;
     This is an opinioned list with the best solutions out there. If you think we are missing
-    a good one you can head over to &lt;a href="&lt;%= item[:comments] %&gt;"&gt;Hacker News&lt;/a&gt; to discuss it.
+    a good one you can head over to &lt;a href="http://news.ycombinator.com/item?id=3683978"&gt;Hacker 
+    News&lt;/a&gt; to discuss it.
   &lt;/p&gt;
   &lt;p&gt;
     This is the first of two articles. In the next one we will be featuring 
@@ -6007,7 +6009,7 @@ I"¶
       <span class="subtitle"><a href="/blog/wish/"><span>S</span>it <span>o</span>n <span>t</span>he <span>C</span>ouch <span>a</span>nd <span>k</span>eep <span>C</span>ontrol <span>o</span>f <span>E</span>verything</a></span>
     </li>
   </ul>
-;T;@SI"/blog/feed/;T{;{;I"–j<?xml version="1.0" encoding="UTF-8"?>
+;T;@SI"/blog/feed/;T{;{;I"ªj<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://lelylan.com/</id>
   <title>Lelylan - reThink your house</title>
@@ -6250,7 +6252,8 @@ I"¶
   &lt;h2&gt;Considerations&lt;/h2&gt;
   &lt;p&gt;
     This is an opinioned list with the best solutions out there. If you think we are missing
-    a good one you can head over to &lt;a href="&lt;%= item[:comments] %&gt;"&gt;Hacker News&lt;/a&gt; to discuss it.
+    a good one you can head over to &lt;a href="http://news.ycombinator.com/item?id=3683978"&gt;Hacker 
+    News&lt;/a&gt; to discuss it.
   &lt;/p&gt;
   &lt;p&gt;
     This is the first of two articles. In the next one we will be featuring 
@@ -9347,7 +9350,7 @@ I"a
       <span class="subtitle"><a href="/blog/electronics/"><span>H</span>ardware <span>s</span>olutions <span>f</span>or <span>e</span>verybody</a></span>
     </li>
   </ul>
-;T;@}I"/blog/electronics/;T{;{	;I"÷7<!DOCTYPE HTML>
+;T;@}I"/blog/electronics/;T{;{	;I"38<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -9643,7 +9646,8 @@ I"a
   <h2>Considerations</h2>
   <p>
     This is an opinioned list with the best solutions out there. If you think we are missing
-    a good one you can head over to <a href="<%= item[:comments] %>">Hacker News</a> to discuss it.
+    a good one you can head over to <a href="http://news.ycombinator.com/item?id=3683978">Hacker 
+    News</a> to discuss it.
   </p>
   <p>
     This is the first of two articles. In the next one we will be featuring 
@@ -9697,7 +9701,7 @@ I"a
   </br></br></hr>
   <h2>Comments</h2>
   <p>
-     You can head over to <a href="#place it">Hacker News</a> to discuss it.
+     You can head over to <a href="http://news.ycombinator.com/item?id=3683978">Hacker News</a> to discuss it.
   </p>
 
  
@@ -9735,7 +9739,7 @@ I"a
     </div>
   </body>
 </html>
-;T;	I"Ï<div class="article">
+;T;	I"é<div class="article">
 
   <ul class="media-grid">
     <li>
@@ -9961,7 +9965,8 @@ I"a
   <h2>Considerations</h2>
   <p>
     This is an opinioned list with the best solutions out there. If you think we are missing
-    a good one you can head over to <a href="<%= item[:comments] %>">Hacker News</a> to discuss it.
+    a good one you can head over to <a href="http://news.ycombinator.com/item?id=3683978">Hacker 
+    News</a> to discuss it.
   </p>
   <p>
     This is the first of two articles. In the next one we will be featuring 
