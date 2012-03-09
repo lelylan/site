@@ -6,8 +6,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>http://lelylan.com/blog/electronics/</loc>
+    <lastmod>2012-03-09</lastmod>
+  </url>
+  <url>
     <loc>http://lelylan.com/blog/experts/</loc>
-    <lastmod>2011-12-14</lastmod>
+    <lastmod>2012-03-08</lastmod>
   </url>
   <url>
     <loc>http://lelylan.com/blog/</loc>
@@ -20,15 +24,15 @@
   </url>
   <url>
     <loc>http://lelylan.com/blog/simplify/</loc>
-    <lastmod>2012-02-29</lastmod>
+    <lastmod>2012-03-08</lastmod>
   </url>
   <url>
     <loc>http://lelylan.com/blog/sucks/</loc>
-    <lastmod>2011-11-21</lastmod>
+    <lastmod>2012-03-08</lastmod>
   </url>
   <url>
     <loc>http://lelylan.com/blog/why/</loc>
-    <lastmod>2011-11-19</lastmod>
+    <lastmod>2012-03-08</lastmod>
   </url>
   <url>
     <loc>http://lelylan.com/blog/wish/</loc>

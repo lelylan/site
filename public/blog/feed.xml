@@ -2,13 +2,255 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://lelylan.com/</id>
   <title>Lelylan - reThink your house</title>
-  <updated>2012-02-28T23:00:00Z</updated>
+  <updated>2012-03-08T23:00:00Z</updated>
   <link rel="alternate" href="http://lelylan.com/"/>
   <link rel="self" href="http://lelylan.com/blog/feed.xml"/>
   <author>
     <name>Lelylan Team</name>
     <uri>http://lelylan.com</uri>
   </author>
+  <entry>
+    <id>tag:lelylan.com,2012-03-09:/blog/electronics/</id>
+    <title type="html">Hacking the Internet of Things</title>
+    <published>2012-03-08T23:00:00Z</published>
+    <updated>2012-03-08T23:00:00Z</updated>
+    <link rel="alternate" href="http://lelylan.com/blog/electronics/"/>
+    <content type="html">&lt;div class="article"&gt;
+
+  &lt;ul class="media-grid"&gt;
+    &lt;li&gt;
+      &lt;a href="#"&gt;
+        &lt;img class="thumbnail" src="/images/blog/electronics/header.png" alt=""&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  
+  &lt;p&gt;
+    When connecting devices to the web you face different questions. One is for sure to 
+    understand which is the best electronic you can use. In Lelylan we are experimenting 
+    physical nodes, devices that defines a set of web services to connect your house to the web.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    To build a physical node you can use different hardware solutions varying on 
+    &lt;a href="http://beyondthekeeboard.wordpress.com/2011/06/25/a-simple-overview-to-help-choose-your-hardware-for-internet-of-things-solutions/"&gt;computational power, wireless capability and budget&lt;/a&gt;. 
+    The only required thing is the ability to bild a web server that accepts and send 
+    request over the internet.
+  &lt;/p&gt;
+
+
+
+  &lt;br/&gt;
+  &lt;h2&gt;&lt;a href="http://arduino.cc"&gt;Arduino&lt;/a&gt;&lt;/h2&gt;
+
+  &lt;ul class="media-grid"&gt;
+    &lt;li&gt;
+      &lt;a href="http://arduino.cc"&gt;
+        &lt;img class="thumbnail" src="/images/blog/electronics/arduino.png" alt=""&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;
+    &lt;strong&gt;Description&lt;/strong&gt;:
+    open-source electronics prototyping platform based on flexible, easy-to-use 
+    hardware and software. It's intended for artists, designers, hobbyists, and 
+    anyone interested in creating interactive objects or environments. It can be
+    connected to the internet using 
+    &lt;a href="http://store.arduino.cc/it/index.php?main_page=product_info&amp;cPath=11_12&amp;products_id=141"&gt;ethernet&lt;/a&gt;, 
+    &lt;a href="http://store.arduino.cc/it/index.php?main_page=product_info&amp;cPath=11_5&amp;products_id=5"&gt;zigbee&lt;/a&gt;, 
+    &lt;a href="http://www.sparkfun.com/products/9954"&gt;wifi&lt;/a&gt; and more.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;strong&gt;Good&lt;/strong&gt;:
+    big community, open-source hw, cheap, documentation.
+  &lt;/p&gt;
+  &lt;p&gt;
+    &lt;strong&gt;Bad&lt;/strong&gt;:
+    computational power.
+  &lt;/p&gt;
+  &lt;p&gt;
+    &lt;strong&gt;Prices&lt;/strong&gt;: 
+    &lt;strong&gt;base&lt;/strong&gt;
+      &lt;a href="http://store.arduino.cc/it/index.php?main_page=product_info&amp;cPath=11_12&amp;products_id=195"&gt;~ $30&lt;/a&gt;,
+    &lt;strong&gt;ethernet&lt;/strong&gt;
+      &lt;a href="http://store.arduino.cc/it/index.php?main_page=product_info&amp;cPath=11_12&amp;products_id=141"&gt;~ $60&lt;/a&gt;,
+    &lt;strong&gt;wifi&lt;/strong&gt;
+      &lt;a href="http://www.sparkfun.com/products/9954"&gt;~ $120&lt;/a&gt; and
+    &lt;strong&gt;zigbee&lt;/strong&gt; 
+      &lt;a href="http://store.arduino.cc/it/index.php?main_page=product_info&amp;cPath=11_5&amp;products_id=5"&gt;~ $75&lt;/a&gt; 
+      (including &lt;a href="http://www.sparkfun.com/products/8664"&gt;XBee Antenna&lt;/a&gt;).
+  &lt;/p&gt;
+
+
+
+  &lt;br/&gt;
+  &lt;h2&gt;&lt;a href="http://nanode.eu/"&gt;Nanode&lt;/a&gt;&lt;/h2&gt;
+
+  &lt;ul class="media-grid"&gt;
+    &lt;li&gt;
+      &lt;a href="http://nanode.eu/"&gt;
+        &lt;img class="thumbnail" src="/images/blog/electronics/nanode.png" alt=""&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;
+    &lt;strong&gt;Description&lt;/strong&gt;:
+    open source Arduino-like board that has in-built web connectivity. It connects to a range 
+    of wireless, wired and ethernet interfaces. It allows you to develop web based sensor and 
+    control systems, giving you web access to six analogue sensor lines and six digital I/O 
+    lines. Nanode was designed with hacking in mind.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;strong&gt;Good&lt;/strong&gt;:
+    built-in web connectivity, open-source hw, really cheap, arduino compatible.
+  &lt;/p&gt;
+  &lt;p&gt;
+    &lt;strong&gt;Bad&lt;/strong&gt;:
+    computational power, documentation.
+  &lt;/p&gt;
+  &lt;p&gt;
+    &lt;strong&gt;Prices&lt;/strong&gt;:
+    &lt;strong&gt;ethernet&lt;/strong&gt; &lt;a href="http://nanode.eu/buy"&gt;~ $40&lt;/a&gt; and
+    &lt;strong&gt;wireless&lt;/strong&gt; &lt;a href="http://nanode.eu/buy"&gt;~ $48&lt;/a&gt; 
+    (uses &lt;a href="http://www.sparkfun.com/products/9582"&gt;RFM12B wireless transceiver&lt;/a&gt;).
+  &lt;/p&gt;
+
+
+
+  &lt;br/&gt;
+  &lt;h2&gt;&lt;a href="http://www.openpicus.com"&gt;openPICUS&lt;/a&gt;&lt;/h2&gt;
+
+  &lt;ul class="media-grid"&gt;
+    &lt;li&gt;
+      &lt;a href="http://www.openpicus.com"&gt;
+        &lt;img class="thumbnail" src="/images/blog/electronics/openpicus.png" alt=""&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;
+    &lt;strong&gt;Description&lt;/strong&gt;:
+    defines itself as Internet freedom for your things, control and communication for 
+    electronic devices. A standalone hardware and software platform for embedded applications 
+    to interact via web, email or messages with simple sensors or complex electronic equipment.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;strong&gt;Good&lt;/strong&gt;:
+    built-in web connectivity, cheap, good documentation, support.
+  &lt;/p&gt;
+  &lt;p&gt;
+    &lt;strong&gt;Bad&lt;/strong&gt;:
+    computational power, development windows oriented.
+  &lt;/p&gt;
+  &lt;p&gt;
+    &lt;strong&gt;Price&lt;/strong&gt;:
+    &lt;strong&gt;wifi&lt;/strong&gt;
+    &lt;a href="http://www.eikonsite.it/openpicus/prodotti.aspx?cprod=015365"&gt;~ $90&lt;/a&gt;.
+  &lt;/p&gt;
+
+
+
+  &lt;br/&gt;
+  &lt;h2&gt;&lt;a href="http://www.netduino.com"&gt;Netduino&lt;/a&gt;&lt;/h2&gt;
+
+  &lt;ul class="media-grid"&gt;
+    &lt;li&gt;
+      &lt;a href="http://www.netduino.com/"&gt;
+        &lt;img class="thumbnail" src="/images/blog/electronics/netduino.png" alt=""&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;
+    &lt;strong&gt;Description&lt;/strong&gt;:
+    open-source electronics platform using the .NET Micro Framework. With Netduino, the world 
+    of microcontroller programming can be easily aproached by people programming with .NET.  
+    Netduino is designed to enable both personal projects and sophisticated commercial endeavors. 
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;strong&gt;Good&lt;/strong&gt;:
+    open-source hw, cheap, documentation, arduino compatible, .NET programming.
+  &lt;/p&gt;
+  &lt;p&gt;
+    &lt;strong&gt;Bad&lt;/strong&gt;:
+    computational power.
+  &lt;/p&gt;
+  &lt;p&gt;
+    &lt;strong&gt;Prices&lt;/strong&gt;: 
+    &lt;strong&gt;base&lt;/strong&gt;
+      &lt;a href="http://www.sparkfun.com/products/10107"&lt;/a&gt;~ $35&lt;/a&gt;,
+    &lt;strong&gt;ethernet&lt;/strong&gt;
+      &lt;a href="http://www.sparkfun.com/products/10186"&gt;~ $60&lt;/a&gt;,
+    &lt;strong&gt;wifi&lt;/strong&gt;
+      &lt;a href="http://www.sparkfun.com/products/9954"&gt;~ $120&lt;/a&gt; and
+    &lt;strong&gt;zigbee&lt;/strong&gt; 
+      &lt;a href="http://store.arduino.cc/it/index.php?main_page=product_info&amp;cPath=11_5&amp;products_id=5"&gt;~ $75&lt;/a&gt; 
+      (including &lt;a href="http://www.sparkfun.com/products/8664"&gt;XBee Antenna&lt;/a&gt;).
+  &lt;/p&gt;
+
+
+
+  &lt;br/&gt;
+  &lt;h2&gt;&lt;a href="http://www.libelium.com/"&gt;Libellium Waspmote&lt;/a&gt;&lt;/h2&gt;
+
+  &lt;ul class="media-grid"&gt;
+    &lt;li&gt;
+      &lt;a href="http://www.libelium.com/"&gt;
+        &lt;img class="thumbnail" src="/images/blog/electronics/libelium.png" alt=""&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;
+    &lt;strong&gt;Description&lt;/strong&gt;:
+    sensor device developers oriented. It works with different communicaction protocols 
+    (ZigBee, wifi, Bluetooth and GPRS) and frequencies (2.4GHz, 868MHz, 900MHz) and create 
+    links up to 12Km. Using the hibernate low power mode (0.7uA) it can save battery energy 
+    when not transmitting and be able to work even for years. Waspmote is compatible with 
+    more than 50 sensors and its open source IDE makes really easy to start working with it
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;strong&gt;Good&lt;/strong&gt;:
+    documentation, solid, support,
+    &lt;a href="http://www.libelium.com/products/waspmote/hardware"&gt;radio borads&lt;/a&gt;,
+    &lt;a href="http://www.libelium.com/products/waspmote/sensors"&gt;sensors boards&lt;/a&gt;,
+    &lt;a href="http://www.libelium.com/products/waspmote/OTA"&gt;over the air programming&lt;/a&gt;.
+  &lt;/p&gt;
+  &lt;p&gt;
+    &lt;strong&gt;Bad&lt;/strong&gt;:
+    computational power, expensive.
+  &lt;/p&gt;
+  &lt;p&gt;
+    &lt;strong&gt;Price&lt;/strong&gt;: 
+    &lt;strong&gt;zigbee&lt;/strong&gt;
+    &lt;a href="http://www.libelium.com/products/waspmote"&lt;/a&gt;~ $180&lt;/a&gt;,
+    &lt;strong&gt;wifi&lt;/strong&gt;
+    &lt;a href="http://www.libelium.com/products/waspmote"&lt;/a&gt;~ $200&lt;/a&gt;.
+    The price catalog can be found &lt;a href="http://www.libelium.com/xhjs76gd/libelium_products_catalogue.pdf"&gt;here&lt;/a&gt;
+  &lt;/p&gt;
+
+  &lt;/br&gt;
+  &lt;h2&gt;Considerations&lt;/h2&gt;
+  &lt;p&gt;
+    This is an opinioned list with the best solutions out there. If you think we are missing
+    a good one you can head over to &lt;a href="&lt;%= item[:comments] %&gt;"&gt;Hacker News&lt;/a&gt; to add it.
+  &lt;/p&gt;
+  &lt;p&gt;
+    This is the first part of a two articles serie. In the next one we will be featuring 
+    hardware solutions with more computational power like
+    &lt;a href="http://www.raspberrypi.org/"&gt;Raspberry Pi&lt;/a&gt; and
+    &lt;a href="http://pandaboard.org/"&gt;Panda Board&lt;/a&gt;, which are perfect to define hubs that
+    communicates with the web and all devices in your house.
+  &lt;/p&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <id>tag:lelylan.com,2012-02-29:/blog/wish/</id>
     <title type="html">Dreaming the Connected Home</title>
@@ -429,76 +671,6 @@
     If you think home automation sucks, &lt;a href="/collaborations/"&gt;join us now&lt;/a&gt;. 
     We envision a future where our houses will be the ones we have dreamed when we where 
     child. Don't you love this?
-  &lt;/p&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <id>tag:lelylan.com,2011-11-03:/blog/iot/</id>
-    <title type="html">What the hell does #IoT means?</title>
-    <published>2011-11-02T23:00:00Z</published>
-    <updated>2011-11-02T23:00:00Z</updated>
-    <link rel="alternate" href="http://lelylan.com/blog/iot/"/>
-    <content type="html">&lt;div class="article"&gt;
-
-  &lt;ul class="media-grid"&gt;
-    &lt;li&gt;
-      &lt;a href="#"&gt;
-        &lt;img class="thumbnail" src="/images/blog/iot.png" alt=""&gt;
-      &lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-  
-  &lt;p&gt;
-    The Internet of Things is a concept, a cool one I would say. The problem is that people 
-    love to complicate things. Thus, there are 
-    &lt;a href="http://postscapes.com/internet-of-things-definition"&gt;different definitions&lt;/a&gt; 
-    describing this concept. Conclusion? Just a "little" confusion, making the Internet of 
-    Things a concept trying to describe everything, and consequently resulting in nothing.
-    But let's take a step back. What the hell does Internet of Things mean?
-  &lt;/p&gt;
-
-  &lt;/br&gt;
-  &lt;blockquote&gt;
-    &lt;strong&gt;A world where physical things are reflected onto the web&lt;/strong&gt;
-  &lt;/blockquote&gt;
-  &lt;/br&gt;
-
-  &lt;p&gt;
-    This is the final definition we came up with. It apparently does not say too much, right? 
-    Well, not really. It completely describes the concept in all its simplicity. So, why this 
-    simple concept is so exciting? Because the #IoT power comes out from the combination of the 
-    physical objects which can affect the real world, and the web which is the fastest growing 
-    technology platform available today. Just two concepts, but two really powerful ones, that 
-    combined can definitely change our lives. 
-  &lt;/p&gt;
-
-  &lt;p&gt;
-    Think about the web as it is today. Lot of services, mashups, developers and new ideas popping 
-    up every day. Now, apply all of this to the Internet of Things and try to imagine all the 
-    possible new solutions. Smart meters, smart cities and smart houses are only some of them.
-  &lt;/p&gt;  
-
-  &lt;p&gt;
-    Still, I've many doubts. First, I keep reading the word “smart” too many times, and I think 
-    there is little smart in the #IoT right now. Second, the #IoT is for sure a nice concept, and 
-    I love the idea behind it, but I can't really trust something that can do "everything", just 
-    because there is nothing like that. 
-  &lt;/p&gt;
-
-  &lt;p&gt;
-    Our personal opinion is that we don't have to start from the #IoT to make it successful. We 
-    must start from some of its real applications, building new services on top of it. The one 
-    we bet on is the Connected House, but there are lot more out there. Just find the one you 
-    love the most and make the Internet of Things real.
-    And for you, what's the #IoT?&lt;/p&gt;
-
-  &lt;p&gt;
-    If you want to learn more about #IoT you should read 
-    &lt;a href="http://postscapes.com"&gt;postscapes&lt;/a&gt; and check out some articles on 
-    &lt;a href="http://www.readwriteweb.com/archives/internet_of_things_explained_video_intro.php"&gt;ReadWriteWeb&lt;/a&gt;, 
-    &lt;a href="http://bits.blogs.nytimes.com/2010/09/20/you-too-can-join-the-internet-of-things/"&gt;NY Times&lt;/a&gt;, 
-    &lt;a href="http://www.guardian.co.uk/technology/2011/mar/20/the-internet-of-things-john-naughton"&gt;The Guardian&lt;/a&gt; and 
-    &lt;a href="http://www.economist.com/blogs/schumpeter/2010/12/internet_things"&gt;The Economist&lt;/a&gt;.
   &lt;/p&gt;
 &lt;/div&gt;</content>
   </entry>
