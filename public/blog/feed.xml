@@ -26,16 +26,16 @@
   &lt;/ul&gt;
   
   &lt;p&gt;
-    When connecting devices to the web you face different questions. One is for sure to 
-    understand which is the best electronic you can use. In Lelylan we are experimenting 
+    When you connect devices to the web you face different issues. The first one is to 
+    understand which is the best electronic device to use. In Lelylan we are experimenting 
     physical nodes, devices that defines a set of web services to connect your house to the web.
   &lt;/p&gt;
 
   &lt;p&gt;
-    To build a physical node you can use different hardware solutions varying on 
+    In order to build a physical node you can use different hardware solutions varying on 
     &lt;a href="http://beyondthekeeboard.wordpress.com/2011/06/25/a-simple-overview-to-help-choose-your-hardware-for-internet-of-things-solutions/"&gt;computational power, wireless capability and budget&lt;/a&gt;. 
-    The only required thing is the ability to bild a web server that accepts and send 
-    request over the internet.
+    The only required thing is the ability to build a web server that accepts and send 
+    requests over the internet.
   &lt;/p&gt;
 
 
@@ -99,7 +99,7 @@
   &lt;p&gt;
     &lt;strong&gt;Description&lt;/strong&gt;:
     open source Arduino-like board that has in-built web connectivity. It connects to a range 
-    of wireless, wired and ethernet interfaces. It allows you to develop web based sensor and 
+    of wireless, wired and ethernet interfaces. It allows you to develop web based sensors and 
     control systems, giving you web access to six analogue sensor lines and six digital I/O 
     lines. Nanode was designed with hacking in mind.
   &lt;/p&gt;
@@ -197,7 +197,7 @@
 
 
   &lt;br/&gt;
-  &lt;h2&gt;&lt;a href="http://www.libelium.com/"&gt;Libellium Waspmote&lt;/a&gt;&lt;/h2&gt;
+  &lt;h2&gt;&lt;a href="http://www.libelium.com/"&gt;Libelium Waspmote&lt;/a&gt;&lt;/h2&gt;
 
   &lt;ul class="media-grid"&gt;
     &lt;li&gt;
@@ -210,7 +210,7 @@
   &lt;p&gt;
     &lt;strong&gt;Description&lt;/strong&gt;:
     sensor device developers oriented. It works with different communicaction protocols 
-    (ZigBee, wifi, Bluetooth and GPRS) and frequencies (2.4GHz, 868MHz, 900MHz) and create 
+    (ZigBee, wifi, Bluetooth and GPRS) and frequencies (2.4GHz, 868MHz, 900MHz) and creates
     links up to 12Km. Using the hibernate low power mode (0.7uA) it can save battery energy 
     when not transmitting and be able to work even for years. Waspmote is compatible with 
     more than 50 sensors and its open source IDE makes really easy to start working with it
@@ -218,10 +218,11 @@
 
   &lt;p&gt;
     &lt;strong&gt;Good&lt;/strong&gt;:
-    documentation, solid, support,
+    documentation, solid,
     &lt;a href="http://www.libelium.com/products/waspmote/hardware"&gt;radio borads&lt;/a&gt;,
     &lt;a href="http://www.libelium.com/products/waspmote/sensors"&gt;sensors boards&lt;/a&gt;,
-    &lt;a href="http://www.libelium.com/products/waspmote/OTA"&gt;over the air programming&lt;/a&gt;.
+    &lt;a href="http://www.libelium.com/products/waspmote/OTA"&gt;over the air programming&lt;/a&gt;,
+    libelium support.
   &lt;/p&gt;
   &lt;p&gt;
     &lt;strong&gt;Bad&lt;/strong&gt;:
@@ -240,14 +241,14 @@
   &lt;h2&gt;Considerations&lt;/h2&gt;
   &lt;p&gt;
     This is an opinioned list with the best solutions out there. If you think we are missing
-    a good one you can head over to &lt;a href="&lt;%= item[:comments] %&gt;"&gt;Hacker News&lt;/a&gt; to add it.
+    a good one you can head over to &lt;a href="&lt;%= item[:comments] %&gt;"&gt;Hacker News&lt;/a&gt; to discuss it.
   &lt;/p&gt;
   &lt;p&gt;
-    This is the first part of a two articles serie. In the next one we will be featuring 
+    This is the first of two articles. In the next one we will be featuring 
     hardware solutions with more computational power like
     &lt;a href="http://www.raspberrypi.org/"&gt;Raspberry Pi&lt;/a&gt; and
     &lt;a href="http://pandaboard.org/"&gt;Panda Board&lt;/a&gt;, which are perfect to define hubs that
-    communicates with the web and all devices in your house.
+    communicate with the web and all the devices in your house.
   &lt;/p&gt;
 &lt;/div&gt;</content>
   </entry>
