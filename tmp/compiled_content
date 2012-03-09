@@ -450,7 +450,7 @@
 </script>
 
 ;T:	post@
-I"/blog/;T{;{	;I"Q<!DOCTYPE HTML>
+I"/blog/;T{;{	;I"?<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -514,7 +514,7 @@ I"/blog/;T{;{	;I"Q<!DOCTYPE HTML>
   <ul>
     <li>
       <span class="title"><a href="/blog/electronics/">Hacking the Internet of Things</a></span> -
-      <span class="subtitle"><a href="/blog/electronics/"><span>H</span>ardware <span>s</span>olutions <span>f</span>or <span>e</span>verybody</a></span>
+      <span class="subtitle"><a href="/blog/electronics/"><span>H</span>ardware <span>s</span>olutions <span>c</span>ompared</a></span>
     </li>
   </ul>
 
@@ -610,11 +610,11 @@ I"/blog/;T{;{	;I"Q<!DOCTYPE HTML>
     </li>
   </ul>
 <% end %>;T;
-I"3
+I"!
   <ul>
     <li>
       <span class="title"><a href="/blog/electronics/">Hacking the Internet of Things</a></span> -
-      <span class="subtitle"><a href="/blog/electronics/"><span>H</span>ardware <span>s</span>olutions <span>f</span>or <span>e</span>verybody</a></span>
+      <span class="subtitle"><a href="/blog/electronics/"><span>H</span>ardware <span>s</span>olutions <span>c</span>ompared</a></span>
     </li>
   </ul>
 
@@ -3696,7 +3696,7 @@ I"¢j<?xml version="1.0" encoding="UTF-8"?>
 &lt;/div&gt;</content>
   </entry>
 </feed>
-;T;@,I"/;T{;{	;I"ú8<!DOCTYPE HTML>
+;T;@,I"/;T{;{	;I"è8<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -3937,7 +3937,7 @@ I"¢j<?xml version="1.0" encoding="UTF-8"?>
       <li class="post two-cols box ">
         <a href="/blog/electronics/">
           <span class="strap">Hacking the Internet of Things</span>
-          <span class="label"><span>H</span>ardware <span>s</span>olutions <span>f</span>or <span>e</span>verybody
+          <span class="label"><span>H</span>ardware <span>s</span>olutions <span>c</span>ompared
         </a>
       </li>
       
@@ -4145,7 +4145,7 @@ I"¢j<?xml version="1.0" encoding="UTF-8"?>
 </div>
 
 <img src="/images/face.png" class="hidden">;T;
-I"à'    <div id="overview">
+I"Î'    <div id="overview">
       <div class="container centered">
         <div id="headline" class="home">
           <h1>Lelylan, reThink your house</h1>
@@ -4328,7 +4328,7 @@ I"à'    <div id="overview">
       <li class="post two-cols box ">
         <a href="/blog/electronics/">
           <span class="strap">Hacking the Internet of Things</span>
-          <span class="label"><span>H</span>ardware <span>s</span>olutions <span>f</span>or <span>e</span>verybody
+          <span class="label"><span>H</span>ardware <span>s</span>olutions <span>c</span>ompared
         </a>
       </li>
       
@@ -5557,7 +5557,7 @@ I"à'    <div id="overview">
 
   </div>
 </div>;T;
-@C;@BI"/blog/tags/iot/;T{;{	;I"Ù<!DOCTYPE HTML>
+@C;@BI"/blog/tags/iot/;T{;{	;I"Ç<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -5621,7 +5621,7 @@ I"à'    <div id="overview">
   <ul>
     <li>
       <span class="title"><a href="/blog/electronics/"><span>H</span>acking <span>t</span>he <span>I</span>nternet <span>o</span>f <span>T</span>hings</a></span> -
-      <span class="subtitle"><a href="/blog/electronics/"><span>H</span>ardware <span>s</span>olutions <span>f</span>or <span>e</span>verybody</a></span>
+      <span class="subtitle"><a href="/blog/electronics/"><span>H</span>ardware <span>s</span>olutions <span>c</span>ompared</a></span>
     </li>
   </ul>
 
@@ -5675,11 +5675,11 @@ I"à'    <div id="overview">
   </body>
 </html>
 ;T;	I")<%= render('tags', :tag => 'iot') %>;T;
-I"È
+I"¶
   <ul>
     <li>
       <span class="title"><a href="/blog/electronics/"><span>H</span>acking <span>t</span>he <span>I</span>nternet <span>o</span>f <span>T</span>hings</a></span> -
-      <span class="subtitle"><a href="/blog/electronics/"><span>H</span>ardware <span>s</span>olutions <span>f</span>or <span>e</span>verybody</a></span>
+      <span class="subtitle"><a href="/blog/electronics/"><span>H</span>ardware <span>s</span>olutions <span>c</span>ompared</a></span>
     </li>
   </ul>
 
@@ -9232,7 +9232,7 @@ I"}
     communicates with the web and all devices in your house.
   </p>
 </div>;T;
-@~;@}I"/blog/tags/hardware/;T{;{	;I"r<!DOCTYPE HTML>
+@~;@}I"/blog/tags/hardware/;T{;{	;I"`<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -9296,7 +9296,7 @@ I"}
   <ul>
     <li>
       <span class="title"><a href="/blog/electronics/"><span>H</span>acking <span>t</span>he <span>I</span>nternet <span>o</span>f <span>T</span>hings</a></span> -
-      <span class="subtitle"><a href="/blog/electronics/"><span>H</span>ardware <span>s</span>olutions <span>f</span>or <span>e</span>verybody</a></span>
+      <span class="subtitle"><a href="/blog/electronics/"><span>H</span>ardware <span>s</span>olutions <span>c</span>ompared</a></span>
     </li>
   </ul>
 
@@ -9343,14 +9343,14 @@ I"}
   </body>
 </html>
 ;T;	I".<%= render('tags', :tag => 'hardware') %>;T;
-I"a
+I"O
   <ul>
     <li>
       <span class="title"><a href="/blog/electronics/"><span>H</span>acking <span>t</span>he <span>I</span>nternet <span>o</span>f <span>T</span>hings</a></span> -
-      <span class="subtitle"><a href="/blog/electronics/"><span>H</span>ardware <span>s</span>olutions <span>f</span>or <span>e</span>verybody</a></span>
+      <span class="subtitle"><a href="/blog/electronics/"><span>H</span>ardware <span>s</span>olutions <span>c</span>ompared</a></span>
     </li>
   </ul>
-;T;@}I"/blog/electronics/;T{;{	;I"38<!DOCTYPE HTML>
+;T;@}I"/blog/electronics/;T{;{	;I")8<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -9413,7 +9413,7 @@ I"a
       <div id="main">
                 
         <h1>Hacking the Internet of Things</h1>
-        <span class="sub">Hardware solutions for everybody</span>
+        <span class="sub">Hardware solutions compared</span>
         <p>
           Written by <a href="http://twitter.com/andreareginato">Lelylan Chief</a> | Mar 09, 2012
         </p>
@@ -9662,7 +9662,7 @@ I"a
           <div class="addthis_toolbox addthis_default_style" 
   style="padding-top: 0px;"
   addthis:url="http://lelylan.com/blog/electronics/"
-  addthis:title="Hacking the Internet of Things. Hardware solutions for everybody">
+  addthis:title="Hacking the Internet of Things. Hardware solutions compared">
   <a class="addthis_button_hackernews"></a>
   <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
   <a class="addthis_button_tweet" tw:via="lelylan"></a>
