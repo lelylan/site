@@ -1,7 +1,6 @@
 = Introduction
 
-Repository for http://lelylan.com, a static site built with {nanoc}[http://nanoc.stoneship.org/], 
-a Ruby web publishing system for building small to medium-sized websites.
+Repository for http://lelylan.com, a static site built with {nanoc}[http://nanoc.stoneship.org/].
 
 
 = Requirements
@@ -25,51 +24,42 @@ The web site is now visible at localhost:3000.
 
 = Contribute
 
-Fork the repository on github and issue a pull request with your changes. 
-
+If you find some errors or you want to improve the documentation fork the repository on github 
+and issue a pull request with your changes. No other means of supplying code to the team will 
+be accepted.
 
 == Documentation guidelines
 
-* Do not duplicate existing knowledge.
+* Do not duplicate existing knowledge (read twice what already exists).
 * Add the right information in the right place.
-* Update the CHANGELOG
+* Update the CHANGELOG (if you remember)
 
 
 = Feedback
 
-Use the {issue tracker}[http://github.com/lelylan/lelylan_site/issues] for any bug you find and write 
-us a {mail}[mailto:touch@lelylan.com] or a {tweet}[http://twitter.com/lelylan] for any feature or idea 
-that can improve the project. Feedback is always welcome. Always.
-
+Use the {issue tracker}[http://github.com/lelylan/lelylan_site/issues] for any bug you find and
+write us a {mail}[mailto:touch@lelylan.com] or a {tweet}[http://twitter.com/lelylan] for any 
+feature or idea that can improve the project. Feedback is always welcome. Always.
 
 
 = Links 
 
-* {GIT Repository}[git://github.com/lelylan/developer_site.git]
+* {GIT Repository}[git://github.com/lelylan/lelylan_site.git]
 * {Lelylan}[http://lelylan.com]
 * {Lelylan | Dev Center}[http://dev.lelylan.com]
 
 
-
 = Authors
 
-{Andrea Reginato}[twitter.com/andreareginato]
-
+{Andrea Reginato}[http://twitter.com/andreareginato]
 
 
 = Contributors
 
-See CONTRIBUTORS
-
-
-
-= Changelog
-
-See CHANGELOG
-
+Special thanks to the following people for submitting patches.
 
 
 = Copyright
 
-Copyright (c) 2011 {Andrea Reginato}[twitter.com/andreareginato]. See LICENSE for details.
+Copyright (c) 2013 {Lelylan}[twitter.com/lelylan]. See LICENSE for details.
 
