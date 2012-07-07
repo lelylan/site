@@ -60,13 +60,482 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://lelylan.com/</id>
   <title>Lelylan - reThink your house</title>
-  <updated>2012-03-08T23:00:00Z</updated>
+  <updated>2012-07-08T22:00:00Z</updated>
   <link rel="alternate" href="http://lelylan.com/"/>
   <link rel="self" href="http://lelylan.com/feed/"/>
   <author>
     <name>Lelylan Team</name>
     <uri>http://lelylan.com</uri>
   </author>
+  <entry>
+    <id>tag:lelylan.com,2012-07-09:/blog/boards/</id>
+    <title type="html">Getting ready to access your house</title>
+    <published>2012-07-08T22:00:00Z</published>
+    <updated>2012-07-08T22:00:00Z</updated>
+    <link rel="alternate" href="http://lelylan.com/blog/boards/"/>
+    <content type="html">&lt;div class="article"&gt;
+
+  &lt;ul class="media-grid"&gt;
+    &lt;li&gt;
+      &lt;img class="thumbnail header" src="/images/blog/boards/header.png" alt="Building your house hub"&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  
+  &lt;p&gt;
+    When building an home automation system you need to face different questions like
+    security, availability, connectivity and interoperability between the others. In the 
+    &lt;a href="/blog/electronics/"&gt;previous article&lt;/a&gt; we pointed out how great is to experiment 
+    and hack devices as they are cheap, but those solutions are not (yet) enough powerful to 
+    feature all we need for a connected device in the house. What if we want to add  SSL, 
+    off-line control, protocols interoperation? We have two solutions: 
+    &lt;strong&gt;single device intelligence&lt;/strong&gt;
+    &lt;strong&gt;and home automation hubs.&lt;/strong&gt;
+  &lt;/p&gt;
+
+  &lt;br/&gt;
+  &lt;h2&gt;Single Device Intelligence&lt;/h2&gt;
+
+  &lt;p&gt;
+    This is the best solution and it totally change the way we think at home automation 
+    today. Every device comes out with the ability to connect to the web in a secure way.
+    The scenario is the one where you go to Ikea or the shop down to your house, buy a
+    light, go home, connect it to the web and tell Lelylan it's part of your house.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    This sounds great right. Yes, it does but it has a couple of drawback. The first one is 
+    that every device must be equipped with the ability to directly connect to the web (or to 
+    the router in your house) providing all security features (SSL and authorization logics).
+    This is possible and today we already have the technologies to do this, but it would make 
+    any device way more expensive. 
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    Think at a light. Today you pay it $10. What if it suddenly costs you more than $70 just to 
+    be connected to the web? No way, at least not if we think that home automation is for everybody.
+    The good point is that techs are becoming more cheap and more powerful day after day and this 
+    will let us build smart devices for few dollars more really soon.
+  &lt;/p&gt;
+
+  &lt;br/&gt;
+  &lt;h2&gt;Home Automation Hub&lt;/h2&gt;
+
+  &lt;p&gt;
+    This is the real solution nowadays. Think at the home automation ecosystem today. We have
+    lot of companies producing any kind of device using different standards. In this way we 
+    depend from them and we can't exploit the real power of an home automation system because
+    we do not let every device communicate.
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    To solve this problem we need an hub, which is a small computer that will let your house 
+    talk to the web, without caring at all about the technology devices uses. In this way you 
+    can connect devices that use Zigbee, Konnex, X10 and whatever exists out there and let them 
+    accessible to the web. Its not easy, as you need to have a great knowledge of how those 
+    protocols work out, but once you do it they are accessible.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    An home automation hub gives you several advantages. You have only one place where to handle
+    secure communication and authorization, you can install some extra applications, you can 
+    easily handle an off-line situation when internet does not work and much more. 
+  &lt;/p&gt;
+
+  &lt;br/&gt;
+  &lt;h2&gt;Board Computers Compared&lt;/h2&gt;
+
+  &lt;p&gt;
+    We think that making every single device smart is the future path, but in the meantime we
+    need to face reality. For made a little research listing the boards out there that could be 
+    a reasonable solution to build your next home automation hub.
+  &lt;/p&gt;
+
+  &lt;h3&gt;&lt;a href="http://www.raspberrypi.org/"&gt;Raspberry PI&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+    This is probably the best solution out there. It's a real computer where you can run 
+    Debian Linux at only $25. The initiative, started at Cambridge University got lot of 
+    attention from all media around the world and in 4 months they were able to sell over
+    500.000 pieces.
+  &lt;/p&gt;
+
+  &lt;table class="zebra-striped"&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class="parameter"&gt;
+          &lt;span&gt;Price&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          Raspberry PI | $25 &lt;br/&gt;
+          Raspberry Model B | $35 &lt;br/&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class="parameter"&gt;
+          &lt;span&gt;OS&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          Debian Linux. &lt;a href="http://www.raspberrypi.org/downloads"&gt;See other distributions&lt;/a&gt;.
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class="parameter"&gt;
+          &lt;span&gt;Connectivity&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          The base version does not offer connectivity.&lt;br/&gt;
+          Raspberry Model B&lt;/a&gt; gives you an Ethernet access.
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class="parameter"&gt;
+          &lt;span&gt;Pros&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          Low price, community, documentation, open-source.
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class="parameter"&gt;
+          &lt;span&gt;Cons&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          Computational power, wireless connectivity.
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+  &lt;h3&gt;&lt;a href="http://www.rikomagic.co.uk/"&gt;Rikomagic MK802&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+    A fully functional computer no bigger than a USB pen drive, the Rikomagic MK802 runs on 
+    the popular Android 4 operating system and it features Wifi. The design is just cool and 
+    you have a fully functional computer no bigger than a USB pen drive.
+  &lt;/p&gt;
+
+  &lt;table class="zebra-striped"&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class="parameter"&gt;
+          &lt;span&gt;Price&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          MK802 | $74
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class="parameter"&gt;
+          &lt;span&gt;OS&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          Android 4.
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class="parameter"&gt;
+          &lt;span&gt;Connectivity&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          Wifi 802.11b/g/n.
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class="parameter"&gt;
+          &lt;span&gt;Pros&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          Low price, wireless connectivity, design.
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class="parameter"&gt;
+          &lt;span&gt;Cons&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          Missing community, documentation, computational power.
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+  &lt;h3&gt;&lt;a href="http://liliputing.com/2012/03/mele-a1000-is-a-70-hackable-linux-friendly-arm-based-pc.html"&gt;Mele A1000&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+    Available for as little as $70, while that's twice the price of a Raspberry Pi computer, 
+    the Mele A1000 includes a faster processor, more RAM and a case. It can be a better choice
+    if the power given by the Raspberry PI is not enough and you need something aesthetically 
+    nice.
+  &lt;/p&gt;
+
+  &lt;table class="zebra-striped"&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class="parameter"&gt;
+          &lt;span&gt;Price&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          Mele A1000 | $70
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class="parameter"&gt;
+          &lt;span&gt;OS&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          Android and Ubuntu.
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class="parameter"&gt;
+          &lt;span&gt;Connectivity&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          Ethernet by default.
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class="parameter"&gt;
+          &lt;span&gt;Pros&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          Low price.
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class="parameter"&gt;
+          &lt;span&gt;Cons&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          Missing community, wireless connectivity, computational power.
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+  &lt;h3&gt;&lt;a href="http://beagleboard.org/"&gt;BeagleBoard&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+    The BeagleBoard is an low cost, high performance, low power 
+    &lt;a href="http://www.ti.com/omapwireless"&gt;OMAP3&lt;/a&gt; based platform designed 
+    by BeagleBoard.org community members. It is open-source and there are hundreds of
+    applications developed on top of it.
+  &lt;/p&gt;
+
+  &lt;table class="zebra-striped"&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class="parameter"&gt;
+          &lt;span&gt;Price&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          BeagleBone | $89 &lt;br/&gt;
+          BeagleBoard xM | $149 
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class="parameter"&gt;
+          &lt;span&gt;OS&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          Android, and major Linux distributions like Ubuntu, Debian, ArchLinux and Gentoo. 
+          &lt;a href="http://pandaboard.org/content/resources/software"&gt;See supported distributions&lt;/a&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class="parameter"&gt;
+          &lt;span&gt;Connectivity&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          Ethernet by default.
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class="parameter"&gt;
+          &lt;span&gt;Pros&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          Experience, community, documentation, computational power, open-source.
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class="parameter"&gt;
+          &lt;span&gt;Cons&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          Price, wireless connectivity.
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+  &lt;h3&gt;&lt;a href="http://pandaboard.org//"&gt;PandaBoard ES&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+    PandaBoard is a low-cost, open &lt;a href="http://www.ti.com/omapwireless"&gt;OMAP 4&lt;/a&gt; mobile 
+    software development platform.
+  &lt;/p&gt;
+
+  &lt;table class="zebra-striped"&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class="parameter"&gt;
+          &lt;span&gt;Price&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          PandaBoard ES | $189
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class="parameter"&gt;
+          &lt;span&gt;OS&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          Android, Ubuntu and Linaro.
+          &lt;a href="http://pandaboard.org/content/resources/software"&gt;See supported distributions&lt;/a&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class="parameter"&gt;
+          &lt;span&gt;Connectivity&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          Ethernet connectivity and Wifi 802.11 b/g/n.
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class="parameter"&gt;
+          &lt;span&gt;Pros&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          Community, computational power, wireless connectivity, focus on mobile.
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class="parameter"&gt;
+          &lt;span&gt;Cons&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          Price.
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+  &lt;h3&gt;&lt;a href="http://www.plugcomputer.org/"&gt;Plug Computers (Sheevaplug)&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+    Main resource for the plug computer development community. Plugcomputer.org
+    offers solutions built on a Marvell system-on-chip and focus on high performances and giving
+    full connected devices readily available for developers.
+  &lt;/p&gt;
+
+  &lt;table class="zebra-striped"&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class="parameter"&gt;
+          &lt;span&gt;Price&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          GuruPlug Display | $199 &lt;br/&gt;
+          D2Plug | $249
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class="parameter"&gt;
+          &lt;span&gt;OS&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          Ubuntu, FreeBSD, NetBSD, Windows CE and any other operating system that is compatible 
+          with ARM CPUs.
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class="parameter"&gt;
+          &lt;span&gt;Connectivity&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          Ethernet connectivity by default.
+          Model D2Plug offers integrated 802.11 b/g/n Wifi.
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class="parameter"&gt;
+          &lt;span&gt;Pros&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          Commercial support, computational power, design, wireless connectivity.
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class="parameter"&gt;
+          &lt;span&gt;Cons&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          Missing community, closed-source, price.
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+  &lt;h3&gt;&lt;a href="http://www.ionicsplug.com/"&gt;Ionics Plug&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+    Plug computer with main focus on connectivity and low price. Ionos, comes from the same
+    family of Sheevaplug computers, but with lower prices and better features. For sure one 
+    of the best solutions whenever you want to use a Plug Computer and you are searching for
+    advanced wireless capabilities (WifI, Zigbee and Z-Wave ).
+  &lt;/p&gt;
+
+  &lt;table class="zebra-striped"&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class="parameter"&gt;
+          &lt;span&gt;Price&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          Nimbus 100 | $99 &lt;br/&gt;
+          Stratus | $149
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class="parameter"&gt;
+          &lt;span&gt;OS&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          Debian 5 Lenny.
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class="parameter"&gt;
+          &lt;span&gt;Connectivity&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          Ethernet connectivity by default.
+          Stratus model offers integrated 802.11 b/g (WPS support on Client Mode) and ZigBee.
+          You can decide to change the Zigbee module for a Z-wave module.
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class="parameter"&gt;
+          &lt;span&gt;Pros&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          Commercial support, computational power, design, price, wireless connectivity.
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class="parameter"&gt;
+          &lt;span&gt;Cons&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          Missing community, closed-source.
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <id>tag:lelylan.com,2012-03-09:/blog/electronics/</id>
     <title type="html">Hacking the Internet of Things</title>
@@ -298,7 +767,7 @@
   &lt;/br&gt;
   &lt;h2&gt;Considerations&lt;/h2&gt;
   &lt;p&gt;
-    This is an opinioned list with the best solutions out there. If you think we are missing
+    This is an opinionated list with the best solutions out there. If you think we are missing
     a good one you can head over to &lt;a href="http://news.ycombinator.com/item?id=3683978"&gt;Hacker 
     News&lt;/a&gt; to discuss it.
   &lt;/p&gt;
@@ -653,85 +1122,6 @@
     this is the reason we are here, a passionate need to change the rules.
   &lt;/p&gt;
 
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <id>tag:lelylan.com,2011-11-18:/blog/sucks/</id>
-    <title type="html">Why home automation sucks</title>
-    <published>2011-11-17T23:00:00Z</published>
-    <updated>2011-11-17T23:00:00Z</updated>
-    <link rel="alternate" href="http://lelylan.com/blog/sucks/"/>
-    <content type="html">&lt;div class="article"&gt;
-
-  &lt;ul class="media-grid"&gt;
-    &lt;li&gt;
-      &lt;a href="/collaborations/"&gt;
-        &lt;img class="thumbnail" src="/images/blog/sucks.png" alt=""&gt;
-      &lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-  
-  &lt;p&gt;
-    When we talk about Lelylan, most of the people just tell us that domotics 
-    already exists.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-    As we try to enjoy our time around, we reply with a simple question: &lt;strong&gt;how many 
-    of you have a domotics system, today&lt;/strong&gt;? The answer is always the same, nobody. 
-    To highlight this, it was fun when during a presentation in front of almost 
-    100 people just one hand raised up, clarifying that his domotics system didn't 
-    really work.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-    It's true, lots of companies have been working on home automation for many 
-    years. Some of them are well-known names like
-    &lt;a href="http://www.crestron.com/"&gt;Creston&lt;/a&gt;, 
-    &lt;a href="http://control4.com"&gt;Control4&lt;/a&gt; and
-    &lt;a href="http://www.amx.com"&gt;AMX&lt;/a&gt;, 
-    but there is no real market. As there are so few domotics houses, this field looks like
-    a dream for many of us. At this point, the correct question is: 
-    &lt;strong&gt;why home automation sucks so much nowadays!?&lt;/strong&gt;
-  &lt;/p&gt;
-
-  &lt;p&gt;
-    People tend to think that the cause for the low domotics penetration is 
-    price. This is both true and false. Actual domotics systems 
-    are quite expensive, but like all technologies, when they start to spread,
-    costs start to get lower and lower. So why, why home automation is not a reality?
-  &lt;/p&gt;
-
-  &lt;p&gt;
-    &lt;strong&gt;The real problem are the existing domotics companies&lt;/strong&gt;. 
-    They create devices that are not able to speak to each other, trying in this way 
-    to keep their market share.  
-    The consequences are the impossibility for devices such as lights, appliances, 
-    security and alarm systems, gas and smoke sensors, multimedia systems, heating 
-    systems to communicate with each other, higher complexities, fewer services, 
-    higher prices and more importantly lot of confusion for the final user.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-    Thinking at home automation as companies do today, will not last long. 
-    &lt;a href="http://www.lelylan.com/blog/why"&gt;Lelylan&lt;/a&gt; and 
-    new Internet of Things related &lt;a href="http://postscapes.com/companies"&gt;Companies&lt;/a&gt;
-    will change the way we think at home automation.
-  &lt;/p&gt;
-
-  &lt;blockquote&gt;
-    &lt;p&gt;
-      Let everyone experiment new services, remove complexities, make devices 
-      communicate and teach people what home automation really means.
-    &lt;/p&gt;
-    &lt;small&gt;Mr. Lelylan&lt;/small&gt;
-  &lt;/blockquote&gt;
-
-  &lt;p&gt;
-    If you think home automation sucks, &lt;a href="/collaborations/"&gt;join us now&lt;/a&gt;. 
-    We envision a future where our houses will be the ones we have dreamed when we where 
-    child. Don't you love this?
-  &lt;/p&gt;
 &lt;/div&gt;</content>
   </entry>
 </feed>

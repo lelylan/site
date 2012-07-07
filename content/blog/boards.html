@@ -1,0 +1,474 @@
+--- 
+title: "Getting ready to access your house"
+subtitle: "Smart Devices vs Home Automation Hubs"
+author: <a href="http://twitter.com/andreareginato">Lelylan Chief</a>
+created_at: 2012/07/09
+tags: [hardware, iot]
+publish: true
+kind: article
+menu: blog
+comments: ""
+---
+
+<div class="article">
+
+  <ul class="media-grid">
+    <li>
+      <img class="thumbnail header" src="/images/blog/boards/header.png" alt="Building your house hub">
+    </li>
+  </ul>
+  
+  <p>
+    When building an home automation system you need to face different questions like
+    security, availability, connectivity and interoperability between the others. In the 
+    <a href="/blog/electronics/">previous article</a> we pointed out how great is to experiment 
+    and hack devices as they are cheap, but those solutions are not (yet) enough powerful to 
+    feature all we need for a connected device in the house. What if we want to add  SSL, 
+    off-line control, protocols interoperation? We have two solutions: 
+    <strong>single device intelligence</strong>
+    <strong>and home automation hubs.</strong>
+  </p>
+
+  <br/>
+  <h2>Single Device Intelligence</h2>
+
+  <p>
+    This is the best solution and it totally change the way we think at home automation 
+    today. Every device comes out with the ability to connect to the web in a secure way.
+    The scenario is the one where you go to Ikea or the shop down to your house, buy a
+    light, go home, connect it to the web and tell Lelylan it's part of your house.
+  </p>
+
+  <p>
+    This sounds great right. Yes, it does but it has a couple of drawback. The first one is 
+    that every device must be equipped with the ability to directly connect to the web (or to 
+    the router in your house) providing all security features (SSL and authorization logics).
+    This is possible and today we already have the technologies to do this, but it would make 
+    any device way more expensive. 
+  </p>
+
+  <p>
+    Think at a light. Today you pay it $10. What if it suddenly costs you more than $70 just to 
+    be connected to the web? No way, at least not if we think that home automation is for everybody.
+    The good point is that techs are becoming more cheap and more powerful day after day and this 
+    will let us build smart devices for few dollars more really soon.
+  </p>
+
+  <br/>
+  <h2>Home Automation Hub</h2>
+
+  <p>
+    This is the real solution nowadays. Think at the home automation ecosystem today. We have
+    lot of companies producing any kind of device using different standards. In this way we 
+    depend from them and we can't exploit the real power of an home automation system because
+    we do not let every device communicate.
+  </p>
+  
+  <p>
+    To solve this problem we need an hub, which is a small computer that will let your house 
+    talk to the web, without caring at all about the technology devices uses. In this way you 
+    can connect devices that use Zigbee, Konnex, X10 and whatever exists out there and let them 
+    accessible to the web. Its not easy, as you need to have a great knowledge of how those 
+    protocols work out, but once you do it they are accessible.
+  </p>
+
+  <p>
+    An home automation hub gives you several advantages. You have only one place where to handle
+    secure communication and authorization, you can install some extra applications, you can 
+    easily handle an off-line situation when internet does not work and much more. 
+  </p>
+
+  <br/>
+  <h2>Board Computers Compared</h2>
+
+  <p>
+    We think that making every single device smart is the future path, but in the meantime we
+    need to face reality. For made a little research listing the boards out there that could be 
+    a reasonable solution to build your next home automation hub.
+  </p>
+
+  <h3><a href="http://www.raspberrypi.org/">Raspberry PI</a></h3>
+
+  <p>
+    This is probably the best solution out there. It's a real computer where you can run 
+    Debian Linux at only $25. The initiative, started at Cambridge University got lot of 
+    attention from all media around the world and in 4 months they were able to sell over
+    500.000 pieces.
+  </p>
+
+  <table class="zebra-striped">
+    <tbody>
+      <tr>
+        <td class="parameter">
+          <span>Price</span>
+        </td>
+        <td>
+          Raspberry PI | $25 <br/>
+          Raspberry Model B | $35 <br/>
+        </td>
+      </tr>
+      <tr>
+        <td class="parameter">
+          <span>OS</span>
+        </td>
+        <td>
+          Debian Linux. <a href="http://www.raspberrypi.org/downloads">See other distributions</a>.
+        </td>
+      </tr>
+      <tr>
+        <td class="parameter">
+          <span>Connectivity</span>
+        </td>
+        <td>
+          The base version does not offer connectivity.<br/>
+          Raspberry Model B</a> gives you an Ethernet access.
+        </td>
+      </tr>
+      <tr>
+        <td class="parameter">
+          <span>Pros</span>
+        </td>
+        <td>
+          Low price, community, documentation, open-source.
+        </td>
+      </tr>
+      <tr>
+        <td class="parameter">
+          <span>Cons</span>
+        </td>
+        <td>
+          Computational power, wireless connectivity.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3><a href="http://www.rikomagic.co.uk/">Rikomagic MK802</a></h3>
+
+  <p>
+    A fully functional computer no bigger than a USB pen drive, the Rikomagic MK802 runs on 
+    the popular Android 4 operating system and it features Wifi. The design is just cool and 
+    you have a fully functional computer no bigger than a USB pen drive.
+  </p>
+
+  <table class="zebra-striped">
+    <tbody>
+      <tr>
+        <td class="parameter">
+          <span>Price</span>
+        </td>
+        <td>
+          MK802 | $74
+        </td>
+      </tr>
+      <tr>
+        <td class="parameter">
+          <span>OS</span>
+        </td>
+        <td>
+          Android 4.
+        </td>
+      </tr>
+      <tr>
+        <td class="parameter">
+          <span>Connectivity</span>
+        </td>
+        <td>
+          Wifi 802.11b/g/n.
+        </td>
+      </tr>
+      <tr>
+        <td class="parameter">
+          <span>Pros</span>
+        </td>
+        <td>
+          Low price, wireless connectivity, design.
+        </td>
+      </tr>
+      <tr>
+        <td class="parameter">
+          <span>Cons</span>
+        </td>
+        <td>
+          Missing community, documentation, computational power.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3><a href="http://liliputing.com/2012/03/mele-a1000-is-a-70-hackable-linux-friendly-arm-based-pc.html">Mele A1000</a></h3>
+
+  <p>
+    Available for as little as $70, while that's twice the price of a Raspberry Pi computer, 
+    the Mele A1000 includes a faster processor, more RAM and a case. It can be a better choice
+    if the power given by the Raspberry PI is not enough and you need something aesthetically 
+    nice.
+  </p>
+
+  <table class="zebra-striped">
+    <tbody>
+      <tr>
+        <td class="parameter">
+          <span>Price</span>
+        </td>
+        <td>
+          Mele A1000 | $70
+        </td>
+      </tr>
+      <tr>
+        <td class="parameter">
+          <span>OS</span>
+        </td>
+        <td>
+          Android and Ubuntu.
+        </td>
+      </tr>
+      <tr>
+        <td class="parameter">
+          <span>Connectivity</span>
+        </td>
+        <td>
+          Ethernet by default.
+        </td>
+      </tr>
+      <tr>
+        <td class="parameter">
+          <span>Pros</span>
+        </td>
+        <td>
+          Low price.
+        </td>
+      </tr>
+      <tr>
+        <td class="parameter">
+          <span>Cons</span>
+        </td>
+        <td>
+          Missing community, wireless connectivity, computational power.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3><a href="http://beagleboard.org/">BeagleBoard</a></h3>
+
+  <p>
+    The BeagleBoard is an low cost, high performance, low power 
+    <a href="http://www.ti.com/omapwireless">OMAP3</a> based platform designed 
+    by BeagleBoard.org community members. It is open-source and there are hundreds of
+    applications developed on top of it.
+  </p>
+
+  <table class="zebra-striped">
+    <tbody>
+      <tr>
+        <td class="parameter">
+          <span>Price</span>
+        </td>
+        <td>
+          BeagleBone | $89 <br/>
+          BeagleBoard xM | $149 
+        </td>
+      </tr>
+      <tr>
+        <td class="parameter">
+          <span>OS</span>
+        </td>
+        <td>
+          Android, and major Linux distributions like Ubuntu, Debian, ArchLinux and Gentoo. 
+          <a href="http://pandaboard.org/content/resources/software">See supported distributions</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="parameter">
+          <span>Connectivity</span>
+        </td>
+        <td>
+          Ethernet by default.
+        </td>
+      </tr>
+      <tr>
+        <td class="parameter">
+          <span>Pros</span>
+        </td>
+        <td>
+          Experience, community, documentation, computational power, open-source.
+        </td>
+      </tr>
+      <tr>
+        <td class="parameter">
+          <span>Cons</span>
+        </td>
+        <td>
+          Price, wireless connectivity.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3><a href="http://pandaboard.org//">PandaBoard ES</a></h3>
+
+  <p>
+    PandaBoard is a low-cost, open <a href="http://www.ti.com/omapwireless">OMAP 4</a> mobile 
+    software development platform.
+  </p>
+
+  <table class="zebra-striped">
+    <tbody>
+      <tr>
+        <td class="parameter">
+          <span>Price</span>
+        </td>
+        <td>
+          PandaBoard ES | $189
+        </td>
+      </tr>
+      <tr>
+        <td class="parameter">
+          <span>OS</span>
+        </td>
+        <td>
+          Android, Ubuntu and Linaro.
+          <a href="http://pandaboard.org/content/resources/software">See supported distributions</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="parameter">
+          <span>Connectivity</span>
+        </td>
+        <td>
+          Ethernet connectivity and Wifi 802.11 b/g/n.
+        </td>
+      </tr>
+      <tr>
+        <td class="parameter">
+          <span>Pros</span>
+        </td>
+        <td>
+          Community, computational power, wireless connectivity, focus on mobile.
+        </td>
+      </tr>
+      <tr>
+        <td class="parameter">
+          <span>Cons</span>
+        </td>
+        <td>
+          Price.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3><a href="http://www.plugcomputer.org/">Plug Computers (Sheevaplug)</a></h3>
+
+  <p>
+    Main resource for the plug computer development community. Plugcomputer.org
+    offers solutions built on a Marvell system-on-chip and focus on high performances and giving
+    full connected devices readily available for developers.
+  </p>
+
+  <table class="zebra-striped">
+    <tbody>
+      <tr>
+        <td class="parameter">
+          <span>Price</span>
+        </td>
+        <td>
+          GuruPlug Display | $199 <br/>
+          D2Plug | $249
+        </td>
+      </tr>
+      <tr>
+        <td class="parameter">
+          <span>OS</span>
+        </td>
+        <td>
+          Ubuntu, FreeBSD, NetBSD, Windows CE and any other operating system that is compatible 
+          with ARM CPUs.
+        </td>
+      </tr>
+      <tr>
+        <td class="parameter">
+          <span>Connectivity</span>
+        </td>
+        <td>
+          Ethernet connectivity by default.
+          Model D2Plug offers integrated 802.11 b/g/n Wifi.
+        </td>
+      </tr>
+      <tr>
+        <td class="parameter">
+          <span>Pros</span>
+        </td>
+        <td>
+          Commercial support, computational power, design, wireless connectivity.
+        </td>
+      </tr>
+      <tr>
+        <td class="parameter">
+          <span>Cons</span>
+        </td>
+        <td>
+          Missing community, closed-source, price.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3><a href="http://www.ionicsplug.com/">Ionics Plug</a></h3>
+
+  <p>
+    Plug computer with main focus on connectivity and low price. Ionos, comes from the same
+    family of Sheevaplug computers, but with lower prices and better features. For sure one 
+    of the best solutions whenever you want to use a Plug Computer and you are searching for
+    advanced wireless capabilities (WifI, Zigbee and Z-Wave ).
+  </p>
+
+  <table class="zebra-striped">
+    <tbody>
+      <tr>
+        <td class="parameter">
+          <span>Price</span>
+        </td>
+        <td>
+          Nimbus 100 | $99 <br/>
+          Stratus | $149
+        </td>
+      </tr>
+      <tr>
+        <td class="parameter">
+          <span>OS</span>
+        </td>
+        <td>
+          Debian 5 Lenny.
+        </td>
+      </tr>
+      <tr>
+        <td class="parameter">
+          <span>Connectivity</span>
+        </td>
+        <td>
+          Ethernet connectivity by default.
+          Stratus model offers integrated 802.11 b/g (WPS support on Client Mode) and ZigBee.
+          You can decide to change the Zigbee module for a Z-wave module.
+        </td>
+      </tr>
+      <tr>
+        <td class="parameter">
+          <span>Pros</span>
+        </td>
+        <td>
+          Commercial support, computational power, design, price, wireless connectivity.
+        </td>
+      </tr>
+      <tr>
+        <td class="parameter">
+          <span>Cons</span>
+        </td>
+        <td>
+          Missing community, closed-source.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

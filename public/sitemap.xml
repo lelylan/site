@@ -6,8 +6,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>http://lelylan.com/blog/boards/</loc>
+    <lastmod>2012-07-07</lastmod>
+  </url>
+  <url>
     <loc>http://lelylan.com/blog/electronics/</loc>
-    <lastmod>2012-03-10</lastmod>
+    <lastmod>2012-07-07</lastmod>
   </url>
   <url>
     <loc>http://lelylan.com/blog/experts/</loc>
