@@ -9,7 +9,7 @@
     <meta name="copyright" content="Copyright © Lelylan">
     <meta name="viewport" content="width=device-width">
 
-    <title>Lelylan Blog | Why home automation sucks</title>
+    <title>Lelylan Blog | Thinking the House for the Web</title>
 
     <link href="/stylesheets/screen.css" type="text/css" rel="stylesheet" media="screen">
     <link href="/stylesheets/boxes.css" type="text/css" rel="stylesheet" media="screen">
@@ -60,10 +60,10 @@
     <div id="page">
       <div id="main">
                 
-        <h1>Why home automation sucks</h1>
-        <span class="sub">And why we still love it</span>
+        <h1>Thinking the House for the Web</h1>
+        <span class="sub">Smart Devices vs Hubs</span>
         <p>
-          Written by <a href="http://twitter.com/lelylan">Lelylan Chief</a> | Nov 18, 2011
+          Written by <a href="http://twitter.com/andreareginato">Lelylan Chief</a> | Jul 16, 2012
         </p>
         
  
@@ -72,80 +72,92 @@
 
   <ul class="media-grid">
     <li>
-      <a href="/collaborations/">
-        <img class="thumbnail" src="/images/blog/sucks.png" alt="">
-      </a>
+      <img class="thumbnail header" src="/images/blog/access/header.png" alt="Building your house hub">
     </li>
   </ul>
   
   <p>
-    When we talk about Lelylan, most of the people just tell us that domotics 
-    already exists.
+    When building an home automation system you need to face different questions like
+    security, availability, connectivity and interoperability between the others. In the 
+    <a href="/blog/electronics/">previous article</a> we pointed out how great is to experiment 
+    and hack devices as they are cheap, but those solutions are not (yet) enough powerful to 
+    feature all we need for a connected device in the house. What if we want to add  SSL, 
+    off-line control, protocols interoperation? We have two solutions: 
+    <strong>single device intelligence</strong>
+    <strong>and home automation hubs.</strong>
+  </p>
+
+  <br/>
+  <h2>Single Device Intelligence</h2>
+
+  <p>
+    This is the best solution and it totally change the way we think at home automation 
+    today. Every device comes out with the ability to connect to the web in a secure way.
+    The scenario is the one where you go to Ikea or the shop down to your house, buy a
+    light, go home, connect it to the web and tell Lelylan it's part of your house.
   </p>
 
   <p>
-    As we try to enjoy our time around, we reply with a simple question: <strong>how many 
-    of you have a domotics system, today</strong>? The answer is always the same, nobody. 
-    To highlight this, it was fun when during a presentation in front of almost 
-    100 people just one hand raised up, clarifying that his domotics system didn't 
-    really work.
+    This sounds great right. Yes, it does but it has a couple of drawback. The first one is 
+    that every device must be equipped with the ability to directly connect to the web (or to 
+    the router in your house) providing all security features (SSL and authorization logics).
+    This is possible and today we already have the technologies to do this, but it would make 
+    any device way more expensive. 
   </p>
 
   <p>
-    It's true, lots of companies have been working on home automation for many 
-    years. Some of them are well-known names like
-    <a href="http://www.crestron.com/">Creston</a>, 
-    <a href="http://control4.com">Control4</a> and
-    <a href="http://www.amx.com">AMX</a>, 
-    but there is no real market. As there are so few domotics houses, this field looks like
-    a dream for many of us. At this point, the correct question is: 
-    <strong>why home automation sucks so much nowadays!?</strong>
+    Think at a light. Today you pay it $10. What if it suddenly costs you more than $70 just to 
+    be connected to the web? No way, at least not if we think that home automation is for everybody.
+    The good point is that techs are becoming more cheap and more powerful day after day and this 
+    will let us build smart devices for few dollars more really soon.
+  </p>
+
+  <br/>
+  <h2>Home Automation Hub</h2>
+
+  <p>
+    This is the real solution nowadays. Think at the home automation ecosystem today. We have
+    lot of companies producing any kind of device using different standards. In this way we 
+    depend from them and we can't exploit the real power of an home automation system because
+    we do not let every device communicate.
+  </p>
+  
+  <p>
+    To solve this problem we need an hub, which is a small computer that will let your house 
+    talk to the web, without caring at all about the technology devices uses. In this way you 
+    can connect devices that use Zigbee, Konnex, X10 and whatever exists out there and let them 
+    accessible to the web. Its not easy, as you need to have a great knowledge of how those 
+    protocols work out, but once you do it they are accessible.
   </p>
 
   <p>
-    People tend to think that the cause for the low domotics penetration is 
-    price. This is both true and false. Actual domotics systems 
-    are quite expensive, but like all technologies, when they start to spread,
-    costs start to get lower and lower. So why, why home automation is not a reality?
+    An home automation hub gives you several advantages. You have only one place where to handle
+    secure communication and authorization, you can install some extra applications, you can 
+    easily handle an off-line situation when internet does not work and much more. 
   </p>
+
+  <br/>
+  <h2>Conclusions</h2>
 
   <p>
-    <strong>The real problem are the existing domotics companies</strong>. 
-    They create devices that are not able to speak to each other, trying in this way 
-    to keep their market share.  
-    The consequences are the impossibility for devices such as lights, appliances, 
-    security and alarm systems, gas and smoke sensors, multimedia systems, heating 
-    systems to communicate with each other, higher complexities, fewer services, 
-    higher prices and more importantly lot of confusion for the final user.
-  </p>
-
+    We truly think that making every single device smart is the final goal, but in the meantime 
+    we need to face reality and mix these two idea which can easily live together.
   <p>
-    Thinking at home automation as companies do today, will not last long. 
-    <a href="http://www.lelylan.com/blog/why">Lelylan</a> and 
-    new Internet of Things related <a href="http://postscapes.com/companies">Companies</a>
-    will change the way we think at home automation.
+
+  </p>
+    For the braves who wants to start to experiment their first hub, we've listed the 
+    <a href="/blog/boards/">best boards</a> existing out there so that you can start hacking 
+    your house right now. Just buy one of them and <a href="/about/">tell us</a> what you have 
+    done.
   </p>
 
-  <blockquote>
-    <p>
-      Let everyone experiment new services, remove complexities, make devices 
-      communicate and teach people what home automation really means.
-    </p>
-    <small>Mr. Lelylan</small>
-  </blockquote>
-
-  <p>
-    If you think home automation sucks, <a href="/collaborations/">join us now</a>. 
-    We envision a future where our houses will be the ones we have dreamed when we where 
-    child. Don't you love this?
-  </p>
 </div>
 
         <div class="tag-buttons">
           <div class="addthis_toolbox addthis_default_style" 
   style="padding-top: 0px;"
-  addthis:url="http://lelylan.com/blog/sucks/"
-  addthis:title="Why home automation sucks. And why we still love it">
+  addthis:url="http://lelylan.com/blog/access/"
+  addthis:title="Thinking the House for the Web. Smart Devices vs Hubs">
   <a class="addthis_button_hackernews"></a>
   <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
   <a class="addthis_button_tweet" tw:via="lelylan"></a>
@@ -172,6 +184,8 @@
           <div class="tag-buttons">
             
               
+                <a href="/blog/tags/ideas/" class="button big">Ideas</a>
+              
                 <a href="/blog/tags/market/" class="button big">Market</a>
               
             
@@ -182,7 +196,7 @@
   <div id="disqus_thread"></div>
   <script type="text/javascript">
       var disqus_shortname = 'lelylan'; // required: replace example with your forum shortname
-      var disqus_identifier = '/blog/sucks/';
+      var disqus_identifier = '/blog/access/';
       (function() {
           var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
           dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';

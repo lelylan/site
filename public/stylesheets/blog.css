@@ -1,6 +1,7 @@
 #main { float:left; width:640px; margin: 30px 10px 20px 0px; }
 #main h1 {color: #000; font-size: 34px; line-height: 40px; margin: 0px 0 5px 0; font-weight: normal;}
 #main h2 {color: #000; font-size: 28px; line-height: 32px; margin: 0px 0 15px 0; font-weight: normal;}
+#main h3 {margin: 20px 0 10px 0; }
 #main p { margin-bottom: 10px; }
 #main div.article { margin: 20px 0 35px 0px; }
 #main div.summary { margin-bottom: 0px; }
@@ -25,3 +26,4 @@
 #main .article blockquote {margin-top: 10px; }
 #main .article p {line-height: 22px;}
 #main .article ol li { color: #404040; }
+#main table { margin: 20px 0 40px 0; }

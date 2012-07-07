@@ -9,7 +9,7 @@
     <meta name="copyright" content="Copyright © Lelylan">
     <meta name="viewport" content="width=device-width">
 
-    <title>Lelylan Blog | Getting ready to access your house</title>
+    <title>Lelylan Blog | Hacking the house</title>
 
     <link href="/stylesheets/screen.css" type="text/css" rel="stylesheet" media="screen">
     <link href="/stylesheets/boxes.css" type="text/css" rel="stylesheet" media="screen">
@@ -60,8 +60,8 @@
     <div id="page">
       <div id="main">
                 
-        <h1>Getting ready to access your house</h1>
-        <span class="sub">Smart Devices vs Home Automation Hubs</span>
+        <h1>Hacking the house</h1>
+        <span class="sub">Board Computers Compared</span>
         <p>
           Written by <a href="http://twitter.com/andreareginato">Lelylan Chief</a> | Jul 09, 2012
         </p>
@@ -77,72 +77,10 @@
   </ul>
   
   <p>
-    When building an home automation system you need to face different questions like
-    security, availability, connectivity and interoperability between the others. In the 
-    <a href="/blog/electronics/">previous article</a> we pointed out how great is to experiment 
-    and hack devices as they are cheap, but those solutions are not (yet) enough powerful to 
-    feature all we need for a connected device in the house. What if we want to add  SSL, 
-    off-line control, protocols interoperation? We have two solutions: 
-    <strong>single device intelligence</strong>
-    <strong>and home automation hubs.</strong>
-  </p>
-
-  <br/>
-  <h2>Single Device Intelligence</h2>
-
-  <p>
-    This is the best solution and it totally change the way we think at home automation 
-    today. Every device comes out with the ability to connect to the web in a secure way.
-    The scenario is the one where you go to Ikea or the shop down to your house, buy a
-    light, go home, connect it to the web and tell Lelylan it's part of your house.
-  </p>
-
-  <p>
-    This sounds great right. Yes, it does but it has a couple of drawback. The first one is 
-    that every device must be equipped with the ability to directly connect to the web (or to 
-    the router in your house) providing all security features (SSL and authorization logics).
-    This is possible and today we already have the technologies to do this, but it would make 
-    any device way more expensive. 
-  </p>
-
-  <p>
-    Think at a light. Today you pay it $10. What if it suddenly costs you more than $70 just to 
-    be connected to the web? No way, at least not if we think that home automation is for everybody.
-    The good point is that techs are becoming more cheap and more powerful day after day and this 
-    will let us build smart devices for few dollars more really soon.
-  </p>
-
-  <br/>
-  <h2>Home Automation Hub</h2>
-
-  <p>
-    This is the real solution nowadays. Think at the home automation ecosystem today. We have
-    lot of companies producing any kind of device using different standards. In this way we 
-    depend from them and we can't exploit the real power of an home automation system because
-    we do not let every device communicate.
-  </p>
-  
-  <p>
-    To solve this problem we need an hub, which is a small computer that will let your house 
-    talk to the web, without caring at all about the technology devices uses. In this way you 
-    can connect devices that use Zigbee, Konnex, X10 and whatever exists out there and let them 
-    accessible to the web. Its not easy, as you need to have a great knowledge of how those 
-    protocols work out, but once you do it they are accessible.
-  </p>
-
-  <p>
-    An home automation hub gives you several advantages. You have only one place where to handle
-    secure communication and authorization, you can install some extra applications, you can 
-    easily handle an off-line situation when internet does not work and much more. 
-  </p>
-
-  <br/>
-  <h2>Board Computers Compared</h2>
-
-  <p>
-    We think that making every single device smart is the future path, but in the meantime we
-    need to face reality. For made a little research listing the boards out there that could be 
-    a reasonable solution to build your next home automation hub.
+    Have you ever wanted to make your house accessible from the web? In a 
+    <a href="/blog/electronics/">previous article</a> we pointed out the existing solutions 
+    to hack a single device with solutions like Arduino. Now it's time to find out existing 
+    solutions to build an hub which let all of your devices communicate with the web.
   </p>
 
   <h3><a href="http://www.raspberrypi.org/">Raspberry PI</a></h3>
@@ -529,13 +467,20 @@
       </tr>
     </tbody>
   </table>
+
+  </br>
+  <h2>Considerations</h2>
+  <p>
+    This is an opinionated list with the best solutions out there. If you think we are missing
+    a good one  write a comment or <a href="/about/">get in touch</a>.
+  </p>
 </div>
 
         <div class="tag-buttons">
           <div class="addthis_toolbox addthis_default_style" 
   style="padding-top: 0px;"
   addthis:url="http://lelylan.com/blog/boards/"
-  addthis:title="Getting ready to access your house. Smart Devices vs Home Automation Hubs">
+  addthis:title="Hacking the house. Board Computers Compared">
   <a class="addthis_button_hackernews"></a>
   <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
   <a class="addthis_button_tweet" tw:via="lelylan"></a>
@@ -571,11 +516,18 @@
         </div>
 
         
-  </br></br></hr>
-  <h2>Comments</h2>
-  <p>
-     You can head over to <a href="">Hacker News</a> to discuss it.
-  </p>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'lelylan'; // required: replace example with your forum shortname
+      var disqus_identifier = '/blog/boards/';
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
 
  
       </div>
@@ -590,13 +542,13 @@
           <h3>Read more about</h3>
           <ul>
             
-            <li><a href="/blog/tags/hardware/" class="button big ">Hardware</a></li>
-            
-            <li><a href="/blog/tags/iot/" class="button big ">Iot</a></li>
-            
             <li><a href="/blog/tags/ideas/" class="button big ">Ideas</a></li>
             
             <li><a href="/blog/tags/market/" class="button big ">Market</a></li>
+            
+            <li><a href="/blog/tags/hardware/" class="button big ">Hardware</a></li>
+            
+            <li><a href="/blog/tags/iot/" class="button big ">Iot</a></li>
             
           </ul>
         </div>
