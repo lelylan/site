@@ -513,7 +513,7 @@ I"/blog/;T{;{	;I"><!DOCTYPE HTML>
         
   <ul>
     <li>
-      <span class="title"><a href="/blog/access/">Thinking the House for the Web</a></span> -
+      <span class="title"><a href="/blog/access/">Building the House for the Web</a></span> -
       <span class="subtitle"><a href="/blog/access/"><span>S</span>mart <span>D</span>evices <span>v</span>s <span>H</span>ubs</a></span>
     </li>
   </ul>
@@ -628,7 +628,7 @@ I"
 
   <ul>
     <li>
-      <span class="title"><a href="/blog/access/">Thinking the House for the Web</a></span> -
+      <span class="title"><a href="/blog/access/">Building the House for the Web</a></span> -
       <span class="subtitle"><a href="/blog/access/"><span>S</span>mart <span>D</span>evices <span>v</span>s <span>H</span>ubs</a></span>
     </li>
   </ul>
@@ -2275,7 +2275,7 @@ I"Û<div id="textual">
   Prefinery.apply(prefinery_apply_options);
 </script>
 
-;T;@&I"/feed/;T{;{	;I"–ú<!DOCTYPE HTML>
+;T;@&I"/feed/;T{;{	;I"≈ù<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -2346,7 +2346,7 @@ I"Û<div id="textual">
   </author>
   <entry>
     <id>tag:lelylan.com,2012-07-16:/blog/access/</id>
-    <title type="html">Thinking the House for the Web</title>
+    <title type="html">Building the House for the Web</title>
     <published>2012-07-15T22:00:00Z</published>
     <updated>2012-07-15T22:00:00Z</updated>
     <link rel="alternate" href="http://lelylan.com/blog/access/"/>
@@ -2450,10 +2450,16 @@ I"Û<div id="textual">
   &lt;/ul&gt;
   
   &lt;p&gt;
-    Have you ever wanted to make your house accessible from the web? In a 
-    &lt;a href="/blog/electronics/"&gt;previous article&lt;/a&gt; we pointed out the existing solutions 
-    to hack a single device with solutions like Arduino. Now it's time to find out existing 
-    solutions to build an hub which let all of your devices communicate with the web.
+    Have you ever wanted to make your house accessible from the web? 
+    In the &lt;a href="/blog/electronics/"&gt;previous article&lt;/a&gt; we pointed out the existing 
+    solutions to hack a device with boards like Arduino or Nanode. Anyway those solutions 
+    are not (yet) enough powerful go build a secure home automation system.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    We wrote an &lt;a href="/blog/access/"&gt;article talking about this&lt;/a&gt;.
+    Now it's time to find out more powerful solutions to build an home automation hub which 
+    let all of your devices communicate with the web.
   &lt;/p&gt;
 
   &lt;h3&gt;&lt;a href="http://www.raspberrypi.org/"&gt;Raspberry PI&lt;/a&gt;&lt;/h3&gt;
@@ -2845,7 +2851,7 @@ I"Û<div id="textual">
   &lt;h2&gt;Considerations&lt;/h2&gt;
   &lt;p&gt;
     This is an opinionated list with the best solutions out there. If you think we are missing
-    a good one  write a comment or &lt;a href="/about/"&gt;get in touch&lt;/a&gt;.
+    a good one  write a comment or &lt;a href="/about/"&gt;get in touch&lt;/a&gt; with us.
   &lt;/p&gt;
 &lt;/div&gt;</content>
   </entry>
@@ -3337,7 +3343,7 @@ I"Û<div id="textual">
   </body>
 </html>
 ;T;	I"<%= atom_feed %>;T;
-I"¨ã<?xml version="1.0" encoding="UTF-8"?>
+I"°å<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://lelylan.com/</id>
   <title>Lelylan - reThink your house</title>
@@ -3350,7 +3356,7 @@ I"¨ã<?xml version="1.0" encoding="UTF-8"?>
   </author>
   <entry>
     <id>tag:lelylan.com,2012-07-16:/blog/access/</id>
-    <title type="html">Thinking the House for the Web</title>
+    <title type="html">Building the House for the Web</title>
     <published>2012-07-15T22:00:00Z</published>
     <updated>2012-07-15T22:00:00Z</updated>
     <link rel="alternate" href="http://lelylan.com/blog/access/"/>
@@ -3454,10 +3460,16 @@ I"¨ã<?xml version="1.0" encoding="UTF-8"?>
   &lt;/ul&gt;
   
   &lt;p&gt;
-    Have you ever wanted to make your house accessible from the web? In a 
-    &lt;a href="/blog/electronics/"&gt;previous article&lt;/a&gt; we pointed out the existing solutions 
-    to hack a single device with solutions like Arduino. Now it's time to find out existing 
-    solutions to build an hub which let all of your devices communicate with the web.
+    Have you ever wanted to make your house accessible from the web? 
+    In the &lt;a href="/blog/electronics/"&gt;previous article&lt;/a&gt; we pointed out the existing 
+    solutions to hack a device with boards like Arduino or Nanode. Anyway those solutions 
+    are not (yet) enough powerful go build a secure home automation system.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    We wrote an &lt;a href="/blog/access/"&gt;article talking about this&lt;/a&gt;.
+    Now it's time to find out more powerful solutions to build an home automation hub which 
+    let all of your devices communicate with the web.
   &lt;/p&gt;
 
   &lt;h3&gt;&lt;a href="http://www.raspberrypi.org/"&gt;Raspberry PI&lt;/a&gt;&lt;/h3&gt;
@@ -3849,7 +3861,7 @@ I"¨ã<?xml version="1.0" encoding="UTF-8"?>
   &lt;h2&gt;Considerations&lt;/h2&gt;
   &lt;p&gt;
     This is an opinionated list with the best solutions out there. If you think we are missing
-    a good one  write a comment or &lt;a href="/about/"&gt;get in touch&lt;/a&gt;.
+    a good one  write a comment or &lt;a href="/about/"&gt;get in touch&lt;/a&gt; with us.
   &lt;/p&gt;
 &lt;/div&gt;</content>
   </entry>
@@ -4547,7 +4559,7 @@ I"¨ã<?xml version="1.0" encoding="UTF-8"?>
       
       <li class="post two-cols box ">
         <a href="/blog/access/">
-          <span class="strap">Thinking the House for the Web</span>
+          <span class="strap">Building the House for the Web</span>
           <span class="label"><span>S</span>mart <span>D</span>evices <span>v</span>s <span>H</span>ubs
         </a>
       </li>
@@ -4945,7 +4957,7 @@ I"Ï(    <div id="overview">
       
       <li class="post two-cols box ">
         <a href="/blog/access/">
-          <span class="strap">Thinking the House for the Web</span>
+          <span class="strap">Building the House for the Web</span>
           <span class="label"><span>S</span>mart <span>D</span>evices <span>v</span>s <span>H</span>ubs
         </a>
       </li>
@@ -6559,7 +6571,7 @@ I"x
         
   <ul>
     <li>
-      <span class="title"><a href="/blog/access/"><span>T</span>hinking <span>t</span>he <span>H</span>ouse <span>f</span>or <span>t</span>he <span>W</span>eb</a></span> -
+      <span class="title"><a href="/blog/access/"><span>B</span>uilding <span>t</span>he <span>H</span>ouse <span>f</span>or <span>t</span>he <span>W</span>eb</a></span> -
       <span class="subtitle"><a href="/blog/access/"><span>S</span>mart <span>D</span>evices <span>v</span>s <span>H</span>ubs</a></span>
     </li>
   </ul>
@@ -6638,7 +6650,7 @@ I"x
 I"
   <ul>
     <li>
-      <span class="title"><a href="/blog/access/"><span>T</span>hinking <span>t</span>he <span>H</span>ouse <span>f</span>or <span>t</span>he <span>W</span>eb</a></span> -
+      <span class="title"><a href="/blog/access/"><span>B</span>uilding <span>t</span>he <span>H</span>ouse <span>f</span>or <span>t</span>he <span>W</span>eb</a></span> -
       <span class="subtitle"><a href="/blog/access/"><span>S</span>mart <span>D</span>evices <span>v</span>s <span>H</span>ubs</a></span>
     </li>
   </ul>
@@ -6670,7 +6682,7 @@ I"
       <span class="subtitle"><a href="/blog/wish/"><span>S</span>it <span>o</span>n <span>t</span>he <span>C</span>ouch <span>a</span>nd <span>k</span>eep <span>C</span>ontrol <span>o</span>f <span>E</span>verything</a></span>
     </li>
   </ul>
-;T;@SI"/blog/feed/;T{;{;I"¥ã<?xml version="1.0" encoding="UTF-8"?>
+;T;@SI"/blog/feed/;T{;{;I"©å<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://lelylan.com/</id>
   <title>Lelylan - reThink your house</title>
@@ -6683,7 +6695,7 @@ I"
   </author>
   <entry>
     <id>tag:lelylan.com,2012-07-16:/blog/access/</id>
-    <title type="html">Thinking the House for the Web</title>
+    <title type="html">Building the House for the Web</title>
     <published>2012-07-15T22:00:00Z</published>
     <updated>2012-07-15T22:00:00Z</updated>
     <link rel="alternate" href="http://lelylan.com/blog/access/"/>
@@ -6787,10 +6799,16 @@ I"
   &lt;/ul&gt;
   
   &lt;p&gt;
-    Have you ever wanted to make your house accessible from the web? In a 
-    &lt;a href="/blog/electronics/"&gt;previous article&lt;/a&gt; we pointed out the existing solutions 
-    to hack a single device with solutions like Arduino. Now it's time to find out existing 
-    solutions to build an hub which let all of your devices communicate with the web.
+    Have you ever wanted to make your house accessible from the web? 
+    In the &lt;a href="/blog/electronics/"&gt;previous article&lt;/a&gt; we pointed out the existing 
+    solutions to hack a device with boards like Arduino or Nanode. Anyway those solutions 
+    are not (yet) enough powerful go build a secure home automation system.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    We wrote an &lt;a href="/blog/access/"&gt;article talking about this&lt;/a&gt;.
+    Now it's time to find out more powerful solutions to build an home automation hub which 
+    let all of your devices communicate with the web.
   &lt;/p&gt;
 
   &lt;h3&gt;&lt;a href="http://www.raspberrypi.org/"&gt;Raspberry PI&lt;/a&gt;&lt;/h3&gt;
@@ -7182,7 +7200,7 @@ I"
   &lt;h2&gt;Considerations&lt;/h2&gt;
   &lt;p&gt;
     This is an opinionated list with the best solutions out there. If you think we are missing
-    a good one  write a comment or &lt;a href="/about/"&gt;get in touch&lt;/a&gt;.
+    a good one  write a comment or &lt;a href="/about/"&gt;get in touch&lt;/a&gt; with us.
   &lt;/p&gt;
 &lt;/div&gt;</content>
   </entry>
@@ -8006,7 +8024,7 @@ I"
         
   <ul>
     <li>
-      <span class="title"><a href="/blog/access/"><span>T</span>hinking <span>t</span>he <span>H</span>ouse <span>f</span>or <span>t</span>he <span>W</span>eb</a></span> -
+      <span class="title"><a href="/blog/access/"><span>B</span>uilding <span>t</span>he <span>H</span>ouse <span>f</span>or <span>t</span>he <span>W</span>eb</a></span> -
       <span class="subtitle"><a href="/blog/access/"><span>S</span>mart <span>D</span>evices <span>v</span>s <span>H</span>ubs</a></span>
     </li>
   </ul>
@@ -8078,7 +8096,7 @@ I"
 I"÷
   <ul>
     <li>
-      <span class="title"><a href="/blog/access/"><span>T</span>hinking <span>t</span>he <span>H</span>ouse <span>f</span>or <span>t</span>he <span>W</span>eb</a></span> -
+      <span class="title"><a href="/blog/access/"><span>B</span>uilding <span>t</span>he <span>H</span>ouse <span>f</span>or <span>t</span>he <span>W</span>eb</a></span> -
       <span class="subtitle"><a href="/blog/access/"><span>S</span>mart <span>D</span>evices <span>v</span>s <span>H</span>ubs</a></span>
     </li>
   </ul>
@@ -10958,7 +10976,7 @@ I"j
     Here the link for the <a href="/blog/boards/">second part</a>
   </p>
 </div>;T;
-@Ñ;@ÉI"/blog/boards/;T{;{	;I"JC<!DOCTYPE HTML>
+@Ñ;@ÉI"/blog/boards/;T{;{	;I"'D<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -11037,10 +11055,16 @@ I"j
   </ul>
   
   <p>
-    Have you ever wanted to make your house accessible from the web? In a 
-    <a href="/blog/electronics/">previous article</a> we pointed out the existing solutions 
-    to hack a single device with solutions like Arduino. Now it's time to find out existing 
-    solutions to build an hub which let all of your devices communicate with the web.
+    Have you ever wanted to make your house accessible from the web? 
+    In the <a href="/blog/electronics/">previous article</a> we pointed out the existing 
+    solutions to hack a device with boards like Arduino or Nanode. Anyway those solutions 
+    are not (yet) enough powerful go build a secure home automation system.
+  </p>
+
+  <p>
+    We wrote an <a href="/blog/access/">article talking about this</a>.
+    Now it's time to find out more powerful solutions to build an home automation hub which 
+    let all of your devices communicate with the web.
   </p>
 
   <h3><a href="http://www.raspberrypi.org/">Raspberry PI</a></h3>
@@ -11432,7 +11456,7 @@ I"j
   <h2>Considerations</h2>
   <p>
     This is an opinionated list with the best solutions out there. If you think we are missing
-    a good one  write a comment or <a href="/about/">get in touch</a>.
+    a good one  write a comment or <a href="/about/">get in touch</a> with us.
   </p>
 </div>
 
@@ -11524,7 +11548,7 @@ I"j
     </div>
   </body>
 </html>
-;T;	I"¡(<div class="article">
+;T;	I"û)<div class="article">
 
   <ul class="media-grid">
     <li>
@@ -11533,10 +11557,16 @@ I"j
   </ul>
   
   <p>
-    Have you ever wanted to make your house accessible from the web? In a 
-    <a href="/blog/electronics/">previous article</a> we pointed out the existing solutions 
-    to hack a single device with solutions like Arduino. Now it's time to find out existing 
-    solutions to build an hub which let all of your devices communicate with the web.
+    Have you ever wanted to make your house accessible from the web? 
+    In the <a href="/blog/electronics/">previous article</a> we pointed out the existing 
+    solutions to hack a device with boards like Arduino or Nanode. Anyway those solutions 
+    are not (yet) enough powerful go build a secure home automation system.
+  </p>
+
+  <p>
+    We wrote an <a href="/blog/access/">article talking about this</a>.
+    Now it's time to find out more powerful solutions to build an home automation hub which 
+    let all of your devices communicate with the web.
   </p>
 
   <h3><a href="http://www.raspberrypi.org/">Raspberry PI</a></h3>
@@ -11928,7 +11958,7 @@ I"j
   <h2>Considerations</h2>
   <p>
     This is an opinionated list with the best solutions out there. If you think we are missing
-    a good one  write a comment or <a href="/about/">get in touch</a>.
+    a good one  write a comment or <a href="/about/">get in touch</a> with us.
   </p>
 </div>;T;
 @â;@àI"/blog/access/;T{;{	;I")<!DOCTYPE HTML>
@@ -11942,7 +11972,7 @@ I"j
     <meta name="copyright" content="Copyright ¬© Lelylan">
     <meta name="viewport" content="width=device-width">
 
-    <title>Lelylan Blog | Thinking the House for the Web</title>
+    <title>Lelylan Blog | Building the House for the Web</title>
 
     <link href="/stylesheets/screen.css" type="text/css" rel="stylesheet" media="screen">
     <link href="/stylesheets/boxes.css" type="text/css" rel="stylesheet" media="screen">
@@ -11993,7 +12023,7 @@ I"j
     <div id="page">
       <div id="main">
                 
-        <h1>Thinking the House for the Web</h1>
+        <h1>Building the House for the Web</h1>
         <span class="sub">Smart Devices vs Hubs</span>
         <p>
           Written by <a href="http://twitter.com/andreareginato">Lelylan Chief</a> | Jul 16, 2012
@@ -12090,7 +12120,7 @@ I"j
           <div class="addthis_toolbox addthis_default_style" 
   style="padding-top: 0px;"
   addthis:url="http://lelylan.com/blog/access/"
-  addthis:title="Thinking the House for the Web. Smart Devices vs Hubs">
+  addthis:title="Building the House for the Web. Smart Devices vs Hubs">
   <a class="addthis_button_hackernews"></a>
   <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
   <a class="addthis_button_tweet" tw:via="lelylan"></a>
