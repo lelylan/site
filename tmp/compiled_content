@@ -450,7 +450,7 @@
 </script>
 
 ;T:	post@
-I"/blog/;T{;{	;I"><!DOCTYPE HTML>
+I"/blog/;T{;{	;I"3<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -511,13 +511,6 @@ I"/blog/;T{;{	;I"><!DOCTYPE HTML>
     <div id="page">
       <div id="main">
         
-  <ul>
-    <li>
-      <span class="title"><a href="/blog/access/">Building the House for the Web</a></span> -
-      <span class="subtitle"><a href="/blog/access/"><span>S</span>mart <span>D</span>evices <span>v</span>s <span>H</span>ubs</a></span>
-    </li>
-  </ul>
-
   <ul>
     <li>
       <span class="title"><a href="/blog/boards/">Hacking the House</a></span> -
@@ -587,19 +580,19 @@ I"/blog/;T{;{	;I"><!DOCTYPE HTML>
           <ul>
             
             <li>
-              <a href="/blog/tags/ideas/" class="button big ">Ideas</a>
-            </li>
-            
-            <li>
-              <a href="/blog/tags/market/" class="button big ">Market</a>
-            </li>
-            
-            <li>
               <a href="/blog/tags/hardware/" class="button big ">Hardware</a>
             </li>
             
             <li>
               <a href="/blog/tags/iot/" class="button big ">Iot</a>
+            </li>
+            
+            <li>
+              <a href="/blog/tags/ideas/" class="button big ">Ideas</a>
+            </li>
+            
+            <li>
+              <a href="/blog/tags/market/" class="button big ">Market</a>
             </li>
             
           </ul>
@@ -624,15 +617,7 @@ I"/blog/;T{;{	;I"><!DOCTYPE HTML>
     </li>
   </ul>
 <% end %>;T;
-I" 
-
-  <ul>
-    <li>
-      <span class="title"><a href="/blog/access/">Building the House for the Web</a></span> -
-      <span class="subtitle"><a href="/blog/access/"><span>S</span>mart <span>D</span>evices <span>v</span>s <span>H</span>ubs</a></span>
-    </li>
-  </ul>
-
+I"	
   <ul>
     <li>
       <span class="title"><a href="/blog/boards/">Hacking the House</a></span> -
@@ -886,13 +871,13 @@ I"
           <h3>Read more about</h3>
           <ul>
             
-            <li><a href="/blog/tags/ideas/" class="button big ">Ideas</a></li>
-            
-            <li><a href="/blog/tags/market/" class="button big ">Market</a></li>
-            
             <li><a href="/blog/tags/hardware/" class="button big ">Hardware</a></li>
             
             <li><a href="/blog/tags/iot/" class="button big active">Iot</a></li>
+            
+            <li><a href="/blog/tags/ideas/" class="button big ">Ideas</a></li>
+            
+            <li><a href="/blog/tags/market/" class="button big ">Market</a></li>
             
           </ul>
         </div>
@@ -1157,13 +1142,13 @@ I"
           <h3>Read more about</h3>
           <ul>
             
-            <li><a href="/blog/tags/ideas/" class="button big ">Ideas</a></li>
-            
-            <li><a href="/blog/tags/market/" class="button big ">Market</a></li>
-            
             <li><a href="/blog/tags/hardware/" class="button big ">Hardware</a></li>
             
             <li><a href="/blog/tags/iot/" class="button big ">Iot</a></li>
+            
+            <li><a href="/blog/tags/ideas/" class="button big ">Ideas</a></li>
+            
+            <li><a href="/blog/tags/market/" class="button big ">Market</a></li>
             
           </ul>
         </div>
@@ -2275,7 +2260,7 @@ I"Û<div id="textual">
   Prefinery.apply(prefinery_apply_options);
 </script>
 
-;T;@&I"/feed/;T{;{	;I"Œù<!DOCTYPE HTML>
+;T;@&I"/feed/;T{;{	;I"¬¢<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -2345,101 +2330,10 @@ I"Û<div id="textual">
     <uri>http://lelylan.com</uri>
   </author>
   <entry>
-    <id>tag:lelylan.com,2012-07-16:/blog/access/</id>
-    <title type="html">Building the House for the Web</title>
+    <id>tag:lelylan.com,2012-07-16:/blog/boards/</id>
+    <title type="html">Hacking the House</title>
     <published>2012-07-15T22:00:00Z</published>
     <updated>2012-07-15T22:00:00Z</updated>
-    <link rel="alternate" href="http://lelylan.com/blog/access/"/>
-    <content type="html">&lt;div class="article"&gt;
-
-  &lt;ul class="media-grid"&gt;
-    &lt;li&gt;
-      &lt;img class="thumbnail header" src="/images/blog/access/header.png" alt="Building your house hub"&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-  
-  &lt;p&gt;
-    When building an home automation system you need to face different questions like
-    security, availability, connectivity and interoperability between the others. In the 
-    &lt;a href="/blog/electronics/"&gt;previous article&lt;/a&gt; we pointed out how great is to experiment 
-    and hack devices as they are cheap, but those solutions are not (yet) enough powerful to 
-    feature all we need for a connected device in the house. What if we want to add  SSL, 
-    off-line control, protocols interoperation? We have two solutions: 
-    &lt;strong&gt;single device intelligence&lt;/strong&gt; and
-    &lt;strong&gt;home automation hubs.&lt;/strong&gt;
-  &lt;/p&gt;
-
-  &lt;br/&gt;
-  &lt;h2&gt;Single Device Intelligence&lt;/h2&gt;
-
-  &lt;p&gt;
-    This is the best solution and it totally change the way we think at home automation 
-    today. Every device comes out with the ability to connect to the web in a secure way.
-    The scenario is the one where you go to Ikea or the shop down to your house, buy a
-    light, go home, connect it to the web and tell Lelylan it's part of your house.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-    This sounds great right. Yes, it does but it has a couple of drawback. The first one is 
-    that every device must be equipped with the ability to directly connect to the web (or to 
-    the router in your house) providing all security features (SSL and authorization logics).
-    This is possible and today we already have the technologies to do this, but it would make 
-    any device way more expensive. 
-  &lt;/p&gt;
-
-  &lt;p&gt;
-    Think at a light. Today you pay it $10. What if it suddenly costs you more than $70 just to 
-    be connected to the web? No way, at least not if we think that home automation is for everybody.
-    The good point is that techs are becoming more cheap and more powerful day after day and this 
-    will let us build smart devices for few dollars more really soon.
-  &lt;/p&gt;
-
-  &lt;br/&gt;
-  &lt;h2&gt;Home Automation Hub&lt;/h2&gt;
-
-  &lt;p&gt;
-    This is the real solution nowadays. Think at the home automation ecosystem today. We have
-    lot of companies producing any kind of device using different standards. In this way we 
-    depend from them and we can't exploit the real power of an home automation system because
-    we do not let every device communicate.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-    To solve this problem we need an hub, which is a small computer that will let your house 
-    talk to the web, without caring at all about the technology devices uses. In this way you 
-    can connect devices that use Zigbee, Konnex, X10 and whatever exists out there and let them 
-    accessible to the web. Its not easy, as you need to have a great knowledge of how those 
-    protocols work out, but once you do it they are accessible.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-    An home automation hub gives you several advantages. You have only one place where to handle
-    secure communication and authorization, you can install some extra applications, you can 
-    easily handle an off-line situation when internet does not work and much more. 
-  &lt;/p&gt;
-
-  &lt;br/&gt;
-  &lt;h2&gt;Conclusions&lt;/h2&gt;
-
-  &lt;p&gt;
-    We truly think that making every single device smart is the final goal, but in the meantime 
-    we need to face reality and mix these two idea which can easily live together.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-    For the braves who wants to start to experiment their first hub, we've listed the 
-    &lt;a href="/blog/boards/"&gt;best boards&lt;/a&gt; existing out there so that you can start hacking 
-    your house right now. Just buy one of them and &lt;a href="/about/"&gt;tell us&lt;/a&gt; what you have 
-    done.
-  &lt;/p&gt;
-
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <id>tag:lelylan.com,2012-07-09:/blog/boards/</id>
-    <title type="html">Hacking the House</title>
-    <published>2012-07-08T22:00:00Z</published>
-    <updated>2012-07-08T22:00:00Z</updated>
     <link rel="alternate" href="http://lelylan.com/blog/boards/"/>
     <content type="html">&lt;div class="article"&gt;
 
@@ -2450,10 +2344,10 @@ I"Û<div id="textual">
   &lt;/ul&gt;
   
   &lt;p&gt;
-    Have you ever wanted to make your house accessible from the web? 
+    Have you ever wished to make your house accessible from the web? 
     In the &lt;a href="/blog/electronics/"&gt;previous article&lt;/a&gt; we pointed out the existing 
     solutions to hack a device with boards like Arduino or Nanode. Anyway those solutions 
-    are not (yet) enough powerful go build a secure home automation hub.
+    are not (yet) powerful enough to build a secure home automation hub.
   &lt;/p&gt;
 
   &lt;p&gt;
@@ -2628,7 +2522,7 @@ I"Û<div id="textual">
   &lt;h3&gt;&lt;a href="http://beagleboard.org/"&gt;BeagleBoard&lt;/a&gt;&lt;/h3&gt;
 
   &lt;p&gt;
-    The BeagleBoard is an low cost, high performance, low power 
+    The BeagleBoard is a low cost, high performance, low power 
     &lt;a href="http://www.ti.com/omapwireless"&gt;OMAP3&lt;/a&gt; based platform designed 
     by BeagleBoard.org community members. It is open-source and there are hundreds of
     applications developed on top of it.
@@ -3304,6 +3198,142 @@ I"Û<div id="textual">
     You don't need anything else to build your connected house. In this way everyone working 
     in the web can start working on home automation creating &lt;a href="/collaborations/"&gt;
     new cool solutions&lt;/a&gt;.
+  &lt;/p&gt;
+
+&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <id>tag:lelylan.com,2011-12-13:/blog/experts/</id>
+    <title type="html">Home automation: experts' point of view</title>
+    <published>2011-12-12T23:00:00Z</published>
+    <updated>2011-12-12T23:00:00Z</updated>
+    <link rel="alternate" href="http://lelylan.com/blog/experts/"/>
+    <content type="html">&lt;div class="article"&gt;
+  
+  &lt;p&gt;
+    Our last &lt;a href="/blog/sucks"&gt;article&lt;/a&gt; explained why home automation isn't working today,
+    at least for us. The article was deliberately provoking, and we received lots of feedback. 
+    Some were good, some were not, but all of them taught us something. 
+    In this article we decided to sum up some of the most interesting thoughts, to remember
+    how some experts are approaching home automation.
+  &lt;/p&gt;
+
+  &lt;h4&gt;Group #1. Home automation is my precious.&lt;/h4&gt;
+  &lt;blockquote&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="span6"&gt;
+        &lt;p&gt;
+          I Don't think Automation Sucks. &lt;/br&gt;
+          I think Automation is exactly where it should be. &lt;/br&gt;
+          Otherwise the costs would drop, the profits would &lt;/br&gt;
+          follow and the work load would increase...
+        &lt;/p&gt;
+        &lt;small&gt;Mr. Gollum&lt;/small&gt;
+      &lt;/div&gt;
+      &lt;div class="span3"&gt;
+        &lt;ul class="media-grid"&gt;
+          &lt;li&gt;
+            &lt;a href="#"&gt;
+              &lt;img class="thumbnail" src="/images/blog/experts/1.png" alt=""&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/blockquote&gt;
+
+  &lt;p&gt;
+    For some experts the main goal is profit. They do not care about user experience, 
+    services or innovation. They only care about themselves. Their perfect world is 
+    the one where everything is closed and under their control, so they can become rich.
+    They are the winners, absolutely. 
+  &lt;/p&gt;
+
+
+  &lt;h4&gt;Group #2. Homeowners are a nightmare.&lt;/h4&gt;
+  &lt;blockquote&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="span6"&gt;
+        &lt;p&gt;
+          As long as you are dealing with "A Home Owner" you get comments such as; 
+          "it's too big", it's too small", it's too fat", it's too thin", "it 
+          looks funny", "I can't read the text", "isn't there a different 
+          color", "why doesn't it do everything"...
+        &lt;/p&gt;
+        &lt;small&gt;Mr. Nightmare&lt;/small&gt;
+      &lt;/div&gt;
+      &lt;div class="span3"&gt;
+        &lt;ul class="media-grid"&gt;
+          &lt;li&gt;
+            &lt;a href="#"&gt;
+              &lt;img class="thumbnail" src="/images/blog/experts/2.png" alt=""&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/blockquote&gt;
+
+  &lt;p&gt;
+    I think this problem arise when you lack two basic things. 
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;strong&gt;Know what you do&lt;/strong&gt;. Know your 
+        sector and the solutions you can offer. If you don't, clients will start
+        asking for any possible idea they have in mind. 
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;strong&gt;Start saying no&lt;/strong&gt;. The secret of getting half a product instead 
+        of a half-ass product is &lt;a href="http://gettingreal.37signals.com/ch05_Start_With_No.php"&gt;
+        saying no&lt;/a&gt;. If people complain when you don't adopt 
+        their ideas, remind them why they liked the home automation system you 
+        proposed in the first place. I know this is not easy, but it will pay back.
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/p&gt;
+
+
+  
+  &lt;h4&gt;Group #3. You can not play with me, you are not smart.&lt;/small&gt;&lt;/h4&gt;
+  &lt;blockquote&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="span6"&gt;
+        &lt;p&gt;
+          Home automation needs a lot of time, effort and knowledge 
+          and it's a challenge where you can't succed if you don't have 
+          the technical knowledge, pragmatic sensibility to deal 
+          with end-users and a strong project management skills...
+        &lt;/p&gt;
+        &lt;small&gt;Mr. Smart&lt;/small&gt;
+      &lt;/div&gt;
+      &lt;div class="span3"&gt;
+        &lt;ul class="media-grid"&gt;
+          &lt;li&gt;
+            &lt;a href="#"&gt;
+              &lt;img class="thumbnail" src="/images/blog/experts/3.png" alt=""&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/blockquote&gt;
+
+  &lt;p&gt;
+    I didn't know home automation was like getting a degree in astrophysics. For sure
+    home automation is not like playing with Lego (not yet) but if we keep making home
+    automation something so difficult to use, we will never see a connected house in our lives. 
+    Wouldn't be better if every single person who has a specific knowledge could improve 
+    domotics? We &lt;a href="/collaborations/"&gt;think so&lt;/a&gt;.
+  &lt;/p&gt;
+
+  &lt;h4&gt;Conclusions&lt;/h4&gt;
+  &lt;p&gt;
+    Of course, there were other answers making up other groups, even interesting 
+    ones. However, these were the ones that made us think the most. It seems that 
+    most experts in the field of home automation have a limited way of thinking, 
+    referring only to the existing market. Our dream, the birth of an open home 
+    automation system for everyone, appears to be far this way, and
+    this is the reason we are here, a passionate need to change the rules.
   &lt;/p&gt;
 
 &lt;/div&gt;</content>
@@ -3343,7 +3373,7 @@ I"Û<div id="textual">
   </body>
 </html>
 ;T;	I"<%= atom_feed %>;T;
-I"™å<?xml version="1.0" encoding="UTF-8"?>
+I"ûë<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://lelylan.com/</id>
   <title>Lelylan - reThink your house</title>
@@ -3355,101 +3385,10 @@ I"™å<?xml version="1.0" encoding="UTF-8"?>
     <uri>http://lelylan.com</uri>
   </author>
   <entry>
-    <id>tag:lelylan.com,2012-07-16:/blog/access/</id>
-    <title type="html">Building the House for the Web</title>
+    <id>tag:lelylan.com,2012-07-16:/blog/boards/</id>
+    <title type="html">Hacking the House</title>
     <published>2012-07-15T22:00:00Z</published>
     <updated>2012-07-15T22:00:00Z</updated>
-    <link rel="alternate" href="http://lelylan.com/blog/access/"/>
-    <content type="html">&lt;div class="article"&gt;
-
-  &lt;ul class="media-grid"&gt;
-    &lt;li&gt;
-      &lt;img class="thumbnail header" src="/images/blog/access/header.png" alt="Building your house hub"&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-  
-  &lt;p&gt;
-    When building an home automation system you need to face different questions like
-    security, availability, connectivity and interoperability between the others. In the 
-    &lt;a href="/blog/electronics/"&gt;previous article&lt;/a&gt; we pointed out how great is to experiment 
-    and hack devices as they are cheap, but those solutions are not (yet) enough powerful to 
-    feature all we need for a connected device in the house. What if we want to add  SSL, 
-    off-line control, protocols interoperation? We have two solutions: 
-    &lt;strong&gt;single device intelligence&lt;/strong&gt; and
-    &lt;strong&gt;home automation hubs.&lt;/strong&gt;
-  &lt;/p&gt;
-
-  &lt;br/&gt;
-  &lt;h2&gt;Single Device Intelligence&lt;/h2&gt;
-
-  &lt;p&gt;
-    This is the best solution and it totally change the way we think at home automation 
-    today. Every device comes out with the ability to connect to the web in a secure way.
-    The scenario is the one where you go to Ikea or the shop down to your house, buy a
-    light, go home, connect it to the web and tell Lelylan it's part of your house.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-    This sounds great right. Yes, it does but it has a couple of drawback. The first one is 
-    that every device must be equipped with the ability to directly connect to the web (or to 
-    the router in your house) providing all security features (SSL and authorization logics).
-    This is possible and today we already have the technologies to do this, but it would make 
-    any device way more expensive. 
-  &lt;/p&gt;
-
-  &lt;p&gt;
-    Think at a light. Today you pay it $10. What if it suddenly costs you more than $70 just to 
-    be connected to the web? No way, at least not if we think that home automation is for everybody.
-    The good point is that techs are becoming more cheap and more powerful day after day and this 
-    will let us build smart devices for few dollars more really soon.
-  &lt;/p&gt;
-
-  &lt;br/&gt;
-  &lt;h2&gt;Home Automation Hub&lt;/h2&gt;
-
-  &lt;p&gt;
-    This is the real solution nowadays. Think at the home automation ecosystem today. We have
-    lot of companies producing any kind of device using different standards. In this way we 
-    depend from them and we can't exploit the real power of an home automation system because
-    we do not let every device communicate.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-    To solve this problem we need an hub, which is a small computer that will let your house 
-    talk to the web, without caring at all about the technology devices uses. In this way you 
-    can connect devices that use Zigbee, Konnex, X10 and whatever exists out there and let them 
-    accessible to the web. Its not easy, as you need to have a great knowledge of how those 
-    protocols work out, but once you do it they are accessible.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-    An home automation hub gives you several advantages. You have only one place where to handle
-    secure communication and authorization, you can install some extra applications, you can 
-    easily handle an off-line situation when internet does not work and much more. 
-  &lt;/p&gt;
-
-  &lt;br/&gt;
-  &lt;h2&gt;Conclusions&lt;/h2&gt;
-
-  &lt;p&gt;
-    We truly think that making every single device smart is the final goal, but in the meantime 
-    we need to face reality and mix these two idea which can easily live together.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-    For the braves who wants to start to experiment their first hub, we've listed the 
-    &lt;a href="/blog/boards/"&gt;best boards&lt;/a&gt; existing out there so that you can start hacking 
-    your house right now. Just buy one of them and &lt;a href="/about/"&gt;tell us&lt;/a&gt; what you have 
-    done.
-  &lt;/p&gt;
-
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <id>tag:lelylan.com,2012-07-09:/blog/boards/</id>
-    <title type="html">Hacking the House</title>
-    <published>2012-07-08T22:00:00Z</published>
-    <updated>2012-07-08T22:00:00Z</updated>
     <link rel="alternate" href="http://lelylan.com/blog/boards/"/>
     <content type="html">&lt;div class="article"&gt;
 
@@ -3460,10 +3399,10 @@ I"™å<?xml version="1.0" encoding="UTF-8"?>
   &lt;/ul&gt;
   
   &lt;p&gt;
-    Have you ever wanted to make your house accessible from the web? 
+    Have you ever wished to make your house accessible from the web? 
     In the &lt;a href="/blog/electronics/"&gt;previous article&lt;/a&gt; we pointed out the existing 
     solutions to hack a device with boards like Arduino or Nanode. Anyway those solutions 
-    are not (yet) enough powerful go build a secure home automation hub.
+    are not (yet) powerful enough to build a secure home automation hub.
   &lt;/p&gt;
 
   &lt;p&gt;
@@ -3638,7 +3577,7 @@ I"™å<?xml version="1.0" encoding="UTF-8"?>
   &lt;h3&gt;&lt;a href="http://beagleboard.org/"&gt;BeagleBoard&lt;/a&gt;&lt;/h3&gt;
 
   &lt;p&gt;
-    The BeagleBoard is an low cost, high performance, low power 
+    The BeagleBoard is a low cost, high performance, low power 
     &lt;a href="http://www.ti.com/omapwireless"&gt;OMAP3&lt;/a&gt; based platform designed 
     by BeagleBoard.org community members. It is open-source and there are hundreds of
     applications developed on top of it.
@@ -4318,8 +4257,144 @@ I"™å<?xml version="1.0" encoding="UTF-8"?>
 
 &lt;/div&gt;</content>
   </entry>
+  <entry>
+    <id>tag:lelylan.com,2011-12-13:/blog/experts/</id>
+    <title type="html">Home automation: experts' point of view</title>
+    <published>2011-12-12T23:00:00Z</published>
+    <updated>2011-12-12T23:00:00Z</updated>
+    <link rel="alternate" href="http://lelylan.com/blog/experts/"/>
+    <content type="html">&lt;div class="article"&gt;
+  
+  &lt;p&gt;
+    Our last &lt;a href="/blog/sucks"&gt;article&lt;/a&gt; explained why home automation isn't working today,
+    at least for us. The article was deliberately provoking, and we received lots of feedback. 
+    Some were good, some were not, but all of them taught us something. 
+    In this article we decided to sum up some of the most interesting thoughts, to remember
+    how some experts are approaching home automation.
+  &lt;/p&gt;
+
+  &lt;h4&gt;Group #1. Home automation is my precious.&lt;/h4&gt;
+  &lt;blockquote&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="span6"&gt;
+        &lt;p&gt;
+          I Don't think Automation Sucks. &lt;/br&gt;
+          I think Automation is exactly where it should be. &lt;/br&gt;
+          Otherwise the costs would drop, the profits would &lt;/br&gt;
+          follow and the work load would increase...
+        &lt;/p&gt;
+        &lt;small&gt;Mr. Gollum&lt;/small&gt;
+      &lt;/div&gt;
+      &lt;div class="span3"&gt;
+        &lt;ul class="media-grid"&gt;
+          &lt;li&gt;
+            &lt;a href="#"&gt;
+              &lt;img class="thumbnail" src="/images/blog/experts/1.png" alt=""&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/blockquote&gt;
+
+  &lt;p&gt;
+    For some experts the main goal is profit. They do not care about user experience, 
+    services or innovation. They only care about themselves. Their perfect world is 
+    the one where everything is closed and under their control, so they can become rich.
+    They are the winners, absolutely. 
+  &lt;/p&gt;
+
+
+  &lt;h4&gt;Group #2. Homeowners are a nightmare.&lt;/h4&gt;
+  &lt;blockquote&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="span6"&gt;
+        &lt;p&gt;
+          As long as you are dealing with "A Home Owner" you get comments such as; 
+          "it's too big", it's too small", it's too fat", it's too thin", "it 
+          looks funny", "I can't read the text", "isn't there a different 
+          color", "why doesn't it do everything"...
+        &lt;/p&gt;
+        &lt;small&gt;Mr. Nightmare&lt;/small&gt;
+      &lt;/div&gt;
+      &lt;div class="span3"&gt;
+        &lt;ul class="media-grid"&gt;
+          &lt;li&gt;
+            &lt;a href="#"&gt;
+              &lt;img class="thumbnail" src="/images/blog/experts/2.png" alt=""&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/blockquote&gt;
+
+  &lt;p&gt;
+    I think this problem arise when you lack two basic things. 
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;strong&gt;Know what you do&lt;/strong&gt;. Know your 
+        sector and the solutions you can offer. If you don't, clients will start
+        asking for any possible idea they have in mind. 
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;strong&gt;Start saying no&lt;/strong&gt;. The secret of getting half a product instead 
+        of a half-ass product is &lt;a href="http://gettingreal.37signals.com/ch05_Start_With_No.php"&gt;
+        saying no&lt;/a&gt;. If people complain when you don't adopt 
+        their ideas, remind them why they liked the home automation system you 
+        proposed in the first place. I know this is not easy, but it will pay back.
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/p&gt;
+
+
+  
+  &lt;h4&gt;Group #3. You can not play with me, you are not smart.&lt;/small&gt;&lt;/h4&gt;
+  &lt;blockquote&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="span6"&gt;
+        &lt;p&gt;
+          Home automation needs a lot of time, effort and knowledge 
+          and it's a challenge where you can't succed if you don't have 
+          the technical knowledge, pragmatic sensibility to deal 
+          with end-users and a strong project management skills...
+        &lt;/p&gt;
+        &lt;small&gt;Mr. Smart&lt;/small&gt;
+      &lt;/div&gt;
+      &lt;div class="span3"&gt;
+        &lt;ul class="media-grid"&gt;
+          &lt;li&gt;
+            &lt;a href="#"&gt;
+              &lt;img class="thumbnail" src="/images/blog/experts/3.png" alt=""&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/blockquote&gt;
+
+  &lt;p&gt;
+    I didn't know home automation was like getting a degree in astrophysics. For sure
+    home automation is not like playing with Lego (not yet) but if we keep making home
+    automation something so difficult to use, we will never see a connected house in our lives. 
+    Wouldn't be better if every single person who has a specific knowledge could improve 
+    domotics? We &lt;a href="/collaborations/"&gt;think so&lt;/a&gt;.
+  &lt;/p&gt;
+
+  &lt;h4&gt;Conclusions&lt;/h4&gt;
+  &lt;p&gt;
+    Of course, there were other answers making up other groups, even interesting 
+    ones. However, these were the ones that made us think the most. It seems that 
+    most experts in the field of home automation have a limited way of thinking, 
+    referring only to the existing market. Our dream, the birth of an open home 
+    automation system for everyone, appears to be far this way, and
+    this is the reason we are here, a passionate need to change the rules.
+  &lt;/p&gt;
+
+&lt;/div&gt;</content>
+  </entry>
 </feed>
-;T;@,I"/;T{;{	;I":<!DOCTYPE HTML>
+;T;@,I"/;T{;{	;I"Ë9<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -4558,58 +4633,58 @@ I"™å<?xml version="1.0" encoding="UTF-8"?>
     <ul class="content">
       
       <li class="post two-cols box ">
-        <a href="/blog/access/">
-          <span class="strap">Building the House for the Web</span>
-          <span class="label"><span>S</span>mart <span>D</span>evices <span>v</span>s <span>H</span>ubs
-        </a>
-      </li>
-      
-      <li class="post two-cols box last">
         <a href="/blog/boards/">
           <span class="strap">Hacking the House</span>
           <span class="label"><span>B</span>oard <span>C</span>omputers <span>C</span>ompared
         </a>
       </li>
       
-      <li class="post two-cols box ">
+      <li class="post two-cols box last">
         <a href="/blog/electronics/">
           <span class="strap">Hacking the Internet of Things</span>
           <span class="label"><span>H</span>ardware <span>s</span>olutions <span>c</span>ompared
         </a>
       </li>
       
-      <li class="post two-cols box last">
+      <li class="post two-cols box ">
         <a href="/blog/wish/">
           <span class="strap">Dreaming the Connected Home</span>
           <span class="label"><span>S</span>it <span>o</span>n <span>t</span>he <span>C</span>ouch <span>a</span>nd <span>k</span>eep <span>C</span>ontrol <span>o</span>f <span>E</span>verything
         </a>
       </li>
       
-      <li class="post two-cols box ">
+      <li class="post two-cols box last">
         <a href="/blog/simplify/">
           <span class="strap">Simplifying the Connected Home</span>
           <span class="label"><span>U</span>se <span>t</span>he <span>w</span>eb <span>a</span>nd <span>s</span>top <span>b</span>uilding <span>s</span>tandards!
         </a>
       </li>
       
-      <li class="post two-cols box last">
+      <li class="post two-cols box ">
         <a href="/blog/experts/">
           <span class="strap">Home automation: experts' point of view</span>
           <span class="label"><span>A</span>nd <span>w</span>hat <span>d</span>o <span>w</span>e <span>t</span>hink <span>a</span>bout <span>t</span>hem
         </a>
       </li>
       
-      <li class="post two-cols box ">
+      <li class="post two-cols box last">
         <a href="/blog/sucks/">
           <span class="strap">Why home automation sucks</span>
           <span class="label"><span>A</span>nd <span>w</span>hy <span>w</span>e <span>s</span>till <span>l</span>ove <span>i</span>t
         </a>
       </li>
       
-      <li class="post two-cols box last">
+      <li class="post two-cols box ">
         <a href="/blog/iot/">
           <span class="strap">What the hell does #IoT means?</span>
           <span class="label"><span>A</span>n <span>o</span>pinionated <span>p</span>oint <span>o</span>f <span>v</span>iew
+        </a>
+      </li>
+      
+      <li class="post two-cols box last">
+        <a href="/blog/why/">
+          <span class="strap">The connected house</span>
+          <span class="label"><span>W</span>hy <span>L</span>elylan <span>e</span>xists
         </a>
       </li>
       
@@ -4775,7 +4850,7 @@ I"™å<?xml version="1.0" encoding="UTF-8"?>
 </div>
 
 <img src="/images/face.png" class="hidden">;T;
-I"Ï(    <div id="overview">
+I"Œ(    <div id="overview">
       <div class="container centered">
         <div id="headline" class="home">
           <h1>Lelylan, reThink your house</h1>
@@ -4956,58 +5031,58 @@ I"Ï(    <div id="overview">
     <ul class="content">
       
       <li class="post two-cols box ">
-        <a href="/blog/access/">
-          <span class="strap">Building the House for the Web</span>
-          <span class="label"><span>S</span>mart <span>D</span>evices <span>v</span>s <span>H</span>ubs
-        </a>
-      </li>
-      
-      <li class="post two-cols box last">
         <a href="/blog/boards/">
           <span class="strap">Hacking the House</span>
           <span class="label"><span>B</span>oard <span>C</span>omputers <span>C</span>ompared
         </a>
       </li>
       
-      <li class="post two-cols box ">
+      <li class="post two-cols box last">
         <a href="/blog/electronics/">
           <span class="strap">Hacking the Internet of Things</span>
           <span class="label"><span>H</span>ardware <span>s</span>olutions <span>c</span>ompared
         </a>
       </li>
       
-      <li class="post two-cols box last">
+      <li class="post two-cols box ">
         <a href="/blog/wish/">
           <span class="strap">Dreaming the Connected Home</span>
           <span class="label"><span>S</span>it <span>o</span>n <span>t</span>he <span>C</span>ouch <span>a</span>nd <span>k</span>eep <span>C</span>ontrol <span>o</span>f <span>E</span>verything
         </a>
       </li>
       
-      <li class="post two-cols box ">
+      <li class="post two-cols box last">
         <a href="/blog/simplify/">
           <span class="strap">Simplifying the Connected Home</span>
           <span class="label"><span>U</span>se <span>t</span>he <span>w</span>eb <span>a</span>nd <span>s</span>top <span>b</span>uilding <span>s</span>tandards!
         </a>
       </li>
       
-      <li class="post two-cols box last">
+      <li class="post two-cols box ">
         <a href="/blog/experts/">
           <span class="strap">Home automation: experts' point of view</span>
           <span class="label"><span>A</span>nd <span>w</span>hat <span>d</span>o <span>w</span>e <span>t</span>hink <span>a</span>bout <span>t</span>hem
         </a>
       </li>
       
-      <li class="post two-cols box ">
+      <li class="post two-cols box last">
         <a href="/blog/sucks/">
           <span class="strap">Why home automation sucks</span>
           <span class="label"><span>A</span>nd <span>w</span>hy <span>w</span>e <span>s</span>till <span>l</span>ove <span>i</span>t
         </a>
       </li>
       
-      <li class="post two-cols box last">
+      <li class="post two-cols box ">
         <a href="/blog/iot/">
           <span class="strap">What the hell does #IoT means?</span>
           <span class="label"><span>A</span>n <span>o</span>pinionated <span>p</span>oint <span>o</span>f <span>v</span>iew
+        </a>
+      </li>
+      
+      <li class="post two-cols box last">
+        <a href="/blog/why/">
+          <span class="strap">The connected house</span>
+          <span class="label"><span>W</span>hy <span>L</span>elylan <span>e</span>xists
         </a>
       </li>
       
@@ -5416,7 +5491,7 @@ I"Ï(    <div id="overview">
 
   </div>
 </div>;T;
-@9;@8I"/sitemap/;T{;{;I"<?xml version="1.0" encoding="UTF-8"?>
+@9;@8I"/sitemap/;T{;{;I"é<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://lelylan.com/about/</loc>
@@ -5424,12 +5499,8 @@ I"Ï(    <div id="overview">
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://lelylan.com/blog/access/</loc>
-    <lastmod>2012-07-09</lastmod>
-  </url>
-  <url>
     <loc>http://lelylan.com/blog/boards/</loc>
-    <lastmod>2012-07-09</lastmod>
+    <lastmod>2012-07-15</lastmod>
   </url>
   <url>
     <loc>http://lelylan.com/blog/electronics/</loc>
@@ -6297,19 +6368,19 @@ I"Ï(    <div id="overview">
           <ul>
             
             <li>
-              <a href="/blog/tags/ideas/" class="button big ">Ideas</a>
-            </li>
-            
-            <li>
-              <a href="/blog/tags/market/" class="button big ">Market</a>
-            </li>
-            
-            <li>
               <a href="/blog/tags/hardware/" class="button big ">Hardware</a>
             </li>
             
             <li>
               <a href="/blog/tags/iot/" class="button big active">Iot</a>
+            </li>
+            
+            <li>
+              <a href="/blog/tags/ideas/" class="button big ">Ideas</a>
+            </li>
+            
+            <li>
+              <a href="/blog/tags/market/" class="button big ">Market</a>
             </li>
             
           </ul>
@@ -6508,7 +6579,7 @@ I"x
       <span class="subtitle"><a href="/blog/why/"><span>W</span>hy <span>L</span>elylan <span>e</span>xists</a></span>
     </li>
   </ul>
-;T;@MI"/blog/tags/ideas/;T{;{	;I" <!DOCTYPE HTML>
+;T;@MI"/blog/tags/ideas/;T{;{	;I"«<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -6571,13 +6642,6 @@ I"x
         
   <ul>
     <li>
-      <span class="title"><a href="/blog/access/"><span>B</span>uilding <span>t</span>he <span>H</span>ouse <span>f</span>or <span>t</span>he <span>W</span>eb</a></span> -
-      <span class="subtitle"><a href="/blog/access/"><span>S</span>mart <span>D</span>evices <span>v</span>s <span>H</span>ubs</a></span>
-    </li>
-  </ul>
-
-  <ul>
-    <li>
       <span class="title"><a href="/blog/experts/"><span>H</span>ome <span>a</span>utomation: <span>e</span>xperts' <span>p</span>oint <span>o</span>f <span>v</span>iew</a></span> -
       <span class="subtitle"><a href="/blog/experts/"><span>A</span>nd <span>w</span>hat <span>d</span>o <span>w</span>e <span>t</span>hink <span>a</span>bout <span>t</span>hem</a></span>
     </li>
@@ -6617,19 +6681,19 @@ I"x
           <ul>
             
             <li>
-              <a href="/blog/tags/ideas/" class="button big active">Ideas</a>
-            </li>
-            
-            <li>
-              <a href="/blog/tags/market/" class="button big ">Market</a>
-            </li>
-            
-            <li>
               <a href="/blog/tags/hardware/" class="button big ">Hardware</a>
             </li>
             
             <li>
               <a href="/blog/tags/iot/" class="button big ">Iot</a>
+            </li>
+            
+            <li>
+              <a href="/blog/tags/ideas/" class="button big active">Ideas</a>
+            </li>
+            
+            <li>
+              <a href="/blog/tags/market/" class="button big ">Market</a>
             </li>
             
           </ul>
@@ -6647,14 +6711,7 @@ I"x
   </body>
 </html>
 ;T;	I"+<%= render('tags', :tag => 'ideas') %>;T;
-I"
-  <ul>
-    <li>
-      <span class="title"><a href="/blog/access/"><span>B</span>uilding <span>t</span>he <span>H</span>ouse <span>f</span>or <span>t</span>he <span>W</span>eb</a></span> -
-      <span class="subtitle"><a href="/blog/access/"><span>S</span>mart <span>D</span>evices <span>v</span>s <span>H</span>ubs</a></span>
-    </li>
-  </ul>
-
+I"∂
   <ul>
     <li>
       <span class="title"><a href="/blog/experts/"><span>H</span>ome <span>a</span>utomation: <span>e</span>xperts' <span>p</span>oint <span>o</span>f <span>v</span>iew</a></span> -
@@ -6682,7 +6739,7 @@ I"
       <span class="subtitle"><a href="/blog/wish/"><span>S</span>it <span>o</span>n <span>t</span>he <span>C</span>ouch <span>a</span>nd <span>k</span>eep <span>C</span>ontrol <span>o</span>f <span>E</span>verything</a></span>
     </li>
   </ul>
-;T;@SI"/blog/feed/;T{;{;I"≤å<?xml version="1.0" encoding="UTF-8"?>
+;T;@SI"/blog/feed/;T{;{;I"¶ë<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://lelylan.com/</id>
   <title>Lelylan - reThink your house</title>
@@ -6694,101 +6751,10 @@ I"
     <uri>http://lelylan.com</uri>
   </author>
   <entry>
-    <id>tag:lelylan.com,2012-07-16:/blog/access/</id>
-    <title type="html">Building the House for the Web</title>
+    <id>tag:lelylan.com,2012-07-16:/blog/boards/</id>
+    <title type="html">Hacking the House</title>
     <published>2012-07-15T22:00:00Z</published>
     <updated>2012-07-15T22:00:00Z</updated>
-    <link rel="alternate" href="http://lelylan.com/blog/access/"/>
-    <content type="html">&lt;div class="article"&gt;
-
-  &lt;ul class="media-grid"&gt;
-    &lt;li&gt;
-      &lt;img class="thumbnail header" src="/images/blog/access/header.png" alt="Building your house hub"&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-  
-  &lt;p&gt;
-    When building an home automation system you need to face different questions like
-    security, availability, connectivity and interoperability between the others. In the 
-    &lt;a href="/blog/electronics/"&gt;previous article&lt;/a&gt; we pointed out how great is to experiment 
-    and hack devices as they are cheap, but those solutions are not (yet) enough powerful to 
-    feature all we need for a connected device in the house. What if we want to add  SSL, 
-    off-line control, protocols interoperation? We have two solutions: 
-    &lt;strong&gt;single device intelligence&lt;/strong&gt; and
-    &lt;strong&gt;home automation hubs.&lt;/strong&gt;
-  &lt;/p&gt;
-
-  &lt;br/&gt;
-  &lt;h2&gt;Single Device Intelligence&lt;/h2&gt;
-
-  &lt;p&gt;
-    This is the best solution and it totally change the way we think at home automation 
-    today. Every device comes out with the ability to connect to the web in a secure way.
-    The scenario is the one where you go to Ikea or the shop down to your house, buy a
-    light, go home, connect it to the web and tell Lelylan it's part of your house.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-    This sounds great right. Yes, it does but it has a couple of drawback. The first one is 
-    that every device must be equipped with the ability to directly connect to the web (or to 
-    the router in your house) providing all security features (SSL and authorization logics).
-    This is possible and today we already have the technologies to do this, but it would make 
-    any device way more expensive. 
-  &lt;/p&gt;
-
-  &lt;p&gt;
-    Think at a light. Today you pay it $10. What if it suddenly costs you more than $70 just to 
-    be connected to the web? No way, at least not if we think that home automation is for everybody.
-    The good point is that techs are becoming more cheap and more powerful day after day and this 
-    will let us build smart devices for few dollars more really soon.
-  &lt;/p&gt;
-
-  &lt;br/&gt;
-  &lt;h2&gt;Home Automation Hub&lt;/h2&gt;
-
-  &lt;p&gt;
-    This is the real solution nowadays. Think at the home automation ecosystem today. We have
-    lot of companies producing any kind of device using different standards. In this way we 
-    depend from them and we can't exploit the real power of an home automation system because
-    we do not let every device communicate.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-    To solve this problem we need an hub, which is a small computer that will let your house 
-    talk to the web, without caring at all about the technology devices uses. In this way you 
-    can connect devices that use Zigbee, Konnex, X10 and whatever exists out there and let them 
-    accessible to the web. Its not easy, as you need to have a great knowledge of how those 
-    protocols work out, but once you do it they are accessible.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-    An home automation hub gives you several advantages. You have only one place where to handle
-    secure communication and authorization, you can install some extra applications, you can 
-    easily handle an off-line situation when internet does not work and much more. 
-  &lt;/p&gt;
-
-  &lt;br/&gt;
-  &lt;h2&gt;Conclusions&lt;/h2&gt;
-
-  &lt;p&gt;
-    We truly think that making every single device smart is the final goal, but in the meantime 
-    we need to face reality and mix these two idea which can easily live together.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-    For the braves who wants to start to experiment their first hub, we've listed the 
-    &lt;a href="/blog/boards/"&gt;best boards&lt;/a&gt; existing out there so that you can start hacking 
-    your house right now. Just buy one of them and &lt;a href="/about/"&gt;tell us&lt;/a&gt; what you have 
-    done.
-  &lt;/p&gt;
-
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <id>tag:lelylan.com,2012-07-09:/blog/boards/</id>
-    <title type="html">Hacking the House</title>
-    <published>2012-07-08T22:00:00Z</published>
-    <updated>2012-07-08T22:00:00Z</updated>
     <link rel="alternate" href="http://lelylan.com/blog/boards/"/>
     <content type="html">&lt;div class="article"&gt;
 
@@ -6799,10 +6765,10 @@ I"
   &lt;/ul&gt;
   
   &lt;p&gt;
-    Have you ever wanted to make your house accessible from the web? 
+    Have you ever wished to make your house accessible from the web? 
     In the &lt;a href="/blog/electronics/"&gt;previous article&lt;/a&gt; we pointed out the existing 
     solutions to hack a device with boards like Arduino or Nanode. Anyway those solutions 
-    are not (yet) enough powerful go build a secure home automation hub.
+    are not (yet) powerful enough to build a secure home automation hub.
   &lt;/p&gt;
 
   &lt;p&gt;
@@ -6977,7 +6943,7 @@ I"
   &lt;h3&gt;&lt;a href="http://beagleboard.org/"&gt;BeagleBoard&lt;/a&gt;&lt;/h3&gt;
 
   &lt;p&gt;
-    The BeagleBoard is an low cost, high performance, low power 
+    The BeagleBoard is a low cost, high performance, low power 
     &lt;a href="http://www.ti.com/omapwireless"&gt;OMAP3&lt;/a&gt; based platform designed 
     by BeagleBoard.org community members. It is open-source and there are hundreds of
     applications developed on top of it.
@@ -7657,6 +7623,142 @@ I"
 
 &lt;/div&gt;</content>
   </entry>
+  <entry>
+    <id>tag:lelylan.com,2011-12-13:/blog/experts/</id>
+    <title type="html">Home automation: experts' point of view</title>
+    <published>2011-12-12T23:00:00Z</published>
+    <updated>2011-12-12T23:00:00Z</updated>
+    <link rel="alternate" href="http://lelylan.com/blog/experts/"/>
+    <content type="html">&lt;div class="article"&gt;
+  
+  &lt;p&gt;
+    Our last &lt;a href="/blog/sucks"&gt;article&lt;/a&gt; explained why home automation isn't working today,
+    at least for us. The article was deliberately provoking, and we received lots of feedback. 
+    Some were good, some were not, but all of them taught us something. 
+    In this article we decided to sum up some of the most interesting thoughts, to remember
+    how some experts are approaching home automation.
+  &lt;/p&gt;
+
+  &lt;h4&gt;Group #1. Home automation is my precious.&lt;/h4&gt;
+  &lt;blockquote&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="span6"&gt;
+        &lt;p&gt;
+          I Don't think Automation Sucks. &lt;/br&gt;
+          I think Automation is exactly where it should be. &lt;/br&gt;
+          Otherwise the costs would drop, the profits would &lt;/br&gt;
+          follow and the work load would increase...
+        &lt;/p&gt;
+        &lt;small&gt;Mr. Gollum&lt;/small&gt;
+      &lt;/div&gt;
+      &lt;div class="span3"&gt;
+        &lt;ul class="media-grid"&gt;
+          &lt;li&gt;
+            &lt;a href="#"&gt;
+              &lt;img class="thumbnail" src="/images/blog/experts/1.png" alt=""&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/blockquote&gt;
+
+  &lt;p&gt;
+    For some experts the main goal is profit. They do not care about user experience, 
+    services or innovation. They only care about themselves. Their perfect world is 
+    the one where everything is closed and under their control, so they can become rich.
+    They are the winners, absolutely. 
+  &lt;/p&gt;
+
+
+  &lt;h4&gt;Group #2. Homeowners are a nightmare.&lt;/h4&gt;
+  &lt;blockquote&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="span6"&gt;
+        &lt;p&gt;
+          As long as you are dealing with "A Home Owner" you get comments such as; 
+          "it's too big", it's too small", it's too fat", it's too thin", "it 
+          looks funny", "I can't read the text", "isn't there a different 
+          color", "why doesn't it do everything"...
+        &lt;/p&gt;
+        &lt;small&gt;Mr. Nightmare&lt;/small&gt;
+      &lt;/div&gt;
+      &lt;div class="span3"&gt;
+        &lt;ul class="media-grid"&gt;
+          &lt;li&gt;
+            &lt;a href="#"&gt;
+              &lt;img class="thumbnail" src="/images/blog/experts/2.png" alt=""&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/blockquote&gt;
+
+  &lt;p&gt;
+    I think this problem arise when you lack two basic things. 
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;strong&gt;Know what you do&lt;/strong&gt;. Know your 
+        sector and the solutions you can offer. If you don't, clients will start
+        asking for any possible idea they have in mind. 
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;strong&gt;Start saying no&lt;/strong&gt;. The secret of getting half a product instead 
+        of a half-ass product is &lt;a href="http://gettingreal.37signals.com/ch05_Start_With_No.php"&gt;
+        saying no&lt;/a&gt;. If people complain when you don't adopt 
+        their ideas, remind them why they liked the home automation system you 
+        proposed in the first place. I know this is not easy, but it will pay back.
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/p&gt;
+
+
+  
+  &lt;h4&gt;Group #3. You can not play with me, you are not smart.&lt;/small&gt;&lt;/h4&gt;
+  &lt;blockquote&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="span6"&gt;
+        &lt;p&gt;
+          Home automation needs a lot of time, effort and knowledge 
+          and it's a challenge where you can't succed if you don't have 
+          the technical knowledge, pragmatic sensibility to deal 
+          with end-users and a strong project management skills...
+        &lt;/p&gt;
+        &lt;small&gt;Mr. Smart&lt;/small&gt;
+      &lt;/div&gt;
+      &lt;div class="span3"&gt;
+        &lt;ul class="media-grid"&gt;
+          &lt;li&gt;
+            &lt;a href="#"&gt;
+              &lt;img class="thumbnail" src="/images/blog/experts/3.png" alt=""&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/blockquote&gt;
+
+  &lt;p&gt;
+    I didn't know home automation was like getting a degree in astrophysics. For sure
+    home automation is not like playing with Lego (not yet) but if we keep making home
+    automation something so difficult to use, we will never see a connected house in our lives. 
+    Wouldn't be better if every single person who has a specific knowledge could improve 
+    domotics? We &lt;a href="/collaborations/"&gt;think so&lt;/a&gt;.
+  &lt;/p&gt;
+
+  &lt;h4&gt;Conclusions&lt;/h4&gt;
+  &lt;p&gt;
+    Of course, there were other answers making up other groups, even interesting 
+    ones. However, these were the ones that made us think the most. It seems that 
+    most experts in the field of home automation have a limited way of thinking, 
+    referring only to the existing market. Our dream, the birth of an open home 
+    automation system for everyone, appears to be far this way, and
+    this is the reason we are here, a passionate need to change the rules.
+  &lt;/p&gt;
+
+&lt;/div&gt;</content>
+  </entry>
 </feed>
 ;T;	I"<%= atom_feed %>;T;
 @YI"/blog/sucks/;T{;{	;I":%<!DOCTYPE HTML>
@@ -7866,13 +7968,13 @@ I"
           <h3>Read more about</h3>
           <ul>
             
-            <li><a href="/blog/tags/ideas/" class="button big ">Ideas</a></li>
-            
-            <li><a href="/blog/tags/market/" class="button big ">Market</a></li>
-            
             <li><a href="/blog/tags/hardware/" class="button big ">Hardware</a></li>
             
             <li><a href="/blog/tags/iot/" class="button big ">Iot</a></li>
+            
+            <li><a href="/blog/tags/ideas/" class="button big ">Ideas</a></li>
+            
+            <li><a href="/blog/tags/market/" class="button big ">Market</a></li>
             
           </ul>
         </div>
@@ -7961,7 +8063,7 @@ I"
     child. Don't you love this?
   </p>
 </div>;T;
-@_;@^I"/blog/tags/market/;T{;{	;I"Á<!DOCTYPE HTML>
+@_;@^I"/blog/tags/market/;T{;{	;I"é<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -8024,13 +8126,6 @@ I"
         
   <ul>
     <li>
-      <span class="title"><a href="/blog/access/"><span>B</span>uilding <span>t</span>he <span>H</span>ouse <span>f</span>or <span>t</span>he <span>W</span>eb</a></span> -
-      <span class="subtitle"><a href="/blog/access/"><span>S</span>mart <span>D</span>evices <span>v</span>s <span>H</span>ubs</a></span>
-    </li>
-  </ul>
-
-  <ul>
-    <li>
       <span class="title"><a href="/blog/experts/"><span>H</span>ome <span>a</span>utomation: <span>e</span>xperts' <span>p</span>oint <span>o</span>f <span>v</span>iew</a></span> -
       <span class="subtitle"><a href="/blog/experts/"><span>A</span>nd <span>w</span>hat <span>d</span>o <span>w</span>e <span>t</span>hink <span>a</span>bout <span>t</span>hem</a></span>
     </li>
@@ -8063,19 +8158,19 @@ I"
           <ul>
             
             <li>
-              <a href="/blog/tags/ideas/" class="button big ">Ideas</a>
-            </li>
-            
-            <li>
-              <a href="/blog/tags/market/" class="button big active">Market</a>
-            </li>
-            
-            <li>
               <a href="/blog/tags/hardware/" class="button big ">Hardware</a>
             </li>
             
             <li>
               <a href="/blog/tags/iot/" class="button big ">Iot</a>
+            </li>
+            
+            <li>
+              <a href="/blog/tags/ideas/" class="button big ">Ideas</a>
+            </li>
+            
+            <li>
+              <a href="/blog/tags/market/" class="button big active">Market</a>
             </li>
             
           </ul>
@@ -8093,14 +8188,7 @@ I"
   </body>
 </html>
 ;T;	I",<%= render('tags', :tag => 'market') %>;T;
-I"÷
-  <ul>
-    <li>
-      <span class="title"><a href="/blog/access/"><span>B</span>uilding <span>t</span>he <span>H</span>ouse <span>f</span>or <span>t</span>he <span>W</span>eb</a></span> -
-      <span class="subtitle"><a href="/blog/access/"><span>S</span>mart <span>D</span>evices <span>v</span>s <span>H</span>ubs</a></span>
-    </li>
-  </ul>
-
+I"}
   <ul>
     <li>
       <span class="title"><a href="/blog/experts/"><span>H</span>ome <span>a</span>utomation: <span>e</span>xperts' <span>p</span>oint <span>o</span>f <span>v</span>iew</a></span> -
@@ -8387,13 +8475,13 @@ I"÷
           <h3>Read more about</h3>
           <ul>
             
-            <li><a href="/blog/tags/ideas/" class="button big ">Ideas</a></li>
-            
-            <li><a href="/blog/tags/market/" class="button big ">Market</a></li>
-            
             <li><a href="/blog/tags/hardware/" class="button big ">Hardware</a></li>
             
             <li><a href="/blog/tags/iot/" class="button big ">Iot</a></li>
+            
+            <li><a href="/blog/tags/ideas/" class="button big ">Ideas</a></li>
+            
+            <li><a href="/blog/tags/market/" class="button big ">Market</a></li>
             
           </ul>
         </div>
@@ -9052,13 +9140,13 @@ I"÷
           <h3>Read more about</h3>
           <ul>
             
-            <li><a href="/blog/tags/ideas/" class="button big ">Ideas</a></li>
-            
-            <li><a href="/blog/tags/market/" class="button big ">Market</a></li>
-            
             <li><a href="/blog/tags/hardware/" class="button big ">Hardware</a></li>
             
             <li><a href="/blog/tags/iot/" class="button big ">Iot</a></li>
+            
+            <li><a href="/blog/tags/ideas/" class="button big ">Ideas</a></li>
+            
+            <li><a href="/blog/tags/market/" class="button big ">Market</a></li>
             
           </ul>
         </div>
@@ -9405,13 +9493,13 @@ I"÷
           <h3>Read more about</h3>
           <ul>
             
-            <li><a href="/blog/tags/ideas/" class="button big ">Ideas</a></li>
-            
-            <li><a href="/blog/tags/market/" class="button big ">Market</a></li>
-            
             <li><a href="/blog/tags/hardware/" class="button big ">Hardware</a></li>
             
             <li><a href="/blog/tags/iot/" class="button big ">Iot</a></li>
+            
+            <li><a href="/blog/tags/ideas/" class="button big ">Ideas</a></li>
+            
+            <li><a href="/blog/tags/market/" class="button big ">Market</a></li>
             
           </ul>
         </div>
@@ -10304,19 +10392,19 @@ I"÷
           <ul>
             
             <li>
-              <a href="/blog/tags/ideas/" class="button big ">Ideas</a>
-            </li>
-            
-            <li>
-              <a href="/blog/tags/market/" class="button big ">Market</a>
-            </li>
-            
-            <li>
               <a href="/blog/tags/hardware/" class="button big active">Hardware</a>
             </li>
             
             <li>
               <a href="/blog/tags/iot/" class="button big ">Iot</a>
+            </li>
+            
+            <li>
+              <a href="/blog/tags/ideas/" class="button big ">Ideas</a>
+            </li>
+            
+            <li>
+              <a href="/blog/tags/market/" class="button big ">Market</a>
             </li>
             
           </ul>
@@ -10716,13 +10804,13 @@ I"j
           <h3>Read more about</h3>
           <ul>
             
-            <li><a href="/blog/tags/ideas/" class="button big ">Ideas</a></li>
-            
-            <li><a href="/blog/tags/market/" class="button big ">Market</a></li>
-            
             <li><a href="/blog/tags/hardware/" class="button big ">Hardware</a></li>
             
             <li><a href="/blog/tags/iot/" class="button big ">Iot</a></li>
+            
+            <li><a href="/blog/tags/ideas/" class="button big ">Ideas</a></li>
+            
+            <li><a href="/blog/tags/market/" class="button big ">Market</a></li>
             
           </ul>
         </div>
@@ -10976,7 +11064,7 @@ I"j
     Here the link for the <a href="/blog/boards/">second part</a>
   </p>
 </div>;T;
-@Ñ;@ÉI"/blog/boards/;T{;{	;I",D<!DOCTYPE HTML>
+@Ñ;@ÉI"/blog/boards/;T{;{	;I"+D<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -11041,7 +11129,7 @@ I"j
         <h1>Hacking the House</h1>
         <span class="sub">Board Computers Compared</span>
         <p>
-          Written by <a href="http://twitter.com/andreareginato">Lelylan Chief</a> | Jul 09, 2012
+          Written by <a href="http://twitter.com/andreareginato">Lelylan Chief</a> | Jul 16, 2012
         </p>
         
  
@@ -11055,10 +11143,10 @@ I"j
   </ul>
   
   <p>
-    Have you ever wanted to make your house accessible from the web? 
+    Have you ever wished to make your house accessible from the web? 
     In the <a href="/blog/electronics/">previous article</a> we pointed out the existing 
     solutions to hack a device with boards like Arduino or Nanode. Anyway those solutions 
-    are not (yet) enough powerful go build a secure home automation hub.
+    are not (yet) powerful enough to build a secure home automation hub.
   </p>
 
   <p>
@@ -11233,7 +11321,7 @@ I"j
   <h3><a href="http://beagleboard.org/">BeagleBoard</a></h3>
 
   <p>
-    The BeagleBoard is an low cost, high performance, low power 
+    The BeagleBoard is a low cost, high performance, low power 
     <a href="http://www.ti.com/omapwireless">OMAP3</a> based platform designed 
     by BeagleBoard.org community members. It is open-source and there are hundreds of
     applications developed on top of it.
@@ -11526,13 +11614,13 @@ I"j
           <h3>Read more about</h3>
           <ul>
             
-            <li><a href="/blog/tags/ideas/" class="button big ">Ideas</a></li>
-            
-            <li><a href="/blog/tags/market/" class="button big ">Market</a></li>
-            
             <li><a href="/blog/tags/hardware/" class="button big ">Hardware</a></li>
             
             <li><a href="/blog/tags/iot/" class="button big ">Iot</a></li>
+            
+            <li><a href="/blog/tags/ideas/" class="button big ">Ideas</a></li>
+            
+            <li><a href="/blog/tags/market/" class="button big ">Market</a></li>
             
           </ul>
         </div>
@@ -11548,7 +11636,7 @@ I"j
     </div>
   </body>
 </html>
-;T;	I"£)<div class="article">
+;T;	I"¢)<div class="article">
 
   <ul class="media-grid">
     <li>
@@ -11557,10 +11645,10 @@ I"j
   </ul>
   
   <p>
-    Have you ever wanted to make your house accessible from the web? 
+    Have you ever wished to make your house accessible from the web? 
     In the <a href="/blog/electronics/">previous article</a> we pointed out the existing 
     solutions to hack a device with boards like Arduino or Nanode. Anyway those solutions 
-    are not (yet) enough powerful go build a secure home automation hub.
+    are not (yet) powerful enough to build a secure home automation hub.
   </p>
 
   <p>
@@ -11735,7 +11823,7 @@ I"j
   <h3><a href="http://beagleboard.org/">BeagleBoard</a></h3>
 
   <p>
-    The BeagleBoard is an low cost, high performance, low power 
+    The BeagleBoard is a low cost, high performance, low power 
     <a href="http://www.ti.com/omapwireless">OMAP3</a> based platform designed 
     by BeagleBoard.org community members. It is open-source and there are hundreds of
     applications developed on top of it.
