@@ -30,8 +30,8 @@
     and hack devices as they are cheap, but those solutions are not (yet) enough powerful to 
     feature all we need for a connected device in the house. What if we want to add  SSL, 
     off-line control, protocols interoperation? We have two solutions: 
-    &lt;strong&gt;single device intelligence&lt;/strong&gt;
-    &lt;strong&gt;and home automation hubs.&lt;/strong&gt;
+    &lt;strong&gt;single device intelligence&lt;/strong&gt; and
+    &lt;strong&gt;home automation hubs.&lt;/strong&gt;
   &lt;/p&gt;
 
   &lt;br/&gt;
@@ -68,7 +68,7 @@
     depend from them and we can't exploit the real power of an home automation system because
     we do not let every device communicate.
   &lt;/p&gt;
-  
+
   &lt;p&gt;
     To solve this problem we need an hub, which is a small computer that will let your house 
     talk to the web, without caring at all about the technology devices uses. In this way you 
@@ -89,9 +89,9 @@
   &lt;p&gt;
     We truly think that making every single device smart is the final goal, but in the meantime 
     we need to face reality and mix these two idea which can easily live together.
-  &lt;p&gt;
-
   &lt;/p&gt;
+
+  &lt;p&gt;
     For the braves who wants to start to experiment their first hub, we've listed the 
     &lt;a href="/blog/boards/"&gt;best boards&lt;/a&gt; existing out there so that you can start hacking 
     your house right now. Just buy one of them and &lt;a href="/about/"&gt;tell us&lt;/a&gt; what you have 
@@ -102,7 +102,7 @@
   </entry>
   <entry>
     <id>tag:lelylan.com,2012-07-09:/blog/boards/</id>
-    <title type="html">Hacking the house</title>
+    <title type="html">Hacking the House</title>
     <published>2012-07-08T22:00:00Z</published>
     <updated>2012-07-08T22:00:00Z</updated>
     <link rel="alternate" href="http://lelylan.com/blog/boards/"/>
@@ -118,11 +118,11 @@
     Have you ever wanted to make your house accessible from the web? 
     In the &lt;a href="/blog/electronics/"&gt;previous article&lt;/a&gt; we pointed out the existing 
     solutions to hack a device with boards like Arduino or Nanode. Anyway those solutions 
-    are not (yet) enough powerful go build a secure home automation system.
+    are not (yet) enough powerful go build a secure home automation hub.
   &lt;/p&gt;
 
   &lt;p&gt;
-    We wrote an &lt;a href="/blog/access/"&gt;article talking about this&lt;/a&gt;.
+    &lt;!--We wrote an &lt;a href="/blog/access/"&gt;article talking about this&lt;/a&gt;.--&gt;
     Now it's time to find out more powerful solutions to build an home automation hub which 
     let all of your devices communicate with the web.
   &lt;/p&gt;
@@ -458,7 +458,7 @@
   &lt;h3&gt;&lt;a href="http://www.ionicsplug.com/"&gt;Ionics Plug&lt;/a&gt;&lt;/h3&gt;
 
   &lt;p&gt;
-    Plug computer with main focus on connectivity and low price. Ionos, comes from the same
+    Plug computer with main focus on connectivity and low price. Ionics, comes from the same
     family of Sheevaplug computers, but with lower prices and better features. For sure one 
     of the best solutions whenever you want to use a Plug Computer and you are searching for
     advanced wireless capabilities (WifI, Zigbee and Z-Wave ).
