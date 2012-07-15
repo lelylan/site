@@ -2,13 +2,289 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://lelylan.com/</id>
   <title>Lelylan - reThink your house</title>
-  <updated>2012-07-15T22:00:00Z</updated>
+  <updated>2012-07-29T22:00:00Z</updated>
   <link rel="alternate" href="http://lelylan.com/"/>
   <link rel="self" href="http://lelylan.com/blog/feed.xml"/>
   <author>
     <name>Lelylan Team</name>
     <uri>http://lelylan.com</uri>
   </author>
+  <entry>
+    <id>tag:lelylan.com,2012-07-30:/blog/cosm/</id>
+    <title type="html">Cosm (aka Pachube)</title>
+    <published>2012-07-29T22:00:00Z</published>
+    <updated>2012-07-29T22:00:00Z</updated>
+    <link rel="alternate" href="http://lelylan.com/blog/cosm/"/>
+    <content type="html">&lt;div class="article"&gt;
+
+  &lt;br/&gt;
+
+  &lt;ul class="media-grid"&gt;
+    &lt;li&gt;
+      &lt;a href="http://cosm.com"&gt;&lt;img class="thumbnail" src="/images/blog/cosm/header.png" alt="Cosm"&gt;&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;
+    COSM is a platform which enables you to store, share and discover real-time sensor, 
+    energy and environment data from devices and sensors. Cosm provides most of its 
+    functionality through its API, rather than through its web site, giving to developers
+    a full set of services that we will be studying in this article.
+  &lt;/p&gt;
+
+  &lt;h2&gt;Once upon a time was Pachube&lt;/h2&gt;
+
+  &lt;p&gt;
+    When it started, around 4 years ago, its name was Pachube. It was ideally suited 
+    for visualizing data from sensors connected to the physical world. The main concepts 
+    on which Pachube came to life was two: feeds and datastreams.
+  &lt;/p&gt;
+
+    &lt;ul class="unstyled"&gt;
+      &lt;li&gt;&lt;code&gt;Feeds&lt;/code&gt; Usually a location (e.g. office and house).&lt;/li&gt;
+      &lt;li&gt;&lt;code&gt;Datastreams&lt;/code&gt; The physical device associated to the location
+        (e.g. sensors and power meters).&lt;/li&gt;
+    &lt;/ul&gt;
+
+  &lt;p&gt;
+    Few months ago, it had a facelift and it changed its name to Cosm. Cosm is everything 
+    you know and love about Pachube, with more power to connect and build the Internet of 
+    Things today. The data about Cosm is quite impressive. It manages millions of datapoints 
+    per day from thousands of individuals, organisations and companies around the world. Data 
+    can be pushed from the sensor end, or pulled by the Cosm servers, with the data feeds 
+    then made available in multiple formats at no charge.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    In its new vest Cosm tries to to be a social network for the Internet of Things, but how
+    reported &lt;a href="http://www.readwriteweb.com/archives/cosm-disappointing-re-design-by-internet-of-things-pioneer-pachube.php"&gt;Read Write Web&lt;/a&gt;,
+    at least two problems raised. The first one is that Cosm tries to be now mainstream, it
+    tries to be "for everybody", but it is not ready for this step. Its UI is not enough
+    intuitive. Second, when you go into the console you can't do that much, at least if 
+    you do not have an Arduino. After a while you just leave it. This is an extract I really 
+    like of the RWW article.
+  &lt;/p&gt;
+
+  &lt;blockquote&gt;
+    &lt;p&gt;
+    I'm being a little hard on Cosm, because I was expecting something more user friendly. However, 
+    I still buy into the vision for Cosm. In the not too distant future, we will indeed manage various 
+    feeds from household and other devices...
+    &lt;/p&gt;
+  &lt;/blockquote&gt;
+
+  &lt;p&gt;
+    After studying their APIs we think Cosm is a great product. It has almost all
+    the services needed to build the Internet of Thing and when hardware producers will
+    realize that, it will start making big numbers. Enough introduction, it's API time.
+  &lt;/p&gt;
+
+  &lt;h2&gt;Cosm APIs&lt;/h2&gt;
+
+  &lt;p&gt;
+    The &lt;a href="https://cosm.com/docs/quickstart"&gt;API documentation&lt;/a&gt; is complete. There is 
+    quickstart that let you create your first feed following a step by step wizard. Although it
+    is clear and well prepared, we didn't like the idea of importing the Twitter feed in Cosm as
+    first example as it's not a use case for the Internet of Things. This said lets dig into the 
+    services.
+  &lt;/p&gt;
+
+  &lt;h3&gt;&lt;a href="https://cosm.com/docs/v2/feed/"&gt;FEEDS&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+    Represents a group of datastreams. It is used to represent some locations like your 
+    house or your office. Interesting the ability to tag the feeds to make them easily 
+    searchable and also the ability to set latitude and longitude to enable geospatial queries.
+  &lt;p&gt;
+  
+  &lt;h3&gt;&lt;a href="https://cosm.com/docs/v2/datastream/"&gt;DATASTREAMS&lt;/a&gt;&lt;/h3&gt;
+  
+  &lt;p&gt;
+    A datastream represents an individual sensor/device stream within an environment like
+    powermeters, lights or geiger counters. In here the values related to the physical 
+    device properties are stored.
+  &lt;/p&gt;
+
+  &lt;h3&gt;&lt;a href="https://cosm.com/docs/v2/datapoint/"&gt;DATAPOINTS&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+    A datapoint represents the value in a specific moment of the datastream life. This 
+    enables you to insert datapoints into the history of the datastream.
+  &lt;/p&gt;
+
+  &lt;h3&gt;&lt;a href="https://cosm.com/docs/v2/api_key/"&gt;API KEYS&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+    Cosm lets you create API keys with granular permissions. Keys are composed of different 
+    sets of permissions, so for example a key could be created that allows read only access 
+    all public resources or allows write access to one specific feed, from one specific IP 
+    address. Those are the most important properties in the key resource.
+  &lt;/p&gt;
+
+  &lt;ul class="unstyled"&gt;
+    &lt;li&gt;&lt;code&gt;expires_at&lt;/code&gt; Gives a temporary limit.&lt;/li&gt;
+    &lt;li&gt;&lt;code&gt;private_access&lt;/code&gt; Flag if this key can access private resources.&lt;/li&gt;
+    &lt;li&gt;&lt;code&gt;permissions&lt;/code&gt; List of access level.&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;
+    The permission structure is itself another resource where hose are the most interesting 
+    properties you should be aware of.
+  &lt;/p&gt;
+
+  &lt;ul class="unstyled"&gt;
+    &lt;li&gt;&lt;code&gt;access_method&lt;/code&gt; An array containing one or more of [get, put, post, delete].&lt;/li&gt;
+    &lt;li&gt;&lt;code&gt;source_ip&lt;/code&gt; An IP address that access should be restricted to,
+    &lt;li&gt;&lt;code&gt;minimum_interval&lt;/code&gt; Can be used to create a key that can only request data 
+      with a certain resolution.&lt;/li&gt;
+    &lt;li&gt;&lt;code&gt;resources&lt;/code&gt; An optional collection of resources restricting access 
+      to specific feeds or datastreams.&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;h3&gt;&lt;a href="https://cosm.com/docs/v2/trigger/"&gt;TRIGGERS&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+    Triggers fire HTTP POST requests to a URL of your choice when conditions that you 
+    set up on a datastream have been satisfied (e.g. value change, value exceeds threshold, 
+    value equals, etc.).
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    This service can be useful in different scenarios. For example to turn off the cooling 
+    system when a window is open or when the water for your flowers is finished. In this way,
+    using a webhook mechanism you can connect Cosm feeds and datastreams with any other app.
+  &lt;/p&gt;
+
+  &lt;h3&gt;&lt;a href="https://cosm.com/docs/v2/user/"&gt;USERS&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+    User are ideally a powerful concept, as there are some situations where you have
+    to create new people, so that you can let them access your resources for a limited 
+    period of time. Unluckily the resource is not open and you have to make request to 
+    Cosm if you want to use it.
+  &lt;/p&gt;
+
+  &lt;h3&gt;&lt;a href="https://cosm.com/docs/v2/history.html"&gt;HISTORICAL QUERY&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+    Gives the ability to make queries for ranges of historical data at datastream level
+    as well as at the environment level, using formatted dates. The API lets you set the
+    param &lt;code&gt;interval&lt;/code&gt;, which can be pretty useful to reduce the amount of retrieved
+    data letting you get back the historical resources with intervals of 30 seconds, one minute,
+    5 minutes and so on.
+  &lt;/p&gt;
+
+
+  &lt;h2&gt;Beta features&lt;/h2&gt;
+
+  &lt;p&gt;
+    Cosm is delivering also different &lt;a href="https://cosm.com/docs/beta/"&gt;beta&lt;/a&gt; features, 
+    which are just delicious.
+  &lt;/p&gt;
+
+  &lt;h3&gt;&lt;a href="https://cosm.com/docs/beta/group/"&gt;GROUPS&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+    Groups can be used for two main reasons: organize both users and feeds, and create 
+    more advanced access rules for private feeds. If used rightly, they can make your 
+    system much more flexible and open the other users.
+  &lt;/p&gt;
+
+  &lt;h3&gt;&lt;a href="https://cosm.com/docs/beta/permission/"&gt;PERMISSIONS&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+    The permissions API allows you to get information about what an API Key is allowed to 
+    do.
+  &lt;p&gt;
+
+  &lt;h3&gt;&lt;a href="https://cosm.com/docs/beta/socket_server/"&gt;SOCKET SERVER&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+    Paws is the Cosm Advanced Web-scale Socket-server. It is designed to make writing 
+    clients which require real-time push notifications as easy as possible.
+  &lt;/p&gt;
+
+  &lt;h3&gt;&lt;a href="https://cosm.com/docs/beta/mqtt/"&gt;MQTT&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+    The Cosm MQTT Bridge is a simple way to interact with Cosm directly from any MQTT
+    enabled platform. It provides full API interaction, as well as push notifications
+    and subscriptions.
+  &lt;/p&gt;
+
+  &lt;h3&gt;&lt;a href="https://cosm.com/docs/beta/oauth/"&gt;OAUTH2&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+    OAuth2 is a method for allowing third-party application access to your resources 
+    without giving them access to your username and password. It is used by most major 
+    websites including Facebook and Twitter and its biggest strength lies on its ability 
+    to let the user have a full control of its resources.
+  &lt;/p&gt;
+
+  &lt;h2&gt;Provisioning beta. A delicious service&lt;/h2&gt;
+
+  &lt;p&gt;
+    The &lt;a href="https://cosm.com/docs/beta/device_management/provisioning/"&gt;provisioning&lt;/a&gt; 
+    service is just awesome. Provisioning is the process of a device getting its configuration 
+    in order to be able to send data to Cosm. This service simplify our lives when thinking 
+    at the physical world allowing the owner of the device to 'claim' it. For example once 
+    your device is plugged in and online, you might go to its website, enter your serial 
+    number and claim it there, and this would all be done using the provisioning APIs.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    When the physical device is plugged in this is what happens.
+  &lt;/p&gt;
+
+  &lt;ol&gt;
+    &lt;li&gt;It sends an activation code to the provisioning API.&lt;/li&gt;
+    &lt;li&gt;The API creates a feed (which can be preconfigured).&lt;/li&gt;
+    &lt;li&gt;The API creates an API key that is sent to the device. This key will be used by 
+      the physical device to authenticate itself when sending updates.&lt;/li&gt;
+  &lt;/ol&gt;
+
+  &lt;p&gt;
+    Without getting into the details Cosm let you define two resources. The first one is the 
+    &lt;a href="https://cosm.com/docs/beta/device_management/api/device_model/"&gt;Device Model&lt;/a&gt; 
+    and it represents a class of devices, like the "Boxee" and the second is 
+    &lt;a href="https://cosm.com/docs/beta/device_management/api/device/"&gt;Device&lt;/a&gt;, 
+    which represents an individual device with its own serial number.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    Without going further, go and read the &lt;a href="https://cosm.com/docs/beta/device_management/provisioning/"&gt;documentation&lt;/a&gt;.
+    It will worth it.
+  &lt;/p&gt;
+
+  &lt;h2&gt;Conclusions&lt;/h2&gt;
+
+  &lt;p&gt;
+    As we said before the Cosm API documentation is complete and they offer all the services
+    we need to build the Internet of Things. We are sure that next year, when more hardware 
+    will arise on top of Cosm, great results will come.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    As always there are some spots for improvements. In particular there were some errors on 
+    the documentation on the datastream curl examples, and we found the documentation way too
+    verbose on describing some basic concepts. It would be way better to have some real examples
+    describing advanced usage scenarios.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    About the API design, Cosm has been following the REST architecture, but the connectedness 
+    has not been respected. It would be really nice to have, for example, the datastream links
+    into the feed representations. Sure, they are details, but we care about this, don't we? :)
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    Tell us what you think and which one is the next Internet of Things startup you want us to 
+    check, as this is the first article of a series that want to get in deep on how Internet of
+    Things APIs are built.
+  &lt;/p&gt;
+
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <id>tag:lelylan.com,2012-07-16:/blog/boards/</id>
     <title type="html">Hacking the House</title>
@@ -878,142 +1154,6 @@
     You don't need anything else to build your connected house. In this way everyone working 
     in the web can start working on home automation creating &lt;a href="/collaborations/"&gt;
     new cool solutions&lt;/a&gt;.
-  &lt;/p&gt;
-
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <id>tag:lelylan.com,2011-12-13:/blog/experts/</id>
-    <title type="html">Home automation: experts' point of view</title>
-    <published>2011-12-12T23:00:00Z</published>
-    <updated>2011-12-12T23:00:00Z</updated>
-    <link rel="alternate" href="http://lelylan.com/blog/experts/"/>
-    <content type="html">&lt;div class="article"&gt;
-  
-  &lt;p&gt;
-    Our last &lt;a href="/blog/sucks"&gt;article&lt;/a&gt; explained why home automation isn't working today,
-    at least for us. The article was deliberately provoking, and we received lots of feedback. 
-    Some were good, some were not, but all of them taught us something. 
-    In this article we decided to sum up some of the most interesting thoughts, to remember
-    how some experts are approaching home automation.
-  &lt;/p&gt;
-
-  &lt;h4&gt;Group #1. Home automation is my precious.&lt;/h4&gt;
-  &lt;blockquote&gt;
-    &lt;div class="row"&gt;
-      &lt;div class="span6"&gt;
-        &lt;p&gt;
-          I Don't think Automation Sucks. &lt;/br&gt;
-          I think Automation is exactly where it should be. &lt;/br&gt;
-          Otherwise the costs would drop, the profits would &lt;/br&gt;
-          follow and the work load would increase...
-        &lt;/p&gt;
-        &lt;small&gt;Mr. Gollum&lt;/small&gt;
-      &lt;/div&gt;
-      &lt;div class="span3"&gt;
-        &lt;ul class="media-grid"&gt;
-          &lt;li&gt;
-            &lt;a href="#"&gt;
-              &lt;img class="thumbnail" src="/images/blog/experts/1.png" alt=""&gt;
-            &lt;/a&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/blockquote&gt;
-
-  &lt;p&gt;
-    For some experts the main goal is profit. They do not care about user experience, 
-    services or innovation. They only care about themselves. Their perfect world is 
-    the one where everything is closed and under their control, so they can become rich.
-    They are the winners, absolutely. 
-  &lt;/p&gt;
-
-
-  &lt;h4&gt;Group #2. Homeowners are a nightmare.&lt;/h4&gt;
-  &lt;blockquote&gt;
-    &lt;div class="row"&gt;
-      &lt;div class="span6"&gt;
-        &lt;p&gt;
-          As long as you are dealing with "A Home Owner" you get comments such as; 
-          "it's too big", it's too small", it's too fat", it's too thin", "it 
-          looks funny", "I can't read the text", "isn't there a different 
-          color", "why doesn't it do everything"...
-        &lt;/p&gt;
-        &lt;small&gt;Mr. Nightmare&lt;/small&gt;
-      &lt;/div&gt;
-      &lt;div class="span3"&gt;
-        &lt;ul class="media-grid"&gt;
-          &lt;li&gt;
-            &lt;a href="#"&gt;
-              &lt;img class="thumbnail" src="/images/blog/experts/2.png" alt=""&gt;
-            &lt;/a&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/blockquote&gt;
-
-  &lt;p&gt;
-    I think this problem arise when you lack two basic things. 
-    &lt;ol&gt;
-      &lt;li&gt;
-        &lt;strong&gt;Know what you do&lt;/strong&gt;. Know your 
-        sector and the solutions you can offer. If you don't, clients will start
-        asking for any possible idea they have in mind. 
-      &lt;/li&gt;
-      &lt;li&gt;
-      &lt;strong&gt;Start saying no&lt;/strong&gt;. The secret of getting half a product instead 
-        of a half-ass product is &lt;a href="http://gettingreal.37signals.com/ch05_Start_With_No.php"&gt;
-        saying no&lt;/a&gt;. If people complain when you don't adopt 
-        their ideas, remind them why they liked the home automation system you 
-        proposed in the first place. I know this is not easy, but it will pay back.
-      &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/p&gt;
-
-
-  
-  &lt;h4&gt;Group #3. You can not play with me, you are not smart.&lt;/small&gt;&lt;/h4&gt;
-  &lt;blockquote&gt;
-    &lt;div class="row"&gt;
-      &lt;div class="span6"&gt;
-        &lt;p&gt;
-          Home automation needs a lot of time, effort and knowledge 
-          and it's a challenge where you can't succed if you don't have 
-          the technical knowledge, pragmatic sensibility to deal 
-          with end-users and a strong project management skills...
-        &lt;/p&gt;
-        &lt;small&gt;Mr. Smart&lt;/small&gt;
-      &lt;/div&gt;
-      &lt;div class="span3"&gt;
-        &lt;ul class="media-grid"&gt;
-          &lt;li&gt;
-            &lt;a href="#"&gt;
-              &lt;img class="thumbnail" src="/images/blog/experts/3.png" alt=""&gt;
-            &lt;/a&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/blockquote&gt;
-
-  &lt;p&gt;
-    I didn't know home automation was like getting a degree in astrophysics. For sure
-    home automation is not like playing with Lego (not yet) but if we keep making home
-    automation something so difficult to use, we will never see a connected house in our lives. 
-    Wouldn't be better if every single person who has a specific knowledge could improve 
-    domotics? We &lt;a href="/collaborations/"&gt;think so&lt;/a&gt;.
-  &lt;/p&gt;
-
-  &lt;h4&gt;Conclusions&lt;/h4&gt;
-  &lt;p&gt;
-    Of course, there were other answers making up other groups, even interesting 
-    ones. However, these were the ones that made us think the most. It seems that 
-    most experts in the field of home automation have a limited way of thinking, 
-    referring only to the existing market. Our dream, the birth of an open home 
-    automation system for everyone, appears to be far this way, and
-    this is the reason we are here, a passionate need to change the rules.
   &lt;/p&gt;
 
 &lt;/div&gt;</content>
