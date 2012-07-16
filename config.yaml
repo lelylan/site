@@ -6,10 +6,9 @@ enable_output_diff: false
 base_url: 'http://lelylan.com'
 
 data_sources:
-  -
-    type: filesystem_unified
-    items_root: /
-    layouts_root: /
+- type: 'filesystem_unified'
+  items_root: /
+  layouts_root: /
 
 
 # google analytics

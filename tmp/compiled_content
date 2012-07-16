@@ -450,7 +450,7 @@
 </script>
 
 ;T:	post@
-I"/blog/;T{;{	;I"3<!DOCTYPE HTML>
+I"/blog/;T{;{	;I"4<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -513,7 +513,7 @@ I"/blog/;T{;{	;I"3<!DOCTYPE HTML>
         
   <ul>
     <li>
-      <span class="title"><a href="/blog/boards/">Hacking the House</a></span> -
+      <span class="title"><a href="/blog/boards/">Get into the House</a></span> -
       <span class="subtitle"><a href="/blog/boards/"><span>B</span>oard <span>C</span>omputers <span>C</span>ompared</a></span>
     </li>
   </ul>
@@ -617,10 +617,10 @@ I"/blog/;T{;{	;I"3<!DOCTYPE HTML>
     </li>
   </ul>
 <% end %>;T;
-I"	
+I"	
   <ul>
     <li>
-      <span class="title"><a href="/blog/boards/">Hacking the House</a></span> -
+      <span class="title"><a href="/blog/boards/">Get into the House</a></span> -
       <span class="subtitle"><a href="/blog/boards/"><span>B</span>oard <span>C</span>omputers <span>C</span>ompared</a></span>
     </li>
   </ul>
@@ -2260,7 +2260,7 @@ I"ó<div id="textual">
   Prefinery.apply(prefinery_apply_options);
 </script>
 
-;T;@&I"/feed/;T{;{	;I"Â¢<!DOCTYPE HTML>
+;T;@&I"/feed/;T{;{	;I"Ã¢<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -2331,7 +2331,7 @@ I"ó<div id="textual">
   </author>
   <entry>
     <id>tag:lelylan.com,2012-07-16:/blog/boards/</id>
-    <title type="html">Hacking the House</title>
+    <title type="html">Get into the House</title>
     <published>2012-07-15T22:00:00Z</published>
     <updated>2012-07-15T22:00:00Z</updated>
     <link rel="alternate" href="http://lelylan.com/blog/boards/"/>
@@ -3373,7 +3373,7 @@ I"ó<div id="textual">
   </body>
 </html>
 ;T;	I"<%= atom_feed %>;T;
-I"ž‘<?xml version="1.0" encoding="UTF-8"?>
+I"Ÿ‘<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://lelylan.com/</id>
   <title>Lelylan - reThink your house</title>
@@ -3386,7 +3386,7 @@ I"ž‘<?xml version="1.0" encoding="UTF-8"?>
   </author>
   <entry>
     <id>tag:lelylan.com,2012-07-16:/blog/boards/</id>
-    <title type="html">Hacking the House</title>
+    <title type="html">Get into the House</title>
     <published>2012-07-15T22:00:00Z</published>
     <updated>2012-07-15T22:00:00Z</updated>
     <link rel="alternate" href="http://lelylan.com/blog/boards/"/>
@@ -4394,7 +4394,7 @@ I"ž‘<?xml version="1.0" encoding="UTF-8"?>
 &lt;/div&gt;</content>
   </entry>
 </feed>
-;T;@,I"/;T{;{	;I"è9<!DOCTYPE HTML>
+;T;@,I"/;T{;{	;I"é9<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -4634,7 +4634,7 @@ I"ž‘<?xml version="1.0" encoding="UTF-8"?>
       
       <li class="post two-cols box ">
         <a href="/blog/boards/">
-          <span class="strap">Hacking the House</span>
+          <span class="strap">Get into the House</span>
           <span class="label"><span>B</span>oard <span>C</span>omputers <span>C</span>ompared
         </a>
       </li>
@@ -4850,7 +4850,7 @@ I"ž‘<?xml version="1.0" encoding="UTF-8"?>
 </div>
 
 <img src="/images/face.png" class="hidden">;T;
-I"Î(    <div id="overview">
+I"Ï(    <div id="overview">
       <div class="container centered">
         <div id="headline" class="home">
           <h1>Lelylan, reThink your house</h1>
@@ -5032,7 +5032,7 @@ I"Î(    <div id="overview">
       
       <li class="post two-cols box ">
         <a href="/blog/boards/">
-          <span class="strap">Hacking the House</span>
+          <span class="strap">Get into the House</span>
           <span class="label"><span>B</span>oard <span>C</span>omputers <span>C</span>ompared
         </a>
       </li>
@@ -5500,7 +5500,7 @@ I"Î(    <div id="overview">
   </url>
   <url>
     <loc>http://lelylan.com/blog/boards/</loc>
-    <lastmod>2012-07-15</lastmod>
+    <lastmod>2012-07-16</lastmod>
   </url>
   <url>
     <loc>http://lelylan.com/blog/electronics/</loc>
@@ -6273,7 +6273,7 @@ I"Î(    <div id="overview">
 
   </div>
 </div>;T;
-@C;@BI"/blog/tags/iot/;T{;{	;I"â<!DOCTYPE HTML>
+@C;@BI"/blog/tags/iot/;T{;{	;I"ð<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -6336,7 +6336,7 @@ I"Î(    <div id="overview">
         
   <ul>
     <li>
-      <span class="title"><a href="/blog/boards/"><span>H</span>acking <span>t</span>he <span>H</span>ouse</a></span> -
+      <span class="title"><a href="/blog/boards/"><span>G</span>et <span>i</span>nto <span>t</span>he <span>H</span>ouse</a></span> -
       <span class="subtitle"><a href="/blog/boards/"><span>B</span>oard <span>C</span>omputers <span>C</span>ompared</a></span>
     </li>
   </ul>
@@ -6398,10 +6398,10 @@ I"Î(    <div id="overview">
   </body>
 </html>
 ;T;	I")<%= render('tags', :tag => 'iot') %>;T;
-I"Ñ
+I"ß
   <ul>
     <li>
-      <span class="title"><a href="/blog/boards/"><span>H</span>acking <span>t</span>he <span>H</span>ouse</a></span> -
+      <span class="title"><a href="/blog/boards/"><span>G</span>et <span>i</span>nto <span>t</span>he <span>H</span>ouse</a></span> -
       <span class="subtitle"><a href="/blog/boards/"><span>B</span>oard <span>C</span>omputers <span>C</span>ompared</a></span>
     </li>
   </ul>
@@ -6739,7 +6739,7 @@ I"¶
       <span class="subtitle"><a href="/blog/wish/"><span>S</span>it <span>o</span>n <span>t</span>he <span>C</span>ouch <span>a</span>nd <span>k</span>eep <span>C</span>ontrol <span>o</span>f <span>E</span>verything</a></span>
     </li>
   </ul>
-;T;@SI"/blog/feed/;T{;{;I"¦‘<?xml version="1.0" encoding="UTF-8"?>
+;T;@SI"/blog/feed/;T{;{;I"§‘<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://lelylan.com/</id>
   <title>Lelylan - reThink your house</title>
@@ -6752,7 +6752,7 @@ I"¶
   </author>
   <entry>
     <id>tag:lelylan.com,2012-07-16:/blog/boards/</id>
-    <title type="html">Hacking the House</title>
+    <title type="html">Get into the House</title>
     <published>2012-07-15T22:00:00Z</published>
     <updated>2012-07-15T22:00:00Z</updated>
     <link rel="alternate" href="http://lelylan.com/blog/boards/"/>
@@ -10304,7 +10304,7 @@ I"}
     communicates with the web and all devices in your house.
   </p>
 </div>;T;
-@~;@}I"/blog/tags/hardware/;T{;{	;I"{<!DOCTYPE HTML>
+@~;@}I"/blog/tags/hardware/;T{;{	;I"‰<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -10367,7 +10367,7 @@ I"}
         
   <ul>
     <li>
-      <span class="title"><a href="/blog/boards/"><span>H</span>acking <span>t</span>he <span>H</span>ouse</a></span> -
+      <span class="title"><a href="/blog/boards/"><span>G</span>et <span>i</span>nto <span>t</span>he <span>H</span>ouse</a></span> -
       <span class="subtitle"><a href="/blog/boards/"><span>B</span>oard <span>C</span>omputers <span>C</span>ompared</a></span>
     </li>
   </ul>
@@ -10422,10 +10422,10 @@ I"}
   </body>
 </html>
 ;T;	I".<%= render('tags', :tag => 'hardware') %>;T;
-I"j
+I"x
   <ul>
     <li>
-      <span class="title"><a href="/blog/boards/"><span>H</span>acking <span>t</span>he <span>H</span>ouse</a></span> -
+      <span class="title"><a href="/blog/boards/"><span>G</span>et <span>i</span>nto <span>t</span>he <span>H</span>ouse</a></span> -
       <span class="subtitle"><a href="/blog/boards/"><span>B</span>oard <span>C</span>omputers <span>C</span>ompared</a></span>
     </li>
   </ul>
@@ -11071,7 +11071,7 @@ I"j
     Here the link for the <a href="/blog/boards/">second part</a>
   </p>
 </div>;T;
-@„;@ƒI"/blog/boards/;T{;{	;I"+D<!DOCTYPE HTML>
+@„;@ƒI"/blog/boards/;T{;{	;I".D<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -11082,7 +11082,7 @@ I"j
     <meta name="copyright" content="Copyright Â© Lelylan">
     <meta name="viewport" content="width=device-width">
 
-    <title>Lelylan Blog | Hacking the House</title>
+    <title>Lelylan Blog | Get into the House</title>
 
     <link href="/stylesheets/screen.css" type="text/css" rel="stylesheet" media="screen">
     <link href="/stylesheets/boxes.css" type="text/css" rel="stylesheet" media="screen">
@@ -11133,7 +11133,7 @@ I"j
     <div id="page">
       <div id="main">
                 
-        <h1>Hacking the House</h1>
+        <h1>Get into the House</h1>
         <span class="sub">Board Computers Compared</span>
         <p>
           Written by <a href="http://twitter.com/andreareginato">Lelylan Chief</a> | Jul 16, 2012
@@ -11559,7 +11559,7 @@ I"j
           <div class="addthis_toolbox addthis_default_style" 
   style="padding-top: 0px;"
   addthis:url="http://lelylan.com/blog/boards/"
-  addthis:title="Hacking the House. Board Computers Compared">
+  addthis:title="Get into the House. Board Computers Compared">
   <a class="addthis_button_hackernews"></a>
   <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
   <a class="addthis_button_tweet" tw:via="lelylan"></a>
