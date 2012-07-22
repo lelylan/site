@@ -1,6 +1,6 @@
 --- 
 title: "Cosm (aka Pachube)"
-subtitle: "A comprehensive analysis"
+subtitle: "Advanced Internet of Things"
 author: <a href="http://twitter.com/andreareginato">Lelylan Chief</a>
 created_at: 2012/07/30
 tags: [iot]
@@ -15,48 +15,48 @@ menu: blog
 
   <ul class="media-grid">
     <li>
-      <a href="http://cosm.com"><img class="thumbnail" src="/images/blog/cosm/header.png" alt="Cosm"></a>
+    <a href="http://cosm.com"><img class="thumbnail" src="/images/blog/cosm/header.png" alt="Cosm"></a>
     </li>
   </ul>
 
   <p>
-    COSM is a platform which enables you to store, share and discover real-time sensor, 
-    energy and environment data from devices and sensors. Cosm provides most of its 
-    functionality through its API, rather than through its web site, giving to developers
-    a full set of services that we will be describing in this article.
+  COSM is a platform which enables you to store, share and discover real-time sensor, 
+  energy and environment data from devices and sensors. Cosm provides most of its 
+  functionality through its API, rather than through its web site, giving to developers
+  a full set of services that we will be describing in this article.
   </p>
 
   <h2>Once upon a time there was Pachube</h2>
 
   <p>
-    When it started, around 4 years ago, its name was Pachube. It was ideally suited 
-    for visualizing data from sensors connected to the physical world. The main concepts 
-    on which Pachube came to life was two: feeds and datastreams.
+  When it started, around 4 years ago, its name was Pachube. It was ideally suited 
+  for visualizing data from sensors connected to the physical world. The main concepts 
+  on which Pachube came to life was two: feeds and datastreams.
   </p>
 
-    <ul class="unstyled">
-      <li><code>Feeds</code> Usually a location (e.g. office and house).</li>
-      <li><code>Datastreams</code> The physical device associated to the location
-        (e.g. sensors and power meters).</li>
-    </ul>
+  <ul class="unstyled">
+    <li><code>Feeds</code> Usually a location (e.g. office and house).</li>
+    <li><code>Datastreams</code> The physical device associated to the location
+    (e.g. sensors and power meters).</li>
+  </ul>
 
   <p>
-    A few months ago, it had a facelift and it changed its name to Cosm. Cosm is everything 
-    you know and love about Pachube, with more power to connect and build the Internet of 
-    Things today. The data about Cosm is quite impressive. It manages millions of datapoints 
-    per day from thousands of individuals, organisations and companies around the world. Data 
-    can be pushed from the sensor end, or pulled by the Cosm servers, with the data feeds 
-    then made available in multiple formats at no charge.
+  A few months ago, it had a facelift and it changed its name to Cosm. Cosm is everything 
+  you know and love about Pachube, with more power to connect and build the Internet of 
+  Things today. The data about Cosm is quite impressive. It manages millions of datapoints 
+  per day from thousands of individuals, organisations and companies around the world. Data 
+  can be pushed from the sensor end, or pulled by the Cosm servers, with the data feeds 
+  then made available in multiple formats at no charge.
   </p>
 
   <p>
-    In its new vest Cosm tries to be a social network for the Internet of Things, but as
-    reported by <a href="http://www.readwriteweb.com/archives/cosm-disappointing-re-design-by-internet-of-things-pioneer-pachube.php">Read Write Web</a>,
-    at least two problems raised. The first one is that Cosm tries to be now mainstream, it
-    tries to be "for everybody", but it is not ready for this step. Its UI is not enough
-    intuitive. Second, when you go into the console you can't do that much, at least if 
-    you do not have an Arduino. After a while you just leave it. This is an extract I really 
-    like of the RWW article.
+  In its new vest Cosm tries to be a social network for the Internet of Things, but as
+  reported by <a href="http://www.readwriteweb.com/archives/cosm-disappointing-re-design-by-internet-of-things-pioneer-pachube.php">Read Write Web</a>,
+  at least two problems raised. The first one is that Cosm tries to be now mainstream, it
+  tries to be "for everybody", but it is not ready for this step. Its UI is not enough
+  intuitive. Second, when you go into the console you can't do that much, at least if 
+  you do not have an Arduino. After a while you just leave it. This is an extract I really 
+  like of the RWW article.
   </p>
 
   <blockquote>
@@ -68,51 +68,51 @@ menu: blog
   </blockquote>
 
   <p>
-    After studying their APIs we think Cosm is a great product. It has almost all
-    the services needed to build the Internet of Things and when hardware producers will
-    realize that, it will start making big numbers. Enough with the introduction, it's API time.
+  After studying their APIs we think Cosm is a great product. It has almost all
+  the services needed to build the Internet of Things and when hardware producers will
+  realize that, it will start making big numbers. Enough with the introduction, it's API time.
   </p>
 
   <h2>Cosm APIs</h2>
 
   <p>
-    The <a href="https://cosm.com/docs/quickstart">API documentation</a> is complete. There is 
-    quickstart which lets you create your first feed following a step by step wizard. Although it
-    is clear and well prepared, we didn't like the idea of importing the Twitter feed in Cosm as
-    first example as it's not a use case for the Internet of Things. This said lets dig into the 
-    services.
+  The <a href="https://cosm.com/docs/quickstart">API documentation</a> is complete. There is 
+  quickstart which lets you create your first feed following a step by step wizard. Although it
+  is clear and well prepared, we didn't like the idea of importing the Twitter feed in Cosm as
+  first example as it's not a use case for the Internet of Things. This said lets dig into the 
+  services.
   </p>
 
   <h3><a href="https://cosm.com/docs/v2/feed/">FEEDS</a></h3>
 
   <p>
-    It represents a group of datastreams. It is used to represent some locations like your 
-    house or your office. It's interesting the ability to tag the feeds to make them easily 
-    searchable and also the ability to set latitude and longitude to enable geospatial queries.
+  It represents a group of datastreams. It is used to represent some locations like your 
+  house or your office. It's interesting the ability to tag the feeds to make them easily 
+  searchable and also the ability to set latitude and longitude to enable geospatial queries.
   <p>
-  
+
   <h3><a href="https://cosm.com/docs/v2/datastream/">DATASTREAMS</a></h3>
-  
+
   <p>
-    A datastream represents an individual sensor/device stream within an environment like
-    powermeters, lights or geiger counters. In here the values related to the physical 
-    device properties are stored.
+  A datastream represents an individual sensor/device stream within an environment like
+  powermeters, lights or geiger counters. In here the values related to the physical 
+  device properties are stored.
   </p>
 
   <h3><a href="https://cosm.com/docs/v2/datapoint/">DATAPOINTS</a></h3>
 
   <p>
-    A datapoint represents the value in a specific moment of the datastream life. This 
-    enables you to insert datapoints into the history of the datastream.
+  A datapoint represents the value in a specific moment of the datastream life. This 
+  enables you to insert datapoints into the history of the datastream.
   </p>
 
   <h3><a href="https://cosm.com/docs/v2/api_key/">API KEYS</a></h3>
 
   <p>
-    Cosm lets you create API keys with granular permissions. Keys are composed of different 
-    sets of permissions, so for example we could create a key that allows read-only access to
-    all public resources or allows write-access to one specific feed, from one specific IP 
-    address. Those are the most important properties in the key resource.
+  Cosm lets you create API keys with granular permissions. Keys are composed of different 
+  sets of permissions, so for example we could create a key that allows read-only access to
+  all public resources or allows write-access to one specific feed, from one specific IP 
+  address. Those are the most important properties in the key resource.
   </p>
 
   <ul class="unstyled">
@@ -122,159 +122,146 @@ menu: blog
   </ul>
 
   <p>
-    The permission structure is itself another resource and those are the most interesting 
-    properties you should be aware of.
+  The permission structure is another resource and those are the most interesting 
+  properties you should be aware of.
   </p>
 
   <ul class="unstyled">
     <li><code>access_method</code> An array containing one or more of [get, put, post, delete].</li>
     <li><code>source_ip</code> An IP address that access should be restricted to,
     <li><code>minimum_interval</code> Can be used to create a key that can only request data 
-      with a certain resolution.</li>
+    with a certain resolution.</li>
     <li><code>resources</code> An optional collection of resources restricting access 
-      to specific feeds or datastreams.</li>
+    to specific feeds or datastreams.</li>
   </ul>
 
   <h3><a href="https://cosm.com/docs/v2/trigger/">TRIGGERS</a></h3>
 
   <p>
-    Triggers fire HTTP POST requests to a URL of your choice when conditions that you 
-    set up on a datastream have been satisfied (e.g. value change, value exceeds threshold, 
-    value equals, etc.).
+  Triggers fire HTTP POST requests to a URL of your choice when conditions that you 
+  set up on a datastream have been satisfied (e.g. value change, value exceeds threshold, 
+  value equals, etc.).
   </p>
 
   <p>
-    This service can be useful in different scenarios. For example to turn off the cooling 
-    system when a window is open or when the water for your flowers is finished. In this way,
-    using a webhook mechanism you can connect Cosm feeds and datastreams with any other app.
+  This service can be useful in different scenarios. For example to turn off the cooling 
+  system when a window is open or when the water for your flowers is finished. In this way,
+  using a webhook mechanism you can connect Cosm feeds and datastreams with any other app.
   </p>
 
   <h3><a href="https://cosm.com/docs/v2/user/">USERS</a></h3>
 
   <p>
-    User are ideally a powerful concept, as there are some situations where you have
-    to create new people, so that you can let them access your resources for a limited 
-    period of time. Unluckily the resource is not open and you have to make a request to 
-    Cosm if you want to use it.
+  User are ideally a powerful concept, as there are some situations where you have
+  to create new people, so that you can let them access your resources for a limited 
+  period of time. Unluckily the resource is not open and you have to make a request to 
+  Cosm if you want to use it.
   </p>
 
   <h3><a href="https://cosm.com/docs/v2/history.html">HISTORICAL QUERY</a></h3>
 
   <p>
-    Gives the ability to make queries for ranges of historical data at datastream level
-    as well as at the environment level, using formatted dates. The API lets you set the
-    param <code>interval</code>, which can be pretty useful to reduce the amount of retrieved
-    data letting you get back the historical resources with intervals of 30 seconds, one minute,
-    5 minutes and so on.
+  Gives the ability to make queries for ranges of historical data at datastream level
+  as well as at the environment level, using formatted dates. The API lets you set the
+  param <code>interval</code>, which can be pretty useful to reduce the amount of retrieved
+  data letting you get back the historical resources with intervals of 30 seconds, one minute,
+  5 minutes and so on.
   </p>
 
 
   <h2>Beta features</h2>
 
   <p>
-    Cosm is delivering also different <a href="https://cosm.com/docs/beta/">beta</a> features, 
-    which are just delicious.
+  Cosm is delivering also different <a href="https://cosm.com/docs/beta/">beta</a> features, 
+  which are just delicious.
   </p>
 
   <h3><a href="https://cosm.com/docs/beta/group/">GROUPS</a></h3>
 
   <p>
-    Groups can be used for two main reasons: organize both users and feeds, and create 
-    more advanced access rules for private feeds. If used in the right way, they can make your 
-    system much more flexible and open to other users.
+  Groups can be used for two main reasons: organize both users and feeds, and create 
+  more advanced access rules for private feeds. If used in the right way, they can make your 
+  system much more flexible and open to other users.
   </p>
 
   <h3><a href="https://cosm.com/docs/beta/permission/">PERMISSIONS</a></h3>
 
   <p>
-    The permissions API allows you to get information about what an API Key is allowed to 
-    do.
+  The permissions API allows you to get information about what an API Key is allowed to 
+  do.
   <p>
 
   <h3><a href="https://cosm.com/docs/beta/socket_server/">SOCKET SERVER</a></h3>
 
   <p>
-    Paws is the Cosm Advanced Web-scale Socket-server. It is designed to make writing 
-    clients which require real-time push notifications as easy as possible.
+  Paws is the Cosm Advanced Web-scale Socket-server. It is designed to make writing 
+  clients which require real-time push notifications as easy as possible.
   </p>
 
   <h3><a href="https://cosm.com/docs/beta/mqtt/">MQTT</a></h3>
 
   <p>
-    The Cosm MQTT Bridge is a simple way to interact with Cosm directly from any MQTT
-    enabled platform. It provides full API interaction, as well as push notifications
-    and subscriptions.
+  The Cosm MQTT Bridge is a simple way to interact with Cosm directly from any MQTT
+  enabled platform. It provides full API interaction, as well as push notifications
+  and subscriptions.
   </p>
 
   <h3><a href="https://cosm.com/docs/beta/oauth/">OAUTH2</a></h3>
 
   <p>
-    OAuth2 is a method for allowing third-party application access to your resources 
-    without giving them access to your username and password. It is used by most major 
-    websites including Facebook and Twitter and its biggest strength lies in its ability 
-    to let the user have full control of its resources.
+  OAuth2 is a method for allowing third-party application access to your resources 
+  without giving them access to your username and password. It is used by most major 
+  websites including Facebook and Twitter and its biggest strength lies in its ability 
+  to let the user have full control of its resources.
   </p>
 
   <h2>Provisioning beta. A delicious service</h2>
 
   <p>
-    The <a href="https://cosm.com/docs/beta/device_management/provisioning/">provisioning</a> 
-    service is just awesome. Provisioning is the process of a device getting its configuration 
-    in order to be able to send data to Cosm. This service simplify our lives when thinking 
-    at the physical world allowing the owner of the device to 'claim' it. For example once 
-    your device is plugged in and online, you might go to its website, enter your serial 
-    number and claim it there, and this would all be done using the provisioning APIs.
+  The <a href="https://cosm.com/docs/beta/device_management/provisioning/">provisioning</a> 
+  service is just awesome. Provisioning is the process of a device getting its configuration 
+  in order to be able to send data to Cosm. This service simplify our lives when thinking 
+  at the physical world allowing the owner of the device to 'claim' it. For example once 
+  your device is plugged in and online, you might go to its website, enter your serial 
+  number and claim it there, and this would all be done using the provisioning APIs.
   </p>
 
   <p>
-    When the physical device is plugged in this is what happens.
+  When the physical device is plugged in this is what happens.
   </p>
 
   <ol>
     <li>It sends an activation code to the provisioning API.</li>
     <li>The API creates a feed (which can be preconfigured).</li>
     <li>The API creates an API key that is sent to the device. This key will be used by 
-      the physical device to authenticate itself when sending updates.</li>
+    the physical device to authenticate itself when sending updates.</li>
   </ol>
 
   <p>
-    Without getting into the details Cosm let you define two resources. The first one is the 
-    <a href="https://cosm.com/docs/beta/device_management/api/device_model/">Device Model</a> 
-    and it represents a class of devices, like the "Boxee" and the second is 
-    <a href="https://cosm.com/docs/beta/device_management/api/device/">Device</a>, 
-    which represents an individual device with its own serial number.
+  Without getting into the details Cosm let you define two resources. The first one is the 
+  <a href="https://cosm.com/docs/beta/device_management/api/device_model/">Device Model</a> 
+  and it represents a class of devices, like the "Boxee" and the second is 
+  <a href="https://cosm.com/docs/beta/device_management/api/device/">Device</a>, 
+  which represents an individual device with its own serial number.
   </p>
 
   <p>
-    Without going further, go and read the <a href="https://cosm.com/docs/beta/device_management/provisioning/">documentation</a>.
-    It will be worth it.
+  Without going further, go and read the <a href="https://cosm.com/docs/beta/device_management/provisioning/">documentation</a>.
+  It will be worth it.
   </p>
 
   <h2>Conclusions</h2>
 
   <p>
-    As we said before the Cosm API documentation is complete and they offer all the services
-    we need to build the Internet of Things. We are sure that next year, when more hardware 
-    will arise on top of Cosm, great results will come.
+  Cosm is for sure the most complete service out there. It offers all the services we need to 
+  build the Internet of Things, and it does it well. At first all of those concepts are not easy
+  to grasp, but give it the right time and you will get excited about what you can do. It's a 
+  metter of time and its success will start to be visible to everyone.
   </p>
 
   <p>
-    As always there are some spots for improvements. In particular there were some errors on 
-    the documentation on the datastream curl examples, and we found the documentation way too
-    verbose on describing some basic concepts. It would be way better to have some real examples
-    describing advanced scenario uses.
-  </p>
-
-  <p>
-    About the API design, Cosm has been following the REST architecture, but the connectedness 
-    has not been respected. It would be really nice to have, for example, the datastream links
-    into the feed representations. Sure, these are details, but we care about them, don't we?
-  </p>
-
-  <p>
-    Tell us what you think and which one is the next Internet of Things startup you want us to 
-    check, as this is the first article of a series that want to get in deep on how Internet of
-    Things APIs are built.
+  Tell us which one is the next Internet of Things startup you want us to check. This is the 
+  first article of a series that wants to get in deep about the Internet of Things ecosystem.
   </p>
 
 </div>

@@ -1,0 +1,189 @@
+--- 
+title: "ThingSpeak"
+subtitle: "Open Source Internet of Things"
+author: <a href="http://twitter.com/andreareginato">Lelylan Chief</a>
+created_at: 2012/08/6
+tags: [iot]
+publish: false
+kind: article
+menu: blog
+---
+
+<div class="article">
+
+  <br/>
+
+  <ul class="media-grid">
+    <li>
+    <a href="https://www.thingspeak.com/"><img class="thumbnail" src="/images/blog/thingspeak/header.png" alt="ThingSpeak"></a>
+    </li>
+  </ul>
+
+  <p>
+  <a href="https://www.thingspeak.com/">ThingSpeak</a> is an open platform designed to enable
+  connections between things and people. Reading through their blog you can find different
+  examples and, I've to admit, some made me smile. The best is for sure the
+  <a href="http://community.thingspeak.com/2012/06/a-twitter-powered-gumball-machine-built-on-thingspeak-arduino/">gum-ball machine</a>
+  that being able to communicate with Twitter gets you a tasty gum-ball whenever you send a 
+  tweet to its account. I guess this could be a killer application for kids.
+  </p>
+
+  <p>
+  <strong>ThingSpeak API is open source</strong> and available on 
+  <a href="https://github.com/iobridge/thingspeak">github</a>. This makes it different from 
+  any other service out there at least for two reasons. The first one is that you can run 
+  ThingSpeak on a private network, on your own servers. The second one is that you can take 
+  the source code and make changes, contributing with new features. Since it has been 
+  released in March 2011, it has been installed on over 500 servers. Nice numbers.
+  </p>
+
+  <p>
+  ThingSpeak is a Ruby on Rails 3.0 application and it includes everything to get 
+  started: user management, API key management, channel management and charting. 
+  The license for ThingSpeak is under GPLv3 for open source use and can be licensed 
+  from <a href="http://www.iobridge.com/">ioBridge</a> for closed source applications.
+  </p>
+
+  <h2>What can I do?</h2>
+
+  <p>
+  Think at ThingSpeak as a data container accessible via simple HTTP requests. Data can 
+  come from anything. Blood sugar levels measured by a glucose meter, server uptime or 
+  location info from a mobile phone. All of this data is stored in a <code>channel</code>.
+  </p>
+
+  <p>
+  When you need to visualize your data, ThingSpeak has dynamic <code>charts</code> and an API 
+  to customize them. The charts are used to display sensor data over time and they work on all 
+  devices by using JavaScript. The chart types supported are Line, Bar, Column, and Step and you
+  can set colors, sizing, and labels to fit your needs.
+  </p>
+
+  <ul class="media-grid">
+    <li>
+    <a href="https://www.thingspeak.com/"><img class="thumbnail" src="/images/blog/thingspeak/graph.png" alt="ThingSpeak"></a>
+    </li>
+  </ul>
+
+  <h2>Applications approach</h2>
+
+  <p>
+  ThingSpeak offers several <code>applications</code> to let channels communicate with 
+  other services and augment ThingSpeak capabilities. Right now we can find four of them.
+  </p>
+
+  <h3><a href="https://www.thingspeak.com/apps/thingtweets">ThingTweet</a></h3>
+
+  <p>
+  ThingTweet let you easily send status updates to Twitter along with storing your data in a 
+  ThingSpeak Channel at the same. For example you can have your garage door twitting "You left 
+  the door open" or your house saying "Today's power use was 6150 watts".
+  </p>
+
+  <pre>
+POST /apps/thingtweet/1/statuses/update
+Host: api.thingspeak.com
+
+api_key={thingtweet_key}&status=Your+dear+tulip+is+getting+thirsty.</pre>
+  
+
+  <h3><a href="https://www.thingspeak.com/apps/thinghttp">ThingHTTP</a></h3>
+
+  <p>
+  ThingHTTP allows a micrcontroller to connect to any web service using HTTP. It lets you
+  create a resource on the web and then control it using a simple API. It supports GET, 
+  POST, PUT, and DELETE methods, SSL, Basic Authentication and more.
+  <p>
+
+  <p>
+  Lets make an example with <a href="https://www.twilio.com/">Twilio</a>. Twilio is a cloud 
+  communication platform for phone calls and SMS messages. You can access to its functionalities
+  through its API, but it requires HTTPS and Basic Authentication which is perfect for 
+  high-level devices like phones, but nearly impossible for an embedded device like Arduino.
+  As ThingHTTP allows a device to make HTTPS calls to any service it easily let you interface 
+  the Twilio API with your device.
+  </p>
+
+  <p>
+  Sample request.
+  </p>
+
+  <pre>
+POST /apps/thinghttp/send_request
+Host: api.thingspeak.com
+
+api_key={thinghttp_key}&message=I+call+you+because+the+water+is+finished</pre>
+
+  <h3><a href="https://www.thingspeak.com/apps/reacts">Reacts</a></h3>
+
+  <p>
+  React allows you to trigger a request when your channel meets a certain condition. For
+  example, you can have your thermostat turn on by the time you get home from work or you
+  can post a Twitter update when your power use is higher than normal.
+  </p>
+
+  <p>
+  React let you check if a field:
+  </p>
+
+  <ol>
+    <li><code>contains</code>, <code>starts with</code>, <code>ends with</code>,
+    <code>is equal to</code> or <code>is not equal to</code> a string.
+    </li>
+    <li><code>is greater than</code>, <code>is less than</code> or <code>is equal
+      to</code> a number. 
+    </li>
+    <li>
+    <code>is farther than</code> or <code>is within</code> a geo location.
+    </li>
+  </ol>
+
+  <p>
+  You can test your condition on every insert or on a periodic basis and differently
+  by the other services you do not have an API to create a reaction. You can do it only
+  through the ThingSpeak web interface.
+  </p>
+
+  <h3><a href="https://www.thingspeak.com/apps/tweetcontrol">Tweetcontrol</a></h3>
+
+  <p>
+  TweetControl allows you to receive notifications from your Twitter account when using
+  a specific <code>#hashtag</code>. It uses the Twitter Streaming API, triggering changes
+  to your channels in real-time.
+  </p>
+
+  <p>
+  The flow is straight forward. You create a new TweetControl, fill the twitter screen
+  name to tied it to a twitter user, enter a hashtag to listen for (e.g. <code>#openlight</code>)
+  and select a ThingHTTP request to execute. Also in this case there is not an API.
+  </p>
+
+  <h2>Conclusions</h2>
+
+  <p>
+  As you can see in this article we didn't describe the 
+  <a href="http://community.thingspeak.com/documentation/api/">ThingSpeak API</a>. 
+  We didn't do that for two reasons: the first is that the creation of <code>channels
+  </code> and <code>charts</code> is straightforward; the second is that the real 
+  power of ThingSpeak does not lies in its API, but on its applications.
+  </p>
+
+  <p>
+  Applications are a key element to build a successful Internet of Things. Only when it will
+  interacts with all services out there we will be able to see its real power. In this 
+  ThingSpeak is good example of how things should be done. We saw some applications in 
+  action and we are looking forward for new ones to come.
+  </p>
+
+  <p>
+  Just two notes before closing the article. First, if compared with
+  <a href="http://lelylan.com/blog/cosm/">Cosm</a> or
+  <a href="http://lelylan.com/blog/evrythng/">EVRYTHNG</a>
+  the documentation can be surely improved. The feeling is that the site has all 
+  docs, tutorials and examples we need to build great stuff, but it could be better
+  organized to attract new developers. Second, they are missing some core concepts 
+  like oauth2 or devices provisioning which are a must in a service that wants to 
+  get into the Internet of Things market.
+  </p>
+
+</div>
