@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://lelylan.com/</id>
   <title>Lelylan - reThink your house</title>
-  <updated>2012-08-05T22:00:00Z</updated>
+  <updated>2012-07-25T22:00:00Z</updated>
   <link rel="alternate" href="http://lelylan.com/"/>
   <link rel="self" href="http://lelylan.com/blog/feed.xml"/>
   <author>
@@ -10,10 +10,10 @@
     <uri>http://lelylan.com</uri>
   </author>
   <entry>
-    <id>tag:lelylan.com,2012-08-06:/blog/thingspeak/</id>
+    <id>tag:lelylan.com,2012-07-26:/blog/thingspeak/</id>
     <title type="html">ThingSpeak</title>
-    <published>2012-08-05T22:00:00Z</published>
-    <updated>2012-08-05T22:00:00Z</updated>
+    <published>2012-07-25T22:00:00Z</published>
+    <updated>2012-07-25T22:00:00Z</updated>
     <link rel="alternate" href="http://lelylan.com/blog/thingspeak/"/>
     <content type="html">&lt;div class="article"&gt;
 
