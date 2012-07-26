@@ -450,7 +450,7 @@
 </script>
 
 ;T:	post@
-I"/blog/;T{;{	;I"W<!DOCTYPE HTML>
+I"/blog/;T{;{	;I"e<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -513,8 +513,8 @@ I"/blog/;T{;{	;I"W<!DOCTYPE HTML>
         
   <ul>
     <li>
-      <span class="title"><a href="/blog/thingspeak/">ThingSpeak</a></span> -
-      <span class="subtitle"><a href="/blog/thingspeak/"><span>O</span>pen <span>S</span>ource <span>I</span>nternet <span>o</span>f <span>T</span>hings</a></span>
+      <span class="title"><a href="/blog/evrythng/">EVRYTHNG</a></span> -
+      <span class="subtitle"><a href="/blog/evrythng/"><span>D</span>igital <span>i</span>dentities <span>f</span>or <span>t</span>he <span>r</span>eal <span>w</span>orld</a></span>
     </li>
   </ul>
 
@@ -638,11 +638,11 @@ I"/blog/;T{;{	;I"W<!DOCTYPE HTML>
     </li>
   </ul>
 <% end %>;T;
-I"+
+I"9
   <ul>
     <li>
-      <span class="title"><a href="/blog/thingspeak/">ThingSpeak</a></span> -
-      <span class="subtitle"><a href="/blog/thingspeak/"><span>O</span>pen <span>S</span>ource <span>I</span>nternet <span>o</span>f <span>T</span>hings</a></span>
+      <span class="title"><a href="/blog/evrythng/">EVRYTHNG</a></span> -
+      <span class="subtitle"><a href="/blog/evrythng/"><span>D</span>igital <span>i</span>dentities <span>f</span>or <span>t</span>he <span>r</span>eal <span>w</span>orld</a></span>
     </li>
   </ul>
 
@@ -2302,7 +2302,7 @@ I"ó<div id="textual">
   Prefinery.apply(prefinery_apply_options);
 </script>
 
-;T;@&I"/feed/;T{;{	;I"Ò<!DOCTYPE HTML>
+;T;@&I"/feed/;T{;{	;I"mÍ<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -2364,7 +2364,7 @@ I"ó<div id="textual">
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://lelylan.com/</id>
   <title>Lelylan - reThink your house</title>
-  <updated>2012-07-25T22:00:00Z</updated>
+  <updated>2012-08-05T22:00:00Z</updated>
   <link rel="alternate" href="http://lelylan.com/"/>
   <link rel="self" href="http://lelylan.com/feed/"/>
   <author>
@@ -2372,197 +2372,208 @@ I"ó<div id="textual">
     <uri>http://lelylan.com</uri>
   </author>
   <entry>
-    <id>tag:lelylan.com,2012-07-26:/blog/thingspeak/</id>
-    <title type="html">ThingSpeak</title>
-    <published>2012-07-25T22:00:00Z</published>
-    <updated>2012-07-25T22:00:00Z</updated>
-    <link rel="alternate" href="http://lelylan.com/blog/thingspeak/"/>
+    <id>tag:lelylan.com,2012-08-06:/blog/evrythng/</id>
+    <title type="html">EVRYTHNG</title>
+    <published>2012-08-05T22:00:00Z</published>
+    <updated>2012-08-05T22:00:00Z</updated>
+    <link rel="alternate" href="http://lelylan.com/blog/evrythng/"/>
     <content type="html">&lt;div class="article"&gt;
 
   &lt;br/&gt;
 
   &lt;ul class="media-grid"&gt;
     &lt;li&gt;
-    &lt;a href="https://www.thingspeak.com/"&gt;&lt;img class="thumbnail" src="/images/blog/thingspeak/header.png" alt="ThingSpeak"&gt;&lt;/a&gt;
+    &lt;a href="http://evrythng.net/"&gt;&lt;img class="thumbnail" src="/images/blog/evrythng/header.png" alt="Evrythng"&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
   &lt;p&gt;
-  &lt;a href="https://www.thingspeak.com/"&gt;ThingSpeak&lt;/a&gt; is an open platform designed to enable
-  connections between things and people. Reading through their blog you can find different
-  examples and, I've to admit, some made me smile. The best is for sure the
-  &lt;a href="http://community.thingspeak.com/2012/06/a-twitter-powered-gumball-machine-built-on-thingspeak-arduino/"&gt;gum-ball machine&lt;/a&gt;
-  that being able to communicate with Twitter gets you a tasty gum-ball whenever you send a 
-  tweet to its account. I guess this could be a killer application for kids.
+  &lt;a href="http://evrythng.net/"&gt;EVRYTHNG&lt;/a&gt; is a platform used to create Active Digital 
+  Identities. These are unique online profiles for products and other objects to make them 
+  part of the Web. In this way every physical thing can be digitally connected.
   &lt;/p&gt;
 
   &lt;p&gt;
-  &lt;strong&gt;ThingSpeak API is open source&lt;/strong&gt; and available on 
-  &lt;a href="https://github.com/iobridge/thingspeak"&gt;github&lt;/a&gt;. This makes it different from 
-  any other service out there at least for two reasons. The first one is that you can run 
-  ThingSpeak on a private network, on your own servers. The second one is that you can take 
-  the source code and make changes, contributing with new features. Since it has been 
-  released in March 2011, it has been installed on over 500 servers. Nice numbers.
+    For example you could have a bike that tells you where it is placed if it has been moved, 
+    a smart meter that turns on your washing machines at the cheapest times or a camera that 
+    suggests you where to go to to get the perfect shots. All of this is based around the 
+    Active Digital Identity: the idea of having an online profile for every physical object.
   &lt;/p&gt;
 
   &lt;p&gt;
-  ThingSpeak is a Ruby on Rails 3.0 application and it includes everything to get 
-  started: user management, API key management, channel management and charting. 
-  The license for ThingSpeak is under GPLv3 for open source use and can be licensed 
-  from &lt;a href="http://www.iobridge.com/"&gt;ioBridge&lt;/a&gt; for closed source applications.
-  &lt;/p&gt;
-
-  &lt;h2&gt;What can I do?&lt;/h2&gt;
-
-  &lt;p&gt;
-  Think at ThingSpeak as a data container accessible via simple HTTP requests. Data can 
-  come from anything. Blood sugar levels measured by a glucose meter, server uptime or 
-  location info from a mobile phone. All of this data is stored in a &lt;code&gt;channel&lt;/code&gt;.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-  When you need to visualize your data, ThingSpeak has dynamic &lt;code&gt;charts&lt;/code&gt; and an API 
-  to customize them. The charts are used to display sensor data over time and they work on all 
-  devices by using JavaScript. The chart types supported are Line, Bar, Column, and Step and you
-  can set colors, sizing, and labels to fit your needs.
-  &lt;/p&gt;
-
-  &lt;ul class="media-grid"&gt;
-    &lt;li&gt;
-    &lt;a href="https://www.thingspeak.com/"&gt;&lt;img class="thumbnail" src="/images/blog/thingspeak/graph.png" alt="ThingSpeak"&gt;&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;h2&gt;Applications approach&lt;/h2&gt;
-
-  &lt;p&gt;
-  ThingSpeak offers several &lt;code&gt;applications&lt;/code&gt; to let channels communicate with 
-  other services and augment ThingSpeak capabilities. Right now we can find four of them.
-  &lt;/p&gt;
-
-  &lt;h3&gt;&lt;a href="https://www.thingspeak.com/apps/thingtweets"&gt;ThingTweet&lt;/a&gt;&lt;/h3&gt;
-
-  &lt;p&gt;
-  ThingTweet let you easily send status updates to Twitter along with storing your data in a 
-  ThingSpeak Channel at the same. For example you can have your garage door twitting "You left 
-  the door open" or your house saying "Today's power use was 6150 watts".
-  &lt;/p&gt;
-
-  &lt;pre&gt;
-POST /apps/thingtweet/1/statuses/update
-Host: api.thingspeak.com
-
-api_key={thingtweet_key}&amp;status=Your+dear+tulip+is+getting+thirsty.&lt;/pre&gt;
-  
-
-  &lt;h3&gt;&lt;a href="https://www.thingspeak.com/apps/thinghttp"&gt;ThingHTTP&lt;/a&gt;&lt;/h3&gt;
-
-  &lt;p&gt;
-  ThingHTTP allows a micrcontroller to connect to any web service using HTTP. It lets you
-  create a resource on the web and then control it using a simple API. It supports GET, 
-  POST, PUT, and DELETE methods, SSL, Basic Authentication and more.
-  &lt;p&gt;
-
-  &lt;p&gt;
-  Lets make an example with &lt;a href="https://www.twilio.com/"&gt;Twilio&lt;/a&gt;. Twilio is a cloud 
-  communication platform for phone calls and SMS messages. You can access to its functionalities
-  through its API, but it requires HTTPS and Basic Authentication which is perfect for 
-  high-level devices like phones, but nearly impossible for an embedded device like Arduino.
-  As ThingHTTP allows a device to make HTTPS calls to any service it easily let you interface 
-  the Twilio API with your device.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-  Sample request.
-  &lt;/p&gt;
-
-  &lt;pre&gt;
-POST /apps/thinghttp/send_request
-Host: api.thingspeak.com
-
-api_key={thinghttp_key}&amp;message=I+call+you+because+the+water+is+finished&lt;/pre&gt;
-
-  &lt;h3&gt;&lt;a href="https://www.thingspeak.com/apps/reacts"&gt;Reacts&lt;/a&gt;&lt;/h3&gt;
-
-  &lt;p&gt;
-  React allows you to trigger a request when your channel meets a certain condition. For
-  example, you can have your thermostat turn on by the time you get home from work or you
-  can post a Twitter update when your power use is higher than normal.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-  React let you check if a field:
+  EVRYTHNG has a clear target which can be split in three groups.
   &lt;/p&gt;
 
   &lt;ol&gt;
-    &lt;li&gt;&lt;code&gt;contains&lt;/code&gt;, &lt;code&gt;starts with&lt;/code&gt;, &lt;code&gt;ends with&lt;/code&gt;,
-    &lt;code&gt;is equal to&lt;/code&gt; or &lt;code&gt;is not equal to&lt;/code&gt; a string.
-    &lt;/li&gt;
-    &lt;li&gt;&lt;code&gt;is greater than&lt;/code&gt;, &lt;code&gt;is less than&lt;/code&gt; or &lt;code&gt;is equal
-      to&lt;/code&gt; a number. 
+    &lt;li&gt;
+    &lt;b&gt;Marketers&lt;/b&gt; to create digital experiences and new services built around the 
+    relationship between a customer and their product, improving the product experience.
     &lt;/li&gt;
     &lt;li&gt;
-    &lt;code&gt;is farther than&lt;/code&gt; or &lt;code&gt;is within&lt;/code&gt; a geo location.
+    &lt;b&gt;Manufacturers&lt;/b&gt; to create products with personalized digital experiences already 
+    embedded and build applications and services that store data and real-time updates 
+    from the physical objects.
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;b&gt;Developers&lt;/b&gt; to create applications that stores and uses real-time information 
+    related to the physical objects and to design new way to interact with them.
     &lt;/li&gt;
   &lt;/ol&gt;
 
   &lt;p&gt;
-  You can test your condition on every insert or on a periodic basis and differently
-  by the other services you do not have an API to create a reaction. You can do it only
-  through the ThingSpeak web interface.
-  &lt;/p&gt;
-
-  &lt;h3&gt;&lt;a href="https://www.thingspeak.com/apps/tweetcontrol"&gt;Tweetcontrol&lt;/a&gt;&lt;/h3&gt;
-
-  &lt;p&gt;
-  TweetControl allows you to receive notifications from your Twitter account when using
-  a specific &lt;code&gt;#hashtag&lt;/code&gt;. It uses the Twitter Streaming API, triggering changes
-  to your channels in real-time.
+  You can start using EVRYTHNG today for free managing up to 1000 Active Digital Identities
+  (which are more than enough for different scenarios) and 100MB of storage. Other plans are 
+  not available right now and if you have bigger needs, you need to get in touch with the team. 
   &lt;/p&gt;
 
   &lt;p&gt;
-  The flow is straight forward. You create a new TweetControl, fill the twitter screen
-  name to tied it to a twitter user, enter a hashtag to listen for (e.g. &lt;code&gt;#openlight&lt;/code&gt;)
-  and select a ThingHTTP request to execute. Also in this case there is not an API.
+  They have a good communication. You can follow them on &lt;a href="https://twitter.com/connectevrythng"&gt;
+  twitter&lt;/a&gt; or on their &lt;a href="http://www.webofthings.org/"&gt;blog&lt;/a&gt;, which as far as I 
+  can remember it is one of the first who started to talk about the Internet of things four 
+  years ago. Quite impressive in our opinion.
   &lt;/p&gt;
+
+
+  &lt;h2&gt;EVRYTHNG API&lt;/h2&gt;
+
+  &lt;p&gt;
+  To make all of this real, EVRYTHNG has created a platform to easily create third party 
+  applications and analytics around Active Digital Identities (from now on ADIs), all of 
+  this through a RESTful API and a secure software infrastructure that let you easily 
+  connect your objects to the web.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  Going more in details the infrastructure provides services for accessing, creating, 
+  storing, manipulating, sharing, or searching the ADIs for millions of real-world objects, 
+  and also a set of services and tools that can be useful for such applications. 
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  EVRYTHNG is currently in closed Beta and is available only to a limited group of commercial 
+  and academic partners. Anyway, I'm sure that signing up proposing ideas you want to develop 
+  will give you an early access. The main concepts are easy to get and the documentation let 
+  you understand the service step by step. Here an introduction.
+  &lt;/p&gt;
+
+  &lt;blockquote&gt;
+    &lt;p&gt;
+    &lt;code&gt;Thngs&lt;/code&gt; (it is not misspelled, they call it in this way) have various 
+    &lt;code&gt;Properties&lt;/code&gt; and can be organized into &lt;code&gt;Collections&lt;/code&gt;, and 
+    operated on by &lt;code&gt;Users&lt;/code&gt; and &lt;code&gt;Groups&lt;/code&gt;. Access control schemes 
+    can be used to decide who can interact with what resource and how. This is all you 
+    need to know to have a basic idea. Lets dig in deep.
+    &lt;/p&gt;
+  &lt;/blockquote&gt;
+
+  &lt;p&gt;
+  It accept JSON-P callbacks by adding a &lt;code&gt;?callback&lt;/code&gt; parameter to any GET call
+  so that you can have the results wrapped in a JSON function and they limit requests to API
+  to 5000 per day.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  The services are not complex and they are well described in the web site, so here we just 
+  sum them up.
+  &lt;/p&gt;
+
+  &lt;h3&gt;&lt;a href="http://dev.evrythng.net/#thngs"&gt;THNGS&lt;/a&gt;&lt;/h3&gt;
+  
+  &lt;p&gt;
+  An abstract notion of an object which has location and property data associated to it. Also 
+  called Active Digital Identities (ADIs), these resources can model real-world elements such 
+  as persons, places, cars, guitars, mobile phones, etc. 
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  You can set different params like a name, longitude, latitude which can be used to identify 
+  the thng, but also to enable search queries later on. Nice the ability to create many things 
+  at once which returns a list of IDs for the newly created resources.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  Sample &lt;code&gt;thng&lt;/code&gt; representation.
+  &lt;/p&gt;
+
+&lt;pre&gt;
+{
+"id": "44ed3d1ad0b1cdc02490081ca",
+"name": "Television",
+"description": "Sony Smart Television",
+"is_public": false,
+"latitude": "43.772828",
+"longitude": "11.249488",
+"created_at": "2011-04-18T23:23:56Z"
+}&lt;/pre&gt;
+
+  &lt;h3&gt;&lt;a href="http://dev.evrythng.net/#properties"&gt;PROPERTIES&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+  A Thng can have properties which are arbitrary key/value pairs to store any data. Values could 
+  be either text or binary.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  Sample &lt;code&gt;property&lt;/code&gt; representation.
+  &lt;/p&gt;
+
+&lt;pre&gt;
+{
+"key": "Volume",
+"value": "20"
+"created_at": "2011-04-18T12:10:56Z"
+}&lt;/pre&gt;
+
+
+  &lt;h3&gt;&lt;a href="http://dev.evrythng.net/#collections"&gt;COLLECTIONS&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+  A collection is a group of Thngs. Collections can be created by various users, and the same 
+  Thng can be in more than one collection.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  Sample &lt;code&gt;collection&lt;/code&gt; representation.
+  &lt;/p&gt;
+
+&lt;pre&gt;
+{
+"id": "44ed3d1ad0b1cdc02490081de",
+"name": "Electronics",
+"description": "Contains all electronics in my house",
+"is_public": true,
+"created_at": "2012-07-18T23:23:56Z"
+}&lt;/pre&gt;
+
+  &lt;h3&gt;Other stuff&lt;/h3&gt;
+
+  &lt;p&gt;
+  There is also a &lt;a href="http://dev.evrythng.net/#search"&gt;search&lt;/a&gt; service which does 
+  what it says. You can also find some wrappers to easily start building clients in 
+  &lt;a href="https://github.com/evrythng/evrythng-java-wrapper"&gt;Java&lt;/a&gt; and 
+  &lt;a href="https://github.com/evrythng/evrythng-ruby-wrapper"&gt;Ruby&lt;/a&gt;.
+  &lt;/p&gt;
+
 
   &lt;h2&gt;Conclusions&lt;/h2&gt;
 
   &lt;p&gt;
-  As you can see in this article we didn't describe the 
-  &lt;a href="http://community.thingspeak.com/documentation/api/"&gt;ThingSpeak API&lt;/a&gt;. 
-  We didn't do that for two reasons: the first is that the creation of &lt;code&gt;channels
-  &lt;/code&gt; and &lt;code&gt;charts&lt;/code&gt; is straightforward; the second is that the real 
-  power of ThingSpeak does not lies in its API, but on its applications.
+  When you get to read the website you get a nice feeling. Everything is placed in the right 
+  place, the design is very nice and the main concepts are easy to grasp.
   &lt;/p&gt;
 
   &lt;p&gt;
-  Applications are a key element to build a successful Internet of Things. Only when it will
-  interacts with all services out there we will be able to see its real power. In this 
-  ThingSpeak is good example of how things should be done. We saw some applications in 
-  action and we are looking forward for new ones to come.
+  Overall EVRYTHNG is a simple product if compared with solutions like 
+  &lt;a href="http://lelylan.com/blog/cosm/"&gt;COSM&lt;/a&gt;, but its simplicity is 
+  also its strength. We really enjoyed walking through the whole documentation 
+  and we had the feeling we could have started to use them right now. We loved this.
   &lt;/p&gt;
 
   &lt;p&gt;
-  We also liked the presence of tutorials explaining how to connect ThingSpeak with the 
-  real world. We can find examples about 
-  &lt;a href="http://community.thingspeak.com/tutorials/wireless/connecting-xbee-wireless-networks-to-thingspeak-via-the-connectport-x2-running-xig/"&gt;connecting XBee wireless networks&lt;/a&gt;,
-  &lt;a href="http://www.frank-zhao.com/thingspeak_mbed_tut1/"&gt;temperature monitoring using mbed&lt;/a&gt;, 
-  &lt;a href="http://community.thingspeak.com/tutorials/netduino/create-your-own-web-of-things-using-the-netduino-plus-and-thingspeak/"&gt;Netduino integration&lt;/a&gt; and of course about
-  &lt;a href="http://community.thingspeak.com/tutorials/arduino/using-an-arduino-ethernet-shield-to-update-a-thingspeak-channel/"&gt;Arduino&lt;/a&gt;.
-  Those kind of tutorial are never enough.
-
-  &lt;/p&gt;
-
-  &lt;p&gt;
-  Just two notes before closing the article. First, if compared with
-  &lt;a href="http://lelylan.com/blog/cosm/"&gt;Cosm&lt;/a&gt; or
-  &lt;a href="http://lelylan.com/blog/evrythng/"&gt;EVRYTHNG&lt;/a&gt;
-  the documentation can be surely improved. The feeling is that the site has all 
-  docs, tutorials and examples we need to build great stuff, but it could be better
-  organized to attract new developers. Second, they are missing some core concepts 
-  like oauth2 or devices provisioning which are a must in a service that wants to 
-  get into the Internet of Things market.
+  In the other side, the APIs don't let you do that much and this limits the developer 
+  ability to build new services. Concepts like oauth2 or physical devices provisioning
+  are not faced and in our opinion are too important to be left apart. Once they will be
+  integrated (or publicly released) they will be ready for the real Internet of Things market.
   &lt;/p&gt;
 
 &lt;/div&gt;</content>
@@ -3621,11 +3632,11 @@ api_key={thinghttp_key}&amp;message=I+call+you+because+the+water+is+finished&lt;
   </body>
 </html>
 ;T;	I"<%= atom_feed %>;T;
-I"ëÀ<?xml version="1.0" encoding="UTF-8"?>
+I"I¼<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://lelylan.com/</id>
   <title>Lelylan - reThink your house</title>
-  <updated>2012-07-25T22:00:00Z</updated>
+  <updated>2012-08-05T22:00:00Z</updated>
   <link rel="alternate" href="http://lelylan.com/"/>
   <link rel="self" href="http://lelylan.com/feed/"/>
   <author>
@@ -3633,197 +3644,208 @@ I"ëÀ<?xml version="1.0" encoding="UTF-8"?>
     <uri>http://lelylan.com</uri>
   </author>
   <entry>
-    <id>tag:lelylan.com,2012-07-26:/blog/thingspeak/</id>
-    <title type="html">ThingSpeak</title>
-    <published>2012-07-25T22:00:00Z</published>
-    <updated>2012-07-25T22:00:00Z</updated>
-    <link rel="alternate" href="http://lelylan.com/blog/thingspeak/"/>
+    <id>tag:lelylan.com,2012-08-06:/blog/evrythng/</id>
+    <title type="html">EVRYTHNG</title>
+    <published>2012-08-05T22:00:00Z</published>
+    <updated>2012-08-05T22:00:00Z</updated>
+    <link rel="alternate" href="http://lelylan.com/blog/evrythng/"/>
     <content type="html">&lt;div class="article"&gt;
 
   &lt;br/&gt;
 
   &lt;ul class="media-grid"&gt;
     &lt;li&gt;
-    &lt;a href="https://www.thingspeak.com/"&gt;&lt;img class="thumbnail" src="/images/blog/thingspeak/header.png" alt="ThingSpeak"&gt;&lt;/a&gt;
+    &lt;a href="http://evrythng.net/"&gt;&lt;img class="thumbnail" src="/images/blog/evrythng/header.png" alt="Evrythng"&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
   &lt;p&gt;
-  &lt;a href="https://www.thingspeak.com/"&gt;ThingSpeak&lt;/a&gt; is an open platform designed to enable
-  connections between things and people. Reading through their blog you can find different
-  examples and, I've to admit, some made me smile. The best is for sure the
-  &lt;a href="http://community.thingspeak.com/2012/06/a-twitter-powered-gumball-machine-built-on-thingspeak-arduino/"&gt;gum-ball machine&lt;/a&gt;
-  that being able to communicate with Twitter gets you a tasty gum-ball whenever you send a 
-  tweet to its account. I guess this could be a killer application for kids.
+  &lt;a href="http://evrythng.net/"&gt;EVRYTHNG&lt;/a&gt; is a platform used to create Active Digital 
+  Identities. These are unique online profiles for products and other objects to make them 
+  part of the Web. In this way every physical thing can be digitally connected.
   &lt;/p&gt;
 
   &lt;p&gt;
-  &lt;strong&gt;ThingSpeak API is open source&lt;/strong&gt; and available on 
-  &lt;a href="https://github.com/iobridge/thingspeak"&gt;github&lt;/a&gt;. This makes it different from 
-  any other service out there at least for two reasons. The first one is that you can run 
-  ThingSpeak on a private network, on your own servers. The second one is that you can take 
-  the source code and make changes, contributing with new features. Since it has been 
-  released in March 2011, it has been installed on over 500 servers. Nice numbers.
+    For example you could have a bike that tells you where it is placed if it has been moved, 
+    a smart meter that turns on your washing machines at the cheapest times or a camera that 
+    suggests you where to go to to get the perfect shots. All of this is based around the 
+    Active Digital Identity: the idea of having an online profile for every physical object.
   &lt;/p&gt;
 
   &lt;p&gt;
-  ThingSpeak is a Ruby on Rails 3.0 application and it includes everything to get 
-  started: user management, API key management, channel management and charting. 
-  The license for ThingSpeak is under GPLv3 for open source use and can be licensed 
-  from &lt;a href="http://www.iobridge.com/"&gt;ioBridge&lt;/a&gt; for closed source applications.
-  &lt;/p&gt;
-
-  &lt;h2&gt;What can I do?&lt;/h2&gt;
-
-  &lt;p&gt;
-  Think at ThingSpeak as a data container accessible via simple HTTP requests. Data can 
-  come from anything. Blood sugar levels measured by a glucose meter, server uptime or 
-  location info from a mobile phone. All of this data is stored in a &lt;code&gt;channel&lt;/code&gt;.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-  When you need to visualize your data, ThingSpeak has dynamic &lt;code&gt;charts&lt;/code&gt; and an API 
-  to customize them. The charts are used to display sensor data over time and they work on all 
-  devices by using JavaScript. The chart types supported are Line, Bar, Column, and Step and you
-  can set colors, sizing, and labels to fit your needs.
-  &lt;/p&gt;
-
-  &lt;ul class="media-grid"&gt;
-    &lt;li&gt;
-    &lt;a href="https://www.thingspeak.com/"&gt;&lt;img class="thumbnail" src="/images/blog/thingspeak/graph.png" alt="ThingSpeak"&gt;&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;h2&gt;Applications approach&lt;/h2&gt;
-
-  &lt;p&gt;
-  ThingSpeak offers several &lt;code&gt;applications&lt;/code&gt; to let channels communicate with 
-  other services and augment ThingSpeak capabilities. Right now we can find four of them.
-  &lt;/p&gt;
-
-  &lt;h3&gt;&lt;a href="https://www.thingspeak.com/apps/thingtweets"&gt;ThingTweet&lt;/a&gt;&lt;/h3&gt;
-
-  &lt;p&gt;
-  ThingTweet let you easily send status updates to Twitter along with storing your data in a 
-  ThingSpeak Channel at the same. For example you can have your garage door twitting "You left 
-  the door open" or your house saying "Today's power use was 6150 watts".
-  &lt;/p&gt;
-
-  &lt;pre&gt;
-POST /apps/thingtweet/1/statuses/update
-Host: api.thingspeak.com
-
-api_key={thingtweet_key}&amp;status=Your+dear+tulip+is+getting+thirsty.&lt;/pre&gt;
-  
-
-  &lt;h3&gt;&lt;a href="https://www.thingspeak.com/apps/thinghttp"&gt;ThingHTTP&lt;/a&gt;&lt;/h3&gt;
-
-  &lt;p&gt;
-  ThingHTTP allows a micrcontroller to connect to any web service using HTTP. It lets you
-  create a resource on the web and then control it using a simple API. It supports GET, 
-  POST, PUT, and DELETE methods, SSL, Basic Authentication and more.
-  &lt;p&gt;
-
-  &lt;p&gt;
-  Lets make an example with &lt;a href="https://www.twilio.com/"&gt;Twilio&lt;/a&gt;. Twilio is a cloud 
-  communication platform for phone calls and SMS messages. You can access to its functionalities
-  through its API, but it requires HTTPS and Basic Authentication which is perfect for 
-  high-level devices like phones, but nearly impossible for an embedded device like Arduino.
-  As ThingHTTP allows a device to make HTTPS calls to any service it easily let you interface 
-  the Twilio API with your device.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-  Sample request.
-  &lt;/p&gt;
-
-  &lt;pre&gt;
-POST /apps/thinghttp/send_request
-Host: api.thingspeak.com
-
-api_key={thinghttp_key}&amp;message=I+call+you+because+the+water+is+finished&lt;/pre&gt;
-
-  &lt;h3&gt;&lt;a href="https://www.thingspeak.com/apps/reacts"&gt;Reacts&lt;/a&gt;&lt;/h3&gt;
-
-  &lt;p&gt;
-  React allows you to trigger a request when your channel meets a certain condition. For
-  example, you can have your thermostat turn on by the time you get home from work or you
-  can post a Twitter update when your power use is higher than normal.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-  React let you check if a field:
+  EVRYTHNG has a clear target which can be split in three groups.
   &lt;/p&gt;
 
   &lt;ol&gt;
-    &lt;li&gt;&lt;code&gt;contains&lt;/code&gt;, &lt;code&gt;starts with&lt;/code&gt;, &lt;code&gt;ends with&lt;/code&gt;,
-    &lt;code&gt;is equal to&lt;/code&gt; or &lt;code&gt;is not equal to&lt;/code&gt; a string.
-    &lt;/li&gt;
-    &lt;li&gt;&lt;code&gt;is greater than&lt;/code&gt;, &lt;code&gt;is less than&lt;/code&gt; or &lt;code&gt;is equal
-      to&lt;/code&gt; a number. 
+    &lt;li&gt;
+    &lt;b&gt;Marketers&lt;/b&gt; to create digital experiences and new services built around the 
+    relationship between a customer and their product, improving the product experience.
     &lt;/li&gt;
     &lt;li&gt;
-    &lt;code&gt;is farther than&lt;/code&gt; or &lt;code&gt;is within&lt;/code&gt; a geo location.
+    &lt;b&gt;Manufacturers&lt;/b&gt; to create products with personalized digital experiences already 
+    embedded and build applications and services that store data and real-time updates 
+    from the physical objects.
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;b&gt;Developers&lt;/b&gt; to create applications that stores and uses real-time information 
+    related to the physical objects and to design new way to interact with them.
     &lt;/li&gt;
   &lt;/ol&gt;
 
   &lt;p&gt;
-  You can test your condition on every insert or on a periodic basis and differently
-  by the other services you do not have an API to create a reaction. You can do it only
-  through the ThingSpeak web interface.
-  &lt;/p&gt;
-
-  &lt;h3&gt;&lt;a href="https://www.thingspeak.com/apps/tweetcontrol"&gt;Tweetcontrol&lt;/a&gt;&lt;/h3&gt;
-
-  &lt;p&gt;
-  TweetControl allows you to receive notifications from your Twitter account when using
-  a specific &lt;code&gt;#hashtag&lt;/code&gt;. It uses the Twitter Streaming API, triggering changes
-  to your channels in real-time.
+  You can start using EVRYTHNG today for free managing up to 1000 Active Digital Identities
+  (which are more than enough for different scenarios) and 100MB of storage. Other plans are 
+  not available right now and if you have bigger needs, you need to get in touch with the team. 
   &lt;/p&gt;
 
   &lt;p&gt;
-  The flow is straight forward. You create a new TweetControl, fill the twitter screen
-  name to tied it to a twitter user, enter a hashtag to listen for (e.g. &lt;code&gt;#openlight&lt;/code&gt;)
-  and select a ThingHTTP request to execute. Also in this case there is not an API.
+  They have a good communication. You can follow them on &lt;a href="https://twitter.com/connectevrythng"&gt;
+  twitter&lt;/a&gt; or on their &lt;a href="http://www.webofthings.org/"&gt;blog&lt;/a&gt;, which as far as I 
+  can remember it is one of the first who started to talk about the Internet of things four 
+  years ago. Quite impressive in our opinion.
   &lt;/p&gt;
+
+
+  &lt;h2&gt;EVRYTHNG API&lt;/h2&gt;
+
+  &lt;p&gt;
+  To make all of this real, EVRYTHNG has created a platform to easily create third party 
+  applications and analytics around Active Digital Identities (from now on ADIs), all of 
+  this through a RESTful API and a secure software infrastructure that let you easily 
+  connect your objects to the web.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  Going more in details the infrastructure provides services for accessing, creating, 
+  storing, manipulating, sharing, or searching the ADIs for millions of real-world objects, 
+  and also a set of services and tools that can be useful for such applications. 
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  EVRYTHNG is currently in closed Beta and is available only to a limited group of commercial 
+  and academic partners. Anyway, I'm sure that signing up proposing ideas you want to develop 
+  will give you an early access. The main concepts are easy to get and the documentation let 
+  you understand the service step by step. Here an introduction.
+  &lt;/p&gt;
+
+  &lt;blockquote&gt;
+    &lt;p&gt;
+    &lt;code&gt;Thngs&lt;/code&gt; (it is not misspelled, they call it in this way) have various 
+    &lt;code&gt;Properties&lt;/code&gt; and can be organized into &lt;code&gt;Collections&lt;/code&gt;, and 
+    operated on by &lt;code&gt;Users&lt;/code&gt; and &lt;code&gt;Groups&lt;/code&gt;. Access control schemes 
+    can be used to decide who can interact with what resource and how. This is all you 
+    need to know to have a basic idea. Lets dig in deep.
+    &lt;/p&gt;
+  &lt;/blockquote&gt;
+
+  &lt;p&gt;
+  It accept JSON-P callbacks by adding a &lt;code&gt;?callback&lt;/code&gt; parameter to any GET call
+  so that you can have the results wrapped in a JSON function and they limit requests to API
+  to 5000 per day.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  The services are not complex and they are well described in the web site, so here we just 
+  sum them up.
+  &lt;/p&gt;
+
+  &lt;h3&gt;&lt;a href="http://dev.evrythng.net/#thngs"&gt;THNGS&lt;/a&gt;&lt;/h3&gt;
+  
+  &lt;p&gt;
+  An abstract notion of an object which has location and property data associated to it. Also 
+  called Active Digital Identities (ADIs), these resources can model real-world elements such 
+  as persons, places, cars, guitars, mobile phones, etc. 
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  You can set different params like a name, longitude, latitude which can be used to identify 
+  the thng, but also to enable search queries later on. Nice the ability to create many things 
+  at once which returns a list of IDs for the newly created resources.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  Sample &lt;code&gt;thng&lt;/code&gt; representation.
+  &lt;/p&gt;
+
+&lt;pre&gt;
+{
+"id": "44ed3d1ad0b1cdc02490081ca",
+"name": "Television",
+"description": "Sony Smart Television",
+"is_public": false,
+"latitude": "43.772828",
+"longitude": "11.249488",
+"created_at": "2011-04-18T23:23:56Z"
+}&lt;/pre&gt;
+
+  &lt;h3&gt;&lt;a href="http://dev.evrythng.net/#properties"&gt;PROPERTIES&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+  A Thng can have properties which are arbitrary key/value pairs to store any data. Values could 
+  be either text or binary.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  Sample &lt;code&gt;property&lt;/code&gt; representation.
+  &lt;/p&gt;
+
+&lt;pre&gt;
+{
+"key": "Volume",
+"value": "20"
+"created_at": "2011-04-18T12:10:56Z"
+}&lt;/pre&gt;
+
+
+  &lt;h3&gt;&lt;a href="http://dev.evrythng.net/#collections"&gt;COLLECTIONS&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+  A collection is a group of Thngs. Collections can be created by various users, and the same 
+  Thng can be in more than one collection.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  Sample &lt;code&gt;collection&lt;/code&gt; representation.
+  &lt;/p&gt;
+
+&lt;pre&gt;
+{
+"id": "44ed3d1ad0b1cdc02490081de",
+"name": "Electronics",
+"description": "Contains all electronics in my house",
+"is_public": true,
+"created_at": "2012-07-18T23:23:56Z"
+}&lt;/pre&gt;
+
+  &lt;h3&gt;Other stuff&lt;/h3&gt;
+
+  &lt;p&gt;
+  There is also a &lt;a href="http://dev.evrythng.net/#search"&gt;search&lt;/a&gt; service which does 
+  what it says. You can also find some wrappers to easily start building clients in 
+  &lt;a href="https://github.com/evrythng/evrythng-java-wrapper"&gt;Java&lt;/a&gt; and 
+  &lt;a href="https://github.com/evrythng/evrythng-ruby-wrapper"&gt;Ruby&lt;/a&gt;.
+  &lt;/p&gt;
+
 
   &lt;h2&gt;Conclusions&lt;/h2&gt;
 
   &lt;p&gt;
-  As you can see in this article we didn't describe the 
-  &lt;a href="http://community.thingspeak.com/documentation/api/"&gt;ThingSpeak API&lt;/a&gt;. 
-  We didn't do that for two reasons: the first is that the creation of &lt;code&gt;channels
-  &lt;/code&gt; and &lt;code&gt;charts&lt;/code&gt; is straightforward; the second is that the real 
-  power of ThingSpeak does not lies in its API, but on its applications.
+  When you get to read the website you get a nice feeling. Everything is placed in the right 
+  place, the design is very nice and the main concepts are easy to grasp.
   &lt;/p&gt;
 
   &lt;p&gt;
-  Applications are a key element to build a successful Internet of Things. Only when it will
-  interacts with all services out there we will be able to see its real power. In this 
-  ThingSpeak is good example of how things should be done. We saw some applications in 
-  action and we are looking forward for new ones to come.
+  Overall EVRYTHNG is a simple product if compared with solutions like 
+  &lt;a href="http://lelylan.com/blog/cosm/"&gt;COSM&lt;/a&gt;, but its simplicity is 
+  also its strength. We really enjoyed walking through the whole documentation 
+  and we had the feeling we could have started to use them right now. We loved this.
   &lt;/p&gt;
 
   &lt;p&gt;
-  We also liked the presence of tutorials explaining how to connect ThingSpeak with the 
-  real world. We can find examples about 
-  &lt;a href="http://community.thingspeak.com/tutorials/wireless/connecting-xbee-wireless-networks-to-thingspeak-via-the-connectport-x2-running-xig/"&gt;connecting XBee wireless networks&lt;/a&gt;,
-  &lt;a href="http://www.frank-zhao.com/thingspeak_mbed_tut1/"&gt;temperature monitoring using mbed&lt;/a&gt;, 
-  &lt;a href="http://community.thingspeak.com/tutorials/netduino/create-your-own-web-of-things-using-the-netduino-plus-and-thingspeak/"&gt;Netduino integration&lt;/a&gt; and of course about
-  &lt;a href="http://community.thingspeak.com/tutorials/arduino/using-an-arduino-ethernet-shield-to-update-a-thingspeak-channel/"&gt;Arduino&lt;/a&gt;.
-  Those kind of tutorial are never enough.
-
-  &lt;/p&gt;
-
-  &lt;p&gt;
-  Just two notes before closing the article. First, if compared with
-  &lt;a href="http://lelylan.com/blog/cosm/"&gt;Cosm&lt;/a&gt; or
-  &lt;a href="http://lelylan.com/blog/evrythng/"&gt;EVRYTHNG&lt;/a&gt;
-  the documentation can be surely improved. The feeling is that the site has all 
-  docs, tutorials and examples we need to build great stuff, but it could be better
-  organized to attract new developers. Second, they are missing some core concepts 
-  like oauth2 or devices provisioning which are a must in a service that wants to 
-  get into the Internet of Things market.
+  In the other side, the APIs don't let you do that much and this limits the developer 
+  ability to build new services. Concepts like oauth2 or physical devices provisioning
+  are not faced and in our opinion are too important to be left apart. Once they will be
+  integrated (or publicly released) they will be ready for the real Internet of Things market.
   &lt;/p&gt;
 
 &lt;/div&gt;</content>
@@ -4848,7 +4870,7 @@ api_key={thinghttp_key}&amp;message=I+call+you+because+the+water+is+finished&lt;
 &lt;/div&gt;</content>
   </entry>
 </feed>
-;T;@,I"/;T{;{	;I"ß9<!DOCTYPE HTML>
+;T;@,I"/;T{;{	;I"ï9<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -5087,9 +5109,9 @@ api_key={thinghttp_key}&amp;message=I+call+you+because+the+water+is+finished&lt;
     <ul class="content">
       
       <li class="post two-cols box ">
-        <a href="/blog/thingspeak/">
-          <span class="strap">ThingSpeak</span>
-          <span class="label"><span>O</span>pen <span>S</span>ource <span>I</span>nternet <span>o</span>f <span>T</span>hings
+        <a href="/blog/evrythng/">
+          <span class="strap">EVRYTHNG</span>
+          <span class="label"><span>D</span>igital <span>i</span>dentities <span>f</span>or <span>t</span>he <span>r</span>eal <span>w</span>orld
         </a>
       </li>
       
@@ -5304,7 +5326,7 @@ api_key={thinghttp_key}&amp;message=I+call+you+because+the+water+is+finished&lt;
 </div>
 
 <img src="/images/face.png" class="hidden">;T;
-I"Å(    <div id="overview">
+I"Õ(    <div id="overview">
       <div class="container centered">
         <div id="headline" class="home">
           <h1>Lelylan, reThink your house</h1>
@@ -5485,9 +5507,9 @@ I"Å(    <div id="overview">
     <ul class="content">
       
       <li class="post two-cols box ">
-        <a href="/blog/thingspeak/">
-          <span class="strap">ThingSpeak</span>
-          <span class="label"><span>O</span>pen <span>S</span>ource <span>I</span>nternet <span>o</span>f <span>T</span>hings
+        <a href="/blog/evrythng/">
+          <span class="strap">EVRYTHNG</span>
+          <span class="label"><span>D</span>igital <span>i</span>dentities <span>f</span>or <span>t</span>he <span>r</span>eal <span>w</span>orld
         </a>
       </li>
       
@@ -5945,7 +5967,7 @@ I"Å(    <div id="overview">
 
   </div>
 </div>;T;
-@9;@8I"/sitemap/;T{;{;I"¶<?xml version="1.0" encoding="UTF-8"?>
+@9;@8I"/sitemap/;T{;{;I"´<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://lelylan.com/about/</loc>
@@ -5969,6 +5991,10 @@ I"Å(    <div id="overview">
     <lastmod>2012-07-15</lastmod>
   </url>
   <url>
+    <loc>http://lelylan.com/blog/evrythng/</loc>
+    <lastmod>2012-07-26</lastmod>
+  </url>
+  <url>
     <loc>http://lelylan.com/blog/experts/</loc>
     <lastmod>2012-03-08</lastmod>
   </url>
@@ -5988,10 +6014,6 @@ I"Å(    <div id="overview">
   <url>
     <loc>http://lelylan.com/blog/sucks/</loc>
     <lastmod>2012-03-08</lastmod>
-  </url>
-  <url>
-    <loc>http://lelylan.com/blog/thingspeak/</loc>
-    <lastmod>2012-07-26</lastmod>
   </url>
   <url>
     <loc>http://lelylan.com/blog/why/</loc>
@@ -6739,7 +6761,7 @@ I"Å(    <div id="overview">
 
   </div>
 </div>;T;
-@C;@BI"/blog/tags/iot/;T{;{	;I"H<!DOCTYPE HTML>
+@C;@BI"/blog/tags/iot/;T{;{	;I"V<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -6823,15 +6845,15 @@ I"Å(    <div id="overview">
 
   <ul>
     <li>
-      <span class="title"><a href="/blog/iot/"><span>W</span>hat <span>t</span>he <span>h</span>ell <span>d</span>oes <span>#</span>IoT <span>m</span>eans?</a></span> -
-      <span class="subtitle"><a href="/blog/iot/"><span>A</span>n <span>o</span>pinionated <span>p</span>oint <span>o</span>f <span>v</span>iew</a></span>
+      <span class="title"><a href="/blog/evrythng/"><span>E</span>VRYTHNG</a></span> -
+      <span class="subtitle"><a href="/blog/evrythng/"><span>D</span>igital <span>i</span>dentities <span>f</span>or <span>t</span>he <span>r</span>eal <span>w</span>orld</a></span>
     </li>
   </ul>
 
   <ul>
     <li>
-      <span class="title"><a href="/blog/thingspeak/"><span>T</span>hingSpeak</a></span> -
-      <span class="subtitle"><a href="/blog/thingspeak/"><span>O</span>pen <span>S</span>ource <span>I</span>nternet <span>o</span>f <span>T</span>hings</a></span>
+      <span class="title"><a href="/blog/iot/"><span>W</span>hat <span>t</span>he <span>h</span>ell <span>d</span>oes <span>#</span>IoT <span>m</span>eans?</a></span> -
+      <span class="subtitle"><a href="/blog/iot/"><span>A</span>n <span>o</span>pinionated <span>p</span>oint <span>o</span>f <span>v</span>iew</a></span>
     </li>
   </ul>
 
@@ -6878,7 +6900,7 @@ I"Å(    <div id="overview">
   </body>
 </html>
 ;T;	I")<%= render('tags', :tag => 'iot') %>;T;
-I")
+I"7
   <ul>
     <li>
       <span class="title"><a href="/blog/boards/"><span>G</span>et <span>i</span>nto <span>t</span>he <span>H</span>ouse</a></span> -
@@ -6902,15 +6924,15 @@ I")
 
   <ul>
     <li>
-      <span class="title"><a href="/blog/iot/"><span>W</span>hat <span>t</span>he <span>h</span>ell <span>d</span>oes <span>#</span>IoT <span>m</span>eans?</a></span> -
-      <span class="subtitle"><a href="/blog/iot/"><span>A</span>n <span>o</span>pinionated <span>p</span>oint <span>o</span>f <span>v</span>iew</a></span>
+      <span class="title"><a href="/blog/evrythng/"><span>E</span>VRYTHNG</a></span> -
+      <span class="subtitle"><a href="/blog/evrythng/"><span>D</span>igital <span>i</span>dentities <span>f</span>or <span>t</span>he <span>r</span>eal <span>w</span>orld</a></span>
     </li>
   </ul>
 
   <ul>
     <li>
-      <span class="title"><a href="/blog/thingspeak/"><span>T</span>hingSpeak</a></span> -
-      <span class="subtitle"><a href="/blog/thingspeak/"><span>O</span>pen <span>S</span>ource <span>I</span>nternet <span>o</span>f <span>T</span>hings</a></span>
+      <span class="title"><a href="/blog/iot/"><span>W</span>hat <span>t</span>he <span>h</span>ell <span>d</span>oes <span>#</span>IoT <span>m</span>eans?</a></span> -
+      <span class="subtitle"><a href="/blog/iot/"><span>A</span>n <span>o</span>pinionated <span>p</span>oint <span>o</span>f <span>v</span>iew</a></span>
     </li>
   </ul>
 ;T;@GI"/blog/tags/philosofy/;T{;{	;I"‹<!DOCTYPE HTML>
@@ -7247,11 +7269,11 @@ I"é
       <span class="subtitle"><a href="/blog/wish/"><span>S</span>it <span>o</span>n <span>t</span>he <span>C</span>ouch <span>a</span>nd <span>k</span>eep <span>C</span>ontrol <span>o</span>f <span>E</span>verything</a></span>
     </li>
   </ul>
-;T;@SI"/blog/feed/;T{;{;I"óÀ<?xml version="1.0" encoding="UTF-8"?>
+;T;@SI"/blog/feed/;T{;{;I"Q¼<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://lelylan.com/</id>
   <title>Lelylan - reThink your house</title>
-  <updated>2012-07-25T22:00:00Z</updated>
+  <updated>2012-08-05T22:00:00Z</updated>
   <link rel="alternate" href="http://lelylan.com/"/>
   <link rel="self" href="http://lelylan.com/blog/feed.xml"/>
   <author>
@@ -7259,197 +7281,208 @@ I"é
     <uri>http://lelylan.com</uri>
   </author>
   <entry>
-    <id>tag:lelylan.com,2012-07-26:/blog/thingspeak/</id>
-    <title type="html">ThingSpeak</title>
-    <published>2012-07-25T22:00:00Z</published>
-    <updated>2012-07-25T22:00:00Z</updated>
-    <link rel="alternate" href="http://lelylan.com/blog/thingspeak/"/>
+    <id>tag:lelylan.com,2012-08-06:/blog/evrythng/</id>
+    <title type="html">EVRYTHNG</title>
+    <published>2012-08-05T22:00:00Z</published>
+    <updated>2012-08-05T22:00:00Z</updated>
+    <link rel="alternate" href="http://lelylan.com/blog/evrythng/"/>
     <content type="html">&lt;div class="article"&gt;
 
   &lt;br/&gt;
 
   &lt;ul class="media-grid"&gt;
     &lt;li&gt;
-    &lt;a href="https://www.thingspeak.com/"&gt;&lt;img class="thumbnail" src="/images/blog/thingspeak/header.png" alt="ThingSpeak"&gt;&lt;/a&gt;
+    &lt;a href="http://evrythng.net/"&gt;&lt;img class="thumbnail" src="/images/blog/evrythng/header.png" alt="Evrythng"&gt;&lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 
   &lt;p&gt;
-  &lt;a href="https://www.thingspeak.com/"&gt;ThingSpeak&lt;/a&gt; is an open platform designed to enable
-  connections between things and people. Reading through their blog you can find different
-  examples and, I've to admit, some made me smile. The best is for sure the
-  &lt;a href="http://community.thingspeak.com/2012/06/a-twitter-powered-gumball-machine-built-on-thingspeak-arduino/"&gt;gum-ball machine&lt;/a&gt;
-  that being able to communicate with Twitter gets you a tasty gum-ball whenever you send a 
-  tweet to its account. I guess this could be a killer application for kids.
+  &lt;a href="http://evrythng.net/"&gt;EVRYTHNG&lt;/a&gt; is a platform used to create Active Digital 
+  Identities. These are unique online profiles for products and other objects to make them 
+  part of the Web. In this way every physical thing can be digitally connected.
   &lt;/p&gt;
 
   &lt;p&gt;
-  &lt;strong&gt;ThingSpeak API is open source&lt;/strong&gt; and available on 
-  &lt;a href="https://github.com/iobridge/thingspeak"&gt;github&lt;/a&gt;. This makes it different from 
-  any other service out there at least for two reasons. The first one is that you can run 
-  ThingSpeak on a private network, on your own servers. The second one is that you can take 
-  the source code and make changes, contributing with new features. Since it has been 
-  released in March 2011, it has been installed on over 500 servers. Nice numbers.
+    For example you could have a bike that tells you where it is placed if it has been moved, 
+    a smart meter that turns on your washing machines at the cheapest times or a camera that 
+    suggests you where to go to to get the perfect shots. All of this is based around the 
+    Active Digital Identity: the idea of having an online profile for every physical object.
   &lt;/p&gt;
 
   &lt;p&gt;
-  ThingSpeak is a Ruby on Rails 3.0 application and it includes everything to get 
-  started: user management, API key management, channel management and charting. 
-  The license for ThingSpeak is under GPLv3 for open source use and can be licensed 
-  from &lt;a href="http://www.iobridge.com/"&gt;ioBridge&lt;/a&gt; for closed source applications.
-  &lt;/p&gt;
-
-  &lt;h2&gt;What can I do?&lt;/h2&gt;
-
-  &lt;p&gt;
-  Think at ThingSpeak as a data container accessible via simple HTTP requests. Data can 
-  come from anything. Blood sugar levels measured by a glucose meter, server uptime or 
-  location info from a mobile phone. All of this data is stored in a &lt;code&gt;channel&lt;/code&gt;.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-  When you need to visualize your data, ThingSpeak has dynamic &lt;code&gt;charts&lt;/code&gt; and an API 
-  to customize them. The charts are used to display sensor data over time and they work on all 
-  devices by using JavaScript. The chart types supported are Line, Bar, Column, and Step and you
-  can set colors, sizing, and labels to fit your needs.
-  &lt;/p&gt;
-
-  &lt;ul class="media-grid"&gt;
-    &lt;li&gt;
-    &lt;a href="https://www.thingspeak.com/"&gt;&lt;img class="thumbnail" src="/images/blog/thingspeak/graph.png" alt="ThingSpeak"&gt;&lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;h2&gt;Applications approach&lt;/h2&gt;
-
-  &lt;p&gt;
-  ThingSpeak offers several &lt;code&gt;applications&lt;/code&gt; to let channels communicate with 
-  other services and augment ThingSpeak capabilities. Right now we can find four of them.
-  &lt;/p&gt;
-
-  &lt;h3&gt;&lt;a href="https://www.thingspeak.com/apps/thingtweets"&gt;ThingTweet&lt;/a&gt;&lt;/h3&gt;
-
-  &lt;p&gt;
-  ThingTweet let you easily send status updates to Twitter along with storing your data in a 
-  ThingSpeak Channel at the same. For example you can have your garage door twitting "You left 
-  the door open" or your house saying "Today's power use was 6150 watts".
-  &lt;/p&gt;
-
-  &lt;pre&gt;
-POST /apps/thingtweet/1/statuses/update
-Host: api.thingspeak.com
-
-api_key={thingtweet_key}&amp;status=Your+dear+tulip+is+getting+thirsty.&lt;/pre&gt;
-  
-
-  &lt;h3&gt;&lt;a href="https://www.thingspeak.com/apps/thinghttp"&gt;ThingHTTP&lt;/a&gt;&lt;/h3&gt;
-
-  &lt;p&gt;
-  ThingHTTP allows a micrcontroller to connect to any web service using HTTP. It lets you
-  create a resource on the web and then control it using a simple API. It supports GET, 
-  POST, PUT, and DELETE methods, SSL, Basic Authentication and more.
-  &lt;p&gt;
-
-  &lt;p&gt;
-  Lets make an example with &lt;a href="https://www.twilio.com/"&gt;Twilio&lt;/a&gt;. Twilio is a cloud 
-  communication platform for phone calls and SMS messages. You can access to its functionalities
-  through its API, but it requires HTTPS and Basic Authentication which is perfect for 
-  high-level devices like phones, but nearly impossible for an embedded device like Arduino.
-  As ThingHTTP allows a device to make HTTPS calls to any service it easily let you interface 
-  the Twilio API with your device.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-  Sample request.
-  &lt;/p&gt;
-
-  &lt;pre&gt;
-POST /apps/thinghttp/send_request
-Host: api.thingspeak.com
-
-api_key={thinghttp_key}&amp;message=I+call+you+because+the+water+is+finished&lt;/pre&gt;
-
-  &lt;h3&gt;&lt;a href="https://www.thingspeak.com/apps/reacts"&gt;Reacts&lt;/a&gt;&lt;/h3&gt;
-
-  &lt;p&gt;
-  React allows you to trigger a request when your channel meets a certain condition. For
-  example, you can have your thermostat turn on by the time you get home from work or you
-  can post a Twitter update when your power use is higher than normal.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-  React let you check if a field:
+  EVRYTHNG has a clear target which can be split in three groups.
   &lt;/p&gt;
 
   &lt;ol&gt;
-    &lt;li&gt;&lt;code&gt;contains&lt;/code&gt;, &lt;code&gt;starts with&lt;/code&gt;, &lt;code&gt;ends with&lt;/code&gt;,
-    &lt;code&gt;is equal to&lt;/code&gt; or &lt;code&gt;is not equal to&lt;/code&gt; a string.
-    &lt;/li&gt;
-    &lt;li&gt;&lt;code&gt;is greater than&lt;/code&gt;, &lt;code&gt;is less than&lt;/code&gt; or &lt;code&gt;is equal
-      to&lt;/code&gt; a number. 
+    &lt;li&gt;
+    &lt;b&gt;Marketers&lt;/b&gt; to create digital experiences and new services built around the 
+    relationship between a customer and their product, improving the product experience.
     &lt;/li&gt;
     &lt;li&gt;
-    &lt;code&gt;is farther than&lt;/code&gt; or &lt;code&gt;is within&lt;/code&gt; a geo location.
+    &lt;b&gt;Manufacturers&lt;/b&gt; to create products with personalized digital experiences already 
+    embedded and build applications and services that store data and real-time updates 
+    from the physical objects.
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;b&gt;Developers&lt;/b&gt; to create applications that stores and uses real-time information 
+    related to the physical objects and to design new way to interact with them.
     &lt;/li&gt;
   &lt;/ol&gt;
 
   &lt;p&gt;
-  You can test your condition on every insert or on a periodic basis and differently
-  by the other services you do not have an API to create a reaction. You can do it only
-  through the ThingSpeak web interface.
-  &lt;/p&gt;
-
-  &lt;h3&gt;&lt;a href="https://www.thingspeak.com/apps/tweetcontrol"&gt;Tweetcontrol&lt;/a&gt;&lt;/h3&gt;
-
-  &lt;p&gt;
-  TweetControl allows you to receive notifications from your Twitter account when using
-  a specific &lt;code&gt;#hashtag&lt;/code&gt;. It uses the Twitter Streaming API, triggering changes
-  to your channels in real-time.
+  You can start using EVRYTHNG today for free managing up to 1000 Active Digital Identities
+  (which are more than enough for different scenarios) and 100MB of storage. Other plans are 
+  not available right now and if you have bigger needs, you need to get in touch with the team. 
   &lt;/p&gt;
 
   &lt;p&gt;
-  The flow is straight forward. You create a new TweetControl, fill the twitter screen
-  name to tied it to a twitter user, enter a hashtag to listen for (e.g. &lt;code&gt;#openlight&lt;/code&gt;)
-  and select a ThingHTTP request to execute. Also in this case there is not an API.
+  They have a good communication. You can follow them on &lt;a href="https://twitter.com/connectevrythng"&gt;
+  twitter&lt;/a&gt; or on their &lt;a href="http://www.webofthings.org/"&gt;blog&lt;/a&gt;, which as far as I 
+  can remember it is one of the first who started to talk about the Internet of things four 
+  years ago. Quite impressive in our opinion.
   &lt;/p&gt;
+
+
+  &lt;h2&gt;EVRYTHNG API&lt;/h2&gt;
+
+  &lt;p&gt;
+  To make all of this real, EVRYTHNG has created a platform to easily create third party 
+  applications and analytics around Active Digital Identities (from now on ADIs), all of 
+  this through a RESTful API and a secure software infrastructure that let you easily 
+  connect your objects to the web.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  Going more in details the infrastructure provides services for accessing, creating, 
+  storing, manipulating, sharing, or searching the ADIs for millions of real-world objects, 
+  and also a set of services and tools that can be useful for such applications. 
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  EVRYTHNG is currently in closed Beta and is available only to a limited group of commercial 
+  and academic partners. Anyway, I'm sure that signing up proposing ideas you want to develop 
+  will give you an early access. The main concepts are easy to get and the documentation let 
+  you understand the service step by step. Here an introduction.
+  &lt;/p&gt;
+
+  &lt;blockquote&gt;
+    &lt;p&gt;
+    &lt;code&gt;Thngs&lt;/code&gt; (it is not misspelled, they call it in this way) have various 
+    &lt;code&gt;Properties&lt;/code&gt; and can be organized into &lt;code&gt;Collections&lt;/code&gt;, and 
+    operated on by &lt;code&gt;Users&lt;/code&gt; and &lt;code&gt;Groups&lt;/code&gt;. Access control schemes 
+    can be used to decide who can interact with what resource and how. This is all you 
+    need to know to have a basic idea. Lets dig in deep.
+    &lt;/p&gt;
+  &lt;/blockquote&gt;
+
+  &lt;p&gt;
+  It accept JSON-P callbacks by adding a &lt;code&gt;?callback&lt;/code&gt; parameter to any GET call
+  so that you can have the results wrapped in a JSON function and they limit requests to API
+  to 5000 per day.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  The services are not complex and they are well described in the web site, so here we just 
+  sum them up.
+  &lt;/p&gt;
+
+  &lt;h3&gt;&lt;a href="http://dev.evrythng.net/#thngs"&gt;THNGS&lt;/a&gt;&lt;/h3&gt;
+  
+  &lt;p&gt;
+  An abstract notion of an object which has location and property data associated to it. Also 
+  called Active Digital Identities (ADIs), these resources can model real-world elements such 
+  as persons, places, cars, guitars, mobile phones, etc. 
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  You can set different params like a name, longitude, latitude which can be used to identify 
+  the thng, but also to enable search queries later on. Nice the ability to create many things 
+  at once which returns a list of IDs for the newly created resources.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  Sample &lt;code&gt;thng&lt;/code&gt; representation.
+  &lt;/p&gt;
+
+&lt;pre&gt;
+{
+"id": "44ed3d1ad0b1cdc02490081ca",
+"name": "Television",
+"description": "Sony Smart Television",
+"is_public": false,
+"latitude": "43.772828",
+"longitude": "11.249488",
+"created_at": "2011-04-18T23:23:56Z"
+}&lt;/pre&gt;
+
+  &lt;h3&gt;&lt;a href="http://dev.evrythng.net/#properties"&gt;PROPERTIES&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+  A Thng can have properties which are arbitrary key/value pairs to store any data. Values could 
+  be either text or binary.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  Sample &lt;code&gt;property&lt;/code&gt; representation.
+  &lt;/p&gt;
+
+&lt;pre&gt;
+{
+"key": "Volume",
+"value": "20"
+"created_at": "2011-04-18T12:10:56Z"
+}&lt;/pre&gt;
+
+
+  &lt;h3&gt;&lt;a href="http://dev.evrythng.net/#collections"&gt;COLLECTIONS&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+  A collection is a group of Thngs. Collections can be created by various users, and the same 
+  Thng can be in more than one collection.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  Sample &lt;code&gt;collection&lt;/code&gt; representation.
+  &lt;/p&gt;
+
+&lt;pre&gt;
+{
+"id": "44ed3d1ad0b1cdc02490081de",
+"name": "Electronics",
+"description": "Contains all electronics in my house",
+"is_public": true,
+"created_at": "2012-07-18T23:23:56Z"
+}&lt;/pre&gt;
+
+  &lt;h3&gt;Other stuff&lt;/h3&gt;
+
+  &lt;p&gt;
+  There is also a &lt;a href="http://dev.evrythng.net/#search"&gt;search&lt;/a&gt; service which does 
+  what it says. You can also find some wrappers to easily start building clients in 
+  &lt;a href="https://github.com/evrythng/evrythng-java-wrapper"&gt;Java&lt;/a&gt; and 
+  &lt;a href="https://github.com/evrythng/evrythng-ruby-wrapper"&gt;Ruby&lt;/a&gt;.
+  &lt;/p&gt;
+
 
   &lt;h2&gt;Conclusions&lt;/h2&gt;
 
   &lt;p&gt;
-  As you can see in this article we didn't describe the 
-  &lt;a href="http://community.thingspeak.com/documentation/api/"&gt;ThingSpeak API&lt;/a&gt;. 
-  We didn't do that for two reasons: the first is that the creation of &lt;code&gt;channels
-  &lt;/code&gt; and &lt;code&gt;charts&lt;/code&gt; is straightforward; the second is that the real 
-  power of ThingSpeak does not lies in its API, but on its applications.
+  When you get to read the website you get a nice feeling. Everything is placed in the right 
+  place, the design is very nice and the main concepts are easy to grasp.
   &lt;/p&gt;
 
   &lt;p&gt;
-  Applications are a key element to build a successful Internet of Things. Only when it will
-  interacts with all services out there we will be able to see its real power. In this 
-  ThingSpeak is good example of how things should be done. We saw some applications in 
-  action and we are looking forward for new ones to come.
+  Overall EVRYTHNG is a simple product if compared with solutions like 
+  &lt;a href="http://lelylan.com/blog/cosm/"&gt;COSM&lt;/a&gt;, but its simplicity is 
+  also its strength. We really enjoyed walking through the whole documentation 
+  and we had the feeling we could have started to use them right now. We loved this.
   &lt;/p&gt;
 
   &lt;p&gt;
-  We also liked the presence of tutorials explaining how to connect ThingSpeak with the 
-  real world. We can find examples about 
-  &lt;a href="http://community.thingspeak.com/tutorials/wireless/connecting-xbee-wireless-networks-to-thingspeak-via-the-connectport-x2-running-xig/"&gt;connecting XBee wireless networks&lt;/a&gt;,
-  &lt;a href="http://www.frank-zhao.com/thingspeak_mbed_tut1/"&gt;temperature monitoring using mbed&lt;/a&gt;, 
-  &lt;a href="http://community.thingspeak.com/tutorials/netduino/create-your-own-web-of-things-using-the-netduino-plus-and-thingspeak/"&gt;Netduino integration&lt;/a&gt; and of course about
-  &lt;a href="http://community.thingspeak.com/tutorials/arduino/using-an-arduino-ethernet-shield-to-update-a-thingspeak-channel/"&gt;Arduino&lt;/a&gt;.
-  Those kind of tutorial are never enough.
-
-  &lt;/p&gt;
-
-  &lt;p&gt;
-  Just two notes before closing the article. First, if compared with
-  &lt;a href="http://lelylan.com/blog/cosm/"&gt;Cosm&lt;/a&gt; or
-  &lt;a href="http://lelylan.com/blog/evrythng/"&gt;EVRYTHNG&lt;/a&gt;
-  the documentation can be surely improved. The feeling is that the site has all 
-  docs, tutorials and examples we need to build great stuff, but it could be better
-  organized to attract new developers. Second, they are missing some core concepts 
-  like oauth2 or devices provisioning which are a must in a service that wants to 
-  get into the Internet of Things market.
+  In the other side, the APIs don't let you do that much and this limits the developer 
+  ability to build new services. Concepts like oauth2 or physical devices provisioning
+  are not faced and in our opinion are too important to be left apart. Once they will be
+  integrated (or publicly released) they will be ready for the real Internet of Things market.
   &lt;/p&gt;
 
 &lt;/div&gt;</content>
@@ -13780,7 +13813,7 @@ I"x
   </p>
 
 </div>;T;
-@“;@’I"/blog/evrythng/;T{;{	;I"w5<!DOCTYPE HTML>
+@“;@’I"/blog/evrythng/;T{;{	;I"…5<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -13791,7 +13824,7 @@ I"x
     <meta name="copyright" content="Copyright Â© Lelylan">
     <meta name="viewport" content="width=device-width">
 
-    <title>Lelylan Blog | Evrythng</title>
+    <title>Lelylan Blog | EVRYTHNG</title>
 
     <link href="/stylesheets/screen.css" type="text/css" rel="stylesheet" media="screen">
     <link href="/stylesheets/boxes.css" type="text/css" rel="stylesheet" media="screen">
@@ -13842,7 +13875,7 @@ I"x
     <div id="page">
       <div id="main">
                 
-        <h1>Evrythng</h1>
+        <h1>EVRYTHNG</h1>
         <span class="sub">Digital identities for the real world</span>
         <p>
           Written by <a href="http://twitter.com/andreareginato">Lelylan Chief</a> | Aug 06, 2012
@@ -14055,7 +14088,7 @@ I"x
           <div class="addthis_toolbox addthis_default_style" 
   style="padding-top: 0px;"
   addthis:url="http://lelylan.com/blog/evrythng/"
-  addthis:title="Evrythng. Digital identities for the real world">
+  addthis:title="EVRYTHNG. Digital identities for the real world">
   <a class="addthis_button_hackernews"></a>
   <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
   <a class="addthis_button_tweet" tw:via="lelylan"></a>
@@ -14129,8 +14162,8 @@ I"x
             <div id="siteinfo">
         <div>
           <span>Â© Lelylan 2012</span>
-          <a href="/tos/">TOS</a>
-          <a href="/privacy/">Privacy</a>
+          <!--<a href="/tos/">TOS</a>-->
+          <!--<a href="/privacy/">Privacy</a>-->
         </div>
       </div>
  
