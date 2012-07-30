@@ -275,6 +275,202 @@
 &lt;/div&gt;</content>
   </entry>
   <entry>
+    <id>tag:lelylan.com,2012-07-26:/blog/thingspeak/</id>
+    <title type="html">ThingSpeak</title>
+    <published>2012-07-25T22:00:00Z</published>
+    <updated>2012-07-25T22:00:00Z</updated>
+    <link rel="alternate" href="http://lelylan.com/blog/thingspeak/"/>
+    <content type="html">&lt;div class="article"&gt;
+
+  &lt;br/&gt;
+
+  &lt;ul class="media-grid"&gt;
+    &lt;li&gt;
+    &lt;a href="https://www.thingspeak.com/"&gt;&lt;img class="thumbnail" src="/images/blog/thingspeak/header.png" alt="ThingSpeak"&gt;&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;
+  &lt;a href="https://www.thingspeak.com/"&gt;ThingSpeak&lt;/a&gt; is an open platform designed to enable
+  connections between things and people. Reading through their blog you can find different
+  examples and, I've to admit, some made me smile. The best is for sure the
+  &lt;a href="http://community.thingspeak.com/2012/06/a-twitter-powered-gumball-machine-built-on-thingspeak-arduino/"&gt;gum-ball machine&lt;/a&gt;
+  that being able to communicate with Twitter gets you a tasty gum-ball whenever you send a 
+  tweet to its account. I guess this could be a killer application for kids.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  &lt;strong&gt;ThingSpeak API is open source&lt;/strong&gt; and available on 
+  &lt;a href="https://github.com/iobridge/thingspeak"&gt;github&lt;/a&gt;. This makes it different from 
+  any other service out there at least for two reasons. The first one is that you can run 
+  ThingSpeak on a private network, on your own servers. The second one is that you can take 
+  the source code and make changes, contributing with new features. Since it has been 
+  released in March 2011, it has been installed on over 500 servers. Nice numbers.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  ThingSpeak is a Ruby on Rails 3.0 application and it includes everything to get 
+  started: user management, API key management, channel management and charting. 
+  The license for ThingSpeak is under GPLv3 for open source use and can be licensed 
+  from &lt;a href="http://www.iobridge.com/"&gt;ioBridge&lt;/a&gt; for closed source applications.
+  &lt;/p&gt;
+
+  &lt;h2&gt;What can I do?&lt;/h2&gt;
+
+  &lt;p&gt;
+  Think at ThingSpeak as a data container accessible via simple HTTP requests. Data can 
+  come from anything. Blood sugar levels measured by a glucose meter, server uptime or 
+  location info from a mobile phone. All of this data is stored in a &lt;code&gt;channel&lt;/code&gt;.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  When you need to visualize your data, ThingSpeak has dynamic &lt;code&gt;charts&lt;/code&gt; and an API 
+  to customize them. The charts are used to display sensor data over time and they work on all 
+  devices by using JavaScript. The chart types supported are Line, Bar, Column, and Step and you
+  can set colors, sizing, and labels to fit your needs.
+  &lt;/p&gt;
+
+  &lt;ul class="media-grid"&gt;
+    &lt;li&gt;
+    &lt;a href="https://www.thingspeak.com/"&gt;&lt;img class="thumbnail" src="/images/blog/thingspeak/graph.png" alt="ThingSpeak"&gt;&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;h2&gt;Applications approach&lt;/h2&gt;
+
+  &lt;p&gt;
+  ThingSpeak offers several &lt;code&gt;applications&lt;/code&gt; to let channels communicate with 
+  other services and augment ThingSpeak capabilities. Right now we can find four of them.
+  &lt;/p&gt;
+
+  &lt;h3&gt;&lt;a href="https://www.thingspeak.com/apps/thingtweets"&gt;ThingTweet&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+  ThingTweet let you easily send status updates to Twitter along with storing your data in a 
+  ThingSpeak Channel at the same. For example you can have your garage door twitting "You left 
+  the door open" or your house saying "Today's power use was 6150 watts".
+  &lt;/p&gt;
+
+  &lt;pre&gt;
+POST /apps/thingtweet/1/statuses/update
+Host: api.thingspeak.com
+
+api_key={thingtweet_key}&amp;status=Your+dear+tulip+is+getting+thirsty.&lt;/pre&gt;
+  
+
+  &lt;h3&gt;&lt;a href="https://www.thingspeak.com/apps/thinghttp"&gt;ThingHTTP&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+  ThingHTTP allows a micrcontroller to connect to any web service using HTTP. It lets you
+  create a resource on the web and then control it using a simple API. It supports GET, 
+  POST, PUT, and DELETE methods, SSL, Basic Authentication and more.
+  &lt;p&gt;
+
+  &lt;p&gt;
+  Lets make an example with &lt;a href="https://www.twilio.com/"&gt;Twilio&lt;/a&gt;. Twilio is a cloud 
+  communication platform for phone calls and SMS messages. You can access to its functionalities
+  through its API, but it requires HTTPS and Basic Authentication which is perfect for 
+  high-level devices like phones, but nearly impossible for an embedded device like Arduino.
+  As ThingHTTP allows a device to make HTTPS calls to any service it easily let you interface 
+  the Twilio API with your device.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  Sample request.
+  &lt;/p&gt;
+
+  &lt;pre&gt;
+POST /apps/thinghttp/send_request
+Host: api.thingspeak.com
+
+api_key={thinghttp_key}&amp;message=I+call+you+because+the+water+is+finished&lt;/pre&gt;
+
+  &lt;h3&gt;&lt;a href="https://www.thingspeak.com/apps/reacts"&gt;Reacts&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+  React allows you to trigger a request when your channel meets a certain condition. For
+  example, you can have your thermostat turn on by the time you get home from work or you
+  can post a Twitter update when your power use is higher than normal.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  React let you check if a field:
+  &lt;/p&gt;
+
+  &lt;ol&gt;
+    &lt;li&gt;&lt;code&gt;contains&lt;/code&gt;, &lt;code&gt;starts with&lt;/code&gt;, &lt;code&gt;ends with&lt;/code&gt;,
+    &lt;code&gt;is equal to&lt;/code&gt; or &lt;code&gt;is not equal to&lt;/code&gt; a string.
+    &lt;/li&gt;
+    &lt;li&gt;&lt;code&gt;is greater than&lt;/code&gt;, &lt;code&gt;is less than&lt;/code&gt; or &lt;code&gt;is equal
+      to&lt;/code&gt; a number. 
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;code&gt;is farther than&lt;/code&gt; or &lt;code&gt;is within&lt;/code&gt; a geo location.
+    &lt;/li&gt;
+  &lt;/ol&gt;
+
+  &lt;p&gt;
+  You can test your condition on every insert or on a periodic basis and differently
+  by the other services you do not have an API to create a reaction. You can do it only
+  through the ThingSpeak web interface.
+  &lt;/p&gt;
+
+  &lt;h3&gt;&lt;a href="https://www.thingspeak.com/apps/tweetcontrol"&gt;Tweetcontrol&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+  TweetControl allows you to receive notifications from your Twitter account when using
+  a specific &lt;code&gt;#hashtag&lt;/code&gt;. It uses the Twitter Streaming API, triggering changes
+  to your channels in real-time.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  The flow is straight forward. You create a new TweetControl, fill the twitter screen
+  name to tied it to a twitter user, enter a hashtag to listen for (e.g. &lt;code&gt;#openlight&lt;/code&gt;)
+  and select a ThingHTTP request to execute. Also in this case there is not an API.
+  &lt;/p&gt;
+
+  &lt;h2&gt;Conclusions&lt;/h2&gt;
+
+  &lt;p&gt;
+  As you can see in this article we didn't describe the 
+  &lt;a href="http://community.thingspeak.com/documentation/api/"&gt;ThingSpeak API&lt;/a&gt;. 
+  We didn't do that for two reasons: the first is that the creation of &lt;code&gt;channels
+  &lt;/code&gt; and &lt;code&gt;charts&lt;/code&gt; is straightforward; the second is that the real 
+  power of ThingSpeak does not lies in its API, but on its applications.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  Applications are a key element to build a successful Internet of Things. Only when it will
+  interacts with all services out there we will be able to see its real power. In this 
+  ThingSpeak is good example of how things should be done. We saw some applications in 
+  action and we are looking forward for new ones to come.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  We also liked the presence of tutorials explaining how to connect ThingSpeak with the 
+  real world. We can find examples about 
+  &lt;a href="http://community.thingspeak.com/tutorials/wireless/connecting-xbee-wireless-networks-to-thingspeak-via-the-connectport-x2-running-xig/"&gt;connecting XBee wireless networks&lt;/a&gt;,
+  &lt;a href="http://www.frank-zhao.com/thingspeak_mbed_tut1/"&gt;temperature monitoring using mbed&lt;/a&gt;, 
+  &lt;a href="http://community.thingspeak.com/tutorials/netduino/create-your-own-web-of-things-using-the-netduino-plus-and-thingspeak/"&gt;Netduino integration&lt;/a&gt; and of course about
+  &lt;a href="http://community.thingspeak.com/tutorials/arduino/using-an-arduino-ethernet-shield-to-update-a-thingspeak-channel/"&gt;Arduino&lt;/a&gt;.
+  Those kind of tutorial are never enough.
+
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  Just two notes before closing the article. First, if compared with
+  &lt;a href="http://lelylan.com/blog/cosm/"&gt;Cosm&lt;/a&gt; or
+  &lt;a href="http://lelylan.com/blog/evrythng/"&gt;EVRYTHNG&lt;/a&gt;
+  the documentation can be surely improved. The feeling is that the site has all 
+  docs, tutorials and examples we need to build great stuff, but it could be better
+  organized to attract new developers. Second, they are missing some core concepts 
+  like oauth2 or devices provisioning which are a must in a service that wants to 
+  get into the Internet of Things market.
+  &lt;/p&gt;
+
+&lt;/div&gt;</content>
+  </entry>
+  <entry>
     <id>tag:lelylan.com,2012-07-24:/blog/cosm/</id>
     <title type="html">Cosm (aka Pachube)</title>
     <published>2012-07-23T22:00:00Z</published>
@@ -1045,251 +1241,6 @@
   &lt;p&gt;
     This is an opinionated list with the best solutions out there. If you think we are missing
     a good one  write a comment or &lt;a href="/about/"&gt;get in touch&lt;/a&gt; with us.
-  &lt;/p&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <id>tag:lelylan.com,2012-03-09:/blog/electronics/</id>
-    <title type="html">Hacking the Internet of Things</title>
-    <published>2012-03-08T23:00:00Z</published>
-    <updated>2012-03-08T23:00:00Z</updated>
-    <link rel="alternate" href="http://lelylan.com/blog/electronics/"/>
-    <content type="html">&lt;div class="article"&gt;
-
-  &lt;ul class="media-grid"&gt;
-    &lt;li&gt;
-      &lt;a href="#"&gt;
-        &lt;img class="thumbnail" src="/images/blog/electronics/header.png" alt=""&gt;
-      &lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-  
-  &lt;p&gt;
-    When you connect devices to the web you face different issues. The first one is to 
-    understand which is the best electronic device to use. In Lelylan we are experimenting 
-    physical nodes, devices that defines a set of web services to connect your house to the web.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-    In order to build a physical node you can use different hardware solutions varying on 
-    &lt;a href="http://beyondthekeeboard.wordpress.com/2011/06/25/a-simple-overview-to-help-choose-your-hardware-for-internet-of-things-solutions/"&gt;computational power, wireless capability and budget&lt;/a&gt;. 
-    The only required thing is the ability to build a web server that accepts and send 
-    requests over the internet.
-  &lt;/p&gt;
-
-
-
-  &lt;br/&gt;
-  &lt;h2&gt;&lt;a href="http://arduino.cc"&gt;Arduino&lt;/a&gt;&lt;/h2&gt;
-
-  &lt;ul class="media-grid"&gt;
-    &lt;li&gt;
-      &lt;a href="http://arduino.cc"&gt;
-        &lt;img class="thumbnail" src="/images/blog/electronics/arduino.png" alt=""&gt;
-      &lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;p&gt;
-    &lt;strong&gt;Description&lt;/strong&gt;:
-    open-source electronics prototyping platform based on flexible, easy-to-use 
-    hardware and software. It's intended for artists, designers, hobbyists, and 
-    anyone interested in creating interactive objects or environments. It can be
-    connected to the internet using 
-    &lt;a href="http://store.arduino.cc/it/index.php?main_page=product_info&amp;cPath=11_12&amp;products_id=141"&gt;ethernet&lt;/a&gt;, 
-    &lt;a href="http://store.arduino.cc/it/index.php?main_page=product_info&amp;cPath=11_5&amp;products_id=5"&gt;zigbee&lt;/a&gt;, 
-    &lt;a href="http://www.sparkfun.com/products/9954"&gt;wifi&lt;/a&gt; and more.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-    &lt;strong&gt;Good&lt;/strong&gt;:
-    big community, open-source hw, cheap, documentation.
-  &lt;/p&gt;
-  &lt;p&gt;
-    &lt;strong&gt;Bad&lt;/strong&gt;:
-    computational power.
-  &lt;/p&gt;
-  &lt;p&gt;
-    &lt;strong&gt;Prices&lt;/strong&gt;: 
-    &lt;strong&gt;base&lt;/strong&gt;
-      &lt;a href="http://store.arduino.cc/it/index.php?main_page=product_info&amp;cPath=11_12&amp;products_id=195"&gt;~ $30&lt;/a&gt;,
-    &lt;strong&gt;ethernet&lt;/strong&gt;
-      &lt;a href="http://store.arduino.cc/it/index.php?main_page=product_info&amp;cPath=11_12&amp;products_id=141"&gt;~ $60&lt;/a&gt;,
-    &lt;strong&gt;wifi&lt;/strong&gt;
-      &lt;a href="http://www.sparkfun.com/products/9954"&gt;~ $120&lt;/a&gt; and
-    &lt;strong&gt;zigbee&lt;/strong&gt; 
-      &lt;a href="http://store.arduino.cc/it/index.php?main_page=product_info&amp;cPath=11_5&amp;products_id=5"&gt;~ $75&lt;/a&gt; 
-      (including &lt;a href="http://www.sparkfun.com/products/8664"&gt;XBee Antenna&lt;/a&gt;).
-  &lt;/p&gt;
-
-
-
-  &lt;br/&gt;
-  &lt;h2&gt;&lt;a href="http://nanode.eu/"&gt;Nanode&lt;/a&gt;&lt;/h2&gt;
-
-  &lt;ul class="media-grid"&gt;
-    &lt;li&gt;
-      &lt;a href="http://nanode.eu/"&gt;
-        &lt;img class="thumbnail" src="/images/blog/electronics/nanode.png" alt=""&gt;
-      &lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;p&gt;
-    &lt;strong&gt;Description&lt;/strong&gt;:
-    open source Arduino-like board that has in-built web connectivity. It connects to a range 
-    of wireless, wired and ethernet interfaces. It allows you to develop web based sensors and 
-    control systems, giving you web access to six analogue sensor lines and six digital I/O 
-    lines. Nanode was designed with hacking in mind.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-    &lt;strong&gt;Good&lt;/strong&gt;:
-    built-in web connectivity, open-source hw, really cheap, arduino compatible.
-  &lt;/p&gt;
-  &lt;p&gt;
-    &lt;strong&gt;Bad&lt;/strong&gt;:
-    computational power, documentation.
-  &lt;/p&gt;
-  &lt;p&gt;
-    &lt;strong&gt;Prices&lt;/strong&gt;:
-    &lt;strong&gt;ethernet&lt;/strong&gt; &lt;a href="http://nanode.eu/buy"&gt;~ $40&lt;/a&gt; and
-    &lt;strong&gt;wireless&lt;/strong&gt; &lt;a href="http://nanode.eu/buy"&gt;~ $48&lt;/a&gt; 
-    (uses &lt;a href="http://www.sparkfun.com/products/9582"&gt;RFM12B wireless transceiver&lt;/a&gt;).
-  &lt;/p&gt;
-
-
-
-  &lt;br/&gt;
-  &lt;h2&gt;&lt;a href="http://www.openpicus.com"&gt;openPICUS&lt;/a&gt;&lt;/h2&gt;
-
-  &lt;ul class="media-grid"&gt;
-    &lt;li&gt;
-      &lt;a href="http://www.openpicus.com"&gt;
-        &lt;img class="thumbnail" src="/images/blog/electronics/openpicus.png" alt=""&gt;
-      &lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;p&gt;
-    &lt;strong&gt;Description&lt;/strong&gt;:
-    defines itself as Internet freedom for your things, control and communication for 
-    electronic devices. A standalone hardware and software platform for embedded applications 
-    to interact via web, email or messages with simple sensors or complex electronic equipment.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-    &lt;strong&gt;Good&lt;/strong&gt;:
-    built-in web connectivity, cheap, good documentation, support.
-  &lt;/p&gt;
-  &lt;p&gt;
-    &lt;strong&gt;Bad&lt;/strong&gt;:
-    computational power, development windows oriented.
-  &lt;/p&gt;
-  &lt;p&gt;
-    &lt;strong&gt;Price&lt;/strong&gt;:
-    &lt;strong&gt;wifi&lt;/strong&gt;
-    &lt;a href="http://www.eikonsite.it/openpicus/prodotti.aspx?cprod=015365"&gt;~ $90&lt;/a&gt;.
-  &lt;/p&gt;
-
-
-
-  &lt;br/&gt;
-  &lt;h2&gt;&lt;a href="http://www.netduino.com"&gt;Netduino&lt;/a&gt;&lt;/h2&gt;
-
-  &lt;ul class="media-grid"&gt;
-    &lt;li&gt;
-      &lt;a href="http://www.netduino.com/"&gt;
-        &lt;img class="thumbnail" src="/images/blog/electronics/netduino.png" alt=""&gt;
-      &lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;p&gt;
-    &lt;strong&gt;Description&lt;/strong&gt;:
-    open-source electronics platform using the .NET Micro Framework. With Netduino, the world 
-    of microcontroller programming can be easily aproached by people programming with .NET.  
-    Netduino is designed to enable both personal projects and sophisticated commercial endeavors. 
-  &lt;/p&gt;
-
-  &lt;p&gt;
-    &lt;strong&gt;Good&lt;/strong&gt;:
-    open-source hw, cheap, documentation, arduino compatible, .NET programming.
-  &lt;/p&gt;
-  &lt;p&gt;
-    &lt;strong&gt;Bad&lt;/strong&gt;:
-    computational power.
-  &lt;/p&gt;
-  &lt;p&gt;
-    &lt;strong&gt;Prices&lt;/strong&gt;: 
-    &lt;strong&gt;base&lt;/strong&gt;
-      &lt;a href="http://www.sparkfun.com/products/10107"&lt;/a&gt;~ $35&lt;/a&gt;,
-    &lt;strong&gt;ethernet&lt;/strong&gt;
-      &lt;a href="http://www.sparkfun.com/products/10186"&gt;~ $60&lt;/a&gt;,
-    &lt;strong&gt;wifi&lt;/strong&gt;
-      &lt;a href="http://www.sparkfun.com/products/9954"&gt;~ $120&lt;/a&gt; and
-    &lt;strong&gt;zigbee&lt;/strong&gt; 
-      &lt;a href="http://store.arduino.cc/it/index.php?main_page=product_info&amp;cPath=11_5&amp;products_id=5"&gt;~ $75&lt;/a&gt; 
-      (including &lt;a href="http://www.sparkfun.com/products/8664"&gt;XBee Antenna&lt;/a&gt;).
-  &lt;/p&gt;
-
-
-
-  &lt;br/&gt;
-  &lt;h2&gt;&lt;a href="http://www.libelium.com/"&gt;Libelium Waspmote&lt;/a&gt;&lt;/h2&gt;
-
-  &lt;ul class="media-grid"&gt;
-    &lt;li&gt;
-      &lt;a href="http://www.libelium.com/"&gt;
-        &lt;img class="thumbnail" src="/images/blog/electronics/libelium.png" alt=""&gt;
-      &lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;p&gt;
-    &lt;strong&gt;Description&lt;/strong&gt;:
-    sensor device developers oriented. It works with different communicaction protocols 
-    (ZigBee, wifi, Bluetooth and GPRS) and frequencies (2.4GHz, 868MHz, 900MHz) and creates
-    links up to 12Km. Using the hibernate low power mode (0.7uA) it can save battery energy 
-    when not transmitting and be able to work even for years. Waspmote is compatible with 
-    more than 50 sensors and its open source IDE makes really easy to start working with it
-  &lt;/p&gt;
-
-  &lt;p&gt;
-    &lt;strong&gt;Good&lt;/strong&gt;:
-    documentation, solid,
-    &lt;a href="http://www.libelium.com/products/waspmote/hardware"&gt;radio boards&lt;/a&gt;,
-    &lt;a href="http://www.libelium.com/products/waspmote/sensors"&gt;sensors boards&lt;/a&gt;,
-    &lt;a href="http://www.libelium.com/products/waspmote/OTA"&gt;over the air programming&lt;/a&gt;,
-    libelium support.
-  &lt;/p&gt;
-  &lt;p&gt;
-    &lt;strong&gt;Bad&lt;/strong&gt;:
-    computational power, expensive.
-  &lt;/p&gt;
-  &lt;p&gt;
-    &lt;strong&gt;Price&lt;/strong&gt;: 
-    &lt;strong&gt;zigbee&lt;/strong&gt;
-    &lt;a href="http://www.libelium.com/products/waspmote"&lt;/a&gt;~ $180&lt;/a&gt;,
-    &lt;strong&gt;wifi&lt;/strong&gt;
-    &lt;a href="http://www.libelium.com/products/waspmote"&lt;/a&gt;~ $200&lt;/a&gt;.
-    The price catalog can be found &lt;a href="http://www.libelium.com/xhjs76gd/libelium_products_catalogue.pdf"&gt;here&lt;/a&gt;
-  &lt;/p&gt;
-
-  &lt;/br&gt;
-  &lt;h2&gt;Considerations&lt;/h2&gt;
-  &lt;p&gt;
-    This is an opinionated list with the best solutions out there. If you think we are missing
-    a good one you can head over to &lt;a href="http://news.ycombinator.com/item?id=3683978"&gt;Hacker 
-    News&lt;/a&gt; to discuss it.
-  &lt;/p&gt;
-  &lt;p&gt;
-    This is the first of two articles. In the next one we will be featuring 
-    hardware solutions with more computational power like
-    &lt;a href="http://www.raspberrypi.org/"&gt;Raspberry Pi&lt;/a&gt; and
-    &lt;a href="http://pandaboard.org/"&gt;Panda Board&lt;/a&gt;, which are perfect to define hubs that
-    communicate with the web and all the devices in your house.
-    Here the link for the &lt;a href="/blog/boards/"&gt;second part&lt;/a&gt;
   &lt;/p&gt;
 &lt;/div&gt;</content>
   </entry>
