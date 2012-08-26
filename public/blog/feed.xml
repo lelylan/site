@@ -2,13 +2,495 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://lelylan.com/</id>
   <title>Lelylan - reThink your house</title>
-  <updated>2012-07-29T22:00:00Z</updated>
+  <updated>2012-09-04T22:00:00Z</updated>
   <link rel="alternate" href="http://lelylan.com/"/>
   <link rel="self" href="http://lelylan.com/blog/feed.xml"/>
   <author>
     <name>Lelylan Team</name>
     <uri>http://lelylan.com</uri>
   </author>
+  <entry>
+    <id>tag:lelylan.com,2012-09-05:/blog/bugswarm/</id>
+    <title type="html">BUGswarm</title>
+    <published>2012-09-04T22:00:00Z</published>
+    <updated>2012-09-04T22:00:00Z</updated>
+    <link rel="alternate" href="http://lelylan.com/blog/bugswarm/"/>
+    <content type="html">&lt;div class="article"&gt;
+
+  &lt;br/&gt;
+
+  &lt;ul class="media-grid"&gt;
+    &lt;li&gt;
+    &lt;a href="https://developer.bugswarm.net/"&gt;&lt;img class="thumbnail" src="/images/blog/bugswarm/header.png" alt="BUGswarm"&gt;&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;
+  &lt;a href="http://developer.bugswarm.net"&gt;BUGswarm&lt;/a&gt; is a cloud-based platform created by
+  &lt;a href="http://buglabs.net"&gt;Bug Labs&lt;/a&gt;, used to acquire data from and to control
+  embedded devices. The idea behind it is based on four concepts: resources, swarms,
+  invitations and participations.
+  &lt;/p&gt;
+
+  &lt;p&gt;Trying to simplify you have one or more
+  &lt;em&gt;resources&lt;/em&gt; that produce and consume data. Those resources are grouped into
+  &lt;em&gt;swarms&lt;/em&gt;. A resource could be your mobile phone and the swarm could
+  be a group that puts together all mobile devices you own. Once a resource is added to
+  a swarm, you can open an HTTP stream connection (&lt;em&gt;participation&lt;/em&gt;)
+  and have realtime information about the exchanged messages. Speaking always about mobile
+  phones, this means that we can have realtime information, for instance, about their
+  locations or accelerations.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  Last, resources can belong to different
+  swarms. This means that you can invite other resources to be part of your swarm and vice
+  versa, you can accept invitation for your resources to be part of somebody else swarms.
+  &lt;/p&gt;
+
+  &lt;h2&gt;BUGswarm API&lt;/h2&gt;
+
+  &lt;p&gt;
+  It can be a little tricky to get started with BUGswarm. Follows a detailed description
+  of the main concepts behind it together with some examples showing how they are implemented.
+  &lt;/p&gt;
+
+  &lt;h3&gt;&lt;a href="http://developer.bugswarm.net/restful_api_keys.html"&gt;API Keys&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+  The API Key lets you create a valid key to access BUGswarms services. To create a
+  valid key you have to basic authenticate with your &lt;code&gt;username:password&lt;/code&gt;.
+  You should also choose if the key is used to access the &lt;em&gt;participation&lt;/em&gt; services (which includes
+  participation API), the &lt;em&gt;configuration&lt;/em&gt; services (which includes resource, swarms and
+  invitation API) or both.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  Sample request creating a key to access to the configuration services.
+  &lt;/p&gt;
+
+&lt;pre&gt;
+curl -X POST --user "username:password" http://api.bugswarm.net/keys/configuration
+&lt;/pre&gt;
+
+  &lt;p&gt;
+  Sample response.
+  &lt;/p&gt;
+
+&lt;pre&gt;
+[
+  {
+    "created_at": "2011-10-21T15:37:35.636Z", 
+    "key": "b8c2382d0fd9123f3d0ccc760afa03854c652fdb", 
+    "status": "active", 
+    "type": "configuration", 
+    "user_id": "username"
+  }
+]
+&lt;/pre&gt;
+
+  &lt;h3&gt;&lt;a href="http://developer.bugswarm.net/restful_resources.html"&gt;Resources&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+  A resource is an application or device that is configured to &lt;em&gt;produce&lt;/em&gt;
+  or &lt;em&gt;consume&lt;/em&gt; data. A resource is a physical device, such as a smartphone
+  or Arduino, as well as a web or mobile app. Anything than can communicate through
+  HTTP can be configured to join a swarm and being producing and consuming data.
+  Here a sample request creating a resource representing a smartphone.
+  &lt;/p&gt;
+
+&lt;pre&gt;
+curl -X POST http://api.bugswarm.net/resources
+     --header "x-bugswarmapikey: &amp;lt;api-key&amp;gt;"
+     --header "content-type: application/json"
+     -d '{
+           "name": "My resource",
+            "machine_type": "smartphone",
+            "description": "HTC Dream",
+            "position": { "longitude": 0, "latitude": 0 }
+         }'
+&lt;/pre&gt;
+
+
+  &lt;h3&gt;&lt;a href="http://developer.bugswarm.net/restful_swarms.html"&gt;Swarms&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+  A swarm is a collection of resources. Once a swarm is created, users can invite another
+  user's resources to become its member or can accept invitations to share a resource with
+  somebody else swarms. The owner of the swarm can control what level of access
+  (&lt;em&gt;production&lt;/em&gt; and &lt;em&gt;consumption&lt;/em&gt;) that each resource in the swarm has.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  Sample request creating a swarm representing my mobile phones. When including a
+  resource simply specify its id and its level of access (the resource must be
+  previously created).
+  &lt;/p&gt;
+
+&lt;pre&gt;
+curl -X POST http://api.bugswarm.net/swarms
+     --header "x-bugswarmapikey: &amp;lt;api-key&amp;gt;" 
+     --header "content-type: application/json"
+     -d '{
+          "name": "My smartphones",
+          "description": "I'm owesome!",
+          "public": false,
+          "resources": [{ 
+            "resource_id": "&amp;lt;resource-id&amp;gt;",
+            "resource_type": "consumer"
+          }]
+        }'
+&lt;/pre&gt;
+
+  &lt;h3&gt;&lt;a href="http://developer.bugswarm.net/restful_invitations.html"&gt;Invitations&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+  An invitation provides a social presence by inviting another user's resources to
+  join your swarms, sharing the production and consumption of data. A user can freely
+  accept or reject invitations from other users.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  Sample request where a resource with id &lt;resource-id&gt; is shared as data producer
+  with the user &lt;username&gt;.
+  &lt;/p&gt;
+
+&lt;pre&gt;
+curl -X POST http://api.bugswarm.net/swarms/&amp;lt;swarm-id&amp;gt;/invitations
+     --header "x-bugswarmapikey: &amp;lt;api-key&amp;gt;" 
+     --header "content-type: application/json"
+     -d '{
+    "description": "I want to share my HTC Dream data with you Bob",
+      "to": "&amp;lf;username&amp;gt;",
+      "resource_id": "&amp;lt;resource-id&amp;gt;",
+      "resource_type": "producer"
+  }
+&lt;/pre&gt;
+
+  &lt;h3&gt;&lt;a href="http://developer.bugswarm.net/participation_api.html"&gt;Partecipation&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+  Once connected, resources may produce or consume data. Throughout the
+  participation API the BUGswarm platform let you exchange messages, presence
+  notifications and error messages. The Participation API makes use of HTTP
+  streaming, meaning that once a connection has been opened, bidirectional
+  communication between the resource and the swarm may continue until the
+  connection is closed.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  Sample request opening a stream between the swarm &amp;lt;swarm-id&amp;gt; and the resource
+  &lt;resource-id&gt;.
+  &lt;/p&gt;
+
+&lt;pre&gt;
+curl -X POST 'http://api.bugswarm.net/stream?
+             swarm_id=&amp;lt;swarm-id&amp;gt;&amp;resource_id=&amp;lt;resource-id&amp;gt;'
+&lt;/pre&gt;
+
+  &lt;p&gt;
+  Once a connection has has been successfully opened you can send and receive messages.
+  Here a sample request sending the acceleration value of a smartphone.
+  &lt;/p&gt;
+
+&lt;pre&gt;
+{
+  "message":
+  {
+    "to": [ { "swarm": "&amp;lt;swarm-id&amp;gt;", "resource": "&amp;lt;resource-ide&amp;gt;" } ],
+    "payload": { "acceleration" : 0.03242 }
+   }
+}
+&lt;/pre&gt;
+
+  &lt;h3&gt;&lt;a href="http://developer.bugswarm.net/participation_api.html"&gt;Connectors (Hardware)&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+  A connector is a client-side device-specific application that lets your
+  embedded devices to participate on BUGswarm being able to produce and
+  consume data. In other words a connector uses the participation API to
+  exchange a sequence of messages that lets your swarms know the device status.
+  &lt;a href="http://developer.bugswarm.net/hardware.html"&gt;Learn more&lt;/a&gt;.
+  &lt;p&gt;
+
+
+  &lt;h2&gt;Conclusions&lt;/h2&gt;
+
+  &lt;p&gt;
+  The documentation is clear and you can find &lt;a href="http://developer.bugswarm.net/tutorial.html"&gt;step by step tutorials&lt;/a&gt;
+  that give to a developer all needed information to get started. The API is simple and follows
+  pretty well the RESTful architecture. To easily access to the API, BUGswarm offers a
+  &lt;a href="https://github.com/buglabs/bugswarm-tools"&gt;command line&lt;/a&gt; written in Python, 
+  as well as a &lt;a href="https://github.com/buglabs/bugswarm-js"&gt;Javascript library&lt;/a&gt;.
+  The key concept that differentiate this service from all others, in our opinion, is the
+  invitation one. It easily let you share resources with other users and as far as we know, no
+  other service does this.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  In the other side we were expecting more examples on real case scenarios.
+  The communication with real hardware is not clear. A simple example on how to integrate
+  Arduino would be enough to improve this part.
+  The authorization system does not provide a flexible mechanism. As far as we could see
+  there is also no way to revoke an API key once generated.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  As final result, BUGswarm looks like the cool kid that uses cutting edge technologies and
+  that follow the realtime trend characterizing the web nowadays. Unluckily it misses to target
+  the real needs and the physical world. We hope to see soon more examples about.
+  &lt;/p&gt;
+
+&lt;/div&gt;</content>
+    <summary type="html">BUGswarm is a cloud-based platform created by Bug Labs, used to acquire data from and to control embedded devices. The idea behind it is based on four concepts: resources, swarms, invitations and participations. Trying to simplify you have one or more resources that produce and consume data that are grouped into swarms...</summary>
+  </entry>
+  <entry>
+    <id>tag:lelylan.com,2012-08-29:/blog/iobridge/</id>
+    <title type="html">ioBridge</title>
+    <published>2012-08-28T22:00:00Z</published>
+    <updated>2012-08-28T22:00:00Z</updated>
+    <link rel="alternate" href="http://lelylan.com/blog/iobridge/"/>
+    <content type="html">&lt;div class="article"&gt;
+
+  &lt;br/&gt;
+
+  &lt;ul class="media-grid"&gt;
+    &lt;li&gt;
+    &lt;a href="https://www.iobridge.com/"&gt;&lt;img class="thumbnail" src="/images/blog/iobridge/header.png" alt="ioBridge"&gt;&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;
+  &lt;a href="http://www.iobridge.com"&gt;ioBridge&lt;/a&gt; is a solution that enables everyone to connect
+  easily any object to the internet envisioning a world where physical objects are interacting
+  with the most important element on Earth: &lt;strong&gt;you&lt;/strong&gt;.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  ioBridge allows your devices to communicate with social networks, to control and monitor any physical
+  device and to take your project from prototype to the real product manufacturing and licensing
+  patent-pending technologies to create Internet-enabled devices. Its target goes from
+  &lt;a href="http://www.iobridge.com/manufacturers/"&gt;manufacturer&lt;/a&gt; till the
+  &lt;a href="https://store.iobridge.com/"&gt;casual user&lt;/a&gt; and they offer a secure, private,
+  scalable platforms from DIY home projects to commercial products and professional
+  applications. 
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  What is really interesting is the &lt;a href="http://www.iobridge.com/labs/"&gt;lab section&lt;/a&gt;. We knew that 
+  ioBridge was the mind back to &lt;a href="http://thingspeak.com"&gt;ThingSpeak&lt;/a&gt;, an IoT open source platform 
+  for storing and retrieving data using HTTP commands already featured in &lt;a href="/blog/thingspeak/"&gt;
+  a previous article&lt;/a&gt; but they do not stop here. They take the 20% of their time to create other
+  interesting projects like CheerLights (used to enable people all around the world to link lights and 
+  applications together) or ioAuth (a work in progress set of open standards that involve how devices 
+  authenticate with an API).
+  &lt;/p&gt;
+
+  &lt;h2&gt;Market ready&lt;/h2&gt;
+
+  &lt;p&gt;
+  One aspect that in our opinion makes ioBridge one step further the other startups is that
+  probably it's wrong to call ioBridge a startup. They exist from 2009, they have been selected
+  from ReadWriteWeb as &lt;a href="http://www.nytimes.com/external/readwriteweb/2009/12/08/08readwriteweb-top-10-internet-of-things-products-of-2009-74048.html"&gt;top ten Internet of Things (2009)&lt;/a&gt;
+  and from New York Times as one of the &lt;a href="http://www.iobridge.net/projects/2010/01/iobridge-5-technology-trends-to-watch-in-2010/"&gt;five technologies to watch in 2010&lt;/a&gt;
+  and they make real businesses with partnerships they have built in those 4 years with names like
+  &lt;a href="http://www.powercastsensors.com/remote-monitoring-integration-with-iobridge-pro-20120116/"&gt;Powercast&lt;/a&gt;,
+  &lt;a href="http://www.ereleases.com/pr/solis-usa-offers-professional-energy-services-retail-applications-based-remote-monitoring-control-technology-iobridge-54087"&gt;Solis&lt;/a&gt;
+  and &lt;a href="http://www.prnewswire.com/news-releases/geosyntec-consultants-signs-strategic-teaming-agreement-for-high-performance-green-infrastructure-computing-platform-123545629.html"&gt;Geosyntec&lt;/a&gt;.
+  &lt;/p&gt;
+
+  &lt;h2&gt;Give me some hardware&lt;/h2&gt;
+
+  &lt;p&gt;
+  ioBridge has an &lt;a href="https://store.iobridge.com/"&gt;online shop&lt;/a&gt; where you can buy hardware.
+  ioBridge's technology is designed to make it cost effective and easy for everyone to internet-enable almost
+  anything. You can find &lt;a href="http://www.iobridge.com/products/sensors_and_actuators.html"&gt;sensors and 
+    actuators&lt;/a&gt; that enable customers to monitor things like temperature and humidity or to control things
+  like lights and &lt;a href="http://www.iobridge.com/products/web_gateways.html"&gt;web gateways&lt;/a&gt; to easily
+  connect ioBridge provided or third-party sensors, switches, and other devices to the Internet.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  But they do not stop here. For serious stuff ioBridge licenses &lt;a href="http://www.iobridge.com/manufacturers/"&gt;
+    iota&lt;/a&gt;, a really cool piece of hardware to build low cost and scalable applications. The best
+  part about iota is that you get immediate connectivity using wifi or ethernet using high encryption
+  and secure tunneling to and from web services. With this kind of solutions everything from the
+  hardware, licensing, and cloud services are ready to use and to scale. 
+  &lt;/p&gt;
+
+  &lt;ul class="media-grid"&gt;
+    &lt;li&gt;
+    &lt;a href="https://www.iobridge.com/"&gt;&lt;img class="thumbnail" src="/images/blog/iobridge/hardware.png" alt="ioBridge Hardware"&gt;&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;h2&gt;Connecting to the web with realtime.io&lt;/h2&gt;
+
+  &lt;p&gt;
+  ioBridge solution consists of low-cost embedded hardware and firmware that is tightly integrated with
+  scalable cloud services and dashboards. To reach this result they created &lt;a href="http://realtime.io"&gt;realtime.io&lt;/a&gt;,
+  a gateway between devices and applications that offers real-time data plus ability to remote control and
+  monitor your devices. 
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  Their embedded devices are designed to be &lt;a href="http://www.iobridge.com/technology/"&gt;easy to install and connect&lt;/a&gt;
+  to realtime.io. They bypass firewalls and communicate directly to the ioBridge servers on the web. No port-forwarding
+  or dynamic DNS configuration is required making installation easy for the everyday user. They are able to support
+  100.000 to 1.000.000 devices per server in low-traffic situations.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  ioBridge provides a free web interface and configurable dashboard. Developers can create new dashboards to
+  monitor and control almost anything without writing any software, but just in case, they provide an API
+  that can be used by developers or customers to create their own custom applications or to integrate with
+  their own or other third-party systems.
+  &lt;/p&gt;
+
+  &lt;h2&gt;ioBridge Connect&lt;/h2&gt;
+
+  &lt;p&gt;
+  To setup, monitor, and control your devices you must use the &lt;a href="https://www.iobridge.com/interface"&gt;ioBridge Interface&lt;/a&gt;.
+  Once you have purchased one of the ioBridge gateways you can use ioBridge to control it. Create your
+  account, add the link for your gateway and unlock all its features. The default account
+  is &lt;a href="http://iobridge.com/signup/index.html"&gt;free&lt;/a&gt;.
+  &lt;/p&gt;
+
+  &lt;ul class="media-grid"&gt;
+    &lt;li&gt;
+    &lt;a href="https://www.iobridge.com/"&gt;&lt;img class="thumbnail" src="/images/blog/iobridge/dashboard.png" alt="ioBridge dashboard"&gt;&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;
+  Once you have signed in you can find these sections:
+  &lt;/p&gt;
+
+  &lt;ol&gt;
+    &lt;li&gt;
+    &lt;a href="http://connect.iobridge.com/docs/interface/"&gt;Dashboard&lt;/a&gt;.
+    Customizable home screen for quick access to modules and widgets
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;a href="http://connect.iobridge.com/docs/web-gateway-modules/module-configuration/"&gt;Modules&lt;/a&gt;.
+    Table of your linked gateways for access to configuration, monitoring and control.
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;a href="http://connect.iobridge.com/docs/widgets/"&gt;Widgets&lt;/a&gt;.
+    Links to your widgets.
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;a href="http://connect.iobridge.com/docs/actions/"&gt;Actions&lt;/a&gt;.
+    Access to actions, events and links to create new actions.
+    &lt;/li&gt;
+  &lt;/ol&gt;
+
+  &lt;h2&gt;Functionalities explained&lt;/h2&gt;
+
+  &lt;h3&gt;&lt;a href="http://connect.iobridge.com/docs/widgets/"&gt;Widgets&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+  Widgets are simple script objects that either control outputs or monitor inputs. ioBridge offers
+  different kind of widgets to &lt;a href="http://connect.iobridge.com/docs/widgets/io/"&gt;monitor i/o&lt;/a&gt;,
+  &lt;a href="http://connect.iobridge.com/docs/widgets/servo/"&gt;control servo positions&lt;/a&gt;
+  and &lt;a href="http://connect.iobridge.com/docs/widgets/chart/"&gt;visualize charts&lt;/a&gt;.
+  You can also place the widget in-line into your blog or website by using the automatically
+  generated embedded code and customizing the look and feel with few lines of CSS.
+  &lt;/p&gt;
+
+  &lt;h3&gt;&lt;a href="http://connect.iobridge.com/docs/actions/"&gt;Actions&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+  Actions are a mix between web-hooks to post realtime data to external services and integrated
+  applications that can easily enhance your functionalities. In this ioBridge takes the best feature of
+  ThingSpeak giving you extra applications like text messaging, twitter integration, mail notifications and more.
+  &lt;/p&gt;
+
+  &lt;h3&gt;&lt;a href="http://connect.iobridge.com/docs/onboard-actions/"&gt;Rules&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+  A rule is essentially an if/then statement like "If the temperature is too high, then 
+  turn on the fan". You can break that rule down into two distinct parts: a condition
+  and an action. With ioBridge you can create multiple conditions and multiple actions under
+  each rule and If there are multiple conditions for a rule, all the conditions must be true
+  for the action(s) to be executed. In rules with multiple actions, all of the actions will
+  be executed when the rule is true. This service lives directly on the physical board but the
+  definition part is online through web based wizards.
+  &lt;/p&gt;
+
+  &lt;h3&gt;&lt;a href="http://connect.iobridge.com/api/"&gt;API&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+  The APIs are not as rich as we could expect from a complete service like ioBridge.
+  They mainly offer a way to access to &lt;a href="http://connect.iobridge.com/api/data-feed-api/"&gt;data feeds&lt;/a&gt;
+  for every device registered on your account and a bit more. The feed service returns a JSON or XML
+  snapshot of your device input and output states as well as extra meta information you can set such as
+  location, latitude, longitude and more.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  Sample request.
+  &lt;/p&gt;
+
+  &lt;pre&gt;
+http://www.iobridge.com/api/module/feed.json?key=zTFNFDol7706vSZnuxel&lt;/pre&gt;
+
+  &lt;p&gt;
+  Sample response.
+  &lt;/p&gt;
+
+  &lt;pre&gt;
+{
+    "module": {
+        "serial":   "24000XXX",
+        "label":    "Monitor",
+        "lat": "43.772828",
+        "lon": "11.249488",
+        "location": "Plutolandia, FN",
+        "datetime": "Dec-24-2008 00:35:22 AM",
+        "status":   "online",
+        "channels": [{
+            "channel": "1",
+            "label":   "Channel 1", 
+            "AnalogInput": "384", 
+            "AnalogInputRaw": "384", 
+            "AnalogInputScale": "Raw", 
+            "DigitalInput": "Off", 
+            "DigitalInputState": "0", 
+            "DigitalOutput": "On", 
+            "DigitalOutputState": "1"
+        }]
+    }
+}&lt;/pre&gt;
+
+  &lt;h2&gt;Conclusions&lt;/h2&gt;
+
+  &lt;p&gt;
+  ioBridge is a full featured platform and the only one at the same level of &lt;a href="http://cosm.com"&gt;cosm&lt;/a&gt;.
+  They have easy to connect hardware and a basic API to improve the platform. It's easy 
+  &lt;a href="http://connect.iobridge.com/docs/getting-started-with-the-internet-of-things"&gt;to start with&lt;/a&gt;
+  and we were quite impressed by the &lt;a href="http://connect.iobridge.com/docs/"&gt;complete documentation&lt;/a&gt;,
+  the &lt;a href="http://connect.iobridge.com/tutorials/"&gt;tutorials&lt;/a&gt; and the commercial applications
+  where ioBridge is used. From a business point of view lot of IoT startup should learn from them.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  Anyway, there is a tradeoff. Their business model is based on collaboration where partners
+  uses their products, both hardware and software. One limitation comes up quite clear. As far
+  as they make money allowing only their own products &lt;strong&gt;they will not create an open platform&lt;/strong&gt;. 
+  The poor APIs clearly show this direction. This limit is a strong one.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  We do not like the ioBridge business model, but those are just personal points of view. The important
+  point is that right now they are doing well. We also shouldn't forget that they are contributing
+  to the community with cool stuff like &lt;a href="www.thingspeak.com"&gt;ThingSpeak&lt;/a&gt;. We only wished they
+  could be a bit more open. Will this happen? And will it be sustainable?
+  &lt;/p&gt;
+
+&lt;/div&gt;</content>
+    <summary type="html">ioBridge allows your devices to communicate with social networks, to control and monitor any physical device and to take your project from prototype to the real product manufacturing and licensing patent-pending technologies to create Internet-enabled devices...</summary>
+  </entry>
   <entry>
     <id>tag:lelylan.com,2012-07-30:/blog/thingspeak/</id>
     <title type="html">ThingSpeak</title>
@@ -673,517 +1155,6 @@ api_key={thinghttp_key}&amp;message=I+call+you+because+the+water+is+finished&lt;
   first article of a series that wants to get in deep about the Internet of Things ecosystem.
   &lt;/p&gt;
 
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <id>tag:lelylan.com,2012-07-23:/blog/access/</id>
-    <title type="html">Houses for the Web</title>
-    <published>2012-07-22T22:00:00Z</published>
-    <updated>2012-07-22T22:00:00Z</updated>
-    <link rel="alternate" href="http://lelylan.com/blog/access/"/>
-    <content type="html">&lt;div class="article"&gt;
-
-  &lt;ul class="media-grid"&gt;
-    &lt;li&gt;
-    &lt;img class="thumbnail header" src="/images/blog/access/header.png" alt="Building your house hub"&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;p&gt;
-  When you build a home automation system you need to face different issues like
-  security, availability, connectivity and interoperability between the others. In the 
-  &lt;a href="/blog/electronics/"&gt;previous article&lt;/a&gt; we pointed out how great it is to 
-  experiment with and hack devices with cheap solutions like Arduino, but those solutions 
-  are not (yet) powerful enough to feature all we need for the connected house. What if 
-  we want to add  SSL, off-line control, protocols interoperation? Actually there we 
-  have two possible solutions:
-  &lt;strong&gt;single device intelligence&lt;/strong&gt; and
-  &lt;strong&gt;home automation hubs.&lt;/strong&gt;
-  &lt;/p&gt;
-
-  &lt;h2&gt;Single Device Intelligence&lt;/h2&gt;
-
-  &lt;p&gt;
-  This is the best solution and it totally changes the way we think at home automation 
-  today. Every device comes out with the ability to connect to the web in a secure way.
-  The scenario is the one where you go to Ikea or the shop down to your house, buy a
-  light, go home, connect it to the web and tell Lelylan it's part of your house.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-  This sounds great right. Yes, it does but it has a couple of drawbacks. The first one is 
-  that every device must be equipped with the ability to directly connect to the web (or to 
-  the router in your house) providing all security features (SSL and authorization logics).
-  This is possible and today we already have the technologies to do this, but it would make 
-  any device way more expensive. 
-  &lt;/p&gt;
-
-  &lt;p&gt;
-  Think at a light. Today you pay it $10. What if it suddenly costs you more than $70 just to 
-  be connected to the web? No way, at least if we think that home automation is for everybody.
-  The good point is that techs are getting cheaper and more powerful day by day and this 
-  will let us build smart devices for few more dollars more really soon. Check out 
-  &lt;a href="http://electricimp.com"&gt;Electronic Imp&lt;/a&gt; if you want to see what the future will
-  look like.
-  &lt;/p&gt;
-
-  &lt;h2&gt;Home Automation Hub&lt;/h2&gt;
-
-  &lt;p&gt;
-  This is the real solution nowadays. Think at the home automation ecosystem today. We have
-  a lot of companies producing any kind of device using different standards. In this way we 
-  depend on them and we can't unleash the real power of a home automation system because
-  we can't let every device communicate.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-  To solve this problem we need a hub, which is a small computer that will let your house 
-  talk to the web, without caring at all about the technology the devices use. In this way you 
-  can connect devices that use Zigbee, Konnex, X10 and whatever exists out there and let them be
-  accessible to the web. It's not easy, as you need to have a great knowledge of how those 
-  protocols work out, but once you do this they are accessible.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-  A home automation hub gives you several advantages. You have only one place to handle
-  secure communication and authorization, you can install some extra applications, you can 
-  easily handle an off-line situation when internet does not work and much more. 
-  &lt;/p&gt;
-
-  &lt;h2&gt;Conclusions&lt;/h2&gt;
-
-  &lt;p&gt;
-  We truly think that making every single device smart is the final goal, but in the meantime 
-  we need to face reality and mix these two ideaa which can easily live together.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-  For the braves who wanna start to experiment their first hub, we've listed the 
-  &lt;a href="/blog/boards/"&gt;best boards&lt;/a&gt; existing out there so that you can start hacking 
-  your house right now. Just buy one of them and &lt;a href="/about/"&gt;tell us&lt;/a&gt; what you have 
-  done.
-  &lt;/p&gt;
-
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <id>tag:lelylan.com,2012-07-16:/blog/boards/</id>
-    <title type="html">Get into the House</title>
-    <published>2012-07-15T22:00:00Z</published>
-    <updated>2012-07-15T22:00:00Z</updated>
-    <link rel="alternate" href="http://lelylan.com/blog/boards/"/>
-    <content type="html">&lt;div class="article"&gt;
-
-  &lt;ul class="media-grid"&gt;
-    &lt;li&gt;
-      &lt;img class="thumbnail header" src="/images/blog/boards/header.png" alt="Building your house hub"&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-  
-  &lt;p&gt;
-    Have you ever wished to make your house accessible from the web? 
-    In the &lt;a href="/blog/electronics/"&gt;previous article&lt;/a&gt; we pointed out the existing 
-    solutions to hack a device with boards like Arduino or Nanode. Anyway those solutions 
-    are not (yet) powerful enough to build a secure home automation hub.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-    &lt;!--We wrote an &lt;a href="/blog/access/"&gt;article talking about this&lt;/a&gt;.--&gt;
-    Now it's time to find out more powerful solutions to build an home automation hub which 
-    let all of your devices communicate with the web.
-  &lt;/p&gt;
-
-  &lt;h3&gt;&lt;a href="http://www.raspberrypi.org/"&gt;Raspberry PI&lt;/a&gt;&lt;/h3&gt;
-
-  &lt;p&gt;
-    This is probably the best solution out there. It's a real computer where you can run 
-    Debian Linux at only $25. The initiative, started at Cambridge University got lot of 
-    attention from all media around the world and in 4 months they were able to sell over
-    500.000 pieces.
-  &lt;/p&gt;
-
-  &lt;table class="zebra-striped"&gt;
-    &lt;tbody&gt;
-      &lt;tr&gt;
-        &lt;td class="parameter"&gt;
-          &lt;span&gt;Price&lt;/span&gt;
-        &lt;/td&gt;
-        &lt;td&gt;
-          Raspberry PI | $25 &lt;br/&gt;
-          Raspberry Model B | $35 &lt;br/&gt;
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td class="parameter"&gt;
-          &lt;span&gt;OS&lt;/span&gt;
-        &lt;/td&gt;
-        &lt;td&gt;
-          Debian Linux. &lt;a href="http://www.raspberrypi.org/downloads"&gt;See other distributions&lt;/a&gt;.
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td class="parameter"&gt;
-          &lt;span&gt;Connectivity&lt;/span&gt;
-        &lt;/td&gt;
-        &lt;td&gt;
-          The base version does not offer connectivity.&lt;br/&gt;
-          Raspberry Model B&lt;/a&gt; gives you an Ethernet access.
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td class="parameter"&gt;
-          &lt;span&gt;Pros&lt;/span&gt;
-        &lt;/td&gt;
-        &lt;td&gt;
-          Low price, community, documentation, open-source.
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td class="parameter"&gt;
-          &lt;span&gt;Cons&lt;/span&gt;
-        &lt;/td&gt;
-        &lt;td&gt;
-          Computational power, wireless connectivity.
-        &lt;/td&gt;
-      &lt;/tr&gt;
-    &lt;/tbody&gt;
-  &lt;/table&gt;
-
-  &lt;h3&gt;&lt;a href="http://www.rikomagic.co.uk/"&gt;Rikomagic MK802&lt;/a&gt;&lt;/h3&gt;
-
-  &lt;p&gt;
-    A fully functional computer no bigger than a USB pen drive, the Rikomagic MK802 runs on 
-    the popular Android 4 operating system and it features Wifi. The design is just cool and 
-    you have a fully functional computer no bigger than a USB pen drive.
-  &lt;/p&gt;
-
-  &lt;table class="zebra-striped"&gt;
-    &lt;tbody&gt;
-      &lt;tr&gt;
-        &lt;td class="parameter"&gt;
-          &lt;span&gt;Price&lt;/span&gt;
-        &lt;/td&gt;
-        &lt;td&gt;
-          MK802 | $74
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td class="parameter"&gt;
-          &lt;span&gt;OS&lt;/span&gt;
-        &lt;/td&gt;
-        &lt;td&gt;
-          Android 4.
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td class="parameter"&gt;
-          &lt;span&gt;Connectivity&lt;/span&gt;
-        &lt;/td&gt;
-        &lt;td&gt;
-          Wifi 802.11b/g/n.
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td class="parameter"&gt;
-          &lt;span&gt;Pros&lt;/span&gt;
-        &lt;/td&gt;
-        &lt;td&gt;
-          Low price, wireless connectivity, design.
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td class="parameter"&gt;
-          &lt;span&gt;Cons&lt;/span&gt;
-        &lt;/td&gt;
-        &lt;td&gt;
-          Missing community, documentation, computational power.
-        &lt;/td&gt;
-      &lt;/tr&gt;
-    &lt;/tbody&gt;
-  &lt;/table&gt;
-
-  &lt;h3&gt;&lt;a href="http://liliputing.com/2012/03/mele-a1000-is-a-70-hackable-linux-friendly-arm-based-pc.html"&gt;Mele A1000&lt;/a&gt;&lt;/h3&gt;
-
-  &lt;p&gt;
-    Available for as little as $70, while that's twice the price of a Raspberry Pi computer, 
-    the Mele A1000 includes a faster processor, more RAM and a case. It can be a better choice
-    if the power given by the Raspberry PI is not enough and you need something aesthetically 
-    nice.
-  &lt;/p&gt;
-
-  &lt;table class="zebra-striped"&gt;
-    &lt;tbody&gt;
-      &lt;tr&gt;
-        &lt;td class="parameter"&gt;
-          &lt;span&gt;Price&lt;/span&gt;
-        &lt;/td&gt;
-        &lt;td&gt;
-          Mele A1000 | $70
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td class="parameter"&gt;
-          &lt;span&gt;OS&lt;/span&gt;
-        &lt;/td&gt;
-        &lt;td&gt;
-          Android and Ubuntu.
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td class="parameter"&gt;
-          &lt;span&gt;Connectivity&lt;/span&gt;
-        &lt;/td&gt;
-        &lt;td&gt;
-          Ethernet by default.
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td class="parameter"&gt;
-          &lt;span&gt;Pros&lt;/span&gt;
-        &lt;/td&gt;
-        &lt;td&gt;
-          Low price.
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td class="parameter"&gt;
-          &lt;span&gt;Cons&lt;/span&gt;
-        &lt;/td&gt;
-        &lt;td&gt;
-          Missing community, wireless connectivity, computational power.
-        &lt;/td&gt;
-      &lt;/tr&gt;
-    &lt;/tbody&gt;
-  &lt;/table&gt;
-
-  &lt;h3&gt;&lt;a href="http://beagleboard.org/"&gt;BeagleBoard&lt;/a&gt;&lt;/h3&gt;
-
-  &lt;p&gt;
-    The BeagleBoard is a low cost, high performance, low power 
-    &lt;a href="http://www.ti.com/omapwireless"&gt;OMAP3&lt;/a&gt; based platform designed 
-    by BeagleBoard.org community members. It is open-source and there are hundreds of
-    applications developed on top of it.
-  &lt;/p&gt;
-
-  &lt;table class="zebra-striped"&gt;
-    &lt;tbody&gt;
-      &lt;tr&gt;
-        &lt;td class="parameter"&gt;
-          &lt;span&gt;Price&lt;/span&gt;
-        &lt;/td&gt;
-        &lt;td&gt;
-          BeagleBone | $89 &lt;br/&gt;
-          BeagleBoard xM | $149 
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td class="parameter"&gt;
-          &lt;span&gt;OS&lt;/span&gt;
-        &lt;/td&gt;
-        &lt;td&gt;
-          Android, and major Linux distributions like Ubuntu, Debian, ArchLinux and Gentoo. 
-          &lt;a href="http://pandaboard.org/content/resources/software"&gt;See supported distributions&lt;/a&gt;
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td class="parameter"&gt;
-          &lt;span&gt;Connectivity&lt;/span&gt;
-        &lt;/td&gt;
-        &lt;td&gt;
-          Ethernet by default.
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td class="parameter"&gt;
-          &lt;span&gt;Pros&lt;/span&gt;
-        &lt;/td&gt;
-        &lt;td&gt;
-          Experience, community, documentation, computational power, open-source.
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td class="parameter"&gt;
-          &lt;span&gt;Cons&lt;/span&gt;
-        &lt;/td&gt;
-        &lt;td&gt;
-          Price, wireless connectivity.
-        &lt;/td&gt;
-      &lt;/tr&gt;
-    &lt;/tbody&gt;
-  &lt;/table&gt;
-
-  &lt;h3&gt;&lt;a href="http://pandaboard.org//"&gt;PandaBoard ES&lt;/a&gt;&lt;/h3&gt;
-
-  &lt;p&gt;
-    PandaBoard is a low-cost, open &lt;a href="http://www.ti.com/omapwireless"&gt;OMAP 4&lt;/a&gt; mobile 
-    software development platform.
-  &lt;/p&gt;
-
-  &lt;table class="zebra-striped"&gt;
-    &lt;tbody&gt;
-      &lt;tr&gt;
-        &lt;td class="parameter"&gt;
-          &lt;span&gt;Price&lt;/span&gt;
-        &lt;/td&gt;
-        &lt;td&gt;
-          PandaBoard ES | $189
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td class="parameter"&gt;
-          &lt;span&gt;OS&lt;/span&gt;
-        &lt;/td&gt;
-        &lt;td&gt;
-          Android, Ubuntu and Linaro.
-          &lt;a href="http://pandaboard.org/content/resources/software"&gt;See supported distributions&lt;/a&gt;
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td class="parameter"&gt;
-          &lt;span&gt;Connectivity&lt;/span&gt;
-        &lt;/td&gt;
-        &lt;td&gt;
-          Ethernet connectivity and Wifi 802.11 b/g/n.
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td class="parameter"&gt;
-          &lt;span&gt;Pros&lt;/span&gt;
-        &lt;/td&gt;
-        &lt;td&gt;
-          Community, computational power, wireless connectivity, focus on mobile.
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td class="parameter"&gt;
-          &lt;span&gt;Cons&lt;/span&gt;
-        &lt;/td&gt;
-        &lt;td&gt;
-          Price.
-        &lt;/td&gt;
-      &lt;/tr&gt;
-    &lt;/tbody&gt;
-  &lt;/table&gt;
-
-  &lt;h3&gt;&lt;a href="http://www.plugcomputer.org/"&gt;Plug Computers (Sheevaplug)&lt;/a&gt;&lt;/h3&gt;
-
-  &lt;p&gt;
-    Main resource for the plug computer development community. Plugcomputer.org
-    offers solutions built on a Marvell system-on-chip and focus on high performances and giving
-    full connected devices readily available for developers.
-  &lt;/p&gt;
-
-  &lt;table class="zebra-striped"&gt;
-    &lt;tbody&gt;
-      &lt;tr&gt;
-        &lt;td class="parameter"&gt;
-          &lt;span&gt;Price&lt;/span&gt;
-        &lt;/td&gt;
-        &lt;td&gt;
-          GuruPlug Display | $199 &lt;br/&gt;
-          D2Plug | $249
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td class="parameter"&gt;
-          &lt;span&gt;OS&lt;/span&gt;
-        &lt;/td&gt;
-        &lt;td&gt;
-          Ubuntu, FreeBSD, NetBSD, Windows CE and any other operating system that is compatible 
-          with ARM CPUs.
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td class="parameter"&gt;
-          &lt;span&gt;Connectivity&lt;/span&gt;
-        &lt;/td&gt;
-        &lt;td&gt;
-          Ethernet connectivity by default.
-          Model D2Plug offers integrated 802.11 b/g/n Wifi.
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td class="parameter"&gt;
-          &lt;span&gt;Pros&lt;/span&gt;
-        &lt;/td&gt;
-        &lt;td&gt;
-          Commercial support, computational power, design, wireless connectivity.
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td class="parameter"&gt;
-          &lt;span&gt;Cons&lt;/span&gt;
-        &lt;/td&gt;
-        &lt;td&gt;
-          Missing community, closed-source, price.
-        &lt;/td&gt;
-      &lt;/tr&gt;
-    &lt;/tbody&gt;
-  &lt;/table&gt;
-
-  &lt;h3&gt;&lt;a href="http://www.ionicsplug.com/"&gt;Ionics Plug&lt;/a&gt;&lt;/h3&gt;
-
-  &lt;p&gt;
-    Plug computer with main focus on connectivity and low price. Ionics, comes from the same
-    family of Sheevaplug computers, but with lower prices and better features. For sure one 
-    of the best solutions whenever you want to use a Plug Computer and you are searching for
-    advanced wireless capabilities (WifI, Zigbee and Z-Wave ).
-  &lt;/p&gt;
-
-  &lt;table class="zebra-striped"&gt;
-    &lt;tbody&gt;
-      &lt;tr&gt;
-        &lt;td class="parameter"&gt;
-          &lt;span&gt;Price&lt;/span&gt;
-        &lt;/td&gt;
-        &lt;td&gt;
-          Nimbus 100 | $99 &lt;br/&gt;
-          Stratus | $149
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td class="parameter"&gt;
-          &lt;span&gt;OS&lt;/span&gt;
-        &lt;/td&gt;
-        &lt;td&gt;
-          Debian 5 Lenny.
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td class="parameter"&gt;
-          &lt;span&gt;Connectivity&lt;/span&gt;
-        &lt;/td&gt;
-        &lt;td&gt;
-          Ethernet connectivity by default.
-          Stratus model offers integrated 802.11 b/g (WPS support on Client Mode) and ZigBee.
-          You can decide to change the Zigbee module for a Z-wave module.
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td class="parameter"&gt;
-          &lt;span&gt;Pros&lt;/span&gt;
-        &lt;/td&gt;
-        &lt;td&gt;
-          Commercial support, computational power, design, price, wireless connectivity.
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td class="parameter"&gt;
-          &lt;span&gt;Cons&lt;/span&gt;
-        &lt;/td&gt;
-        &lt;td&gt;
-          Missing community, closed-source.
-        &lt;/td&gt;
-      &lt;/tr&gt;
-    &lt;/tbody&gt;
-  &lt;/table&gt;
-
-  &lt;/br&gt;
-  &lt;h2&gt;Considerations&lt;/h2&gt;
-  &lt;p&gt;
-    This is an opinionated list with the best solutions out there. If you think we are missing
-    a good one  write a comment or &lt;a href="/about/"&gt;get in touch&lt;/a&gt; with us.
-  &lt;/p&gt;
 &lt;/div&gt;</content>
   </entry>
 </feed>
