@@ -4,6 +4,7 @@ gem 'rack'
 gem 'rake'
 gem 'nanoc3', '3.2.4'
 gem 'builder'
+gem 'adsf'
 
 # Thin to serve content from Heroku
 gem 'thin'

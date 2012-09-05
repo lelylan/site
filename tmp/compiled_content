@@ -450,7 +450,7 @@
 </script>
 
 ;T:	post@
-I"/blog/;T{;{	;I"ä<!DOCTYPE HTML>
+I"/blog/;T{;{	;I"u<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -511,6 +511,13 @@ I"/blog/;T{;{	;I"ä<!DOCTYPE HTML>
     <div id="page">
       <div id="main">
         
+  <ul>
+    <li>
+      <span class="title"><a href="/blog/bugswarm/">BUGswarm</a></span> -
+      <span class="subtitle"><a href="/blog/bugswarm/"><span>R</span>ealtime <span>S</span>ocial <span>#</span>IoT</a></span>
+    </li>
+  </ul>
+
   <ul>
     <li>
       <span class="title"><a href="/blog/iobridge/">ioBridge</a></span> -
@@ -652,7 +659,14 @@ I"/blog/;T{;{	;I"ä<!DOCTYPE HTML>
     </li>
   </ul>
 <% end %>;T;
-I"^
+I"I
+  <ul>
+    <li>
+      <span class="title"><a href="/blog/bugswarm/">BUGswarm</a></span> -
+      <span class="subtitle"><a href="/blog/bugswarm/"><span>R</span>ealtime <span>S</span>ocial <span>#</span>IoT</a></span>
+    </li>
+  </ul>
+
   <ul>
     <li>
       <span class="title"><a href="/blog/iobridge/">ioBridge</a></span> -
@@ -2330,7 +2344,7 @@ I"Û<div id="textual">
   Prefinery.apply(prefinery_apply_options);
 </script>
 
-;T;@&I"/feed/;T{;{	;I"*…<!DOCTYPE HTML>
+;T;@&I"/feed/;T{;{	;I"?ﬁ<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -2392,13 +2406,248 @@ I"Û<div id="textual">
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://lelylan.com/</id>
   <title>Lelylan - reThink your house</title>
-  <updated>2012-08-28T22:00:00Z</updated>
+  <updated>2012-09-04T22:00:00Z</updated>
   <link rel="alternate" href="http://lelylan.com/"/>
   <link rel="self" href="http://lelylan.com/feed/"/>
   <author>
     <name>Lelylan Team</name>
     <uri>http://lelylan.com</uri>
   </author>
+  <entry>
+    <id>tag:lelylan.com,2012-09-05:/blog/bugswarm/</id>
+    <title type="html">BUGswarm</title>
+    <published>2012-09-04T22:00:00Z</published>
+    <updated>2012-09-04T22:00:00Z</updated>
+    <link rel="alternate" href="http://lelylan.com/blog/bugswarm/"/>
+    <content type="html">&lt;div class="article"&gt;
+
+  &lt;br/&gt;
+
+  &lt;ul class="media-grid"&gt;
+    &lt;li&gt;
+    &lt;a href="https://developer.bugswarm.net/"&gt;&lt;img class="thumbnail" src="/images/blog/bugswarm/header.png" alt="BUGswarm"&gt;&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;
+  &lt;a href="http://developer.bugswarm.net"&gt;BUGswarm&lt;/a&gt; is a cloud-based platform created by
+  &lt;a href="http://buglabs.net"&gt;Bug Labs&lt;/a&gt;, used to acquire data from embedded devices and
+  control them. The idea behind it is based on four concepts: resources, swarms,
+  invitations and participations.
+  &lt;/p&gt;
+
+  &lt;p&gt;To simplify matters, you have one or more
+  &lt;em&gt;resources&lt;/em&gt; that produce and consume data. Those resources are grouped into
+  &lt;em&gt;swarms&lt;/em&gt;. A resource could be your mobile phone and the swarm could
+  be a group that puts together all mobile devices you own. Once a resource is added to
+  a swarm, you can open an HTTP stream connection (&lt;em&gt;participation&lt;/em&gt;)
+  and get realtime information about the exchanged messages. About mobile
+  phones this means i.e. that we can have realtime information about their
+  locations or accelerations.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  Finally, resources can belong to different
+  swarms. This means that you can invite other resources to be part of your swarm and vice
+  versa, you can accept invitation for your resources to be part of somebody else's swarms.
+  &lt;/p&gt;
+
+  &lt;h2&gt;BUGswarm API&lt;/h2&gt;
+
+  &lt;p&gt;
+  It can be a little tricky to get started with BUGswarm. See the following detailed description
+  of the main concepts behind it with some examples showing how they are implemented.
+  &lt;/p&gt;
+
+  &lt;h3&gt;&lt;a href="http://developer.bugswarm.net/restful_api_keys.html"&gt;API Keys&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+  The API Key lets you create a valid key to access BUGswarms services. To create a
+  valid key you have to 'basic authenticate' with your &lt;code&gt;username:password&lt;/code&gt;.
+  You should also choose whether the key is used to access the &lt;em&gt;participation&lt;/em&gt; services (which includes
+  participation API) or the &lt;em&gt;configuration&lt;/em&gt; services (which includes resource, swarms and
+  invitation API) or both.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  Sample request creating a key to access to the configuration services.
+  &lt;/p&gt;
+
+&lt;pre&gt;
+curl -X POST --user "username:password" http://api.bugswarm.net/keys/configuration
+&lt;/pre&gt;
+
+  &lt;p&gt;
+  Sample response.
+  &lt;/p&gt;
+
+&lt;pre&gt;
+[
+  {
+    "created_at": "2011-10-21T15:37:35.636Z", 
+    "key": "b8c2382d0fd9123f3d0ccc760afa03854c652fdb", 
+    "status": "active", 
+    "type": "configuration", 
+    "user_id": "username"
+  }
+]
+&lt;/pre&gt;
+
+  &lt;h3&gt;&lt;a href="http://developer.bugswarm.net/restful_resources.html"&gt;Resources&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+  A resource is an application or device that is configured to &lt;em&gt;produce&lt;/em&gt;
+  or &lt;em&gt;consume&lt;/em&gt; data. A resource is a physical device, such as a smartphone
+  or Arduino, as well as a web or mobile app. Anything than can communicate through
+  HTTP can be configured to join a swarm and produce and consume data.
+  Here is a sample request creating a resource representing a smartphone.
+  &lt;/p&gt;
+
+&lt;pre&gt;
+curl -X POST http://api.bugswarm.net/resources
+     --header "x-bugswarmapikey: &amp;lt;api-key&amp;gt;"
+     --header "content-type: application/json"
+     -d '{
+           "name": "My resource",
+            "machine_type": "smartphone",
+            "description": "HTC Dream",
+            "position": { "longitude": 0, "latitude": 0 }
+         }'
+&lt;/pre&gt;
+
+
+  &lt;h3&gt;&lt;a href="http://developer.bugswarm.net/restful_swarms.html"&gt;Swarms&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+  A swarm is a collection of resources. Once a swarm is created, users can invite another
+  user's resources to become its member or can accept invitations to share a resource with
+  somebody else's swarms. The owner of the swarm can control what level of access
+  (&lt;em&gt;production&lt;/em&gt; and &lt;em&gt;consumption&lt;/em&gt;) that each resource in the swarm has.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  Sample request creating a swarm representing my mobile phones. When including a
+  resource simply specify its ID and its level of access (the resource must be
+  previously created).
+  &lt;/p&gt;
+
+&lt;pre&gt;
+curl -X POST http://api.bugswarm.net/swarms
+     --header "x-bugswarmapikey: &amp;lt;api-key&amp;gt;" 
+     --header "content-type: application/json"
+     -d '{
+          "name": "My smartphones",
+          "description": "I'm owesome!",
+          "public": false,
+          "resources": [{ 
+            "resource_id": "&amp;lt;resource-id&amp;gt;",
+            "resource_type": "consumer"
+          }]
+        }'
+&lt;/pre&gt;
+
+  &lt;h3&gt;&lt;a href="http://developer.bugswarm.net/restful_invitations.html"&gt;Invitations&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+  An invitation provides a social presence by inviting another user's resources to
+  join your swarms, sharing the production and consumption of data. A user can freely
+  accept or reject invitations from other users.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  Sample request where a resource with ID &lt;resource-id&gt; is shared as data producer
+  with the user &lt;username&gt;.
+  &lt;/p&gt;
+
+&lt;pre&gt;
+curl -X POST http://api.bugswarm.net/swarms/&amp;lt;swarm-id&amp;gt;/invitations
+     --header "x-bugswarmapikey: &amp;lt;api-key&amp;gt;" 
+     --header "content-type: application/json"
+     -d '{
+    "description": "I want to share my HTC Dream data with you Bob",
+      "to": "&amp;lf;username&amp;gt;",
+      "resource_id": "&amp;lt;resource-id&amp;gt;",
+      "resource_type": "producer"
+  }
+&lt;/pre&gt;
+
+  &lt;h3&gt;&lt;a href="http://developer.bugswarm.net/participation_api.html"&gt;Partecipation&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+  Once connected, resources may produce or consume data. Throughout the
+  participation API the BUGswarm platform lets you exchange messages, presence
+  notifications and error messages. The Participation API uses HTTP
+  streaming, meaning that once a connection has been opened, bidirectional
+  communication between the resource and the swarm may continue until the
+  connection is closed.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  Sample request opening a stream between the swarm &amp;lt;swarm-id&amp;gt; and the resource
+  &lt;resource-id&gt;.
+  &lt;/p&gt;
+
+&lt;pre&gt;
+curl -X POST 'http://api.bugswarm.net/stream?
+             swarm_id=&amp;lt;swarm-id&amp;gt;&amp;resource_id=&amp;lt;resource-id&amp;gt;'
+&lt;/pre&gt;
+
+  &lt;p&gt;
+  Once a connection has been successfully opened you can send and receive messages.
+  Here a sample request sending the acceleration value of a smartphone.
+  &lt;/p&gt;
+
+&lt;pre&gt;
+{
+  "message":
+  {
+    "to": [ { "swarm": "&amp;lt;swarm-id&amp;gt;", "resource": "&amp;lt;resource-ide&amp;gt;" } ],
+    "payload": { "acceleration" : 0.03242 }
+   }
+}
+&lt;/pre&gt;
+
+  &lt;h3&gt;&lt;a href="http://developer.bugswarm.net/participation_api.html"&gt;Connectors (Hardware)&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+  A connector is a client-side device-specific application that allows your
+  embedded devices to participate on BUGswarm being able to produce and
+  consume data. In other words a connector uses the participation API to
+  exchange a sequence of messages that lets your swarms know the device status.
+  &lt;a href="http://developer.bugswarm.net/hardware.html"&gt;Learn more&lt;/a&gt;.
+  &lt;p&gt;
+
+
+  &lt;h2&gt;Conclusions&lt;/h2&gt;
+
+  &lt;p&gt;
+  The documentation is clear and you can find &lt;a href="http://developer.bugswarm.net/tutorial.html"&gt;step by step tutorials&lt;/a&gt;
+  that give all the needed information to get started. The API is simple and follows
+  pretty well the RESTful architecture. To easily access to the API, BUGswarm offers a
+  &lt;a href="https://github.com/buglabs/bugswarm-tools"&gt;command line&lt;/a&gt; written in Python, 
+  as well as a &lt;a href="https://github.com/buglabs/bugswarm-js"&gt;Javascript library&lt;/a&gt;.
+  The key concept that differentiate this service from all others, in our opinion, is the
+  invitation one. It easily let you share resources with other users and as far as we know, no
+  other service does this.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  In the other side we were expecting more examples on real case scenarios.
+  The communication with real hardware is not clear. A simple example on how to integrate
+  Arduino would be enough to improve this part.
+  The authorization system does not provide a flexible mechanism. As far as we could see
+  there is also no way to revoke an API key once generated.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  As final result, BUGswarm looks like the cool kid that uses cutting edge technologies and
+  that follow the realtime trend characterizing the web nowadays. Unluckily it misses to target
+  the real needs and the physical world. We hope to see soon more examples about it.
+  &lt;/p&gt;
+
+&lt;/div&gt;</content>
+    <summary type="html">BUGswarm is a cloud-based platform created by Bug Labs, used to acquire data from and to control embedded devices. The idea behind it is based on four concepts: resources, swarms, invitations and participations. Trying to simplify you have one or more resources that produce and consume data that are grouped into swarms...</summary>
+  </entry>
   <entry>
     <id>tag:lelylan.com,2012-08-29:/blog/iobridge/</id>
     <title type="html">ioBridge</title>
@@ -3308,97 +3557,6 @@ api_key={thinghttp_key}&amp;message=I+call+you+because+the+water+is+finished&lt;
   &lt;p&gt;
   Tell us which one is the next Internet of Things startup you want us to check. This is the 
   first article of a series that wants to get in deep about the Internet of Things ecosystem.
-  &lt;/p&gt;
-
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <id>tag:lelylan.com,2012-07-23:/blog/access/</id>
-    <title type="html">Houses for the Web</title>
-    <published>2012-07-22T22:00:00Z</published>
-    <updated>2012-07-22T22:00:00Z</updated>
-    <link rel="alternate" href="http://lelylan.com/blog/access/"/>
-    <content type="html">&lt;div class="article"&gt;
-
-  &lt;ul class="media-grid"&gt;
-    &lt;li&gt;
-    &lt;img class="thumbnail header" src="/images/blog/access/header.png" alt="Building your house hub"&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;p&gt;
-  When you build a home automation system you need to face different issues like
-  security, availability, connectivity and interoperability between the others. In the 
-  &lt;a href="/blog/electronics/"&gt;previous article&lt;/a&gt; we pointed out how great it is to 
-  experiment with and hack devices with cheap solutions like Arduino, but those solutions 
-  are not (yet) powerful enough to feature all we need for the connected house. What if 
-  we want to add  SSL, off-line control, protocols interoperation? Actually there we 
-  have two possible solutions:
-  &lt;strong&gt;single device intelligence&lt;/strong&gt; and
-  &lt;strong&gt;home automation hubs.&lt;/strong&gt;
-  &lt;/p&gt;
-
-  &lt;h2&gt;Single Device Intelligence&lt;/h2&gt;
-
-  &lt;p&gt;
-  This is the best solution and it totally changes the way we think at home automation 
-  today. Every device comes out with the ability to connect to the web in a secure way.
-  The scenario is the one where you go to Ikea or the shop down to your house, buy a
-  light, go home, connect it to the web and tell Lelylan it's part of your house.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-  This sounds great right. Yes, it does but it has a couple of drawbacks. The first one is 
-  that every device must be equipped with the ability to directly connect to the web (or to 
-  the router in your house) providing all security features (SSL and authorization logics).
-  This is possible and today we already have the technologies to do this, but it would make 
-  any device way more expensive. 
-  &lt;/p&gt;
-
-  &lt;p&gt;
-  Think at a light. Today you pay it $10. What if it suddenly costs you more than $70 just to 
-  be connected to the web? No way, at least if we think that home automation is for everybody.
-  The good point is that techs are getting cheaper and more powerful day by day and this 
-  will let us build smart devices for few more dollars more really soon. Check out 
-  &lt;a href="http://electricimp.com"&gt;Electronic Imp&lt;/a&gt; if you want to see what the future will
-  look like.
-  &lt;/p&gt;
-
-  &lt;h2&gt;Home Automation Hub&lt;/h2&gt;
-
-  &lt;p&gt;
-  This is the real solution nowadays. Think at the home automation ecosystem today. We have
-  a lot of companies producing any kind of device using different standards. In this way we 
-  depend on them and we can't unleash the real power of a home automation system because
-  we can't let every device communicate.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-  To solve this problem we need a hub, which is a small computer that will let your house 
-  talk to the web, without caring at all about the technology the devices use. In this way you 
-  can connect devices that use Zigbee, Konnex, X10 and whatever exists out there and let them be
-  accessible to the web. It's not easy, as you need to have a great knowledge of how those 
-  protocols work out, but once you do this they are accessible.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-  A home automation hub gives you several advantages. You have only one place to handle
-  secure communication and authorization, you can install some extra applications, you can 
-  easily handle an off-line situation when internet does not work and much more. 
-  &lt;/p&gt;
-
-  &lt;h2&gt;Conclusions&lt;/h2&gt;
-
-  &lt;p&gt;
-  We truly think that making every single device smart is the final goal, but in the meantime 
-  we need to face reality and mix these two ideaa which can easily live together.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-  For the braves who wanna start to experiment their first hub, we've listed the 
-  &lt;a href="/blog/boards/"&gt;best boards&lt;/a&gt; existing out there so that you can start hacking 
-  your house right now. Just buy one of them and &lt;a href="/about/"&gt;tell us&lt;/a&gt; what you have 
-  done.
   &lt;/p&gt;
 
 &lt;/div&gt;</content>
@@ -3438,17 +3596,252 @@ api_key={thinghttp_key}&amp;message=I+call+you+because+the+water+is+finished&lt;
   </body>
 </html>
 ;T;	I"<%= atom_feed %>;T;
-I"∏<?xml version="1.0" encoding="UTF-8"?>
+I"Õ<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://lelylan.com/</id>
   <title>Lelylan - reThink your house</title>
-  <updated>2012-08-28T22:00:00Z</updated>
+  <updated>2012-09-04T22:00:00Z</updated>
   <link rel="alternate" href="http://lelylan.com/"/>
   <link rel="self" href="http://lelylan.com/feed/"/>
   <author>
     <name>Lelylan Team</name>
     <uri>http://lelylan.com</uri>
   </author>
+  <entry>
+    <id>tag:lelylan.com,2012-09-05:/blog/bugswarm/</id>
+    <title type="html">BUGswarm</title>
+    <published>2012-09-04T22:00:00Z</published>
+    <updated>2012-09-04T22:00:00Z</updated>
+    <link rel="alternate" href="http://lelylan.com/blog/bugswarm/"/>
+    <content type="html">&lt;div class="article"&gt;
+
+  &lt;br/&gt;
+
+  &lt;ul class="media-grid"&gt;
+    &lt;li&gt;
+    &lt;a href="https://developer.bugswarm.net/"&gt;&lt;img class="thumbnail" src="/images/blog/bugswarm/header.png" alt="BUGswarm"&gt;&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;
+  &lt;a href="http://developer.bugswarm.net"&gt;BUGswarm&lt;/a&gt; is a cloud-based platform created by
+  &lt;a href="http://buglabs.net"&gt;Bug Labs&lt;/a&gt;, used to acquire data from embedded devices and
+  control them. The idea behind it is based on four concepts: resources, swarms,
+  invitations and participations.
+  &lt;/p&gt;
+
+  &lt;p&gt;To simplify matters, you have one or more
+  &lt;em&gt;resources&lt;/em&gt; that produce and consume data. Those resources are grouped into
+  &lt;em&gt;swarms&lt;/em&gt;. A resource could be your mobile phone and the swarm could
+  be a group that puts together all mobile devices you own. Once a resource is added to
+  a swarm, you can open an HTTP stream connection (&lt;em&gt;participation&lt;/em&gt;)
+  and get realtime information about the exchanged messages. About mobile
+  phones this means i.e. that we can have realtime information about their
+  locations or accelerations.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  Finally, resources can belong to different
+  swarms. This means that you can invite other resources to be part of your swarm and vice
+  versa, you can accept invitation for your resources to be part of somebody else's swarms.
+  &lt;/p&gt;
+
+  &lt;h2&gt;BUGswarm API&lt;/h2&gt;
+
+  &lt;p&gt;
+  It can be a little tricky to get started with BUGswarm. See the following detailed description
+  of the main concepts behind it with some examples showing how they are implemented.
+  &lt;/p&gt;
+
+  &lt;h3&gt;&lt;a href="http://developer.bugswarm.net/restful_api_keys.html"&gt;API Keys&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+  The API Key lets you create a valid key to access BUGswarms services. To create a
+  valid key you have to 'basic authenticate' with your &lt;code&gt;username:password&lt;/code&gt;.
+  You should also choose whether the key is used to access the &lt;em&gt;participation&lt;/em&gt; services (which includes
+  participation API) or the &lt;em&gt;configuration&lt;/em&gt; services (which includes resource, swarms and
+  invitation API) or both.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  Sample request creating a key to access to the configuration services.
+  &lt;/p&gt;
+
+&lt;pre&gt;
+curl -X POST --user "username:password" http://api.bugswarm.net/keys/configuration
+&lt;/pre&gt;
+
+  &lt;p&gt;
+  Sample response.
+  &lt;/p&gt;
+
+&lt;pre&gt;
+[
+  {
+    "created_at": "2011-10-21T15:37:35.636Z", 
+    "key": "b8c2382d0fd9123f3d0ccc760afa03854c652fdb", 
+    "status": "active", 
+    "type": "configuration", 
+    "user_id": "username"
+  }
+]
+&lt;/pre&gt;
+
+  &lt;h3&gt;&lt;a href="http://developer.bugswarm.net/restful_resources.html"&gt;Resources&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+  A resource is an application or device that is configured to &lt;em&gt;produce&lt;/em&gt;
+  or &lt;em&gt;consume&lt;/em&gt; data. A resource is a physical device, such as a smartphone
+  or Arduino, as well as a web or mobile app. Anything than can communicate through
+  HTTP can be configured to join a swarm and produce and consume data.
+  Here is a sample request creating a resource representing a smartphone.
+  &lt;/p&gt;
+
+&lt;pre&gt;
+curl -X POST http://api.bugswarm.net/resources
+     --header "x-bugswarmapikey: &amp;lt;api-key&amp;gt;"
+     --header "content-type: application/json"
+     -d '{
+           "name": "My resource",
+            "machine_type": "smartphone",
+            "description": "HTC Dream",
+            "position": { "longitude": 0, "latitude": 0 }
+         }'
+&lt;/pre&gt;
+
+
+  &lt;h3&gt;&lt;a href="http://developer.bugswarm.net/restful_swarms.html"&gt;Swarms&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+  A swarm is a collection of resources. Once a swarm is created, users can invite another
+  user's resources to become its member or can accept invitations to share a resource with
+  somebody else's swarms. The owner of the swarm can control what level of access
+  (&lt;em&gt;production&lt;/em&gt; and &lt;em&gt;consumption&lt;/em&gt;) that each resource in the swarm has.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  Sample request creating a swarm representing my mobile phones. When including a
+  resource simply specify its ID and its level of access (the resource must be
+  previously created).
+  &lt;/p&gt;
+
+&lt;pre&gt;
+curl -X POST http://api.bugswarm.net/swarms
+     --header "x-bugswarmapikey: &amp;lt;api-key&amp;gt;" 
+     --header "content-type: application/json"
+     -d '{
+          "name": "My smartphones",
+          "description": "I'm owesome!",
+          "public": false,
+          "resources": [{ 
+            "resource_id": "&amp;lt;resource-id&amp;gt;",
+            "resource_type": "consumer"
+          }]
+        }'
+&lt;/pre&gt;
+
+  &lt;h3&gt;&lt;a href="http://developer.bugswarm.net/restful_invitations.html"&gt;Invitations&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+  An invitation provides a social presence by inviting another user's resources to
+  join your swarms, sharing the production and consumption of data. A user can freely
+  accept or reject invitations from other users.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  Sample request where a resource with ID &lt;resource-id&gt; is shared as data producer
+  with the user &lt;username&gt;.
+  &lt;/p&gt;
+
+&lt;pre&gt;
+curl -X POST http://api.bugswarm.net/swarms/&amp;lt;swarm-id&amp;gt;/invitations
+     --header "x-bugswarmapikey: &amp;lt;api-key&amp;gt;" 
+     --header "content-type: application/json"
+     -d '{
+    "description": "I want to share my HTC Dream data with you Bob",
+      "to": "&amp;lf;username&amp;gt;",
+      "resource_id": "&amp;lt;resource-id&amp;gt;",
+      "resource_type": "producer"
+  }
+&lt;/pre&gt;
+
+  &lt;h3&gt;&lt;a href="http://developer.bugswarm.net/participation_api.html"&gt;Partecipation&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+  Once connected, resources may produce or consume data. Throughout the
+  participation API the BUGswarm platform lets you exchange messages, presence
+  notifications and error messages. The Participation API uses HTTP
+  streaming, meaning that once a connection has been opened, bidirectional
+  communication between the resource and the swarm may continue until the
+  connection is closed.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  Sample request opening a stream between the swarm &amp;lt;swarm-id&amp;gt; and the resource
+  &lt;resource-id&gt;.
+  &lt;/p&gt;
+
+&lt;pre&gt;
+curl -X POST 'http://api.bugswarm.net/stream?
+             swarm_id=&amp;lt;swarm-id&amp;gt;&amp;resource_id=&amp;lt;resource-id&amp;gt;'
+&lt;/pre&gt;
+
+  &lt;p&gt;
+  Once a connection has been successfully opened you can send and receive messages.
+  Here a sample request sending the acceleration value of a smartphone.
+  &lt;/p&gt;
+
+&lt;pre&gt;
+{
+  "message":
+  {
+    "to": [ { "swarm": "&amp;lt;swarm-id&amp;gt;", "resource": "&amp;lt;resource-ide&amp;gt;" } ],
+    "payload": { "acceleration" : 0.03242 }
+   }
+}
+&lt;/pre&gt;
+
+  &lt;h3&gt;&lt;a href="http://developer.bugswarm.net/participation_api.html"&gt;Connectors (Hardware)&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+  A connector is a client-side device-specific application that allows your
+  embedded devices to participate on BUGswarm being able to produce and
+  consume data. In other words a connector uses the participation API to
+  exchange a sequence of messages that lets your swarms know the device status.
+  &lt;a href="http://developer.bugswarm.net/hardware.html"&gt;Learn more&lt;/a&gt;.
+  &lt;p&gt;
+
+
+  &lt;h2&gt;Conclusions&lt;/h2&gt;
+
+  &lt;p&gt;
+  The documentation is clear and you can find &lt;a href="http://developer.bugswarm.net/tutorial.html"&gt;step by step tutorials&lt;/a&gt;
+  that give all the needed information to get started. The API is simple and follows
+  pretty well the RESTful architecture. To easily access to the API, BUGswarm offers a
+  &lt;a href="https://github.com/buglabs/bugswarm-tools"&gt;command line&lt;/a&gt; written in Python, 
+  as well as a &lt;a href="https://github.com/buglabs/bugswarm-js"&gt;Javascript library&lt;/a&gt;.
+  The key concept that differentiate this service from all others, in our opinion, is the
+  invitation one. It easily let you share resources with other users and as far as we know, no
+  other service does this.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  In the other side we were expecting more examples on real case scenarios.
+  The communication with real hardware is not clear. A simple example on how to integrate
+  Arduino would be enough to improve this part.
+  The authorization system does not provide a flexible mechanism. As far as we could see
+  there is also no way to revoke an API key once generated.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  As final result, BUGswarm looks like the cool kid that uses cutting edge technologies and
+  that follow the realtime trend characterizing the web nowadays. Unluckily it misses to target
+  the real needs and the physical world. We hope to see soon more examples about it.
+  &lt;/p&gt;
+
+&lt;/div&gt;</content>
+    <summary type="html">BUGswarm is a cloud-based platform created by Bug Labs, used to acquire data from and to control embedded devices. The idea behind it is based on four concepts: resources, swarms, invitations and participations. Trying to simplify you have one or more resources that produce and consume data that are grouped into swarms...</summary>
+  </entry>
   <entry>
     <id>tag:lelylan.com,2012-08-29:/blog/iobridge/</id>
     <title type="html">ioBridge</title>
@@ -4362,99 +4755,8 @@ api_key={thinghttp_key}&amp;message=I+call+you+because+the+water+is+finished&lt;
 
 &lt;/div&gt;</content>
   </entry>
-  <entry>
-    <id>tag:lelylan.com,2012-07-23:/blog/access/</id>
-    <title type="html">Houses for the Web</title>
-    <published>2012-07-22T22:00:00Z</published>
-    <updated>2012-07-22T22:00:00Z</updated>
-    <link rel="alternate" href="http://lelylan.com/blog/access/"/>
-    <content type="html">&lt;div class="article"&gt;
-
-  &lt;ul class="media-grid"&gt;
-    &lt;li&gt;
-    &lt;img class="thumbnail header" src="/images/blog/access/header.png" alt="Building your house hub"&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;p&gt;
-  When you build a home automation system you need to face different issues like
-  security, availability, connectivity and interoperability between the others. In the 
-  &lt;a href="/blog/electronics/"&gt;previous article&lt;/a&gt; we pointed out how great it is to 
-  experiment with and hack devices with cheap solutions like Arduino, but those solutions 
-  are not (yet) powerful enough to feature all we need for the connected house. What if 
-  we want to add  SSL, off-line control, protocols interoperation? Actually there we 
-  have two possible solutions:
-  &lt;strong&gt;single device intelligence&lt;/strong&gt; and
-  &lt;strong&gt;home automation hubs.&lt;/strong&gt;
-  &lt;/p&gt;
-
-  &lt;h2&gt;Single Device Intelligence&lt;/h2&gt;
-
-  &lt;p&gt;
-  This is the best solution and it totally changes the way we think at home automation 
-  today. Every device comes out with the ability to connect to the web in a secure way.
-  The scenario is the one where you go to Ikea or the shop down to your house, buy a
-  light, go home, connect it to the web and tell Lelylan it's part of your house.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-  This sounds great right. Yes, it does but it has a couple of drawbacks. The first one is 
-  that every device must be equipped with the ability to directly connect to the web (or to 
-  the router in your house) providing all security features (SSL and authorization logics).
-  This is possible and today we already have the technologies to do this, but it would make 
-  any device way more expensive. 
-  &lt;/p&gt;
-
-  &lt;p&gt;
-  Think at a light. Today you pay it $10. What if it suddenly costs you more than $70 just to 
-  be connected to the web? No way, at least if we think that home automation is for everybody.
-  The good point is that techs are getting cheaper and more powerful day by day and this 
-  will let us build smart devices for few more dollars more really soon. Check out 
-  &lt;a href="http://electricimp.com"&gt;Electronic Imp&lt;/a&gt; if you want to see what the future will
-  look like.
-  &lt;/p&gt;
-
-  &lt;h2&gt;Home Automation Hub&lt;/h2&gt;
-
-  &lt;p&gt;
-  This is the real solution nowadays. Think at the home automation ecosystem today. We have
-  a lot of companies producing any kind of device using different standards. In this way we 
-  depend on them and we can't unleash the real power of a home automation system because
-  we can't let every device communicate.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-  To solve this problem we need a hub, which is a small computer that will let your house 
-  talk to the web, without caring at all about the technology the devices use. In this way you 
-  can connect devices that use Zigbee, Konnex, X10 and whatever exists out there and let them be
-  accessible to the web. It's not easy, as you need to have a great knowledge of how those 
-  protocols work out, but once you do this they are accessible.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-  A home automation hub gives you several advantages. You have only one place to handle
-  secure communication and authorization, you can install some extra applications, you can 
-  easily handle an off-line situation when internet does not work and much more. 
-  &lt;/p&gt;
-
-  &lt;h2&gt;Conclusions&lt;/h2&gt;
-
-  &lt;p&gt;
-  We truly think that making every single device smart is the final goal, but in the meantime 
-  we need to face reality and mix these two ideaa which can easily live together.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-  For the braves who wanna start to experiment their first hub, we've listed the 
-  &lt;a href="/blog/boards/"&gt;best boards&lt;/a&gt; existing out there so that you can start hacking 
-  your house right now. Just buy one of them and &lt;a href="/about/"&gt;tell us&lt;/a&gt; what you have 
-  done.
-  &lt;/p&gt;
-
-&lt;/div&gt;</content>
-  </entry>
 </feed>
-;T;@,I"/;T{;{	;I"Å9<!DOCTYPE HTML>
+;T;@,I"/;T{;{	;I"	9<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -4693,58 +4995,58 @@ api_key={thinghttp_key}&amp;message=I+call+you+because+the+water+is+finished&lt;
     <ul class="content">
       
       <li class="post two-cols box ">
+        <a href="/blog/bugswarm/">
+          <span class="strap">BUGswarm</span>
+          <span class="label"><span>R</span>ealtime <span>S</span>ocial <span>#</span>IoT
+        </a>
+      </li>
+      
+      <li class="post two-cols box last">
         <a href="/blog/iobridge/">
           <span class="strap">ioBridge</span>
           <span class="label"><span>M</span>arket <span>R</span>eady <span>I</span>nternet <span>o</span>f <span>T</span>hings
         </a>
       </li>
       
-      <li class="post two-cols box last">
+      <li class="post two-cols box ">
         <a href="/blog/thingspeak/">
           <span class="strap">ThingSpeak</span>
           <span class="label"><span>O</span>pen <span>S</span>ource <span>I</span>nternet <span>o</span>f <span>T</span>hings
         </a>
       </li>
       
-      <li class="post two-cols box ">
+      <li class="post two-cols box last">
         <a href="/blog/evrythng/">
           <span class="strap">EVRYTHNG</span>
           <span class="label"><span>D</span>igital <span>i</span>dentities <span>f</span>or <span>t</span>he <span>r</span>eal <span>w</span>orld
         </a>
       </li>
       
-      <li class="post two-cols box last">
+      <li class="post two-cols box ">
         <a href="/blog/cosm/">
           <span class="strap">Cosm (aka Pachube)</span>
           <span class="label"><span>A</span>dvanced <span>I</span>nternet <span>o</span>f <span>T</span>hings
         </a>
       </li>
       
-      <li class="post two-cols box ">
+      <li class="post two-cols box last">
         <a href="/blog/access/">
           <span class="strap">Houses for the Web</span>
           <span class="label"><span>S</span>mart <span>D</span>evices <span>v</span>s <span>H</span>ubs
         </a>
       </li>
       
-      <li class="post two-cols box last">
+      <li class="post two-cols box ">
         <a href="/blog/boards/">
           <span class="strap">Get into the House</span>
           <span class="label"><span>B</span>oard <span>C</span>omputers <span>C</span>ompared
         </a>
       </li>
       
-      <li class="post two-cols box ">
+      <li class="post two-cols box last">
         <a href="/blog/electronics/">
           <span class="strap">Hacking the Internet of Things</span>
           <span class="label"><span>H</span>ardware <span>s</span>olutions <span>c</span>ompared
-        </a>
-      </li>
-      
-      <li class="post two-cols box last">
-        <a href="/blog/wish/">
-          <span class="strap">Dreaming the Connected Home</span>
-          <span class="label"><span>S</span>it <span>o</span>n <span>t</span>he <span>C</span>ouch <span>a</span>nd <span>k</span>eep <span>C</span>ontrol <span>o</span>f <span>E</span>verything
         </a>
       </li>
       
@@ -4910,7 +5212,7 @@ api_key={thinghttp_key}&amp;message=I+call+you+because+the+water+is+finished&lt;
 </div>
 
 <img src="/images/face.png" class="hidden">;T;
-I"g(    <div id="overview">
+I"Ô'    <div id="overview">
       <div class="container centered">
         <div id="headline" class="home">
           <h1>Lelylan, reThink your house</h1>
@@ -5091,58 +5393,58 @@ I"g(    <div id="overview">
     <ul class="content">
       
       <li class="post two-cols box ">
+        <a href="/blog/bugswarm/">
+          <span class="strap">BUGswarm</span>
+          <span class="label"><span>R</span>ealtime <span>S</span>ocial <span>#</span>IoT
+        </a>
+      </li>
+      
+      <li class="post two-cols box last">
         <a href="/blog/iobridge/">
           <span class="strap">ioBridge</span>
           <span class="label"><span>M</span>arket <span>R</span>eady <span>I</span>nternet <span>o</span>f <span>T</span>hings
         </a>
       </li>
       
-      <li class="post two-cols box last">
+      <li class="post two-cols box ">
         <a href="/blog/thingspeak/">
           <span class="strap">ThingSpeak</span>
           <span class="label"><span>O</span>pen <span>S</span>ource <span>I</span>nternet <span>o</span>f <span>T</span>hings
         </a>
       </li>
       
-      <li class="post two-cols box ">
+      <li class="post two-cols box last">
         <a href="/blog/evrythng/">
           <span class="strap">EVRYTHNG</span>
           <span class="label"><span>D</span>igital <span>i</span>dentities <span>f</span>or <span>t</span>he <span>r</span>eal <span>w</span>orld
         </a>
       </li>
       
-      <li class="post two-cols box last">
+      <li class="post two-cols box ">
         <a href="/blog/cosm/">
           <span class="strap">Cosm (aka Pachube)</span>
           <span class="label"><span>A</span>dvanced <span>I</span>nternet <span>o</span>f <span>T</span>hings
         </a>
       </li>
       
-      <li class="post two-cols box ">
+      <li class="post two-cols box last">
         <a href="/blog/access/">
           <span class="strap">Houses for the Web</span>
           <span class="label"><span>S</span>mart <span>D</span>evices <span>v</span>s <span>H</span>ubs
         </a>
       </li>
       
-      <li class="post two-cols box last">
+      <li class="post two-cols box ">
         <a href="/blog/boards/">
           <span class="strap">Get into the House</span>
           <span class="label"><span>B</span>oard <span>C</span>omputers <span>C</span>ompared
         </a>
       </li>
       
-      <li class="post two-cols box ">
+      <li class="post two-cols box last">
         <a href="/blog/electronics/">
           <span class="strap">Hacking the Internet of Things</span>
           <span class="label"><span>H</span>ardware <span>s</span>olutions <span>c</span>ompared
-        </a>
-      </li>
-      
-      <li class="post two-cols box last">
-        <a href="/blog/wish/">
-          <span class="strap">Dreaming the Connected Home</span>
-          <span class="label"><span>S</span>it <span>o</span>n <span>t</span>he <span>C</span>ouch <span>a</span>nd <span>k</span>eep <span>C</span>ontrol <span>o</span>f <span>E</span>verything
         </a>
       </li>
       
@@ -5551,7 +5853,7 @@ I"g(    <div id="overview">
 
   </div>
 </div>;T;
-@9;@8I"/sitemap/;T{;{;I"~	<?xml version="1.0" encoding="UTF-8"?>
+@9;@8I"/sitemap/;T{;{;I"‚	<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://lelylan.com/about/</loc>
@@ -5565,6 +5867,10 @@ I"g(    <div id="overview">
   <url>
     <loc>http://lelylan.com/blog/boards/</loc>
     <lastmod>2012-07-16</lastmod>
+  </url>
+  <url>
+    <loc>http://lelylan.com/blog/bugswarm/</loc>
+    <lastmod>2012-09-05</lastmod>
   </url>
   <url>
     <loc>http://lelylan.com/blog/cosm/</loc>
@@ -6353,7 +6659,7 @@ I"g(    <div id="overview">
 
   </div>
 </div>;T;
-@C;@BI"/blog/tags/iot/;T{;{	;I"ï<!DOCTYPE HTML>
+@C;@BI"/blog/tags/iot/;T{;{	;I"ç<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -6418,6 +6724,13 @@ I"g(    <div id="overview">
     <li>
       <span class="title"><a href="/blog/boards/"><span>G</span>et <span>i</span>nto <span>t</span>he <span>H</span>ouse</a></span> -
       <span class="subtitle"><a href="/blog/boards/"><span>B</span>oard <span>C</span>omputers <span>C</span>ompared</a></span>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+      <span class="title"><a href="/blog/bugswarm/"><span>B</span>UGswarm</a></span> -
+      <span class="subtitle"><a href="/blog/bugswarm/"><span>R</span>ealtime <span>S</span>ocial <span>#</span>IoT</a></span>
     </li>
   </ul>
 
@@ -6506,11 +6819,18 @@ I"g(    <div id="overview">
   </body>
 </html>
 ;T;	I")<%= render('tags', :tag => 'iot') %>;T;
-I"v
+I"n	
   <ul>
     <li>
       <span class="title"><a href="/blog/boards/"><span>G</span>et <span>i</span>nto <span>t</span>he <span>H</span>ouse</a></span> -
       <span class="subtitle"><a href="/blog/boards/"><span>B</span>oard <span>C</span>omputers <span>C</span>ompared</a></span>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+      <span class="title"><a href="/blog/bugswarm/"><span>B</span>UGswarm</a></span> -
+      <span class="subtitle"><a href="/blog/bugswarm/"><span>R</span>ealtime <span>S</span>ocial <span>#</span>IoT</a></span>
     </li>
   </ul>
 
@@ -6889,17 +7209,252 @@ I"È
       <span class="subtitle"><a href="/blog/wish/"><span>S</span>it <span>o</span>n <span>t</span>he <span>C</span>ouch <span>a</span>nd <span>k</span>eep <span>C</span>ontrol <span>o</span>f <span>E</span>verything</a></span>
     </li>
   </ul>
-;T;@SI"/blog/feed/;T{;{;I"∏<?xml version="1.0" encoding="UTF-8"?>
+;T;@SI"/blog/feed/;T{;{;I"#Õ<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://lelylan.com/</id>
   <title>Lelylan - reThink your house</title>
-  <updated>2012-08-28T22:00:00Z</updated>
+  <updated>2012-09-04T22:00:00Z</updated>
   <link rel="alternate" href="http://lelylan.com/"/>
   <link rel="self" href="http://lelylan.com/blog/feed.xml"/>
   <author>
     <name>Lelylan Team</name>
     <uri>http://lelylan.com</uri>
   </author>
+  <entry>
+    <id>tag:lelylan.com,2012-09-05:/blog/bugswarm/</id>
+    <title type="html">BUGswarm</title>
+    <published>2012-09-04T22:00:00Z</published>
+    <updated>2012-09-04T22:00:00Z</updated>
+    <link rel="alternate" href="http://lelylan.com/blog/bugswarm/"/>
+    <content type="html">&lt;div class="article"&gt;
+
+  &lt;br/&gt;
+
+  &lt;ul class="media-grid"&gt;
+    &lt;li&gt;
+    &lt;a href="https://developer.bugswarm.net/"&gt;&lt;img class="thumbnail" src="/images/blog/bugswarm/header.png" alt="BUGswarm"&gt;&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;
+  &lt;a href="http://developer.bugswarm.net"&gt;BUGswarm&lt;/a&gt; is a cloud-based platform created by
+  &lt;a href="http://buglabs.net"&gt;Bug Labs&lt;/a&gt;, used to acquire data from embedded devices and
+  control them. The idea behind it is based on four concepts: resources, swarms,
+  invitations and participations.
+  &lt;/p&gt;
+
+  &lt;p&gt;To simplify matters, you have one or more
+  &lt;em&gt;resources&lt;/em&gt; that produce and consume data. Those resources are grouped into
+  &lt;em&gt;swarms&lt;/em&gt;. A resource could be your mobile phone and the swarm could
+  be a group that puts together all mobile devices you own. Once a resource is added to
+  a swarm, you can open an HTTP stream connection (&lt;em&gt;participation&lt;/em&gt;)
+  and get realtime information about the exchanged messages. About mobile
+  phones this means i.e. that we can have realtime information about their
+  locations or accelerations.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  Finally, resources can belong to different
+  swarms. This means that you can invite other resources to be part of your swarm and vice
+  versa, you can accept invitation for your resources to be part of somebody else's swarms.
+  &lt;/p&gt;
+
+  &lt;h2&gt;BUGswarm API&lt;/h2&gt;
+
+  &lt;p&gt;
+  It can be a little tricky to get started with BUGswarm. See the following detailed description
+  of the main concepts behind it with some examples showing how they are implemented.
+  &lt;/p&gt;
+
+  &lt;h3&gt;&lt;a href="http://developer.bugswarm.net/restful_api_keys.html"&gt;API Keys&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+  The API Key lets you create a valid key to access BUGswarms services. To create a
+  valid key you have to 'basic authenticate' with your &lt;code&gt;username:password&lt;/code&gt;.
+  You should also choose whether the key is used to access the &lt;em&gt;participation&lt;/em&gt; services (which includes
+  participation API) or the &lt;em&gt;configuration&lt;/em&gt; services (which includes resource, swarms and
+  invitation API) or both.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  Sample request creating a key to access to the configuration services.
+  &lt;/p&gt;
+
+&lt;pre&gt;
+curl -X POST --user "username:password" http://api.bugswarm.net/keys/configuration
+&lt;/pre&gt;
+
+  &lt;p&gt;
+  Sample response.
+  &lt;/p&gt;
+
+&lt;pre&gt;
+[
+  {
+    "created_at": "2011-10-21T15:37:35.636Z", 
+    "key": "b8c2382d0fd9123f3d0ccc760afa03854c652fdb", 
+    "status": "active", 
+    "type": "configuration", 
+    "user_id": "username"
+  }
+]
+&lt;/pre&gt;
+
+  &lt;h3&gt;&lt;a href="http://developer.bugswarm.net/restful_resources.html"&gt;Resources&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+  A resource is an application or device that is configured to &lt;em&gt;produce&lt;/em&gt;
+  or &lt;em&gt;consume&lt;/em&gt; data. A resource is a physical device, such as a smartphone
+  or Arduino, as well as a web or mobile app. Anything than can communicate through
+  HTTP can be configured to join a swarm and produce and consume data.
+  Here is a sample request creating a resource representing a smartphone.
+  &lt;/p&gt;
+
+&lt;pre&gt;
+curl -X POST http://api.bugswarm.net/resources
+     --header "x-bugswarmapikey: &amp;lt;api-key&amp;gt;"
+     --header "content-type: application/json"
+     -d '{
+           "name": "My resource",
+            "machine_type": "smartphone",
+            "description": "HTC Dream",
+            "position": { "longitude": 0, "latitude": 0 }
+         }'
+&lt;/pre&gt;
+
+
+  &lt;h3&gt;&lt;a href="http://developer.bugswarm.net/restful_swarms.html"&gt;Swarms&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+  A swarm is a collection of resources. Once a swarm is created, users can invite another
+  user's resources to become its member or can accept invitations to share a resource with
+  somebody else's swarms. The owner of the swarm can control what level of access
+  (&lt;em&gt;production&lt;/em&gt; and &lt;em&gt;consumption&lt;/em&gt;) that each resource in the swarm has.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  Sample request creating a swarm representing my mobile phones. When including a
+  resource simply specify its ID and its level of access (the resource must be
+  previously created).
+  &lt;/p&gt;
+
+&lt;pre&gt;
+curl -X POST http://api.bugswarm.net/swarms
+     --header "x-bugswarmapikey: &amp;lt;api-key&amp;gt;" 
+     --header "content-type: application/json"
+     -d '{
+          "name": "My smartphones",
+          "description": "I'm owesome!",
+          "public": false,
+          "resources": [{ 
+            "resource_id": "&amp;lt;resource-id&amp;gt;",
+            "resource_type": "consumer"
+          }]
+        }'
+&lt;/pre&gt;
+
+  &lt;h3&gt;&lt;a href="http://developer.bugswarm.net/restful_invitations.html"&gt;Invitations&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+  An invitation provides a social presence by inviting another user's resources to
+  join your swarms, sharing the production and consumption of data. A user can freely
+  accept or reject invitations from other users.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  Sample request where a resource with ID &lt;resource-id&gt; is shared as data producer
+  with the user &lt;username&gt;.
+  &lt;/p&gt;
+
+&lt;pre&gt;
+curl -X POST http://api.bugswarm.net/swarms/&amp;lt;swarm-id&amp;gt;/invitations
+     --header "x-bugswarmapikey: &amp;lt;api-key&amp;gt;" 
+     --header "content-type: application/json"
+     -d '{
+    "description": "I want to share my HTC Dream data with you Bob",
+      "to": "&amp;lf;username&amp;gt;",
+      "resource_id": "&amp;lt;resource-id&amp;gt;",
+      "resource_type": "producer"
+  }
+&lt;/pre&gt;
+
+  &lt;h3&gt;&lt;a href="http://developer.bugswarm.net/participation_api.html"&gt;Partecipation&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+  Once connected, resources may produce or consume data. Throughout the
+  participation API the BUGswarm platform lets you exchange messages, presence
+  notifications and error messages. The Participation API uses HTTP
+  streaming, meaning that once a connection has been opened, bidirectional
+  communication between the resource and the swarm may continue until the
+  connection is closed.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  Sample request opening a stream between the swarm &amp;lt;swarm-id&amp;gt; and the resource
+  &lt;resource-id&gt;.
+  &lt;/p&gt;
+
+&lt;pre&gt;
+curl -X POST 'http://api.bugswarm.net/stream?
+             swarm_id=&amp;lt;swarm-id&amp;gt;&amp;resource_id=&amp;lt;resource-id&amp;gt;'
+&lt;/pre&gt;
+
+  &lt;p&gt;
+  Once a connection has been successfully opened you can send and receive messages.
+  Here a sample request sending the acceleration value of a smartphone.
+  &lt;/p&gt;
+
+&lt;pre&gt;
+{
+  "message":
+  {
+    "to": [ { "swarm": "&amp;lt;swarm-id&amp;gt;", "resource": "&amp;lt;resource-ide&amp;gt;" } ],
+    "payload": { "acceleration" : 0.03242 }
+   }
+}
+&lt;/pre&gt;
+
+  &lt;h3&gt;&lt;a href="http://developer.bugswarm.net/participation_api.html"&gt;Connectors (Hardware)&lt;/a&gt;&lt;/h3&gt;
+
+  &lt;p&gt;
+  A connector is a client-side device-specific application that allows your
+  embedded devices to participate on BUGswarm being able to produce and
+  consume data. In other words a connector uses the participation API to
+  exchange a sequence of messages that lets your swarms know the device status.
+  &lt;a href="http://developer.bugswarm.net/hardware.html"&gt;Learn more&lt;/a&gt;.
+  &lt;p&gt;
+
+
+  &lt;h2&gt;Conclusions&lt;/h2&gt;
+
+  &lt;p&gt;
+  The documentation is clear and you can find &lt;a href="http://developer.bugswarm.net/tutorial.html"&gt;step by step tutorials&lt;/a&gt;
+  that give all the needed information to get started. The API is simple and follows
+  pretty well the RESTful architecture. To easily access to the API, BUGswarm offers a
+  &lt;a href="https://github.com/buglabs/bugswarm-tools"&gt;command line&lt;/a&gt; written in Python, 
+  as well as a &lt;a href="https://github.com/buglabs/bugswarm-js"&gt;Javascript library&lt;/a&gt;.
+  The key concept that differentiate this service from all others, in our opinion, is the
+  invitation one. It easily let you share resources with other users and as far as we know, no
+  other service does this.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  In the other side we were expecting more examples on real case scenarios.
+  The communication with real hardware is not clear. A simple example on how to integrate
+  Arduino would be enough to improve this part.
+  The authorization system does not provide a flexible mechanism. As far as we could see
+  there is also no way to revoke an API key once generated.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+  As final result, BUGswarm looks like the cool kid that uses cutting edge technologies and
+  that follow the realtime trend characterizing the web nowadays. Unluckily it misses to target
+  the real needs and the physical world. We hope to see soon more examples about it.
+  &lt;/p&gt;
+
+&lt;/div&gt;</content>
+    <summary type="html">BUGswarm is a cloud-based platform created by Bug Labs, used to acquire data from and to control embedded devices. The idea behind it is based on four concepts: resources, swarms, invitations and participations. Trying to simplify you have one or more resources that produce and consume data that are grouped into swarms...</summary>
+  </entry>
   <entry>
     <id>tag:lelylan.com,2012-08-29:/blog/iobridge/</id>
     <title type="html">ioBridge</title>
@@ -7809,97 +8364,6 @@ api_key={thinghttp_key}&amp;message=I+call+you+because+the+water+is+finished&lt;
   &lt;p&gt;
   Tell us which one is the next Internet of Things startup you want us to check. This is the 
   first article of a series that wants to get in deep about the Internet of Things ecosystem.
-  &lt;/p&gt;
-
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <id>tag:lelylan.com,2012-07-23:/blog/access/</id>
-    <title type="html">Houses for the Web</title>
-    <published>2012-07-22T22:00:00Z</published>
-    <updated>2012-07-22T22:00:00Z</updated>
-    <link rel="alternate" href="http://lelylan.com/blog/access/"/>
-    <content type="html">&lt;div class="article"&gt;
-
-  &lt;ul class="media-grid"&gt;
-    &lt;li&gt;
-    &lt;img class="thumbnail header" src="/images/blog/access/header.png" alt="Building your house hub"&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;p&gt;
-  When you build a home automation system you need to face different issues like
-  security, availability, connectivity and interoperability between the others. In the 
-  &lt;a href="/blog/electronics/"&gt;previous article&lt;/a&gt; we pointed out how great it is to 
-  experiment with and hack devices with cheap solutions like Arduino, but those solutions 
-  are not (yet) powerful enough to feature all we need for the connected house. What if 
-  we want to add  SSL, off-line control, protocols interoperation? Actually there we 
-  have two possible solutions:
-  &lt;strong&gt;single device intelligence&lt;/strong&gt; and
-  &lt;strong&gt;home automation hubs.&lt;/strong&gt;
-  &lt;/p&gt;
-
-  &lt;h2&gt;Single Device Intelligence&lt;/h2&gt;
-
-  &lt;p&gt;
-  This is the best solution and it totally changes the way we think at home automation 
-  today. Every device comes out with the ability to connect to the web in a secure way.
-  The scenario is the one where you go to Ikea or the shop down to your house, buy a
-  light, go home, connect it to the web and tell Lelylan it's part of your house.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-  This sounds great right. Yes, it does but it has a couple of drawbacks. The first one is 
-  that every device must be equipped with the ability to directly connect to the web (or to 
-  the router in your house) providing all security features (SSL and authorization logics).
-  This is possible and today we already have the technologies to do this, but it would make 
-  any device way more expensive. 
-  &lt;/p&gt;
-
-  &lt;p&gt;
-  Think at a light. Today you pay it $10. What if it suddenly costs you more than $70 just to 
-  be connected to the web? No way, at least if we think that home automation is for everybody.
-  The good point is that techs are getting cheaper and more powerful day by day and this 
-  will let us build smart devices for few more dollars more really soon. Check out 
-  &lt;a href="http://electricimp.com"&gt;Electronic Imp&lt;/a&gt; if you want to see what the future will
-  look like.
-  &lt;/p&gt;
-
-  &lt;h2&gt;Home Automation Hub&lt;/h2&gt;
-
-  &lt;p&gt;
-  This is the real solution nowadays. Think at the home automation ecosystem today. We have
-  a lot of companies producing any kind of device using different standards. In this way we 
-  depend on them and we can't unleash the real power of a home automation system because
-  we can't let every device communicate.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-  To solve this problem we need a hub, which is a small computer that will let your house 
-  talk to the web, without caring at all about the technology the devices use. In this way you 
-  can connect devices that use Zigbee, Konnex, X10 and whatever exists out there and let them be
-  accessible to the web. It's not easy, as you need to have a great knowledge of how those 
-  protocols work out, but once you do this they are accessible.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-  A home automation hub gives you several advantages. You have only one place to handle
-  secure communication and authorization, you can install some extra applications, you can 
-  easily handle an off-line situation when internet does not work and much more. 
-  &lt;/p&gt;
-
-  &lt;h2&gt;Conclusions&lt;/h2&gt;
-
-  &lt;p&gt;
-  We truly think that making every single device smart is the final goal, but in the meantime 
-  we need to face reality and mix these two ideaa which can easily live together.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-  For the braves who wanna start to experiment their first hub, we've listed the 
-  &lt;a href="/blog/boards/"&gt;best boards&lt;/a&gt; existing out there so that you can start hacking 
-  your house right now. Just buy one of them and &lt;a href="/about/"&gt;tell us&lt;/a&gt; what you have 
-  done.
   &lt;/p&gt;
 
 &lt;/div&gt;</content>
@@ -14938,7 +15402,7 @@ http://www.iobridge.com/api/module/feed.json?key=zTFNFDol7706vSZnuxel</pre>
   </p>
 
 </div>;T;
-@¢;@°I"/blog/bugswarm/;T{;{	;I" :<!DOCTYPE HTML>
+@¢;@°I"/blog/bugswarm/;T{;{	;I":<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -15001,7 +15465,7 @@ http://www.iobridge.com/api/module/feed.json?key=zTFNFDol7706vSZnuxel</pre>
       <div id="main">
                 
         <h1>BUGswarm</h1>
-        <span class="sub">Realtime Invitation #IoT</span>
+        <span class="sub">Realtime Social #IoT</span>
         <p>
           Written by <a href="http://twitter.com/andreareginato">Lelylan Chief</a> | Sep 05, 2012
         </p>
@@ -15240,7 +15704,7 @@ curl -X POST 'http://api.bugswarm.net/stream?
           <div class="addthis_toolbox addthis_default_style" 
   style="padding-top: 0px;"
   addthis:url="http://lelylan.com/blog/bugswarm/"
-  addthis:title="BUGswarm. Realtime Invitation #IoT">
+  addthis:title="BUGswarm. Realtime Social #IoT">
   <a class="addthis_button_hackernews"></a>
   <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
   <a class="addthis_button_tweet" tw:via="lelylan"></a>
