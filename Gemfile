@@ -1,16 +1,6 @@
-source :gemcutter
+source 'https://rubygems.org'
 
-gem 'rack'
-gem 'rake'
-gem 'nanoc3', '3.2.4'
-gem 'builder'
-gem 'adsf'
+ruby '1.9.3'
 
-# Thin to serve content from Heroku
-gem 'thin'
-gem 'rack-rewrite', :require => 'rack-rewrite'
-gem 'rack-contrib', :require => 'rack/contrib'
-
-# Mime-types for handling mime types
-gem 'mime-types', :require => 'mime/types'
-
+gem 'sinatra'
+gem 'unicorn'

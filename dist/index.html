@@ -1,0 +1,250 @@
+<!doctype html>
+
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+
+  <title>Lelylan. Building the connected home</title>
+
+  <meta name="description" content="A simple and open solution to connect every device to the web.">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:300,400,700">
+  <link rel="stylesheet" href="/styles/de47bbd1.main.css">
+
+  <meta http-equiv="cleartype" content="on">
+</head>
+
+<body class="features">
+
+  <header id="global-header" class="navbar">
+    <nav role="navigation">
+    <div class="wrapper">
+      <a class="brand" href="/"><span class="lelylan-icon"></span> Lelylan</a>
+      <button type="button" class="mobile-menu" data-toggle="collapse" data-target=".nav-collapse"><span class="hidden">Menu</span></button>
+      <ul id="main-menu" class="nav-collapse collapse">
+        <li class="makers"><a href="/makers">Makers</a></li>
+        <li class="developers"><a href="/developers">Developers</a></li>
+        <li class="action"><a href="/people">Call for action</a></li>
+        <li class="try"><a href="http://try.lelylan.com">Try</a></li>
+        <li class="join"><a href="http://people.lelylan.com/subscriptions/new">Join</a></li>
+      </ul>
+    </div>
+    </nav>
+    <section class="featurebanner">
+    <div class="bannercontent">
+      <h1 class="title">Building the Connected Home</h1>
+      <p>A simple and open solution to connect every device to the web.</p>
+      <!--<p class="beta"><strong>[ANN]</strong> The private beta is finally open!</p>-->
+      <a class="playbutton" href="http://try.lelylan.com"><span class="hidden">Try Lelylan</span></a>
+    </div>
+    </section>
+  </header>
+
+<div class="clearfix"></div>
+<main role="main">
+
+<section class="container-wrapper features">
+  <div class="inner row one">
+    <div class="left small">
+      <img src="/images/76d34fc4.examples.png">
+    </div>
+    <div class="right big">
+      <h2>An API that gets out of your way</h2>
+      <p>
+        The connected home should be easy and accessible to everyone. <br>
+        See how turning on a light only requires few lines of code.
+      </p>
+
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#update-properties-curl" data-toggle="tab" class="curl">Curl</a></li>
+        <li><a href="#update-properties-ruby" data-toggle="tab" class="ruby">Ruby</a></li>
+        <li><a href="#update-properties-node" data-toggle="tab" class="node">Node.js</a></li>
+        <li><a href="#update-properties-angular" data-toggle="tab" class="angular">AngularJS</a></li>
+      </ul>
+
+      <div class="tab-content">
+        <div class="tab-pane active" id="update-properties-curl">
+          <div class="preview"><pre><xmp>curl -X PUT http://api.lelylan.com/devices/<light-id>/properties \
+     -H 'Authorization: Bearer <token>' \
+     -H 'Content-Type: application/json' \
+     -d '{ "properties": [{ "id": "<status>", "value": "on" }] }'</status></token></light-id></xmp></pre>
+          </div>
+        </div>
+        <div class="tab-pane" id="update-properties-node">
+          <div class="preview">
+            <pre class="prettyprint"><xmp>var Lelylan = require('lelylan-node')({ token: token });
+var params  = { properties: [{ id: '<status>', value: 'on' }] };
+Lelylan.Device.properties('<light-id>', params, callback);</light-id></status></xmp></pre>
+          </div>
+        </div>
+        <div class="tab-pane" id="update-properties-angular">
+          <div class="preview">
+            <pre class="prettyprint"><xmp><div ng-app="lelylan">
+  <!-- login component here (dev.lelylan.com/api/oauth#implicit-grant-angular) -->
+  <div ng-controller="LelylanController">{{device}}</div>
+  <script>
+    function LelylanController($scope, Device) {
+      var params = { id: '<light-id>', properties: [{ id: '<status>', value: 'on' }] };
+      $scope.device = new Device(params);
+      $scope.device.$properties();
+    }
+  </script>
+</div></xmp></pre>
+          </div>
+        </div>
+        <div class="tab-pane" id="update-properties-ruby">
+          <div class="preview">
+            <pre class="prettyprint"><xmp>lelylan = Lelylan::Client.new(token: token)
+params  = { properties: [{ id: '<status>', value: 'on' }] };
+device  = lelylan.device_properties('<light-id>', params)</light-id></status></xmp></pre>
+          </div>
+        </div>
+      </div>
+      <p><a class="button-add" href="/developers">Learn More &rarr;</a></p>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+
+  <hr>
+
+  <div class="inner row">
+    <div class="left big">
+      <h2><div class="intro">A perfect match for</div> Makers, Designers and Kickstarters</h2>
+      <p>
+      Create new physical devices for your home and connect them to the web in no time.
+      What formally might have taken weeks or months to have a set of web apps,
+      can now be created in a matter of days. You focus on the hardware and the design process,
+      we do the rest.
+      </p>
+      <p><a class="button-add" href="/makers">Learn more &rarr;</a></p>
+    </div>
+    <div class="right small">
+      <img src="/images/95e40b22.makers.png">
+    </div>
+    <div class="clearfix"></div>
+  </div>
+
+  <hr>
+
+  <div class="inner row">
+    <div class="left small">
+      <img src="/images/ef9502b9.developers.png">
+    </div>
+    <div class="right big">
+      <h2><div class="intro">An new tool for</div> Web Developers</h2>
+      <p>
+      Lelylan offers a simple and open set of REST API to easily create new apps for the
+      connected home. Whether or not your app is for web, mobile, voice, etc. Lelylan
+      offers everything you need to get started in minutes.
+      </p>
+      <p><a class="button-add" href="/developers">Learn more &rarr;</a></p>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+
+  <hr>
+
+  <div class="inner row">
+    <div class="left big">
+      <h2><div class="intro">A place where to</div> Improve the Connected Home </h2>
+      <p>
+      Lelylan is based on collaborations. Our goals is to create a group of people that wants
+      to challenge the connected home hacking existing hardware, building new apps and solving
+      challanges the connected home offers today.
+      </p>
+      <p><a class="button-add" href="/people">Learn more &rarr;</a></p>
+    </div>
+    <div class="right small">
+      <img src="/images/04c4f733.people.png">
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</section>
+
+<section class="go">
+<div class="inner">
+  <h2>Sound awesome? We think so.</h2>
+  <a href="http://people.lelylan.com/subscriptions/new" class="button-add">Join the Beta</a>
+</div>
+</section>
+
+</main>
+<div class="clearfix"></div>
+<footer id="global-footer">
+  <nav id="footer-nav" role="navigation">
+    <div>
+      <ul id="footer-menu">
+        <li><a href="/">Home</a></li>
+        <li class="makers"><a href="/makers">Makers</a></li>
+        <li class="developers"><a href="/developers">Developers</a></li>
+        <li class="dev"><a href="http://dev.lelylan.com">Dev Center</a></li>
+        <li class="blog"><a href="http://blog.lelylan.com/">Blog</a></li>
+        <li class="try"><a href="http://try.lelylan.com">Try</a></li>
+        <li class="join"><a href="http://people.lelylan.com/subscriptions/new">Join</a></li>
+      </ul>
+    </div>
+    <div class="clearfix"></div>
+    <div class="social-footer">
+
+      <!-- Facebook -->
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=117921285026384";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+      <div class="fb-like" data-href="http://lelylan.com" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+
+      <!-- Twitter -->
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://lelylan.com" data-text="building the connected home" data-related="lelylan" data-hashtags="iot, lelylan">Tweet</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+      <!-- Google Plus -->
+      <div class="g-plusone" data-size="medium" data-href="http://lelylan.com"></div>
+      <script type="text/javascript">
+        (function() {
+          var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+          po.src = 'https://apis.google.com/js/plusone.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+        })();
+      </script>
+
+      <!-- Github -->
+      <iframe src="http://ghbtns.com/github-btn.html?user=lelylan&type=follow&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="132" height="20"></iframe>
+
+      <!-- Linkedin -->
+      <script src="//platform.linkedin.com/in.js" type="text/javascript">
+      lang: en_US
+      </script>
+      <script type="IN/Share" data-url="http://lelylan.com" data-counter="right"></script>
+    </div>
+  </nav>
+<div class="clearfix"></div>
+</footer>
+
+
+<script src="scripts/c245b099.scripts.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12181910-2']);
+  _gaq.push(['_setDomainName', 'lelylan.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</body>
