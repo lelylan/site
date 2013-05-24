@@ -1,0 +1,128 @@
+<main role="main">
+
+  <section class="container-wrapper features">
+    <div class="inner row one">
+      <div class="left small">
+        <%= image_tag 'examples.png' %>
+      </div>
+      <div class="right big">
+        <h2>An API that gets out of your way</h2>
+        <p>
+          The connected home should be easy and accessible to everyone. <br/>
+          See how turning on a light only requires few lines of code.
+        </p>
+
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#update-properties-curl" data-toggle="tab" class="curl">Curl</a></li>
+          <li><a href="#update-properties-ruby" data-toggle="tab" class="ruby">Ruby</a></li>
+          <li><a href="#update-properties-node" data-toggle="tab" class="node">Node.js</a></li>
+          <li><a href="#update-properties-angular" data-toggle="tab" class="angular">AngularJS</a></li>
+        </ul>
+
+        <div class="tab-content">
+          <div class="tab-pane active" id="update-properties-curl">
+            <div class="preview"><pre><xmp>curl -X PUT http://api.lelylan.com/devices/<light-id>/properties \
+     -H 'Authorization: Bearer <token>' \
+     -H 'Content-Type: application/json' \
+     -d '{ "properties": [{ "id": "<status>", "value": "on" }] }'</xmp></pre>
+            </div>
+          </div>
+          <div class="tab-pane" id="update-properties-node">
+            <div class="preview">
+              <pre class="prettyprint"><xmp>var Lelylan = require('lelylan-node')({ token: token });
+var params  = { properties: [{ id: '<status>', value: 'on' }] };
+Lelylan.Device.properties('<light-id>', params, callback);</xmp></pre>
+            </div>
+          </div>
+          <div class="tab-pane" id="update-properties-angular">
+            <div class="preview">
+              <pre class="prettyprint"><xmp><div ng-app="lelylan">
+  <!-- login component here (dev.lelylan.com/api/oauth#implicit-grant-angular) -->
+  <div ng-controller="LelylanController">{{device}}</div>
+  <script>
+    function LelylanController($scope, Device) {
+      var params = { id: '<light-id>', properties: [{ id: '<status>', value: 'on' }] };
+      $scope.device = new Device(params);
+      $scope.device.$properties();
+    }
+  </script>
+</div></xmp></pre>
+            </div>
+          </div>
+          <div class="tab-pane" id="update-properties-ruby">
+            <div class="preview">
+              <pre class="prettyprint"><xmp>lelylan = Lelylan::Client.new(token: token)
+params  = { properties: [{ id: '<status>', value: 'on' }] };
+device  = lelylan.device_properties('<light-id>', params)</xmp></pre>
+            </div>
+          </div>
+        </div>
+        <p><a class="button-add" href="/developers">Learn More &rarr;</a></p>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+
+    <hr/>
+
+    <div class="inner row">
+      <div class="left big">
+        <h2><div class="intro">A perfect match for</div> Makers, Designers and Kickstarters</h2>
+        <p>
+        Create new physical devices for your home and connect them to the web in no time.
+        What formally might have taken weeks or months to have a set of web apps,
+        can now be created in a matter of days. You focus on the hardware and the design process,
+        we do the rest.
+        </p>
+        <p><a class="button-add" href="/makers">Learn more &rarr;</a></p>
+      </div>
+      <div class="right small">
+        <%= image_tag 'makers.png' %>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+
+    <hr/>
+
+    <div class="inner row">
+      <div class="left small">
+        <%= image_tag 'developers.png' %>
+      </div>
+      <div class="right big">
+        <h2><div class="intro">An new tool for</div> Web Developers</h2>
+        <p>
+        Lelylan offers a simple and open set of REST API to easily create new apps for the
+        connected home. Whether or not your app is for web, mobile, voice, etc. Lelylan
+        offers everything you need to get started in minutes.
+        </p>
+        <p><a class="button-add" href="/developers">Learn more &rarr;</a></p>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+
+    <hr/>
+
+    <div class="inner row">
+      <div class="left big">
+        <h2><div class="intro">A place where to</div> Improve the Connected Home </h2>
+        <p>
+        Lelylan is based on collaborations. Our goals is to create a group of people that wants
+        to challenge the connected home hacking existing hardware, building new apps and solving
+        challanges the connected home offers today.
+        </p>
+        <p><a class="button-add" href="/people">Learn more &rarr;</a></p>
+      </div>
+      <div class="right small">
+        <%= image_tag 'people.png' %>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </section>
+
+  <section class="go">
+  <div class="inner">
+    <h2>Sound awesome? We think so.</h2>
+    <a href="http://people.lelylan.com/subscriptions/new" class="button-add">Join the Beta</a>
+  </div>
+  </section>
+
+</main>
