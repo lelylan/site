@@ -11,7 +11,7 @@ Use the [issue tracker](http://github.com/lelylan/site/issues) for bugs.
 
 ## Links
 
-* [GIT Repository](http://github.com/lelylan/www)
+* [GIT Repository](http://github.com/lelylan/site)
 * [Lelylan Site](http://lelylan.com).
 
 
@@ -22,7 +22,7 @@ Use the [issue tracker](http://github.com/lelylan/site/issues) for bugs.
 
 ## Contributors
 
-Special thanks to the [following people](https://github.com/lelylan/www/contributors) for submitting patches.
+Special thanks to the [following people](https://github.com/lelylan/site/contributors) for submitting patches.
 
 
 ## Changelog
