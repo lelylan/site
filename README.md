@@ -12,7 +12,7 @@ Use the [issue tracker](http://github.com/lelylan/site/issues) for bugs.
 ## Links
 
 * [GIT Repository](http://github.com/lelylan/site)
-* [Lelylan Site](http://lelylan.com).
+* [Lelylan Site](http://lelylan.com)
 
 
 ## Authors
