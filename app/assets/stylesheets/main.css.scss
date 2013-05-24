@@ -36,7 +36,7 @@ $lelylanLineColor: #e8e8e8 !default;
 
 .featurebanner {
   height: 660px;
-  background: $lelylanColor url(header.jpg) top left;
+  background: $lelylanColor url(header.jpg) center center;
   background-size: cover;
   width: 100%;
   position: relative
@@ -219,6 +219,7 @@ pre code, pre xmp {
 
 .nav-tabs>li>a {
   font-size: 16px;
+  font-weight: 200;
 }
 
 .nav-tabs>li.active a:hover,
