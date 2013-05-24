@@ -42,10 +42,25 @@
       </nav>
       <section class="featurebanner <%= params[:id] %>-header">
       <div class="bannercontent">
-        <h1 class="title">Building the Connected Home</h1>
-        <p>A simple and open solution to connect every device to the web.</p>
         <% if params[:id]=='index' %>
+          <h1 class="title">Building the Connected Home</h1>
+          <p>A simple and open solution to connect every device to the web.</p>
           <a class="playbutton" href="http://try.lelylan.com"><span class="hidden">Try Lelylan</span></a>
+        <% end %>
+
+        <% if params[:id]=='makers' %>
+          <h1 class="title">Makers, Designers and Kickstarters</h1>
+          <p>Create new physical objects for your home and connect them to the web in no time</p>
+        <% end %>
+
+        <% if params[:id]=='developers' %>
+          <h1 class="title">Web Developers and Designers</h1>
+          <p>A simple and open set of REST API to easily create new apps for the connected home.</p>
+        <% end %>
+
+        <% if params[:id]=='people' %>
+          <h1 class="title">Collaborate with Lelylan</h1>
+          <p>Do you want to realize an idea related to the connected home?  <a href="http://people.lelylan.com/subscriptions/new">Join us.</a></p>
         <% end %>
       </div>
       </section>
