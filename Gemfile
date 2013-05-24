@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.13'
 gem 'flutie'
 gem 'high_voltage'
+gem 'asset_sync'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
