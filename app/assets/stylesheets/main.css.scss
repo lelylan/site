@@ -48,6 +48,10 @@ $lelylanLineColor: #e8e8e8 !default;
   background: none;
   height: 360px;
 }
+.featurebanner .bannercontent p,
+.featurebanner .bannercontent h1 {
+  margin-left: 25px;
+}
 
 .featurebanner .bannercontent p {
   font-size: 24px;
