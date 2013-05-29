@@ -36,7 +36,8 @@ $lelylanLineColor: #e8e8e8 !default;
 
 .featurebanner {
   height: 520px;
-  background-color: $lelylanColor;
+  background: $lelylanColor url(header.jpg) center center
+  //background-color: $lelylanColor;
   background-size: cover;
   width: 100%;
   position: relative
