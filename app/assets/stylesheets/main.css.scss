@@ -35,12 +35,13 @@ $lelylanLineColor: #e8e8e8 !default;
 }
 
 .featurebanner {
-  height: 660px;
-  background: $lelylanColor url(header.jpg) center center;
+  height: 520px;
+  background-color: $lelylanColor;
   background-size: cover;
   width: 100%;
   position: relative
 }
+
 
 .people-header,
 .developers-header,
@@ -51,10 +52,11 @@ $lelylanLineColor: #e8e8e8 !default;
 .featurebanner .bannercontent p,
 .featurebanner .bannercontent h1 {
   margin-left: 25px;
+  background: rgba(0,0,0,0.8) !important;
 }
 
 .featurebanner .bannercontent p {
-  font-size: 24px;
+  font-size: 28px;
   color: #fff;
 }
 
