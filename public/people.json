@@ -56,6 +56,20 @@
 			"id": "2",
 			"title": null
 		}
+	}, {
+		"id": "1",
+		"user_id": "3",
+		"question_id": "2",
+		"user": {
+			"id": "3",
+			"firstname": "Christian Nyumbayire",
+			"surname": "",
+			"twitter": "Chritchen"
+		},
+		"question": {
+			"id": "2",
+			"title": null
+		}
 	}],
   "3": [{
 		"id": "1",
