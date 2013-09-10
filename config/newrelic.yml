@@ -210,7 +210,7 @@ test:
   # unit, functional or integration tests or the like.
   monitor_mode: false
 
-# Turn on the agent in production for 24x7 monitoring. NewRelic
+# Turn on the agent in production for 24x7 monitoring. New Relic
 # testing shows an average performance impact of < 5 ms per
 # transaction, you can leave this on all the time without
 # incurring any user-visible performance degradation.
