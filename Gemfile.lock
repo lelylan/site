@@ -73,6 +73,7 @@ GEM
     net-scp (1.1.1)
       net-ssh (>= 2.6.5)
     net-ssh (2.6.7)
+    newrelic_rpm (3.6.7.152)
     nokogiri (1.5.9)
     polyglot (0.3.3)
     rack (1.4.5)
@@ -135,6 +136,7 @@ DEPENDENCIES
   flutie
   high_voltage
   jquery-rails
+  newrelic_rpm
   rails (= 3.2.13)
   sass-rails (~> 3.2.3)
   uglifier (>= 1.0.3)

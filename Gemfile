@@ -5,6 +5,7 @@ gem 'flutie'
 gem 'high_voltage'
 gem 'asset_sync'
 gem 'unicorn'
+gem 'newrelic_rpm'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
