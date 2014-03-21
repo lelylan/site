@@ -43,6 +43,7 @@ $lelylanLineColor: #e8e8e8 !default;
 }
 
 
+.pricing-header,
 .people-header,
 .developers-header,
 .makers-header {
@@ -166,13 +167,21 @@ a {
   margin-bottom: 30px;
 }
 
-a.button-add {
+.button-add {
   background-color: $lelylanColor;
 }
 
-a.button-add:hover {
+.button-add:hover {
   color: #fff;
 }
+
+.disabled:hover,
+.disabled {
+  background-color: #ccc;
+  cursor: default;
+}
+
+
 
 #global-footer #footer-nav {
   margin: 0;
@@ -283,4 +292,80 @@ pre code, pre xmp {
 
 .people .go {
   margin-top: 80px;
+}
+
+.pricing .table-pricing {
+
+  div.table-title {
+    height: 70px;
+    background-color: #444;
+  }
+
+  div.table-title h2 {
+    background-color: #444;
+    color: #fff;
+    padding: 15px 20px 18px;
+  }
+
+  div.table-title h2.plan {
+    float: left;
+  }
+
+  div.table-title h2.price {
+    float: right;
+  }
+
+  table {
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 1px solid #F3F3F3;
+  }
+
+  table tr {
+    height: 40px;
+  }
+
+  table td {
+    padding-left: 20px;
+    line-height: 42px;
+    font-size: 18px;
+    font-weight: 200;
+  }
+
+
+  table td .description {
+    margin-left: 35px;
+    color: #aaa;
+    font-size: 16px;
+  }
+
+
+  table tr.missing td {
+    color: #ccc;
+  }
+
+  table img {
+    float: left !important;
+    margin-top: 16px;
+    padding-right: 20px;
+  }
+
+  table span.highlight {
+    color: $lelylanColor;
+  }
+
+  .button-add-big {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 14px;
+  }
+
+  .button-change {
+    float: right;
+    width:230px;
+  }
+}
+
+.pricing .features .inner .small {
+  margin-top: 100px;
 }

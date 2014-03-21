@@ -35,6 +35,7 @@
           <li class="makers"><a class="<%= 'current' if params[:id]=='makers' %>" href="/makers">Makers</a></li>
           <li class="developers"><a class="<%= 'current' if params[:id]=='developers' %>" href="/developers">Developers</a></li>
           <li class="people"><a class="<%= 'current' if params[:id]=='people' %>" href="/people">Call for action</a></li>
+          <li class="pricing"><a class="<%= 'current' if params[:id]=='pricing' %>" href="/pricing">Pricing</a></li>
           <li class="try"><a href="http://try.lelylan.com">Try Demo</a></li>
           <li class="join"><a href="http://people.lelylan.com/subscriptions/new">Join</a></li>
         </ul>
@@ -53,7 +54,7 @@
 
         <% if params[:id]=='makers' %>
           <h1 class="title">Makers, Designers and Kickstarters</h1>
-          <p>Create new physical objects for your home and connect them to the web in no time</p>
+          <p>Create new physical objects for your home and connect them to the web in no time.</p>
         <% end %>
 
         <% if params[:id]=='developers' %>
@@ -64,6 +65,11 @@
         <% if params[:id]=='people' %>
           <h1 class="title">Collaborate with Lelylan</h1>
           <p>Do you want to realize an idea related to the connected home?  <a href="http://people.lelylan.com/subscriptions/new">Join us.</a></p>
+        <% end %>
+
+        <% if params[:id]=='pricing' %>
+          <h1 class="title">Pricing. Simple as possible</h1>
+          <p>Based on your real needs.</p>
         <% end %>
       </div>
       </section>
