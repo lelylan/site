@@ -54,7 +54,7 @@ $(function(){
   	e.preventDefault();
 
     $me.grumble({
-      text: 'Number of devices with access to all lelylan services<br> (MQTT enabled)',
+      text: 'Number of devices with full access<br> to lelylan<br> (MQTT enabled)',
       angle: 30,
       distance: 25,
       type: 'alt-',
@@ -67,10 +67,10 @@ $(function(){
   	e.preventDefault();
 
     $me.grumble({
-      text: 'One single payment.</br> No recurring fees.</br> Get serious about using Lelylan.',
+      text: 'One single payment.</br> No recurring fees.</br> Add what you need and pay what you use.',
 
       angle: 30,
-      distance: 25,
+      distance: 35,
       type: 'alt-',
       hideOnClick: true
     });
@@ -107,7 +107,7 @@ $(function(){
   	e.preventDefault();
 
     $me.grumble({
-      text: 'Initial pack of requests (in millions) available between all connected devices',
+      text: 'Initial pack of requests (in millions) shared between all connected devices',
       angle: 30,
       distance: 25,
       type: 'alt-',
