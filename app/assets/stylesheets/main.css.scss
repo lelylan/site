@@ -315,6 +315,15 @@ pre code, pre xmp {
     float: right;
   }
 
+  div.table-title a {
+    color: #57DDFF;
+  }
+
+  div.table-title a:hover {
+    box-shadow: none;
+  }
+
+
   table {
     margin-top: 0;
     margin-bottom: 0;
@@ -351,7 +360,8 @@ pre code, pre xmp {
   }
 
   table span.highlight {
-    color: $lelylanColor;
+    color: #333;
+    font-weight: 400;
   }
 
   .button-add-big {
@@ -364,8 +374,14 @@ pre code, pre xmp {
     float: right;
     width:230px;
   }
+
+  .info {
+    margin-left: 4px;
+  }
 }
 
 .pricing .features .inner .small {
   margin-top: 100px;
 }
+
+

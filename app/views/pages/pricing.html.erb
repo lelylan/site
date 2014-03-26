@@ -10,7 +10,7 @@
         <div class="table-pricing">
           <div class="table-title">
             <h2 class="plan">Free Plan</h2>
-            <h2 class="price">$0. Forever.</h2>
+            <h2 class="price">$0. <a href="#" class="free-price">Forever.</a></h2>
           </div>
 
           <table class="table table-hover">
@@ -19,6 +19,7 @@
                 <td>
                   <%= image_tag 'pricing/pricing-included.png' %>
                   <span class="highlight">1</span> connected device
+                  <a href="#" class="info info-connected">(what is this?)</a>
                 </td>
               </tr>
               <tr>
@@ -66,7 +67,7 @@
         <div class="table-pricing">
           <div class="table-title">
             <h2 class="plan">Makers Plan</h2>
-            <h2 class="price">$29. Forever.</h2>
+            <h2 class="price">$29. <a href="#" class="makers-price">Forever.</a></h2>
           </div>
 
           <table class="table table-hover">
@@ -75,15 +76,17 @@
                 <td>
                   <%= image_tag 'pricing/pricing-included.png' %>
                   <span class="highlight">1</span> connected device
+                  <a href="#" class="info info-connected">(what is this?)</a>
                   <%#<span class="description">Paying this price includes unlimited access to all included Lelylan services. Forever.</span>%>
-                  <button class="button-add button-change disabled" style="float:right">Add devices <br>($10 each)</button>
+                  <button class="button-add button-change button-coming-soon disabled" style="float:right">Add devices <br>($10 each)</button>
                 </td>
               </tr>
               <tr>
                 <td>
                   <%= image_tag 'pricing/pricing-included.png' %>
                   <span class="highlight">100K</span> requests per month
-                  <button class="button-add button-change disabled" style="float:right">Add requests <br>($10 to add 50K req/month)</button>
+                  <a href="#" class="info info-requests-month">(what is this?)</a>
+                  <button class="button-add button-change button-coming-soon disabled" style="float:right">Add requests <br>($10 to add 50K req/month)</button>
                 </td>
               </tr>
               <tr>
@@ -113,7 +116,7 @@
             </tbody>
           </table>
 
-          <button class="button-add button-add-big disabled">Coming soon</button>
+          <button class="button-add button-add-big button-coming-soon disabled">Coming soon</button>
         </div>
       </div>
       <div class="right small">
@@ -131,7 +134,7 @@
         <div class="table-pricing">
           <div class="table-title">
             <h2 class="plan">Premium Plan</h2>
-            <h2 class="price">$499. Forever.</h2>
+            <h2 class="price">$499. <a href="#" class="enterprise-price">Forever.</a></h2>
           </div>
 
           <table class="table table-hover">
@@ -140,13 +143,15 @@
                 <td>
                   <%= image_tag 'pricing/pricing-included.png' %>
                   <span class="highlight">Unlimited</span> connected device
+                  <a href="#" class="info info-connected">(what is this?)</a>
                 </td>
               </tr>
               <tr>
                 <td>
                   <%= image_tag 'pricing/pricing-included.png' %>
-                  Start pack of <span class="highlight">10.000K</span> requests
-                  <button class="button-add button-change disabled" style="float:right">Add requests <br>($10 to add 5.000K req)</button>
+                  Start pack of <span class="highlight">10M</span> requests
+                  <a href="#" class="info info-requests-pack">(what is this?)</a>
+                  <button class="button-add button-change button-coming-soon disabled" style="float:right">Add requests <br>($10 to add 5M req)</button>
                 </td>
               </tr>
               <tr>
@@ -159,12 +164,14 @@
                 <td>
                   <%= image_tag 'pricing/pricing-included.png' %>
                   White label dashboard
+                  <a href="#" class="info info-white-label">(what is this?)</a>
                 </td>
               </tr>
               <tr>
                 <td>
                   <%= image_tag 'pricing/pricing-included.png' %>
                   Batch devices definition
+                  <a href="#" class="info info-batch">(what is this?)</a>
                 </td>
               </tr>
               <tr>
@@ -176,7 +183,7 @@
             </tbody>
           </table>
 
-          <button class="button-add button-add-big disabled">Coming soon</button>
+          <button class="button-add button-add-big button-coming-soon disabled">Coming soon</button>
         </div>
       </div>
       <div class="clearfix"></div>

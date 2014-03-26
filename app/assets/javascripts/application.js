@@ -14,6 +14,8 @@
 //= require jquery_ujs
 //= require_tree .
 
+
+
 /* open all external links in new tab */
 
 $(function(){
@@ -28,3 +30,130 @@ $(function(){
     }
   });
 });
+
+
+/* open all bubbles */
+
+$(function(){
+
+  $('.free-price').click(function(e){
+    var $me = $(this);
+  	e.preventDefault();
+
+    $me.grumble({
+      text: 'Get started using Lelylan for free.<br> No credit card required.',
+      angle: 30,
+      distance: 40,
+      type: 'alt-',
+      hideOnClick: true
+    });
+  });
+
+  $('.info-connected').click(function(e){
+    var $me = $(this);
+  	e.preventDefault();
+
+    $me.grumble({
+      text: 'Number of devices with access to all lelylan services<br> (MQTT enabled)',
+      angle: 30,
+      distance: 25,
+      type: 'alt-',
+      hideOnClick: true
+    });
+  });
+
+  $('.makers-price').click(function(e){
+    var $me = $(this);
+  	e.preventDefault();
+
+    $me.grumble({
+      text: 'One single payment.</br> No recurring fees.</br> Get serious about using Lelylan.',
+
+      angle: 30,
+      distance: 25,
+      type: 'alt-',
+      hideOnClick: true
+    });
+  });
+
+  $('.button-coming-soon').click(function(e){
+    var $me = $(this);
+  	e.preventDefault();
+
+    $me.grumble({
+      text: 'This feature is coming soon',
+      angle: 90,
+      distance: 125,
+      type: 'alt-',
+      hideOnClick: true
+    });
+  });
+
+  $('.info-requests-month').click(function(e){
+    var $me = $(this);
+  	e.preventDefault();
+
+    $me.grumble({
+      text: 'Requests per month <br>(in thousands)<br> shared between all connected devices',
+      angle: 30,
+      distance: 25,
+      type: 'alt-',
+      hideOnClick: true
+    });
+  });
+
+  $('.info-requests-pack').click(function(e){
+    var $me = $(this);
+  	e.preventDefault();
+
+    $me.grumble({
+      text: 'Initial pack of requests (in millions) available between all connected devices',
+      angle: 30,
+      distance: 25,
+      type: 'alt-',
+      hideOnClick: true
+    });
+  });
+
+  $('.enterprise-price').click(function(e){
+    var $me = $(this);
+  	e.preventDefault();
+
+    $me.grumble({
+      text: 'One single payment.</br> No recurring fees.</br> Get professional about using Lelylan.',
+
+      angle: 30,
+      distance: 25,
+      type: 'alt-',
+      hideOnClick: true
+    });
+  });
+
+  $('.info-white-label').click(function(e){
+    var $me = $(this);
+  	e.preventDefault();
+
+    $me.grumble({
+      text: 'Build your own dashboard with a fully customized UI. Built with Angular, HTML5 and CSS3.',
+      angle: 30,
+      distance: 25,
+      type: 'alt-',
+      hideOnClick: true
+    });
+  });
+
+  $('.info-batch').click(function(e){
+    var $me = $(this);
+  	e.preventDefault();
+
+    $me.grumble({
+      text: 'Bulk creation of devices and easy to export services to have all device<br> ID and Secrets',
+      angle: 30,
+      distance: 25,
+      type: 'alt-',
+      hideOnClick: true
+    });
+  });
+});
+
+
