@@ -42,7 +42,7 @@ $lelylanLineColor: #e8e8e8 !default;
   position: relative
 }
 
-
+.companies-header,
 .pricing-header,
 .people-header,
 .developers-header,
@@ -50,6 +50,11 @@ $lelylanLineColor: #e8e8e8 !default;
   background: none;
   height: 360px;
 }
+
+.people-header {
+  height: 395px;
+}
+
 .featurebanner .bannercontent p,
 .featurebanner .bannercontent h1 {
   margin-left: 25px;
@@ -215,6 +220,10 @@ a {
   padding-top: 20px;
   border-top: 1px solid #333;
   margin-bottom:150px;
+}
+
+#global-footer .social-footer > .social-button {
+  display: inline;
 }
 
 .features ul.nav-tabs,#section ol.nav-tabs{margin:15px 0 0 0;line-height:1.7em}

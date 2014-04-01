@@ -32,9 +32,10 @@
         <a class="brand" href="/"><span class="lelylan-icon"></span> Lelylan</a>
         <button type="button" class="mobile-menu" data-toggle="collapse" data-target=".nav-collapse"><span class="hidden">Menu</span></button>
         <ul id="main-menu" class="nav-collapse collapse">
+          <li class="people"><a class="<%= 'current' if params[:id]=='people' %>" href="/people">Call for action</a></li>
           <li class="makers"><a class="<%= 'current' if params[:id]=='makers' %>" href="/makers">Makers</a></li>
           <li class="developers"><a class="<%= 'current' if params[:id]=='developers' %>" href="/developers">Developers</a></li>
-          <li class="people"><a class="<%= 'current' if params[:id]=='people' %>" href="/people">Call for action</a></li>
+          <li class="companies"><a class="<%= 'current' if params[:id]=='companies' %>" href="/companies">Companies</a></li>
           <li class="pricing"><a class="<%= 'current' if params[:id]=='pricing' %>" href="/pricing">Pricing</a></li>
           <li class="try"><a href="http://try.lelylan.com">Try Demo</a></li>
           <li class="join"><a href="http://people.lelylan.com/subscriptions/new">Join</a></li>
@@ -62,9 +63,19 @@
           <p>A simple API to create new apps for the connected home.</p>
         <% end %>
 
+        <% if params[:id]=='companies' %>
+          <h1 class="title">Companies. Connecting Devices.</h1>
+          <p>Build, innovate and sell your products using Lelylan.</p>
+        <% end %>
+
         <% if params[:id]=='people' %>
           <h1 class="title">Collaborate with Lelylan</h1>
-          <p>Do you want to realize an idea related to the connected home?  <a href="http://people.lelylan.com/subscriptions/new">Join us.</a></p>
+          <p>
+          Lelylan exists because of a group of people that experiments day by day new solutions. <br>
+          If you want to realize an idea related to the connected home,
+          <a href="http://people.lelylan.com/subscriptions/new">join us.</a>
+
+          </p>
         <% end %>
 
         <% if params[:id]=='pricing' %>
@@ -97,39 +108,49 @@
         <div class="social-footer">
 
           <!-- Facebook -->
-          <div id="fb-root"></div>
-          <script>(function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=117921285026384";
-            fjs.parentNode.insertBefore(js, fjs);
-          }(document, 'script', 'facebook-jssdk'));</script>
-          <div class="fb-like" data-href="http://lelylan.com" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+          <div class="social-button facebook">
+            <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=117921285026384";
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+            <div class="fb-like" data-href="http://lelylan.com" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+          </div>
 
           <!-- Twitter -->
-          <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://lelylan.com" data-text="building the connected home" data-related="lelylan" data-hashtags="iot, lelylan">Tweet</a>
-          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+          <div class="social-button twitter">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://lelylan.com" data-text="building the connected home" data-related="lelylan" data-hashtags="iot, lelylan">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+          </div>
 
           <!-- Google Plus -->
-          <div class="g-plusone" data-size="medium" data-href="http://lelylan.com"></div>
-          <script type="text/javascript">
-            (function() {
-              var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-              po.src = 'https://apis.google.com/js/plusone.js';
-              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-            })();
-          </script>
+          <div class="social-button plus">
+            <div class="g-plusone" data-size="medium" data-href="http://lelylan.com"></div>
+            <script type="text/javascript">
+              (function() {
+                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                po.src = 'https://apis.google.com/js/plusone.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+              })();
+            </script>
+          </div>
 
           <!-- Github -->
-          <iframe src="http://ghbtns.com/github-btn.html?user=lelylan&type=follow&count=true"
-          allowtransparency="true" frameborder="0" scrolling="0" width="132" height="20"></iframe>
+          <div class="social-button github">
+            <iframe src="http://ghbtns.com/github-btn.html?user=lelylan&type=follow&count=true"
+            allowtransparency="true" frameborder="0" scrolling="0" width="132" height="20"></iframe>
+          </div>
 
           <!-- Linkedin -->
-          <script src="//platform.linkedin.com/in.js" type="text/javascript">
-          lang: en_US
-          </script>
-          <script type="IN/Share" data-url="http://lelylan.com" data-counter="right"></script>
+          <div class="social-button linkedin">
+            <script src="//platform.linkedin.com/in.js" type="text/javascript">
+            lang: en_US
+            </script>
+            <script type="IN/Share" data-url="http://lelylan.com" data-counter="right"></script>
+          </div>
         </div>
       </nav>
     <div class="clearfix"></div>
