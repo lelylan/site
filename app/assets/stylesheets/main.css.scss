@@ -373,6 +373,12 @@ pre code, pre xmp {
     font-weight: 400;
   }
 
+  table tfoot td {
+    border-top: 1px solid #eee;
+    color: #aaa;
+    font-size: 12px;
+  }
+
   .button-add-big {
     margin-top: 30px;
     font-size: 18px;
