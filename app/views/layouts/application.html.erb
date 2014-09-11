@@ -9,7 +9,7 @@
     <base href="/">
     <meta charset="utf-8">
 
-    <title>Lelylan. Building the Connected Home</title>
+    <title>Lelylan | Building the Connected Home</title>
 
     <meta name="description" content="A simple and open solution to connect every device to the web.">
     <meta name="HandheldFriendly" content="True">
@@ -29,10 +29,10 @@
     <header id="global-header" class="navbar">
       <nav role="navigation">
       <div class="wrapper">
-        <a class="brand" href="/"><span class="lelylan-icon"></span> Lelylan</a>
+        <a class="brand" href="/"><span class="lelylan-icon"></span></a>
         <button type="button" class="mobile-menu" data-toggle="collapse" data-target=".nav-collapse"><span class="hidden">Menu</span></button>
         <ul id="main-menu" class="nav-collapse collapse">
-          <li class="people"><a class="<%= 'current' if params[:id]=='people' %>" href="/people">Call for action</a></li>
+          <li class="people"><a class="<%= 'current' if params[:id]=='people' %>" href="/people">People</a></li>
           <li class="makers"><a class="<%= 'current' if params[:id]=='makers' %>" href="/makers">Makers</a></li>
           <li class="developers"><a class="<%= 'current' if params[:id]=='developers' %>" href="/developers">Developers</a></li>
           <li class="companies"><a class="<%= 'current' if params[:id]=='companies' %>" href="/companies">Companies</a></li>
@@ -45,12 +45,19 @@
       <section class="featurebanner <%= params[:id] %>-header">
       <div class="bannercontent">
         <% if params[:id]=='index' %>
-          <h1 class="title">Building the Connected Home</h1>
+          <h1 class="title">Building the Internet of Things</h1>
           <p>
-          All your devices in one simple and open API. What will you build?
+          A set of unified APIs and tools that instantly enables<br> businesses to sell connected products
+          <%#All your devices in one simple and open API. What will you build?%>
           <%#A simple and open solution to connect every device to the web.%>
           </p>
-          <a class="playbutton" href="http://try.lelylan.com"><span class="hidden">Try Lelylan</span></a>
+
+          <p class="buttons-group">
+            <a class="button-add button-important" href="/features">Learn more about Lelylan &rarr;</a>
+            <a class="button-add" href="http://lelylan.github.io/devices-dashboard-ng/demo.html" target="_blank" style="margin-left: 5px">See working demo &rarr;</a>
+          </p>
+
+          <%#<a class="playbutton" href="http://try.lelylan.com"><span class="hidden">Try Lelylan</span></a>%>
         <% end %>
 
         <% if params[:id]=='makers' %>

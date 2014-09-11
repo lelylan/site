@@ -55,6 +55,11 @@ $lelylanLineColor: #e8e8e8 !default;
   height: 395px;
 }
 
+
+.featurebanner .bannercontent {
+  padding: 175px 40px;
+}
+
 .featurebanner .bannercontent p,
 .featurebanner .bannercontent h1 {
   margin-left: 25px;
@@ -74,9 +79,25 @@ $lelylanLineColor: #e8e8e8 !default;
   background-color: $lelylanColor;
 }
 
+.featurebanner .button-important,
 .featurebanner .playbutton:hover {
   background-color:$linkColorHover;
 }
+
+.featurebanner .bannercontent p.buttons-group {
+  background: rgba(0, 0, 0, 0.7) !important;
+  margin-left: 25px;
+  margin-top: 25px;
+  padding: 10px;
+  padding-top: 5px;
+}
+
+.featurebanner .bannercontent p.buttons-group,
+.featurebanner .bannercontent p.buttons-group a {
+  text-indent: 0;
+}
+
+
 
 #global-header nav .join {
   padding: 0;
@@ -107,12 +128,12 @@ a {
 .lelylan-icon {
   display: block;
   float: left;
-  width: 28px;
-  height: 28px;
-  background-position: -40px 0px;
+  width: 210px;
+  height: 40px;
+  background-position: 0px 0px;
   margin-right: 8px;
-  margin-top: 9px;
-  background-image: url("circles.png");
+  margin-top: 3px;
+  background-image: url("logo.png");
   -webkit-transition: none;
   -moz-transition: none;
   transition: none;
@@ -150,6 +171,13 @@ a {
 .features .inner .right img {
   float: right;
 }
+
+.features .inner img.bordered {
+  border: 5px solid #eee;
+  border-radius: 5px;
+  float: none;
+}
+
 
 .features .intro {
   color: #333;

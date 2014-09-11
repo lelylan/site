@@ -1,6 +1,7 @@
 <main role="main">
 
   <section class="container-wrapper features">
+
     <div class="inner row one">
       <div class="left small">
         <%= image_tag 'examples.png' %>
@@ -24,13 +25,13 @@
             <div class="preview"><pre><xmp>curl -X PUT http://api.lelylan.com/devices/<light-id>/properties \
      -H 'Authorization: Bearer <token>' \
      -H 'Content-Type: application/json' \
-     -d '{ "properties": [{ "id": "<status>", "value": "on" }] }'</xmp></pre>
+     -d '{ "properties": [{ "id": "<status-id>", "value": "on" }] }'</xmp></pre>
             </div>
           </div>
           <div class="tab-pane" id="update-properties-node">
             <div class="preview">
               <pre class="prettyprint"><xmp>var Lelylan = require('lelylan-node')({ token: token });
-var params  = { properties: [{ id: '<status>', value: 'on' }] };
+var params  = { properties: [{ id: '<status-id>', value: 'on' }] };
 Lelylan.Device.properties('<light-id>', params, callback);</xmp></pre>
             </div>
           </div>
@@ -41,9 +42,9 @@ Lelylan.Device.properties('<light-id>', params, callback);</xmp></pre>
   <div ng-controller="LelylanController">{{device}}</div>
   <script>
     function LelylanController($scope, Device) {
-      var params = { id: '<light-id>', properties: [{ id: '<status>', value: 'on' }] };
-      $scope.device = new Device(params);
-      $scope.device.$properties();
+      var params = { properties: [{ id: '<status-id>', value: 'on' }] };
+      Device.properties('<light-id>', parmas).
+        success(function(data) { $scope.device = data })
     }
   </script>
 </div></xmp></pre>
@@ -52,7 +53,7 @@ Lelylan.Device.properties('<light-id>', params, callback);</xmp></pre>
           <div class="tab-pane" id="update-properties-ruby">
             <div class="preview">
               <pre class="prettyprint"><xmp>lelylan = Lelylan::Client.new(token: token)
-params = { properties: [{ id: '<status>', value: 'on' }] };
+params = { properties: [{ id: '<status-id>', value: 'on' }] };
 device = lelylan.device_properties('<light-id>', params)</xmp></pre>
             </div>
           </div>
@@ -60,12 +61,12 @@ device = lelylan.device_properties('<light-id>', params)</xmp></pre>
             <div class="preview">
               <pre class="prettyprint"><xmp>from lelylan import oauth, devices
 oauth.set_access_token()
-params = { properties: [{ id: '<status>', value: 'on' }] }
+params = { properties: [{ id: '<status-id>', value: 'on' }] }
 device = update_dev_prop('<light-id>', params)</xmp></pre>
             </div>
           </div>
         </div>
-        <p><a class="button-add" href="/developers">Learn More &rarr;</a></p>
+        <p><a class="button-add" href="/features">Get started with Lelylan &rarr;</a></p>
       </div>
       <div class="clearfix"></div>
     </div>
@@ -74,34 +75,35 @@ device = update_dev_prop('<light-id>', params)</xmp></pre>
 
     <div class="inner row">
       <div class="left big">
-        <h2><div class="intro">The perfect partner for</div> Makers, Designers and Kickstarters</h2>
+        <h2>A smart cross-device dashboard</h2>
         <p>
-        With Lelylan you focus on the hardware and on the design process. We do the rest
-        by making it easy to connect your devices to the web and by giving you a complete
-        set of Apps ready to use.
+        A beautiful, customizable, open source, realtime dashboard you can access from any device.
+        It automatically recognize the device type you want to control and renders the correct
+        user interface without writing one line of code.
         </p>
-        <p><a class="button-add" href="/makers">Learn more &rarr;</a></p>
+        <%= image_tag 'dashboard.png', class: 'bordered' %>
+        <p><a class="button-add" href="/features">Get started with Lelylan &rarr;</a></p>
       </div>
       <div class="right small">
-        <%= image_tag 'makers.png' %>
+        <%= image_tag 'developers.png' %>
       </div>
       <div class="clearfix"></div>
     </div>
+
 
     <hr/>
 
     <div class="inner row">
       <div class="left small">
-        <%= image_tag 'developers.png' %>
+        <%= image_tag 'makers.png' %>
       </div>
       <div class="right big">
-        <h2><div class="intro">A new tool for</div> Web Developers</h2>
+        <h2>Works with any hardware</h2>
         <p>
-        Lelylan offers an open API for the connected home. Whether or not you want to build
-        an app for web, mobile, voice, glasses, etc. Lelylan offers everything you need to
-        get started in minutes.
+        Create connected products using the hardware you are most familiar with.
         </p>
-        <p><a class="button-add" href="/developers">Learn more &rarr;</a></p>
+        <%= image_tag 'hardware.png', class: 'bordered' %>
+        <p><a class="button-add" href="/developers">Get started with Lelylan &rarr;</a></p>
       </div>
       <div class="clearfix"></div>
     </div>
@@ -110,25 +112,27 @@ device = update_dev_prop('<light-id>', params)</xmp></pre>
 
     <div class="inner row">
       <div class="left big">
-        <h2><div class="intro">A place to</div> Improve the Connected Home </h2>
+        <h2>A ridiculously simple integration flow</h2>
         <p>
-        Lelylan is made up from collaborations. We want to create a group of people that wants
-        to challenge the connected home by hacking the existing hardware and by solving
-        challenges the connected home offers today.
+        With Lelylan you can connect any product to the internet in a metter of minutes.
+        Simply add the code enabling the communication between Lelylan and your hardware
+        and you are done. We give to your business all the tools you need to sell your
+        next connected product.
         </p>
-        <p><a class="button-add" href="/people">Learn more &rarr;</a></p>
+        <p><a class="button-add" href="/features">Get started with Lelylan &rarr;</a></p>
       </div>
       <div class="right small">
-        <%= image_tag 'people.png' %>
+        <%= image_tag 'companies/cloud.png' %>
       </div>
       <div class="clearfix"></div>
     </div>
+
   </section>
 
   <section class="go">
   <div class="inner">
     <h2>Sound awesome? We think so.</h2>
-    <a href="http://people.lelylan.com/subscriptions/new" class="button-add">Join the Beta</a>
+    <a href="http://dev.lelylan.com" class="button-add">Get started with Lelylan</a>
   </div>
   </section>
 
