@@ -32,12 +32,9 @@
         <a class="brand" href="/"><span class="lelylan-icon"></span></a>
         <button type="button" class="mobile-menu" data-toggle="collapse" data-target=".nav-collapse"><span class="hidden">Menu</span></button>
         <ul id="main-menu" class="nav-collapse collapse">
+          <li class="features"><a class="<%= 'current' if params[:id]=='features' %>" href="/features">Features</a></li>
           <li class="people"><a class="<%= 'current' if params[:id]=='people' %>" href="/people">People</a></li>
-          <li class="makers"><a class="<%= 'current' if params[:id]=='makers' %>" href="/makers">Makers</a></li>
-          <li class="developers"><a class="<%= 'current' if params[:id]=='developers' %>" href="/developers">Developers</a></li>
-          <li class="companies"><a class="<%= 'current' if params[:id]=='companies' %>" href="/companies">Companies</a></li>
           <li class="pricing"><a class="<%= 'current' if params[:id]=='pricing' %>" href="/pricing">Pricing</a></li>
-          <li class="try"><a href="http://try.lelylan.com">Try Demo</a></li>
           <li class="join"><a href="http://people.lelylan.com/subscriptions/new">Join</a></li>
         </ul>
       </div>
@@ -60,28 +57,15 @@
           <%#<a class="playbutton" href="http://try.lelylan.com"><span class="hidden">Try Lelylan</span></a>%>
         <% end %>
 
-        <% if params[:id]=='makers' %>
-          <h1 class="title">Makers, Designers and Kickstarters</h1>
-          <p>Create new physical objects for your home and connect them to the web in no time.</p>
-        <% end %>
-
-        <% if params[:id]=='developers' %>
-          <h1 class="title">Web Developers and Designers</h1>
-          <p>A simple API to create new apps for the connected home.</p>
-        <% end %>
-
-        <% if params[:id]=='companies' %>
-          <h1 class="title">Companies. Connecting Devices.</h1>
-          <p>Build, innovate and sell your products using Lelylan.</p>
+        <% if params[:id]=='features' %>
+          <h1 class="title">Companies. Makers. Developers</h1>
+          <p>Creating, innovating and selling connected products.</p>
         <% end %>
 
         <% if params[:id]=='people' %>
           <h1 class="title">Collaborate with Lelylan</h1>
           <p>
-          Lelylan exists because of a group of people that experiments day by day new solutions. <br>
-          If you want to realize an idea related to the connected home,
-          <a href="http://people.lelylan.com/subscriptions/new">join us.</a>
-
+          Create, innovate, experiment and realize the Internet of Things.
           </p>
         <% end %>
 
