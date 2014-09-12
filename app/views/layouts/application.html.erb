@@ -9,7 +9,7 @@
     <base href="/">
     <meta charset="utf-8">
 
-    <title>Lelylan | Building the Connected Home</title>
+    <title>Lelylan | Building the Internet of Things</title>
 
     <meta name="description" content="A simple and open solution to connect every device to the web.">
     <meta name="HandheldFriendly" content="True">
@@ -35,6 +35,7 @@
           <li class="features"><a class="<%= 'current' if params[:id]=='features' %>" href="/features">Features</a></li>
           <li class="people"><a class="<%= 'current' if params[:id]=='people' %>" href="/people">People</a></li>
           <li class="pricing"><a class="<%= 'current' if params[:id]=='pricing' %>" href="/pricing">Pricing</a></li>
+          <li class="dev"><a href="http://dev.lelylan.com" target="_blank">Dev Center</a></li>
           <li class="join"><a href="http://people.lelylan.com/subscriptions/new">Join</a></li>
         </ul>
       </div>
@@ -58,14 +59,14 @@
         <% end %>
 
         <% if params[:id]=='features' %>
-          <h1 class="title">Companies. Makers. Developers</h1>
-          <p>Creating, innovating and selling connected products.</p>
+          <h1 class="title">Developers. Makers. Companies</h1>
+          <p>Innovating, creating and selling connected products.</p>
         <% end %>
 
         <% if params[:id]=='people' %>
           <h1 class="title">Collaborate with Lelylan</h1>
           <p>
-          Create, innovate, experiment and realize the Internet of Things.
+          Experimenting the Internet of Things.
           </p>
         <% end %>
 
@@ -87,11 +88,10 @@
         <div>
           <ul id="footer-menu">
             <li><a href="/">Home</a></li>
-            <li class="makers"><a href="/makers">Makers</a></li>
-            <li class="developers"><a href="/developers">Developers</a></li>
+            <li class="makers"><a href="/features">Features</a></li>
             <li class="dev"><a href="http://dev.lelylan.com">Dev Center</a></li>
-            <%#<li class="blog"><a href="http://blog.lelylan.com/">Blog</a></li>%>
-            <li class="try"><a href="http://try.lelylan.com">Try Demo</a></li>
+            <li class="blog"><a href="http://blog.lelylan.com/">Blog</a></li>
+            <li class="try"><a href="http://try.lelylan.com">Demo</a></li>
             <li class="join"><a href="http://people.lelylan.com/subscriptions/new">Join</a></li>
           </ul>
         </div>

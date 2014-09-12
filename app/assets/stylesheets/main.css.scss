@@ -77,9 +77,9 @@ $lelylanLineColor: #e8e8e8 !default;
   background-color: $lelylanColor;
 }
 
-.featurebanner .button-important,
+.button-important,
 .featurebanner .playbutton:hover {
-  background-color:$linkColorHover;
+  background-color:$linkColorHover !important;
 }
 
 .featurebanner .bannercontent p.buttons-group {
@@ -171,7 +171,7 @@ a {
 }
 
 .features .inner img.bordered {
-  border: 5px solid #eee;
+  border: 5px solid #f8f8f8;
   border-radius: 5px;
   float: none;
 }
@@ -198,8 +198,24 @@ a {
   margin-bottom: 30px;
 }
 
+.features ul li {
+  font-size: 18px;
+  font-weight: 200;
+  color: #333;
+}
+
 .button-add {
   background-color: $lelylanColor;
+}
+
+.button-disabled,
+.button-disabled:hover {
+  background-color: #ccc;
+}
+
+.features .button-add {
+  margin-right: 2px;
+  margin-left: 2px;
 }
 
 .button-add:hover {
