@@ -353,17 +353,23 @@ pre code, pre xmp {
   }
 
   div.table-title h2 {
+    font-size:  56px;
     background-color: #444;
     color: #fff;
-    padding: 15px 20px 18px;
+    padding: 15px 20px 10px;
   }
 
   div.table-title h2.plan {
     float: left;
+    width: 500px;
   }
 
   div.table-title h2.price {
     float: right;
+  }
+
+  div.table-title h2.price a {
+    font-size: 50px;
   }
 
   div.table-title a {
@@ -372,6 +378,17 @@ pre code, pre xmp {
 
   div.table-title a:hover {
     box-shadow: none;
+  }
+
+  div.table-subtitle {
+    height: 50px;
+  }
+
+  div.table-subtitle p {
+    margin: 0;
+    float: right;
+    margin-right: 20px;
+    color: #eee;
   }
 
 
@@ -387,14 +404,13 @@ pre code, pre xmp {
 
   table td {
     padding-left: 20px;
-    line-height: 42px;
+    line-height: 75px;
     font-size: 18px;
     font-weight: 200;
   }
 
 
   table td .description {
-    margin-left: 35px;
     color: #aaa;
     font-size: 16px;
   }
@@ -406,7 +422,7 @@ pre code, pre xmp {
 
   table img {
     float: left !important;
-    margin-top: 16px;
+    margin-top: 33px;
     padding-right: 20px;
   }
 
@@ -430,6 +446,7 @@ pre code, pre xmp {
   .button-change {
     float: right;
     width:230px;
+    margin-top: 10px;
   }
 
   .info {

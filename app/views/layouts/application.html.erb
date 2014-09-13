@@ -20,7 +20,6 @@
     <%= stylesheet_link_tag    'application', :media => "all" %>
     <%= javascript_include_tag 'application' %>
 
-
     <meta http-equiv="cleartype" content="on">
   </head>
 
@@ -44,6 +43,7 @@
       <div class="bannercontent">
         <% if params[:id]=='index' %>
           <h1 class="title">Building the Internet of Things</h1>
+
           <p>
           A set of unified APIs and tools that instantly enables<br> businesses to sell connected products
           <%#All your devices in one simple and open API. What will you build?%>
@@ -71,7 +71,7 @@
         <% end %>
 
         <% if params[:id]=='pricing' %>
-          <h1 class="title">Pricing. Simple as possible</h1>
+          <h1 class="title">Pricing. Clear and simple as possible</h1>
           <p>One single payment. No recurring fees.</p>
         <% end %>
       </div>
