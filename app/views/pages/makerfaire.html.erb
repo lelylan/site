@@ -1,0 +1,570 @@
+<main role="main">
+
+<section class="container-wrapper features">
+
+  <div class="inner row one">
+    <div class="left big">
+      <h2>Lelylan</h2>
+      <br>
+      <br>
+      <%= image_tag 'makerfaire/img0.png', class: 'bordered' %>
+      <p>
+      Hi everyone, my name is Andrea Reginato and today I'm glad to be here to talk about Lelylan, a new platform that makes it easy to build the Connected Home.
+      </p>
+    </div>
+    <div class="clearfix"></div>
+  <hr/>
+  </div>
+
+  <div class="inner row">
+    <div class="left big">
+      <h2>What is the Connected Home?</h2>
+      <br>
+      <br>
+      <%= image_tag 'makerfaire/img1.png', class: 'bordered' %>
+      <p>
+      First of all, what's the Connected Home? The Connected Home describes the idea of a home where all devices talk to each other through the Internet. The advantages of having a Connected Home are different. For example your washing machine can start working during night because of the lower energy pricing, the coffee machine starts making you a coffee when you are waking up or when you are coming back from work, all doors and windows automatically gets closed when you are leaving home and much much more.
+      </p>
+      <p>
+      The nice thing is that the Connected Home is becoming real. During the last two, three years we saw the first connected products coming out. The Nest thermostats, the Lifx light bulb and the Lockitron door lock are some great examples. Products are starting to get connected to the Internet and the best part is that they are doing it by releasing an open API that makes it possible for those products to talk to each other.
+      </p>
+      <p>
+      We are sure one day all products inside your home will talk to each other, but it took almost 30 years for computers to talk to each other, in the fifties, and for connected products to talk to each other, it will take some time, probably 5, 10 years. But at that point it will be common, as it's common to have a smartphone today, to live in a home where all devices talk to each other.
+      </p>
+    </div>
+    <div class="clearfix"></div>
+  <hr/>
+  </div>
+
+  <div class="inner row">
+    <div class="left big">
+      <h2>Problem</h2>
+      <br>
+      <br>
+      <%= image_tag 'makerfaire/img2.png', class: 'bordered' %>
+      <p>
+      Everything looks great, really, but suppose that you, maker, entrepreneur or manufacturer want to create a new connected product. What do you need? First of all you need the product, the physical product, but probably you already know how to do it and how to give it a great design. But what if you want to make this product to a connected product. In this case you need an open API, an app for tablets and mobile, a web app working in your browser, a dev center with clear documentation and tutorials, analytic tools to know how products are used, a notification system to know when products are having problems, security and a scalable infrastructure. Those are just some of the things you need. Building all this stuff takes a lot of time and a lot of money and that’s why connected products are coming out slowly.
+      </p>
+    </div>
+    <div class="clearfix"></div>
+  <hr/>
+  </div>
+
+  <div class="inner row">
+    <div class="left big">
+      <h2>Solution</h2><br><br>
+      <%= image_tag 'makerfaire/img3.png', class: 'bordered' %>
+      <p>
+      Here comes Lelylan.
+      </p>
+      <p>
+      We make it simple to build new Connected Products. That's the only thing we are good at, but we do it pretty well. All you have to do is to add the code enabling the communication between Lelylan and your hardware and you automatically get all the tools you need to sell your next connected product. Nothing else.
+      </p>
+      <p>
+      In a few minutes we'll show you how to connect this lamp to Lelylan through an Arduino Yun to better understand how the integration works. It will take more or less 10 minutes. But, before, let’s understand what Lelylan really is and what it offers.
+      </p>
+    </div>
+    <div class="clearfix"></div>
+  <hr/>
+  </div>
+
+  <div class="inner row">
+    <div class="left big">
+      <h2>Architecture</h2><br><br>
+      <%= image_tag 'makerfaire/img4.png', class: 'bordered' %>
+      <p>
+      Architecture
+      </p>
+
+      <p>
+      The Architecture. Lelylan is based on three key concepts: Types, Devices, Physical Devices.
+      </p>
+    </div>
+    <div class="clearfix"></div>
+  <hr/>
+  </div>
+
+  <div class="inner row">
+    <div class="left big">
+      <h2>Types</h2><br><br>
+      <%= image_tag 'makerfaire/img5.png', class: 'bordered' %>
+      <p>
+      Types. Types are used to describe the structure of devices. A type is made up of three elements: properties, functions and statuses.
+      </p>
+
+      <p>
+      <ul>
+        <li><em>Properties</em> represent what change during time. For this lamp, it is its status that can assume the values “on”, “off”, “on”, “off” and so on.</li>
+        <li><em>Functions</em> represent what a device can do. For this lamp it can be “turn it on” and “turn it off”.</li>
+        <li><em>Statuses</em> represent what a device is in a specific time of its life. This lamp, in this moment is “off”.</li>
+      </ul>
+      </p>
+    </div>
+    <div class="clearfix"></div>
+  <hr/>
+  </div>
+
+  <div class="inner row">
+    <div class="left big">
+      <h2>Virtual Devices</h2><br><br>
+      <%= image_tag 'makerfaire/img6.png', class: 'bordered' %>
+      <p>
+      Once we have a type we can create a Virtual Device of a specific type. Virtual Devices are a virtual representation of everything you interact with everyday of your life like lights, thermostats or locks. Virtual Devices by default simulate the physical world, which is perfect when you are a developer and you want to create new apps without the need of any hardware. But, for real case scenarios, we want Virtual Devices to communicate with the physical world. To make this possible, we need to introduce the Physical Devices.
+      </p>
+    </div>
+    <div class="clearfix"></div>
+  <hr/>
+  </div>
+
+  <div class="inner row">
+    <div class="left big">
+      <h2>Physical Devices</h2><br><br>
+      <%= image_tag 'makerfaire/img7.png', class: 'bordered' %>
+      <p>
+      A Physical Device represents the physical object you interact with in the real world, like this lamp. It needs to be connected to the internet and to be accessible so that the physical device can be connected to the Virtual Device existing on the web. In this way when you interact with the Virtual Device changes are reflected to the Physical Device. For example, if you are using a web app and you click on the icon that turns on this lamp, you are sending a change to a Virtual Device, which in turn is reflected to the physical world turning this lamp on. On the other side when you interact with the Physical Devices, for example turning on this light, changes are reflected to the Virtual Devices.
+      </p>
+
+      <p>
+      In other words, Virtual Devices are the resources you interact with in the web. Physical Devices are the resources you interact with in the physical world, the ones you touch.
+      </p>
+
+      <p>
+      That's all. You have a Virtual Device which is associated to a type that defines properties, functions and statuses and this Virtual Device can be connected to a physical device to control the physical world.
+      </p>
+
+    </div>
+    <div class="clearfix"></div>
+  <hr/>
+  </div>
+
+  <div class="inner row">
+    <div class="left big">
+      <h2>Unified API</h2><br><br>
+      <%= image_tag 'makerfaire/img8.png', class: 'bordered' %>
+      <p>
+      We described the building blocks of lelylan, but now let's see what Lelylan really offers.
+      </p>
+      <p>
+      In Lelylan every device is identified by a unique URL and through this unique URL you can control and monitor everything. Based on this simple idea, we created an open and complete RESTful API. Everything is documented in the Dev Center where you can find tutorials, examples and wrappers in AngularJS, Ruby and Node.js to easily get started.
+      </p>
+      <p>
+      We also use the OAuth 2.0 standard for authorization and authentication which makes it easy for developers to create third party apps and we use webhooks to get real-time data from the physical world.
+      </p>
+    </div>
+    <div class="clearfix"></div>
+    <hr/>
+  </div>
+
+  <div class="inner row">
+    <div class="left big">
+      <h2>Monitor</h2><br><br>
+      <%= image_tag 'makerfaire/img9.png', class: 'bordered' %>
+      <p>
+      The first example shows you how to monitor a device. All you have to do is to make a GET request to the device URL and you get the device representation with its name, type, property values and much more.
+      </p>
+    </div>
+    <div class="clearfix"></div>
+  <hr/>
+  </div>
+
+  <div class="inner row">
+    <div class="left big">
+      <h2>Control</h2><br><br>
+      <%= image_tag 'makerfaire/img10.png', class: 'bordered' %>
+      <p>
+      The second example shows you how to control a device. All you have to do is to set the device properties to the desired values. In this example, we want to turn a light on. All we need to do is to set the property status to “on”. If we wanted to turn the light off we only had to set the property status to “off”.
+      </p>
+    </div>
+    <div class="clearfix"></div>
+  <hr/>
+  </div>
+
+  <div class="inner row">
+    <div class="left big">
+      <h2>Any Hardware</h2><br><br>
+      <%= image_tag 'makerfaire/img11.png', class: 'bordered' %>
+      <p>
+      The Hardware. Lelylan is open to any hardware. You can use the one you are most familiar with as long as it gives you internet connectivity. At the moment we made integration tests using Arduino Ethernet, Arduino Yun, Raspberry Pi, Electric Imp, Spark Core, TinyDuino and NetDuino and for each of those we wrote a tutorial in the dev center so that you can easily get started.
+      </p>
+      <p>
+      For the communication between Lelylan and your hardware we use MQTT, a publish subscribe solution that makes it easy to control physical devices, waiting for the IPV6 to raise.
+      </p>
+      <p>
+      In Lelylan, we focus on making the integration as simple as possible and for this reason a physical device is identified only by its properties. You don't need anything else, like functions, services or apps. Taking this basic lamp for example, the hardware - which in this case is an Arduino - only needs to understand the property "status" which can assume the "on" or "off" values. In this way we make connected products simple and easy to build, still giving the chance to extend their functionalities by adding new services and apps on top of Lelylan.
+      </p>
+    </div>
+    <div class="clearfix"></div>
+  <hr/>
+  </div>
+
+  <div class="inner row">
+    <div class="left big">
+      <h2>Apps for the Internet of Things</h2><br><br>
+      <%= image_tag 'makerfaire/img12.png', class: 'bordered' %>
+      <p>
+      At this point all connected products become part of a unified platform where everything communicates using a unique API, also including existing products offering an open API like the NEST thermostat. This gives new power to developers, which can create new apps based on web, mobile, voice recognition, smart surfaces, google glasses and more experimenting in different fields like user experience, security, energy saving and much more.
+      </p>
+    </div>
+    <div class="clearfix"></div>
+    <hr/>
+  </div>
+
+  <div class="inner row">
+    <div class="left big">
+      <h2>Speed</h2><br><br>
+      <%= image_tag 'makerfaire/img13.png', class: 'bordered' %>
+      <p>
+      APIs are great and with them you can build everything but it can take some time to use them to build new apps or new services. For this reasons we started to create wrappers in AngularJS, Node.js and Ruby, but, this wasn't enough to let developers build Web Apps in minutes. We spent some time thinking at which one could be the best solution to solve this problem and we finally came out with the new <device> tag.
+      </p>
+    </div>
+    <div class="clearfix"></div>
+    <hr/>
+  </div>
+
+  <div class="inner row">
+    <div class="left big">
+      <h2>&ltdevice&gt tag</h2><br><br>
+      <%= image_tag 'makerfaire/img14.png', class: 'bordered' %>
+      <p>
+      The device tag is an HTML tag that automatically renders a working user interface to control and monitor any device. All you have to do is to add the device tag into your HTML page and set the "device-id" attribute to the desired ID. At this point the directive will automatically render the needed user interface.
+      </p>
+    </div>
+    <div class="clearfix"></div>
+    <hr/>
+  </div>
+
+  <div class="inner row">
+    <div class="left big">
+      <h2>Dynamic user interfaces</h2><br><br>
+      <%= image_tag 'makerfaire/img15.png', class: 'bordered' %>
+      <p>
+      Here is what you get with one line of code. The device directive is released as open source and it's highly customizable. This means that if you do not like the default template you can create your own. For example, you can create a template for lights, thermostats, locks and so on. It only requires few lines of HTML and CSS to personalize it.
+      </p>
+    </div>
+    <div class="clearfix"></div>
+    <hr/>
+  </div>
+
+  <div class="inner row">
+    <div class="left big">
+      <h2>Custom templates</h2><br><br>
+      <%= image_tag 'makerfaire/img16.png', class: 'bordered' %>
+      <p>
+      Here you can see a custom template for a light. Using this switch you can turn it on and off.
+      The device directive is also full documented and you'll find a several usage examples and a step by step tutorial that describes how to build your first web app for the connected home in 10 minutes.
+      </p>
+    </div>
+    <div class="clearfix"></div>
+    <hr/>
+  </div>
+
+  <div class="inner row">
+    <div class="left big">
+      <h2>Lelylan Dashboard</h2><br><br>
+      <%= image_tag 'makerfaire/img17.png', class: 'bordered' %>
+      <p>
+      With the APIs, wrappers in different languages and the new device tag, developers have all they need to build new apps and services for the Connected Home. This is great. But what about makers, entrepreneurs or manufacturers that only want to focus on creating new connected products? They need a ready-to-use solution for their customers to control and monitor all those devices. For this reason we created Lelylan Dashboard.
+      </p>
+      <p>
+      Lelylan Dashboard is a simple and intuitive web app that works across desktop, tablet, and mobile which lets you monitor and control all of your connected products in real-time. This means that once you connect your product to Lelylan, you or your customers get a working dashboard to access them without writing one line of code.
+      </p>
+      <p>
+      The dashboard is released as open-source. It is built using AngularJS, HTML5 and CSS3 and there is no server side code, which makes it easy to build white label solutions. Suppose, for example, you want to create a new connected product with a strong brand identity. In this case you need a customized dashboard, deployed on your site, where your customers don’t even recognize they are using Lelylan. All you need to do is to take the dashboard code, customize the layout as much as you want and deploy it wherever you want.
+      </p>
+    </div>
+    <div class="clearfix"></div>
+  <hr/>
+  </div>
+
+  <div class="inner row">
+    <div class="left big">
+      <h2>Simplicity</h2><br><br>
+      <%= image_tag 'makerfaire/img18.png', class: 'bordered' %>
+      <p>
+      These are the tools Lelylan offers today. We only want to add one more thing. As today, it is possible to create connected products through existing services. To name some we have Xively, SmartThings, Electric Imp, Spark Core, Wink App. The thing is that with Lelylan not only we make it possible, but we make it simple. And we make it simple by reducing the time to market and giving you all the tools you need to sell your next connected product right now.
+      </p>
+    </div>
+    <div class="clearfix"></div>
+    <hr/>
+  </div>
+
+  <div class="inner row">
+    <div class="left big">
+      <h2>Demo</h2><br><br>
+      <%= image_tag 'makerfaire/img19.png', class: 'bordered' %>
+      <p>
+      Enough with the talking. Let’s check a real demo, where we’ll show you how to connect this lamp to Lelylan. From the hardware side we will use is an Arduino Yun with WiFi connection, a push button, a light, a relay and a 10K Ohm resistor. And from the software side we’ll need the PubSubClient library, which makes it possible to access physical devices from the web using the MQTT protocol.
+      </p>
+    </div>
+    <div class="clearfix"></div>
+    <hr/>
+  </div>
+
+  <div class="inner row">
+    <div class="left big">
+      <h2>Hardware Setup</h2><br><br>
+      <%= image_tag 'makerfaire/img20.png', class: 'bordered' %>
+      <p>
+      Here you can see the schema with the final hardware setup.
+      </p>
+    </div>
+    <div class="clearfix"></div>
+    <hr/>
+  </div>
+
+  <div class="inner row">
+    <div class="left big">
+      <h2>Device definition</h2><br><br>
+      <%= image_tag 'makerfaire/img21.png', class: 'bordered' %>
+      <p>
+      That said, to get started we have to login into the Dashboard where we can create our first device.
+      </p>
+      <p>
+      The first thing we have to do is to give a meaningful name to the device. Common examples are bedroom light, garage lock, kitchen thermostat and so on. For this demo we’ll call the device “Lelylan Lamp”.
+      </p>
+      <p>
+      Once we defined the name, we need to choose the device type. In Lelylan we have a set of predefined types, like lights, thermostats, alarms, sensors and much more. This means that we can search what we need between the existing types, but if we don’t find it, we can easily create a new one. In this case we need a basic light type, which already exists, so we simply select it.
+      </p>
+      <p>
+      During the last step we have to decide if we want to simulate the physical device or if we want to connect to real physical device. In this case we want to connect to this lamp, and for this reason we choose the second option.
+      </p>
+      <p>
+      At this point we created our first device and we automatically have a working user interface that makes it possible to control and monitor it. We have the top section with the device name and the device status. Then we have the available functions you can apply and in the bottom we have the device property values.
+      </p>
+      <p>
+      Ok. Now, let’s see what happens if we turn the light on. As you can see the lamp status changes to On, but the spinner with the three dots, is still visible. This happens because the device is now in a pending status, meaning that it’s waiting for the physical device to apply and confirm the changes in the physical world. But, as long as we didn’t connected the physical device yet, this confirmation will not arrive, keeping the device in a pending status.
+      </p>
+    </div>
+    <div class="clearfix"></div>
+    <hr/>
+  </div>
+
+  <div class="inner row">
+    <div class="left big">
+      <h2>Arduino programming</h2><br><br>
+      <%= image_tag 'makerfaire/img22.png', class: 'bordered' %>
+      <p>
+      At this point we need to create the physical device by programming the Arduino Yun. We’ll not show you the entire sketch, which is about 100 lines of code, but we’ll describe the most important sections. If you want a full detailed tutorial on how to connect your first light with Lelylan you’ll find all you need the dev center.
+      </p>
+    </div>
+    <div class="clearfix"></div>
+    <hr/>
+  </div>
+
+  <div class="inner row">
+    <div class="left big">
+      <h2>Authentication</h2><br><br>
+      <%= image_tag 'makerfaire/img23.png', class: 'bordered' %>
+      <p>
+      So, first of all, when a physical device wants to communicate with Lelylan, it needs to authenticate itself. This is done by setting the device id and the device secret which are automatically created every time you create a new device in the dashboard.
+      </p>
+    </div>
+    <div class="clearfix"></div>
+    <hr/>
+  </div>
+
+  <div class="inner row">
+    <div class="left big">
+      <h2>Communication channels</h2><br><br>
+      <%= image_tag 'makerfaire/img24.png', class: 'bordered' %>
+      <p>
+      Then, for the communication between Lelylan and the Physical device, we need to open two communication channels: one used from the virtual device to send the messages to the physical device and one used from the physical device to send changes to the virtual device.
+      </p>
+      <p>
+      At this point the physical device needs to understand the messages coming from Lelylan. When we were talking about the hardware integration, we said that the physical device only needs to understand the device properties. In this specific case it needs to understand when the property status is set to “on” or “off”.
+      </p>
+    </div>
+    <div class="clearfix"></div>
+    <hr/>
+  </div>
+
+  <div class="inner row">
+    <div class="left big">
+      <h2>Receiving messages</h2><br><br>
+      <%= image_tag 'makerfaire/img25.png', class: 'bordered' %>
+      <p>
+      In this way, when the arduino receives the on message it turns this lamp on and when it receives the off message it turns the physical lamp off. One important point is that once the physical device applies the physical changes, it needs to send the same message back to Lelylan, to confirm these changes.
+      </p>
+    </div>
+    <div class="clearfix"></div>
+    <hr/>
+  </div>
+
+  <div class="inner row">
+    <div class="left big">
+      <h2>Sending messages</h2><br><br>
+      <%= image_tag 'makerfaire/img26.png', class: 'bordered' %>
+      <p>
+      Similar is the concept, when we interact with the physical lamp. If we turn the lamp on or off, we need to notify Lelylan about the change.
+      </p>
+    </div>
+    <div class="clearfix"></div>
+    <hr/>
+  </div>
+
+
+  <div class="inner row">
+    <div class="left big">
+      <h2>Final result</h2><br><br>
+      <%= image_tag 'makerfaire/img27.png', class: 'bordered' %>
+      <p>
+      This is all you need to know when creating a physical device. So, lets take the <a href="https://gist.githubusercontent.com/andreareginato/2f2a8aa71b94bb8ffc17/raw/ecf6f8f2d5128391ea890b954c3913b6acd4d40a/lelylan-lamp-ardiuno-yun.ino">sketch</a> that connects this lamp to Lelylan where we need to make two changes. First, we need to set the device credentials. We can find them in the dashboard, by selecting the device we want and clicking on settings, where we have the device ID and the device secret. Second, we need to define the communication channels by setting the device ID. Now, we can upload the sketch.
+      </p>
+      <p>
+      While waiting for the loading to be completed, lets recap what we did. In this demo we created our first device by setting the name, choosing the desired type and by connecting a physical device. Then we took the light sketch we have in the dev center and we set the device credentials and the communication channels. Thats all we needed to enable the communication between this lamp and Lelylan.
+      </p>
+      <p>
+      Now, we can go to the dashboard and we can control and monitor in realtime this lamp. So, if we turn the light on on the web, it turns on on the physical world. If we turn it off the lamp in the physical world, it turns off on the web. That’s it. This is all we do. We make it simple to build Connected products. I really hope everything was clear. If not, please, don't hesitate to stop me at the end of this talk.
+      </p>
+    </div>
+    <div class="clearfix"></div>
+    <hr/>
+  </div>
+
+  <div class="inner row">
+    <div class="left big">
+      <h2>Roadmap</h2><br><br>
+      <%= image_tag 'makerfaire/img28.png', class: 'bordered' %>
+      <p>
+      The thing is that we don’t stop here. We always have new ideas and we are working on a roadmap which includes four new services: Products Dashboard, Analytics Dashboard, a Market Store and Lelylan Lab.
+      </p>
+    </div>
+    <div class="clearfix"></div>
+    <hr/>
+  </div>
+
+  <div class="inner row">
+    <div class="left big">
+      <h2>Products dashboard</h2><br><br>
+      <%= image_tag 'makerfaire/img29.png', class: 'bordered' %>
+      <p>
+      First, Products Dashboard. When creating a new Connected Product, manufacturers need a simple way to manage all their devices, including provisioning and serial numbers definition for large-scale deployment. They also need to collect the devices data and see which devices are functioning, which are offline and which are broken to help customers when a problem occurs.
+      </p>
+    </div>
+    <div class="clearfix"></div>
+    <hr/>
+  </div>
+
+  <div class="inner row">
+    <div class="left big">
+      <h2>Analytics Dashboard</h2><br><br>
+      <%= image_tag 'makerfaire/img30.png', class: 'bordered' %>
+      <p>
+      Second, Analytics Dashboard. Connected products produce a huge amount of data and we want to give you a meaningful representation of this data showing in real-time how connected products are used. We want to use machine learning techniques to identify new usage patterns and to extract new knowledge from these data with the final goal of helping you to improve your connected products.
+      </p>
+    </div>
+    <div class="clearfix"></div>
+    <hr/>
+  </div>
+
+  <div class="inner row">
+    <div class="left big">
+      <h2>Market Store</h2><br><br>
+      <%= image_tag 'makerfaire/img31.png', class: 'bordered' %>
+      <p>
+      Third, App Store. Developers need a place where they can add and eventually sell their apps, creating in this way, a new ecosystem on top of Lelylan where it’s easy to discover new apps and new services for the Connected Home.
+      </p>
+    </div>
+    <div class="clearfix"></div>
+    <hr/>
+  </div>
+
+  <div class="inner row">
+    <div class="left big">
+      <h2>Lelylan Lab</h2><br><br>
+      <%= image_tag 'makerfaire/img32.png', class: 'bordered' %>
+      <p>
+      First, Lelylan Lab. Lelylan Lab is the place where everyone share their work to inspire others. In this way we have a unique place where you can search, create and discuss all existing projects that use Lelylan.
+      </p>
+    </div>
+    <div class="clearfix"></div>
+    <hr/>
+  </div>
+
+  <div class="inner row">
+    <div class="left big">
+      <h2>Target</h2><br><br>
+      <%= image_tag 'makerfaire/img33.png', class: 'bordered' %>
+      <p>
+      If it wasn’t clear enough, Lelylan is open to everyone who want to explore the connected home. Makers who want to connect new hardwares or hack existing physical products, developers who want to create a new apps mixing different services, manufacturers and entrepreneurs that want to sell a new connected product. We also collaborated with a crowd-funding campaign on Indiegogo where Lelylan services were combined with a low cost wifi hardware certified Arduino@Hearth.
+      </p>
+    </div>
+    <div class="clearfix"></div>
+    <hr/>
+  </div>
+
+  <div class="inner row">
+    <div class="left big">
+      <h2>Pricing</h2><br><br>
+      <%= image_tag 'makerfaire/img34.png', class: 'bordered' %>
+      <p>
+      Pricings in the Connected Home and the Internet of Things are not an easy topic to talk about [not so clear]. If you check out startups like Electric Imp, Spark Core or Xively, you’ll not find out a pricing for their API usage. This happens for two reasons. The first is that the field is still young and it’s not clear how the startups in the field will monetize it. The second is that it can be complex to set a unique price when devices can behave in such a different way. For example, we can’t compare a light that is used few times in a day and a smart meter that makes more than 1 request per second.
+      </p>
+      <p>
+      In Lelylan we are working on two pricing solutions.
+      </p>
+      <p>
+      <ul>
+        <li>The first is a "per life pricing", where you pay once - per connected device - and you get full access to all Lelylan services, forever.</li>
+        <li>The second is a "per usage pricing", where you pay the number of requests that the connected product really uses.</li>
+      </ul>
+      </p>
+      <p>
+      We are still working on the pricing definition and we know that every company and every product is different and for this reason we are always open to discuss about custom pricing solutions.
+      </p>
+    </div>
+    <div class="clearfix"></div>
+    <hr/>
+  </div>
+
+  <div class="inner row">
+    <div class="left big">
+      <h2>People</h2><br><br>
+      <%= image_tag 'makerfaire/img35.png', class: 'bordered' %>
+      <p>
+      Preparing this presentation i was watching different talks. While watching those talks, there was one sentence that took my attention. It was my colleague Tony Fadell, CEO of NEST, which said "Startup must be fast”.
+      </p>
+      <p>
+      This sentence made think few minutes, because you have to know, Lelylan began in 2006. It was 8 years ago. And I guess, for this reason, we can’t call Lelylan a startup anymore. But on the other side, all this time gave us the opportunity to arrive here today, with Lelylan. And this was possible only thanks to the work of 46 people, which have been, and are, involved in all possible aspects of the project, like architecture definition, communication protocols, hardware integration, crowd-funding, funding and much more.
+      </p>
+    </div>
+    <div class="clearfix"></div>
+    <hr/>
+  </div>
+
+  <div class="inner row">
+    <div class="left big">
+      <h2>Target</h2><br><br>
+      <%= image_tag 'makerfaire/img36.png', class: 'bordered' %>
+      <p>
+      One last thing. Long time ago, a friend of mine, told me that for a project like this there was no market. As today, Cisco says that the connected objects in the 2020 will be 50 billion objects, which to me sounds a huge market opportunity. The first connected products are coming out and our homes will not be the same. They will be connected homes.
+      </p>
+    </div>
+    <div class="clearfix"></div>
+    <hr/>
+  </div>
+
+  <div class="inner row">
+    <div class="left big">
+      <h2>Target</h2><br><br>
+      <%= image_tag 'makerfaire/img37.png', class: 'bordered' %>
+      <p>
+      This is the time to get into this market, and we need to do it now. For this reason, we are happy to be here today to announce the official launch of Lelylan. Because now, not only we make connected products possible, but we make them simple. Have fun and build your next Connected Product using Lelylan.
+      </p>
+      <p>
+        Thank you very much.
+      </p>
+    </div>
+    <div class="clearfix"></div>
+    <hr/>
+  </div>
+  </section>
+
+  <section class="go">
+  <div class="inner">
+    <h2>Interested in Building Apps Using Lelylan?</h2>
+    <a href="http://dev.lelylan.com" class="button-add">Get started with Lelylan</a>
+  </div>
+  </section>
+
+</main>

@@ -31,6 +31,7 @@
         <a class="brand" href="/"><span class="lelylan-icon"></span></a>
         <button type="button" class="mobile-menu" data-toggle="collapse" data-target=".nav-collapse"><span class="hidden">Menu</span></button>
         <ul id="main-menu" class="nav-collapse collapse">
+          <li class="makerfaire"><a class="<%= 'current' if params[:id]=='makerfaire' %>" href="/makerfaire">Maker Faire</a></li>
           <li class="features"><a class="<%= 'current' if params[:id]=='features' %>" href="/features">Features</a></li>
           <li class="people"><a class="<%= 'current' if params[:id]=='people' %>" href="/people">People</a></li>
           <!--<li class="pricing"><a class="<%= 'current' if params[:id]=='pricing' %>" href="/pricing">Pricing</a></li>-->
@@ -56,6 +57,11 @@
           </p>
 
           <%#<a class="playbutton" href="http://try.lelylan.com"><span class="hidden">Try Lelylan</span></a>%>
+        <% end %>
+
+        <% if params[:id]=='makerfaire' %>
+          <h1 class="title">Maker Faire 2014</h1>
+          <p>Lelylan official lunch | Friday October 4 at 14.30</p>
         <% end %>
 
         <% if params[:id]=='features' %>
