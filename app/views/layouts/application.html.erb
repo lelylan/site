@@ -33,7 +33,7 @@
         <ul id="main-menu" class="nav-collapse collapse">
           <li class="features"><a class="<%= 'current' if params[:id]=='features' %>" href="/features">Features</a></li>
           <li class="people"><a class="<%= 'current' if params[:id]=='people' %>" href="/people">People</a></li>
-          <li class="pricing"><a class="<%= 'current' if params[:id]=='pricing' %>" href="/pricing">Pricing</a></li>
+          <!--<li class="pricing"><a class="<%= 'current' if params[:id]=='pricing' %>" href="/pricing">Pricing</a></li>-->
           <li class="dev"><a href="http://dev.lelylan.com" target="_blank">Dev Center</a></li>
           <li class="join"><a href="http://people.lelylan.com/subscriptions/new">Join</a></li>
         </ul>
@@ -42,10 +42,10 @@
       <section class="featurebanner <%= params[:id] %>-header">
       <div class="bannercontent">
         <% if params[:id]=='index' %>
-          <h1 class="title">Building the Internet of Things</h1>
+          <h1 class="title">Building the Connected Home</h1>
 
           <p>
-          A set of unified APIs and tools that instantly enables<br> businesses to sell connected products
+          A unified APIs and tools that instantly enable<br> businesses to sell connected products
           <%#All your devices in one simple and open API. What will you build?%>
           <%#A simple and open solution to connect every device to the web.%>
           </p>
@@ -59,14 +59,14 @@
         <% end %>
 
         <% if params[:id]=='features' %>
-          <h1 class="title">Developers. Makers. Companies</h1>
-          <p>Innovating, creating and selling connected products.</p>
+          <h1 class="title">Developers. Makers. Manifacturers</h1>
+          <p>Making it simple to create Connected Products.</p>
         <% end %>
 
         <% if params[:id]=='people' %>
-          <h1 class="title">Collaborate with Lelylan</h1>
+          <h1 class="title">Work and experiment with Lelylan</h1>
           <p>
-          Experimenting the Internet of Things.
+          Experimenting the Connected Home.
           </p>
         <% end %>
 
