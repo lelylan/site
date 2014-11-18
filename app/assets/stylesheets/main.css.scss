@@ -3,7 +3,6 @@ $linkColorHover:   #01cf9e !default;
 $lelylanColor:     #239cbb !default;
 $lelylanLineColor: #e8e8e8 !default;
 
-
 #global-header .logo-animated {
   background-color: $lelylanColor;
   border-color: $lelylanColor;
@@ -459,4 +458,28 @@ pre code, pre xmp {
   margin-top: 100px;
 }
 
+/* News */
 
+.features .news {
+  background-color: #01cf9e;
+}
+
+.features .news .inner {
+  padding: 20px 0;
+}
+
+.features .news .inner p {
+  text-align: center;
+  color: #333;
+  margin-top: 0;
+}
+
+.features .news .inner .fa {
+  font-size: 22px;
+  margin-right: 6px;
+}
+
+.features .news .inner a,
+.features .news .inner a:hover {
+  color: #fff;
+}
