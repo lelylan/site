@@ -32,7 +32,8 @@
         <a class="brand" href="/"><span class="lelylan-icon"></span></a>
         <button type="button" class="mobile-menu" data-toggle="collapse" data-target=".nav-collapse"><span class="hidden">Menu</span></button>
         <ul id="main-menu" class="nav-collapse collapse">
-          <li class="makerfaire"><a class="<%= 'current' if params[:id]=='makerfaire' %>" href="/makerfaire">Maker Faire</a></li>
+          <!--<li class="makerfaire"><a class="<%= 'current' if params[:id]=='makerfaire' %>" href="/makerfaire">Maker Faire</a></li>-->
+          <li class="use-cases"><a class="<%= 'current' if params[:id]=='use-cases' %>" href="/use-cases">Use Cases</a></li>
           <li class="features"><a class="<%= 'current' if params[:id]=='features' %>" href="/features">Features</a></li>
           <li class="people"><a class="<%= 'current' if params[:id]=='people' %>" href="/people">People</a></li>
           <!--<li class="pricing"><a class="<%= 'current' if params[:id]=='pricing' %>" href="/pricing">Pricing</a></li>-->
@@ -64,6 +65,11 @@
         <% if params[:id]=='makerfaire' %>
           <h1 class="title">Maker Faire 2014</h1>
           <p>Lelylan official lunch | Friday October 4 at 14.30</p>
+        <% end %>
+
+        <% if params[:id]=='use-cases' %>
+          <h1 class="title">When should I use Lelylan?</h1>
+          <p>Opening up new business opportunities using a solid cloud platform.</p>
         <% end %>
 
         <% if params[:id]=='features' %>
