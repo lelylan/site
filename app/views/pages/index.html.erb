@@ -3,8 +3,12 @@
     <div class="inner">
       <p style="">
         <i class="fa fa-rocket"></i>
-        Lelylan Device is out! A new solution that makes it faster to create apps for the Internet of Things.
-        <a href="/news/lelylan-device/" target="_blank">Learn more.</a>
+        (December 2014) New hardware integrations with
+        <a href="http://lelylan.github.io/lab-projects/arduino-yun-light/">Arduino Yun</a>,
+        <a href="http://lelylan.github.io/lab-projects/raspberry-pi-light/">Raspberry Pi</a>
+        and
+        <a href="http://lelylan.github.io/lab-projects/electric-imp-light/">Electric Imp</a>
+        are out!
       </p>
     </div>
   </section>
@@ -15,13 +19,14 @@
   <section class="container-wrapper features">
 
     <div class="inner row one">
-      <div class="left small">
+      <div class="right small">
         <%= image_tag 'examples.png' %>
       </div>
-      <div class="right big">
+      <div class="left big">
         <h2>An API that gets out of your way</h2>
         <p>
           See how turning a light on only requires a few lines of code with your favorite language.
+          We offer wrappers in AngularJS, Ruby, Node.js, Python, Android and iOS.
         </p>
 
         <ul class="nav nav-tabs">
@@ -78,7 +83,7 @@ device = update_dev_prop('<light-id>', params)</xmp></pre>
             </div>
           </div>
         </div>
-        <%#<p><a class="button-add" href="/features">Learn more about Lelylan &rarr;</a></p>%>
+        <p><a class="button-add" href="http://lelylan.github.io/lab-ng/#/projects/software">Get started with your favorite language &rarr;</a></p>
       </div>
       <div class="clearfix"></div>
     </div>
@@ -86,58 +91,69 @@ device = update_dev_prop('<light-id>', params)</xmp></pre>
     <hr/>
 
     <div class="inner row">
+      <div class="left big">
+        <h2>Works with any hardware</h2>
+        <p>
+        Create connected products using the hardware you are most familiar with.
+        We already tested different solutions like Arduino Yun, Raspberry Pi, Electric Imp,
+        Spark Core, Netduino, Texas Instruments CC3000/CC3200 and more are on the way.
+        </p>
+        <%= image_tag 'hardware.png', class: 'bordered' %>
+        <p><a class="button-add" href="http://lelylan.github.io/lab-ng/#/projects/hardware">Get started with your favorite hardware &rarr;</a></p>
+      </div>
+      <div class="right small">
+        <%= image_tag 'makers.png' %>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+
+    <hr/>
+
+    <div class="inner row">
+      <div class="right small">
+        <%= image_tag 'developers.png' %>
+      </div>
       <div class="left big">
         <h2>A smart cross-device dashboard</h2>
         <p>
         A beautiful, customizable, open source, realtime dashboard to control all of your devices.
-        It recognizes the connected devices and gives you the needed UI to control them without
-        writing one line of code.
+        Based on Web Components it's perfect to create white label solutions working on
+        mobile, tablet or desktop.
         </p>
-        <%= image_tag 'dashboard.png' %>
-        <%#<p><a class="button-add" href="/features">Learn more about Lelylan &rarr;</a></p>%>
-      </div>
-      <div class="right small">
-        <%= image_tag 'developers.png' %>
+        <%= image_tag 'dashboard.png', style: 'float: left' %>
       </div>
       <div class="clearfix"></div>
-    </div>
-
-
-    <hr/>
-
-    <div class="inner row">
-      <div class="left small">
-        <%= image_tag 'makers.png' %>
-      </div>
-      <div class="right big">
-        <h2>Works with any hardware</h2>
         <p>
-        Create connected products using the hardware you are most familiar with.
+        <a class="button-add" href="http://lelylan.github.io/devices-dashboard-ng/demo.html">Try a demo of Lelylan Dashboard &rarr;</a>
+        <a class="button-add" href="/news/lelylan-device/">Learn more about Lelylan Web Components &rarr;</a>
         </p>
-        <%= image_tag 'hardware.png', class: 'bordered' %>
-        <%#<p><a class="button-add" href="/features">Learn more about Lelylan &rarr;</a></p>%>
-      </div>
-      <div class="clearfix"></div>
     </div>
 
     <hr/>
 
     <div class="inner row">
       <div class="left big">
-        <h2>Create, connect, control</h2>
+        <h2>Create, Connect, Control</h2>
         <p>
         With Lelylan you can connect any product to the internet in a matter of minutes.
-        Simply add the code enabling the communication between Lelylan and your hardware
-        and you are done. We give to your business all the tools you need to sell your
-        next connected product right now.
+        Add the code enabling the communication between Lelylan and your hardware
+        and control the physical world from mobile, tablet and desktop. You can get
+        started in 15 minutes.
         </p>
-        <%#<p><a class="button-add" href="/features">Learn more about Lelylan &rarr;</a></p>%>
       </div>
       <div class="right small">
         <%= image_tag 'companies/cloud.png' %>
       </div>
       <div class="clearfix"></div>
+      <div ng-app="project-app">
+        <ly-project ly-project-id="5457a193386166008d000000"></ly-project>
+        <ly-project ly-project-id="547d9104316135000e000000"></ly-project>
+        <link rel="stylesheet" href="http://lelylan.github.io/lab-directives-ng/styles/main.css"><script src="http://lelylan.github.io/lab-directives-ng/scripts/vendor.js"></script><script src="http://lelylan.github.io/lab-directives-ng/scripts/scripts.js"></script><script>angular.module('project-app', ['lelylan-lab.directives.project']);</script>
+      </div>
+      <div class="clearfix"></div>
+      <p><a class="button-add" href="http://lelylan.github.io/lab-ng/#/projects/light">Get started creating your own smart light (with any hardware) &rarr;</a></p>
     </div>
+
 
   </section>
 
