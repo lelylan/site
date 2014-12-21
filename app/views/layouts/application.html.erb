@@ -33,6 +33,7 @@
         <button type="button" class="mobile-menu" data-toggle="collapse" data-target=".nav-collapse"><span class="hidden">Menu</span></button>
         <ul id="main-menu" class="nav-collapse collapse">
           <!--<li class="makerfaire"><a class="<%= 'current' if params[:id]=='makerfaire' %>" href="/makerfaire">Maker Faire</a></li>-->
+          <li class="dev"><a href="http://dev.lelylan.comh/#makers" target="_blank">Get Started</a></li>
           <li class="use-cases"><a class="<%= 'current' if params[:id]=='use-cases' %>" href="/use-cases">Use Cases</a></li>
           <li class="features"><a class="<%= 'current' if params[:id]=='features' %>" href="/features">Features</a></li>
           <li class="people"><a class="<%= 'current' if params[:id]=='people' %>" href="/people">People</a></li>
@@ -55,8 +56,8 @@
           </p>
 
           <p class="buttons-group">
+            <a class="button-add" href="http://dev.lelylan.comh/#makers" target="_blank" style="margin-left: 5px">Get started &rarr;</a>
             <a class="button-add button-important" href="/features">Learn more about Lelylan &rarr;</a>
-            <a class="button-add" href="http://lelylan.github.io/devices-dashboard-ng/demo.html" target="_blank" style="margin-left: 5px">See working demo &rarr;</a>
           </p>
 
           <%#<a class="playbutton" href="http://try.lelylan.com"><span class="hidden">Try Lelylan</span></a>%>
@@ -102,12 +103,10 @@
         <div>
           <ul id="footer-menu">
             <li><a href="/">Home</a></li>
-            <li class="makerfaire"><a class="<%= 'current' if params[:id]=='makerfaire' %>" href="/makerfaire">Maker Faire</a></li>
+            <li class="dev"><a href="http://dev.lelylan.comh/#makers" target="_blank">Get Started</a></li>
             <li class="makers"><a href="/features">Features</a></li>
             <li class="blog"><a href="/people" target="_blank">People</a></li>
             <li class="dev"><a href="http://dev.lelylan.com">Dev Center</a></li>
-            <%#<li class="blog"><a href="http://blog.lelylan.com/">Blog</a></li>%>
-            <%#<li class="try"><a href="http://try.lelylan.com">Demo</a></li>%>
             <li class="blog"><a href="https://medium.com/@lelylan" target="_blank">Blog</a></li>
             <li class="join"><a href="http://people.lelylan.com/users/sign_up">Join</a></li>
           </ul>
