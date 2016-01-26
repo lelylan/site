@@ -1,9 +1,8 @@
 <main role="main">
   <section class="container-wrapper news">
     <div class="inner">
-      <p style="">
-        <i class="fa fa-rocket"></i>
-        (February 2015) <a href="https://medium.com/@lelylan/how-to-build-an-high-availability-mqtt-cluster-for-the-internet-of-things-8011a06bd000">We open sourced our High Availability MQTT cluster architecture!</a>
+      <p>
+        An Internet of Things platform is a key ingredient to the innovative products and technologies of the future world. Research in this area is global and growing fast, but lacks standard tools. By sharing what we have learned during the last years, we hope to create an open solution for exchanging ideas, making it simple the definition of connected products.
       </p>
     </div>
   </section>
@@ -14,22 +13,78 @@
   <section class="container-wrapper features">
 
     <div class="inner row one">
-      <div class="right small">
-        <%= image_tag 'examples.png' %>
-      </div>
-      <div class="left big">
-        <h2>An API that gets out of your way</h2>
+      <div>
+        <h2>Microservices</h2>
+        
         <p>
-          See how turning a light on only requires a few lines of code with your favorite language.
-          We offer wrappers in AngularJS, Ruby, Node.js, Python, Android and iOS.
+        Lelylan break up the Internet of Things complexity defining small, independent microservices. 
+        This lets you add, replace and change functionalities withouth affecting the whole platform, 
+        making it simple to integrate any existing architecures (eg. Spark, Cassandra, Kafka).
         </p>
+      </div>
+
+      <p>
+      <%= image_tag 'microservices-1-col.png', class: 'min-image' %>
+      <%= image_tag 'microservices-3-col.png', class: 'max-image' %>
+      </p>
+
+      <div class="clearfix"></div>
+        <p><a class="button-add" href="">
+          Architecture &rarr;
+        </a></p>
+      </div>
+    </div>
+
+    <hr/>
+
+    
+
+    <div class="inner row">
+      <div>
+        <h2>Works anywhere</h2>
+        <p>
+        Lelylan is based on Ruby, Node.js, MongoDB and Redis. You can install Lelylan on any public 
+        cloud or in your own private datacenter, even a hybrid environment, whether virtualized 
+        or on bare metal.
+        </p>
+        
+        <p>
+        <%= image_tag 'cloud-purple.png', class: 'max-image' %>
+        <%= image_tag 'cloud-purple-min.png', class: 'min-image' %>
+        </p>
+      </div>
+
+      <div class="clearfix"></div>
+        <p>
+        <a class="button-add" href="">
+          Deployment &rarr;
+        </a>
+        </p>
+      </div>
+    </div>
+
+    <hr/>
+
+
+
+    <div class="inner row">
+      <div class="feature ">
+
+        <h2>Simple API</h2>
+
+        <p>
+          See how turning a light on and off only requires a few lines of code.
+          We offer wrappers in different languages like AngularJS, Ruby, Node.js (and more to come) 
+          to easily get started.
+        </p>
+
+        <div class="code-content">
 
         <ul class="nav nav-tabs">
           <li class="active"><a href="#update-properties-curl" data-toggle="tab" class="curl">Curl</a></li>
           <li><a href="#update-properties-ruby" data-toggle="tab" class="ruby">Ruby</a></li>
           <li><a href="#update-properties-node" data-toggle="tab" class="node">Node.js</a></li>
           <li><a href="#update-properties-angular" data-toggle="tab" class="angular">AngularJS</a></li>
-          <li><a href="#update-properties-python" data-toggle="tab" class="python">Python</a></li>
         </ul>
 
         <div class="tab-content">
@@ -78,85 +133,63 @@ device = update_dev_prop('<light-id>', params)</xmp></pre>
             </div>
           </div>
         </div>
-        <p><a class="button-add" href="http://lelylan.github.io/lab-ng/#/projects/software">Get started with your favorite language &rarr;</a></p>
+        </div>
+        <p><a class="button-add" href="http://ldev.lelylan.com">API &rarr;</a></p>
       </div>
       <div class="clearfix"></div>
     </div>
 
     <hr/>
 
+
+
     <div class="inner row">
-      <div class="left big">
-        <h2>Works with any hardware</h2>
+      <div>
+        <h2>Any hardware</h2>
         <p>
-        Create connected products using the hardware you are most familiar with.
-        We already tested different solutions like Arduino Yun, Raspberry Pi, Electric Imp,
-        Spark Core, Netduino, Texas Instruments CC3000/CC3200 and more are on the way.
+        Use the hardware you are most familiar with. We already tested solutions like Arduino Yun, Raspberry Pi, Electric Imp, Spark Core, Netduino, Texas Instruments CC3000/CC3200 and more. With Lelylan you 
+        can connect any board supporting the <a class="external" href="https://medium.com/@lelylan/how-to-build-an-high-availability-mqtt-cluster-for-the-internet-of-things-8011a06bd000#.zfwmfb7xo">MQTT protocol</a>.
         </p>
-        <%= image_tag 'hardware.png', class: 'bordered' %>
-        <p><a class="button-add" href="http://lelylan.github.io/lab-ng/#/projects/hardware">Get started with your favorite hardware &rarr;</a></p>
-      </div>
-      <div class="right small">
-        <%= image_tag 'makers.png' %>
+
+        <div ng-app="project-app">
+          <ly-project ly-project-id="5457a193386166008d000000"></ly-project>
+          <ly-project ly-project-id="547d9104316135000e000000"></ly-project>
+          <link rel="stylesheet" href="http://lelylan.github.io/lab-directives-ng/styles/main.css"><script src="http://lelylan.github.io/lab-directives-ng/scripts/vendor.js"></script><script src="http://lelylan.github.io/lab-directives-ng/scripts/scripts.js"></script><script>angular.module('project-app', ['lelylan-lab.directives.project']);</script>
+        </div>
+        <div class="clearfix"></div>
+
+        <p><a class="button-add" href="http://lelylan.github.io/lab-ng/#/projects/hardware">
+          Try Lelylan &rarr;
+        </a></p>
       </div>
       <div class="clearfix"></div>
     </div>
 
     <hr/>
 
-    <div class="inner row">
-      <div class="right small">
-        <%= image_tag 'developers.png' %>
-      </div>
-      <div class="left big">
-        <h2>A smart cross-device dashboard</h2>
-        <p>
-        A beautiful, customizable, open source, realtime dashboard to control all of your devices.
-        Based on Web Components it's perfect to create white label solutions working on
-        mobile, tablet or desktop.
-        </p>
-        <%= image_tag 'dashboard.png', style: 'float: left' %>
-      </div>
-      <div class="clearfix"></div>
-        <p>
-        <a class="button-add" href="http://lelylan.github.io/devices-dashboard-ng/demo.html">Try a demo of Lelylan Dashboard &rarr;</a>
-        <a class="button-add" href="/news/lelylan-device/">Learn more about Lelylan Web Components &rarr;</a>
-        </p>
-    </div>
 
-    <hr/>
 
     <div class="inner row">
-      <div class="left big">
-        <h2>Create, Connect, Control</h2>
+      <div>
+        <h2>Any Platform</h2>
         <p>
-        With Lelylan you can connect any product to the internet in a matter of minutes.
-        Add the code enabling the communication between Lelylan and your hardware
-        and control the physical world from mobile, tablet and desktop. You can get
-        started in 15 minutes.
+        A clean, customizable, realtime dashboard to control all of your devices.
+        Based on the <i>&lt;device&gt;</i> web components you can create solutions 
+        working on mobile, tablet or desktop in short time.
+        </p>
+        
+        <%= image_tag 'mobile-first.png', class: 'max-image half-image' %>
+
+      </div>
+      <div class="clearfix"></div>
+        <p>
+        <a class="button-add" href="http://lelylan.github.io/device-directive-ng/">
+          See Device Component &rarr;
+        </a>
         </p>
       </div>
-      <div class="right small">
-        <%= image_tag 'companies/cloud.png' %>
-      </div>
-      <div class="clearfix"></div>
-      <div ng-app="project-app">
-        <ly-project ly-project-id="5457a193386166008d000000"></ly-project>
-        <ly-project ly-project-id="547d9104316135000e000000"></ly-project>
-        <link rel="stylesheet" href="http://lelylan.github.io/lab-directives-ng/styles/main.css"><script src="http://lelylan.github.io/lab-directives-ng/scripts/vendor.js"></script><script src="http://lelylan.github.io/lab-directives-ng/scripts/scripts.js"></script><script>angular.module('project-app', ['lelylan-lab.directives.project']);</script>
-      </div>
-      <div class="clearfix"></div>
-      <p><a class="button-add" href="http://lelylan.github.io/lab-ng/#/projects/light">Get started creating your own smart light (with any hardware) &rarr;</a></p>
     </div>
-
-
-  </section>
-
-  <section class="go">
-  <div class="inner">
-    <h2>Sound awesome? We think so.</h2>
-    <a href="http://people.lelylan.com/users/sign_up" class="button-add">Get started with Lelylan</a>
-  </div>
-  </section>
 
 </main>
+
+<br><br><br>
