@@ -8,7 +8,7 @@
   </section>
 </main>
 
-<main role="main">
+<main role="main" ng-app="project-app">
 
   <section class="container-wrapper features">
 
@@ -57,7 +57,7 @@
       <div class="clearfix"></div>
         <p>
         <a class="button-add" href="">
-          Deployment &rarr;
+          Installation &rarr;
         </a>
         </p>
       </div>
@@ -151,7 +151,7 @@ device = update_dev_prop('<light-id>', params)</xmp></pre>
         can connect any board supporting the <a class="external" href="https://medium.com/@lelylan/how-to-build-an-high-availability-mqtt-cluster-for-the-internet-of-things-8011a06bd000#.zfwmfb7xo">MQTT protocol</a>.
         </p>
 
-        <div ng-app="project-app">
+        <div>
           <ly-project ly-project-id="5457a193386166008d000000"></ly-project>
           <ly-project ly-project-id="547d9104316135000e000000"></ly-project>
           <link rel="stylesheet" href="http://lelylan.github.io/lab-directives-ng/styles/main.css"><script src="http://lelylan.github.io/lab-directives-ng/scripts/vendor.js"></script><script src="http://lelylan.github.io/lab-directives-ng/scripts/scripts.js"></script><script>angular.module('project-app', ['lelylan-lab.directives.project']);</script>
@@ -171,14 +171,14 @@ device = update_dev_prop('<light-id>', params)</xmp></pre>
 
     <div class="inner row">
       <div>
-        <h2>Any Platform</h2>
+        <h2>Any Device</h2>
         <p>
         A clean, customizable, realtime dashboard to control all of your devices.
         Based on the <i>&lt;device&gt;</i> web components you can create solutions 
         working on mobile, tablet or desktop in short time.
         </p>
         
-        <%= image_tag 'mobile-first.png', class: 'max-image half-image' %>
+        <ly-project ly-project-id="547d9f7f316135000e030000"></ly-project>
 
       </div>
       <div class="clearfix"></div>
