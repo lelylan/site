@@ -46,6 +46,10 @@
             <a href="http://dev.lelylan.com" target="_blank">Dev Center</a>
           </li>
 
+          <li class="github">
+            <a href="https://github.com/lelylan/lelylan" target="_blank">Github</a>
+          </li>
+
           <li class="blog">
             <a href="https://medium.com/@lelylan" target="_blank">Blog</a>
           </li>
@@ -59,7 +63,7 @@
 
         <% if params[:id]=='index' %>
           <h1 class="title">Open Source<br> Internet of Things</h1>
-          <p>Deploy connected products faster. Microservices architecture. For developers.</p>
+          <p>IOT Cloud Platform. Microservices Architecture. For Developers.</p>
 
           <p class="buttons-group">
             <a class="button-add button-header" href="http://dev.lelylan.com" target="_blank" style="margin-left: 5px">Get started today</a>
@@ -80,6 +84,21 @@
 
     <%= yield %>
 
+    <main role="main">
+      <section class="container-wrapper news">
+        <div class="inner">
+          <p>
+            <span style="font-size: 20px;">If you like the what we are doing give us a Star on Github</span>
+            <br>
+            <span style="font-size: 16px;">{it will help to reach more developers}</span>
+          </p>
+          <p>
+            <iframe src="https://ghbtns.com/github-btn.html?user=lelylan&repo=lelylan&type=star&count=true&size=large" frameborder="0" scrolling="0" width="130px" height="30px"></iframe>
+          </p>
+        </div>
+      </section>
+    </main>
+
     <div class="clearfix"></div>
     <footer id="global-footer">
       <nav id="footer-nav" role="navigation">
@@ -90,7 +109,8 @@
             <li><a href="https://medium.com/@lelylan">Blog</a></li>
             <li><a href="http://dev.lelylan.com/api">API</a></li>
             <li><a href="http://people.lelylan.com/users/sign_up">Try</a></li>
-            <li><a href="http://dev.lelylan.com/support">Support</a></li>
+            <li><a href="http://lelylan.github.io/lab-ng/#/">Lab</a></li>
+            <li><a href="mailto:touch@lelylan.com">Contacts</a></li>
             <li><a href="http://twitter.com/lelylan">Twitter</a></li>
           </ul>
         </div>

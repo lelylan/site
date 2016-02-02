@@ -496,6 +496,7 @@ pre code, pre xmp {
 .ly-project-item-card .ly-project-title a, .ly-project-item-card .ly-project-title a:hover, .ly-project-item-card .ly-project-title a:visited:hover,
 .ly-project-item-card .ly-project-link a, .ly-project-item-card .ly-project-link a span, .ly-project-item-card .ly-project-link a:hover {
   color: #9351e5 !important;
+  box-shadow: none;
 }
 
 .ly-project-item-card.ly-project-list-item {
@@ -515,6 +516,7 @@ pre code, pre xmp {
   background-color: transparent !important;
   border-top:1px solid rgba(147, 81, 229, 0.1);
 }
+
 
 /* Open source */
 
