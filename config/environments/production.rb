@@ -66,5 +66,5 @@ Site::Application.configure do
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
   # CDN settings
-  config.action_controller.asset_host = "//#{ENV['FOG_CLOUDFRONT']}.cloudfront.net"
+  # config.action_controller.asset_host = "//#{ENV['FOG_CLOUDFRONT']}.cloudfront.net"
 end

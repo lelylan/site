@@ -6,88 +6,86 @@
 
 </html>
   <head>
+
     <base href="/">
     <meta charset="utf-8">
 
-    <title>Lelylan | Building the Internet of Things</title>
+    <title>Lelylan. Open Source Internet of Things</title>
 
-    <meta name="description" content="A simple and open solution to connect every device to the web.">
+    <meta property="og:title" content="Lelylan. Open Source Internet of Things"/>
+    <meta name="description" 
+          content="Lightweight microservices architecture for developers to build the Internet of Things">
+    <meta content="Lightweight microservices architecture for developers to build the Internet of Things" property="og:description" />
+    <meta name="keywords" 
+          content="iot, microservices, open source, ruby, node.js">
+
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta property="og:url" content="http://www.lelylan.com" />
+    <meta property="og:site_name" content="www.lelylan.com" />
+    <meta property="og:image" content="http://i.imgur.com/BJOAfqo.png" />
+
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:300,400,700">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
     <%= stylesheet_link_tag    'application', :media => "all" %>
     <%= javascript_include_tag 'application' %>
 
     <meta http-equiv="cleartype" content="on">
   </head>
 
+
   <body class="features <%= params[:id] %>">
 
     <header id="global-header" class="navbar">
+
       <nav role="navigation">
       <div class="wrapper">
+
         <a class="brand" href="/"><span class="lelylan-icon"></span></a>
-        <button type="button" class="mobile-menu" data-toggle="collapse" data-target=".nav-collapse"><span class="hidden">Menu</span></button>
+
         <ul id="main-menu" class="nav-collapse collapse">
-          <!--<li class="makerfaire"><a class="<%= 'current' if params[:id]=='makerfaire' %>" href="/makerfaire">Maker Faire</a></li>-->
-          <li class="dev"><a href="http://dev.lelylan.com/#makers" target="_blank">Get Started</a></li>
-          <li class="use-cases"><a class="<%= 'current' if params[:id]=='use-cases' %>" href="/use-cases">Use Cases</a></li>
-          <li class="features"><a class="<%= 'current' if params[:id]=='features' %>" href="/features">Features</a></li>
-          <li class="people"><a class="<%= 'current' if params[:id]=='people' %>" href="/people">People</a></li>
-          <!--<li class="pricing"><a class="<%= 'current' if params[:id]=='pricing' %>" href="/pricing">Pricing</a></li>-->
-          <li class="dev"><a href="http://dev.lelylan.com" target="_blank">Dev Center</a></li>
-          <li class="blog"><a href="https://medium.com/@lelylan" target="_blank">Blog</a></li>
-          <li class="join"><a href="http://people.lelylan.com/users/sign_up">Join</a></li>
+
+
+          <li class="dev" style="margin-top: 21px;">
+            <iframe src="https://ghbtns.com/github-btn.html?user=lelylan&repo=lelylan&type=star&count=true" frameborder="0" scrolling="0" width="90px" height="20px"></iframe>
+          </li>
+
+          <li class="dev">
+            <a href="http://dev.lelylan.com" target="_blank">Dev Center</a>
+          </li>
+
+          <li class="github">
+            <a href="https://github.com/lelylan/lelylan" target="_blank">Github</a>
+          </li>
+
+          <li class="blog">
+            <a href="https://medium.com/@lelylan" target="_blank">Blog</a>
+          </li>
+
         </ul>
+
       </div>
       </nav>
       <section class="featurebanner <%= params[:id] %>-header">
       <div class="bannercontent">
-        <% if params[:id]=='index' %>
-          <h1 class="title">Building the Connected Home</h1>
 
-          <p>
-          A unified APIs and tools that instantly enable<br> businesses to sell connected products
-          <%#All your devices in one simple and open API. What will you build?%>
-          <%#A simple and open solution to connect every device to the web.%>
-          </p>
+        <% if params[:id]=='index' %>
+          <h1 class="title">Open Source<br> Internet of Things</h1>
+          <p>IOT Cloud Platform. Microservices Architecture. For Developers.</p>
 
           <p class="buttons-group">
-            <a class="button-add" href="http://dev.lelylan.com/#makers" target="_blank" style="margin-left: 5px">Get started &rarr;</a>
-            <a class="button-add button-important" href="/features">Learn more about Lelylan &rarr;</a>
+            <a class="button-add button-header" href="http://dev.lelylan.com" target="_blank" style="margin-left: 5px">Get started today</a>
           </p>
 
           <%#<a class="playbutton" href="http://try.lelylan.com"><span class="hidden">Try Lelylan</span></a>%>
         <% end %>
 
-        <% if params[:id]=='makerfaire' %>
-          <h1 class="title">Maker Faire 2014</h1>
-          <p>Lelylan official lunch | Friday October 4 at 14.30</p>
-        <% end %>
-
-        <% if params[:id]=='use-cases' %>
-          <h1 class="title">When should I use Lelylan?</h1>
-          <p>Opening up new business opportunities using a solid cloud platform.</p>
-        <% end %>
-
-        <% if params[:id]=='features' %>
-          <h1 class="title">Developers. Makers. Manifacturers</h1>
-          <p>Making it simple to create Connected Products.</p>
-        <% end %>
-
         <% if params[:id]=='people' %>
           <h1 class="title">Work and experiment with Lelylan</h1>
-          <p>
-          Experimenting the Connected Home.
-          </p>
-        <% end %>
-
-        <% if params[:id]=='pricing' %>
-          <h1 class="title">Pricing. Clear and simple as possible</h1>
-          <p>One single payment. No recurring fees.</p>
+          <p>Lelylan Friends</p>
         <% end %>
       </div>
       </section>
@@ -97,82 +95,48 @@
 
     <%= yield %>
 
+    <main role="main">
+      <section class="container-wrapper news">
+        <div class="inner">
+          <p>
+            <span style="font-size: 20px;">If you like the what we are doing give us a Star on Github</span>
+            <br>
+            <span style="font-size: 16px;">{it will help to reach more developers}</span>
+          </p>
+          <p>
+            <iframe src="https://ghbtns.com/github-btn.html?user=lelylan&repo=lelylan&type=star&count=true&size=large" frameborder="0" scrolling="0" width="130px" height="30px"></iframe>
+          </p>
+        </div>
+      </section>
+    </main>
+
     <div class="clearfix"></div>
     <footer id="global-footer">
       <nav id="footer-nav" role="navigation">
         <div>
           <ul id="footer-menu">
-            <li><a href="/">Home</a></li>
-            <li class="dev"><a href="http://dev.lelylan.com/#makers" target="_blank">Get Started</a></li>
-            <li class="makers"><a href="/features">Features</a></li>
-            <li class="blog"><a href="/people" target="_blank">People</a></li>
-            <li class="dev"><a href="http://dev.lelylan.com">Dev Center</a></li>
-            <li class="blog"><a href="https://medium.com/@lelylan" target="_blank">Blog</a></li>
-            <li class="join"><a href="http://people.lelylan.com/users/sign_up">Join</a></li>
+            <li><a href="http://dev.lelylan.com">Dev Center</a></li>
+            <li><a href="http://github.com/lelylan">Github</a></li>
+            <li><a href="https://medium.com/@lelylan">Blog</a></li>
+            <li><a href="http://dev.lelylan.com/api">API</a></li>
+            <li><a href="http://people.lelylan.com/users/sign_up">Try</a></li>
+            <li><a href="http://lelylan.github.io/lab-ng/#/">Lab</a></li>
+            <li><a href="mailto:touch@lelylan.com">Contacts</a></li>
+            <li><a href="http://twitter.com/lelylan">Twitter</a></li>
           </ul>
         </div>
         <div class="clearfix"></div>
-        <div class="social-footer">
-
-          <!-- Facebook -->
-          <div class="social-button facebook">
-            <div id="fb-root"></div>
-            <script>(function(d, s, id) {
-              var js, fjs = d.getElementsByTagName(s)[0];
-              if (d.getElementById(id)) return;
-              js = d.createElement(s); js.id = id;
-              js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=117921285026384";
-              fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));</script>
-            <div class="fb-like" data-href="http://lelylan.com" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
-          </div>
-
-          <!-- Twitter -->
-          <div class="social-button twitter">
-            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://lelylan.com" data-text="building the connected home" data-related="lelylan" data-hashtags="iot, lelylan">Tweet</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-          </div>
-
-          <!-- Google Plus -->
-          <div class="social-button plus">
-            <div class="g-plusone" data-size="medium" data-href="http://lelylan.com"></div>
-            <script type="text/javascript">
-              (function() {
-                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-                po.src = 'https://apis.google.com/js/plusone.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-              })();
-            </script>
-          </div>
-
-          <!-- Github -->
-          <div class="social-button github">
-            <iframe src="http://ghbtns.com/github-btn.html?user=lelylan&type=follow&count=true"
-            allowtransparency="true" frameborder="0" scrolling="0" width="132" height="20"></iframe>
-          </div>
-
-          <!-- Linkedin -->
-          <div class="social-button linkedin">
-            <script src="//platform.linkedin.com/in.js" type="text/javascript">
-            lang: en_US
-            </script>
-            <script type="IN/Share" data-url="http://lelylan.com" data-counter="right"></script>
-          </div>
-        </div>
       </nav>
-    <div class="clearfix"></div>
+      <div class="clearfix"></div>
     </footer>
 
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-12181910-2', 'lelylan.com');
-    ga('send', 'pageview');
-
-  </script>
-
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-12181910-2', 'lelylan.com');
+      ga('send', 'pageview');
+    </script>
   </body>
 </html>

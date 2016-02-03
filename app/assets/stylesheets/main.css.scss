@@ -1,6 +1,6 @@
-$linkColor:        #239cbb !default;
-$linkColorHover:   #01cf9e !default;
-$lelylanColor:     #239cbb !default;
+$linkColor:        #8449ce !default;
+$linkColorHover:   #9351e5 !default;
+$lelylanColor:     #8449ce !default;
 $lelylanLineColor: #e8e8e8 !default;
 
 #global-header .logo-animated {
@@ -9,7 +9,6 @@ $lelylanLineColor: #e8e8e8 !default;
 }
 
 #global-header .logo-animated:hover {
-  color: #fff;
   width: 80px;
 }
 
@@ -20,7 +19,7 @@ $lelylanLineColor: #e8e8e8 !default;
   font-size: 26px;
   font-weight: 200;
   left: 10px;
-  padding: 8px 10px;
+  padding: 8px 20px;
   position: absolute;
   text-shadow: 0 1px 0 #fff;
   top: 0px;
@@ -35,7 +34,7 @@ $lelylanLineColor: #e8e8e8 !default;
 
 .featurebanner {
   height: 520px;
-  background: $lelylanColor url(header-site.jpg) center center;
+  background: $lelylanColor url(header-site.png) center center;
   background-size: cover;
   width: 100%;
   position: relative
@@ -56,13 +55,12 @@ $lelylanLineColor: #e8e8e8 !default;
 
 
 .featurebanner .bannercontent {
-  padding: 175px 40px;
+  padding: 135px 40px;
 }
 
 .featurebanner .bannercontent p,
 .featurebanner .bannercontent h1 {
   margin-left: 25px;
-  background: rgba(0,0,0,0.8) !important;
 }
 
 .featurebanner .bannercontent p {
@@ -84,9 +82,8 @@ $lelylanLineColor: #e8e8e8 !default;
 }
 
 .featurebanner .bannercontent p.buttons-group {
-  background: rgba(0, 0, 0, 0.7) !important;
   margin-left: 25px;
-  margin-top: 25px;
+  margin-top: 65px;
   padding: 10px;
   padding-top: 5px;
 }
@@ -106,11 +103,9 @@ $lelylanLineColor: #e8e8e8 !default;
 #global-header nav .join a {
   padding-top: 6px;
   height: 30px;
-  color: #fff
 }
 
 #global-header nav .join a:hover {
-  color: #fff
 }
 
 a:hover {
@@ -127,12 +122,10 @@ a {
 .lelylan-icon {
   display: block;
   float: left;
-  width: 210px;
-  height: 40px;
-  background-position: 0px 0px;
-  margin-right: 8px;
-  margin-top: 3px;
+  width: 148px;
+  height: 50px;
   background-image: url("logo.png");
+  background-size: 148px 50px;
   -webkit-transition: none;
   -moz-transition: none;
   transition: none;
@@ -156,7 +149,7 @@ a {
 }
 
 .features .one {
-  padding-top: 150px;
+  padding-top: 80px;
 }
 
 .features .inner .small {
@@ -229,7 +222,15 @@ a {
   cursor: default;
 }
 
+#global-footer {
+  background-color: #8449ce;
+  border-bottom: #6C31B7 5px solid;
+}
 
+#global-footer a, 
+#global-footer a:visited {
+  color: #fff !important;
+}
 
 #global-footer #footer-nav {
   margin: 0;
@@ -254,8 +255,6 @@ a {
 }
 
 #global-footer #footer-nav ul {
-  padding-left: 35px;
-  float: left;
   padding-bottom: 5px;
 }
 
@@ -270,14 +269,14 @@ a {
 }
 
 .features ul.nav-tabs,#section ol.nav-tabs{margin:15px 0 0 0;line-height:1.7em}
-.features ul.nav-tabs li.active a,#section ol.nav-tabs li.active a{background-color:#F6F6F6}
+.features ul.nav-tabs li.active a,#section ol.nav-tabs li.active a{background-color:rgba(147, 81, 229, 0.05)}
 .features ul.nav-tabs{padding-left:0}
 .features div.tab-content pre{border-top:none}
 .features pre {
   margin: 0;
   padding: 5px 0 5px 5px;
-  background: #f6f6f6;
-  border: 1px solid #ddd;
+  background: rgba(147, 81, 229, 0.05);
+  border: 1px solid rgba(147, 81, 229, 0.05);
 }
 
 pre code, pre xmp {
@@ -462,16 +461,16 @@ pre code, pre xmp {
 /* News */
 
 .features .news {
-  background-color: #01cf9e;
+  background-color: #9351e5;
 }
 
 .features .news .inner {
-  padding: 20px 0;
+  padding: 30px 25px;
 }
 
 .features .news .inner p {
   text-align: center;
-  color: #333;
+  color: rgba(255, 255, 255, 0.7);
   margin-top: 0;
 }
 
@@ -482,11 +481,105 @@ pre code, pre xmp {
 
 .features .news .inner a,
 .features .news .inner a:hover {
-  color: #fff;
 }
 
 /* Projects */
 
 .ly-project-item-card .ly-project-tags {
   display: none;
+}
+
+.ly-project-item-card.ly-project-list-item {
+  margin-left: 0 !important;
+}
+
+.ly-project-item-card .ly-project-title a, .ly-project-item-card .ly-project-title a:hover, .ly-project-item-card .ly-project-title a:visited:hover,
+.ly-project-item-card .ly-project-link a, .ly-project-item-card .ly-project-link a span, .ly-project-item-card .ly-project-link a:hover {
+  color: #9351e5 !important;
+  box-shadow: none;
+}
+
+.ly-project-item-card.ly-project-list-item {
+  border: 1px solid rgba(147, 81, 229, 0.2)  !important;
+  box-shadow: 0 2px 2px rgba(147, 81, 229, 0.05) !important;
+}
+
+.ly-project-item-card .features .row p {
+  width: 100% !important;
+}
+
+.ly-project-item-card .ly-project-footer * {
+  background-color: transparent !important;
+}
+
+.ly-project-item-card .ly-project-footer {
+  background-color: transparent !important;
+  border-top:1px solid rgba(147, 81, 229, 0.1);
+}
+
+
+/* Open source */
+
+.bannercontent h1 {
+  font-weight: 400; 
+}
+
+.bannercontent p {
+  color: #777; 
+  font-size: 22px !important;
+}
+
+#global-header nav {
+  background-color: #fff;
+  height: 60px;
+}
+
+.button-header {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.button-add a {
+  color: #fff !important;
+}
+
+.external, .nav-tabs a {
+  color: #9351e5 !important;
+}
+
+.max-image,
+.min-image {
+  width: 100%;
+}
+
+.half-image {
+  width: 400px;
+}
+
+.features .row p {
+  width: 90%;
+}
+
+.min-image {
+  display: none;
+}
+
+#global-footer #footer-nav li a {
+  font-size: 1.2em;
+}
+
+@media (max-width: 550px), (max-width: 550px) {
+  .features .index-header p,
+  .features .news p { 
+    width: 100%; 
+  }
+  .features .code-content { width: 90%; }
+  .max-image { display:none; }
+  .min-image { display:block; }
+  .features .one { padding-left: 20px; }
+  .nav-collapse.collapse { overflow: hidden; }
+  .featurebanner .bannercontent { padding: 100px 0px; }
+  .featurebanner .bannercontent h1 { line-height: 42px; }
+  .featurebanner .bannercontent p { line-height: 32px; }
+  hr { margin: 2em 0;}
 }
