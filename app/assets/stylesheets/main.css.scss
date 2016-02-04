@@ -570,9 +570,7 @@ pre code, pre xmp {
 
 @media (max-width: 550px), (max-width: 550px) {
   .features .index-header p,
-  .features .news p { 
-    width: 100%; 
-  }
+  .features .news p { width: 100%; }
   .features .code-content { width: 90%; }
   .max-image { display:none; }
   .min-image { display:block; }
@@ -580,6 +578,6 @@ pre code, pre xmp {
   .nav-collapse.collapse { overflow: hidden; }
   .featurebanner .bannercontent { padding: 100px 0px; }
   .featurebanner .bannercontent h1 { line-height: 42px; }
-  .featurebanner .bannercontent p { line-height: 32px; }
+  .featurebanner .bannercontent p { line-height: 32px; max-width: 265px; }
   hr { margin: 2em 0;}
 }
