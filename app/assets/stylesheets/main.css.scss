@@ -1,0 +1,583 @@
+$linkColor:        #8449ce !default;
+$linkColorHover:   #9351e5 !default;
+$lelylanColor:     #8449ce !default;
+$lelylanLineColor: #e8e8e8 !default;
+
+#global-header .logo-animated {
+  background-color: $lelylanColor;
+  border-color: $lelylanColor;
+}
+
+#global-header .logo-animated:hover {
+  width: 80px;
+}
+
+#global-header .brand {
+  color: #333;
+  display: block;
+  float: left;
+  font-size: 26px;
+  font-weight: 200;
+  left: 10px;
+  padding: 8px 20px;
+  position: absolute;
+  text-shadow: 0 1px 0 #fff;
+  top: 0px;
+  z-index:800;
+  text-decoration: none;
+
+}
+
+#global-header nav .wrapper {
+  padding: 0;
+}
+
+.featurebanner {
+  height: 520px;
+  background: $lelylanColor url(header-site.png) center center;
+  background-size: cover;
+  width: 100%;
+  position: relative
+}
+
+.pricing-header,
+.makerfaire-header,
+.people-header,
+.use-cases-header,
+.features-header {
+  background: none;
+  height: 360px;
+}
+
+.people-header {
+  height: 395px;
+}
+
+
+.featurebanner .bannercontent {
+  padding: 135px 40px;
+}
+
+.featurebanner .bannercontent p,
+.featurebanner .bannercontent h1 {
+  margin-left: 25px;
+}
+
+.featurebanner .bannercontent p {
+  font-size: 28px;
+  color: #fff;
+}
+
+.featurebanner .bannercontent p.beta {
+  margin-top: 5px;
+}
+
+.featurebanner .playbutton {
+  background-color: $lelylanColor;
+}
+
+.button-important,
+.featurebanner .playbutton:hover {
+  background-color:$linkColorHover !important;
+}
+
+.featurebanner .bannercontent p.buttons-group {
+  margin-left: 25px;
+  margin-top: 65px;
+  padding: 10px;
+  padding-top: 5px;
+}
+
+.featurebanner .bannercontent p.buttons-group,
+.featurebanner .bannercontent p.buttons-group a {
+  text-indent: 0;
+}
+
+
+
+#global-header nav .join {
+  padding: 0;
+  margin: 15px 0 0 15px;
+}
+
+#global-header nav .join a {
+  padding-top: 6px;
+  height: 30px;
+}
+
+#global-header nav .join a:hover {
+}
+
+a:hover {
+  text-decoration: none;
+  color: $linkColorHover;
+}
+
+a {
+  -webkit-transition: color 0.3s ease, text-decoration 0.3s ease, background 0.3s ease;
+  -moz-transition: color 0.3s ease, text-decoration 0.3s ease, background 0.3s ease;
+  transition: color 0.3s ease, text-decoration 0.3s ease, background 0.3s ease;
+}
+
+.lelylan-icon {
+  display: block;
+  float: left;
+  width: 148px;
+  height: 50px;
+  background-image: url("logo.png");
+  background-size: 148px 50px;
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+}
+
+#global-header nav li a {
+  font-size: 12px;
+}
+
+.features {
+  background-color: #fff;
+}
+
+.features .inner {
+  padding-bottom: 40px;
+}
+
+.features .row {
+  padding-top:20px;
+
+}
+
+.features .one {
+  padding-top: 80px;
+}
+
+.features .inner .small {
+  width: 30%;
+}
+
+.features .inner .big {
+  width: 70%;
+}
+
+.features .inner .right img {
+  float: right;
+}
+
+.features .inner img.bordered {
+  border: 5px solid #f8f8f8;
+  border-radius: 5px;
+  float: none;
+}
+
+
+.features .intro {
+  color: #333;
+  font-size: 16px;
+  line-height: 36px;
+  text-transform: uppercase
+}
+
+.features .go {
+  border-top: none;
+  background-color: #e8e8e8;
+}
+
+.features .go .inner {
+  margin-top: 40px;
+  padding-bottom: 80px;
+}
+
+.features .go .inner h2 {
+  margin-bottom: 30px;
+}
+
+.features ul li {
+  font-size: 18px;
+  font-weight: 200;
+  color: #333;
+}
+
+.button-add {
+  background-color: $lelylanColor;
+}
+
+.button-disabled,
+.button-disabled:hover {
+  background-color: #ccc;
+}
+
+.features .button-add {
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.button-add:hover {
+  color: #fff;
+}
+
+.disabled:hover,
+.disabled {
+  background-color: #ccc;
+  cursor: default;
+}
+
+#global-footer {
+  background-color: #8449ce;
+  border-bottom: #6C31B7 5px solid;
+}
+
+#global-footer a, 
+#global-footer a:visited {
+  color: #fff !important;
+}
+
+#global-footer #footer-nav {
+  margin: 0;
+  border-bottom: none;
+  max-width: none;
+  display: table;
+  margin: 0 auto;
+}
+
+.features main p {
+  font-size: 18px;
+  font-weight: 200;
+  color: #333;
+}
+
+.fb-like {
+  margin-right: 25px;
+}
+
+.IN-widget {
+  margin-left: 25px;
+}
+
+#global-footer #footer-nav ul {
+  padding-bottom: 5px;
+}
+
+#global-footer .social-footer {
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  margin-bottom:150px;
+}
+
+#global-footer .social-footer > .social-button {
+  display: inline;
+}
+
+.features ul.nav-tabs,#section ol.nav-tabs{margin:15px 0 0 0;line-height:1.7em}
+.features ul.nav-tabs li.active a,#section ol.nav-tabs li.active a{background-color:rgba(147, 81, 229, 0.05)}
+.features ul.nav-tabs{padding-left:0}
+.features div.tab-content pre{border-top:none}
+.features pre {
+  margin: 0;
+  padding: 5px 0 5px 5px;
+  background: rgba(147, 81, 229, 0.05);
+  border: 1px solid rgba(147, 81, 229, 0.05);
+}
+
+pre code, pre xmp {
+  margin: 5px 3px;
+}
+
+.nav-tabs>li>a {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.nav-tabs>li.active a:hover,
+.nav-tabs>li.active a {
+  color: $linkColorHover;
+}
+
+
+
+.people .one {
+  padding-top: 120px;
+  padding-left: 75px;
+}
+
+.people .row h1 {
+  border-top: none;
+}
+
+.people .row h2 {
+  margin-bottom: 10px;
+}
+
+.people .row h2 a {
+  color: $lelylanColor;
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: normal;
+}
+
+.people .row h2 a:hover {
+  color: $linkColorHover;
+  text-decoration: none;
+  box-shadow: none;
+}
+
+.people main p.description {
+  margin: 5px 0 5px;;
+}
+
+.userName {
+ font-size: 16px;
+}
+
+.answerElement {
+  margin-bottom: 0;
+}
+
+.avatarRow {
+  margin-bottom: 0;
+}
+
+.people hr {
+  padding-bottom: 10px;
+}
+
+.people .go {
+  margin-top: 80px;
+}
+
+.pricing .table-pricing {
+
+  div.table-title {
+    height: 70px;
+    background-color: #444;
+  }
+
+  div.table-title h2 {
+    font-size:  56px;
+    background-color: #444;
+    color: #fff;
+    padding: 15px 20px 10px;
+  }
+
+  div.table-title h2.plan {
+    float: left;
+    width: 500px;
+  }
+
+  div.table-title h2.price {
+    float: right;
+  }
+
+  div.table-title h2.price a {
+    font-size: 50px;
+  }
+
+  div.table-title a {
+    color: #57DDFF;
+  }
+
+  div.table-title a:hover {
+    box-shadow: none;
+  }
+
+  div.table-subtitle {
+    height: 50px;
+  }
+
+  div.table-subtitle p {
+    margin: 0;
+    float: right;
+    margin-right: 20px;
+    color: #eee;
+  }
+
+
+  table {
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 1px solid #F3F3F3;
+  }
+
+  table tr {
+    height: 40px;
+  }
+
+  table td {
+    padding-left: 20px;
+    line-height: 75px;
+    font-size: 18px;
+    font-weight: 200;
+  }
+
+
+  table td .description {
+    color: #aaa;
+    font-size: 16px;
+  }
+
+
+  table tr.missing td {
+    color: #ccc;
+  }
+
+  table img {
+    float: left !important;
+    margin-top: 33px;
+    padding-right: 20px;
+  }
+
+  table span.highlight {
+    color: #333;
+    font-weight: 400;
+  }
+
+  table tfoot td {
+    border-top: 1px solid #eee;
+    color: #aaa;
+    font-size: 12px;
+  }
+
+  .button-add-big {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 14px;
+  }
+
+  .button-change {
+    float: right;
+    width:230px;
+    margin-top: 10px;
+  }
+
+  .info {
+    margin-left: 4px;
+  }
+}
+
+.pricing .features .inner .small {
+  margin-top: 100px;
+}
+
+/* News */
+
+.features .news {
+  background-color: #9351e5;
+}
+
+.features .news .inner {
+  padding: 30px 25px;
+}
+
+.features .news .inner p {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 0;
+}
+
+.features .news .inner .fa {
+  font-size: 22px;
+  margin-right: 6px;
+}
+
+.features .news .inner a,
+.features .news .inner a:hover {
+}
+
+/* Projects */
+
+.ly-project-item-card .ly-project-tags {
+  display: none;
+}
+
+.ly-project-item-card.ly-project-list-item {
+  margin-left: 0 !important;
+}
+
+.ly-project-item-card .ly-project-title a, .ly-project-item-card .ly-project-title a:hover, .ly-project-item-card .ly-project-title a:visited:hover,
+.ly-project-item-card .ly-project-link a, .ly-project-item-card .ly-project-link a span, .ly-project-item-card .ly-project-link a:hover {
+  color: #9351e5 !important;
+  box-shadow: none;
+}
+
+.ly-project-item-card.ly-project-list-item {
+  border: 1px solid rgba(147, 81, 229, 0.2)  !important;
+  box-shadow: 0 2px 2px rgba(147, 81, 229, 0.05) !important;
+}
+
+.ly-project-item-card .features .row p {
+  width: 100% !important;
+}
+
+.ly-project-item-card .ly-project-footer * {
+  background-color: transparent !important;
+}
+
+.ly-project-item-card .ly-project-footer {
+  background-color: transparent !important;
+  border-top:1px solid rgba(147, 81, 229, 0.1);
+}
+
+
+/* Open source */
+
+.bannercontent h1 {
+  font-weight: 400; 
+}
+
+.bannercontent p {
+  color: #777; 
+  font-size: 22px !important;
+}
+
+#global-header nav {
+  background-color: #fff;
+  height: 60px;
+}
+
+.button-header {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.button-add a {
+  color: #fff !important;
+}
+
+.external, .nav-tabs a {
+  color: #9351e5 !important;
+}
+
+.max-image,
+.min-image {
+  width: 100%;
+}
+
+.half-image {
+  width: 400px;
+}
+
+.features .row p {
+  width: 90%;
+}
+
+.min-image {
+  display: none;
+}
+
+#global-footer #footer-nav li a {
+  font-size: 1.2em;
+}
+
+@media (max-width: 550px), (max-width: 550px) {
+  .features .index-header p,
+  .features .news p { width: 100%; }
+  .features .code-content { width: 90%; }
+  .max-image { display:none; }
+  .min-image { display:block; }
+  .features .one { padding-left: 20px; }
+  .nav-collapse.collapse { overflow: hidden; }
+  .featurebanner .bannercontent { padding: 100px 0px; }
+  .featurebanner .bannercontent h1 { line-height: 42px; }
+  .featurebanner .bannercontent p { line-height: 32px; max-width: 265px; }
+  hr { margin: 2em 0;}
+}

@@ -9,6 +9,7 @@
 *.swo
 *.DS_Store
 
+
 # Ignore .rvmrc file.
 /.rvmrc
 

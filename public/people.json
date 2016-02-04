@@ -1,0 +1,145 @@
+{
+	"1": [{
+		"id": "1",
+		"user_id": "1",
+		"question_id": "1",
+		"user": {
+			"id": "1",
+			"firstname": "William",
+			"surname": "bergamo",
+			"twitter": "bugduino"
+		},
+		"question": {
+			"id": "1",
+			"title": null
+		}
+	},{
+		"id": "1",
+		"user_id": "2",
+		"question_id": "1",
+		"user": {
+			"id": "2",
+			"firstname": "Javier",
+			"surname": "Montaner",
+			"twitter": "tumaku_"
+		},
+		"question": {
+			"id": "1",
+			"title": null
+		}
+	}, {
+		"id": "1",
+		"user_id": "3",
+		"question_id": "1",
+		"user": {
+			"id": "3",
+			"firstname": "Martino",
+			"surname": "Coffa",
+			"twitter": "recipient"
+		},
+		"question": {
+			"id": "1",
+			"title": null
+		}
+	}, {
+		"id": "1",
+		"user_id": "4",
+		"question_id": "1",
+		"user": {
+			"id": "4",
+			"firstname": "Matteo",
+			"surname": "Centenaro",
+			"twitter": "bugant"
+		},
+		"question": {
+			"id": "1",
+			"title": null
+		}
+	}, {
+		"id": "1",
+		"user_id": "5",
+		"question_id": "1",
+		"user": {
+			"id": "5",
+			"firstname": "Giovanni",
+			"surname": "Cappellotto",
+			"twitter": "potomak"
+		},
+		"question": {
+			"id": "1",
+			"title": null
+		}
+	}],
+  "2": [{
+		"id": "1",
+		"user_id": "1",
+		"question_id": "2",
+		"user": {
+			"id": "1",
+			"firstname": "Reggie",
+			"surname": "",
+			"twitter": "andreareginato"
+		},
+		"question": {
+			"id": "2",
+			"title": null
+		}
+	}, {
+		"id": "1",
+		"user_id": "2",
+		"question_id": "2",
+		"user": {
+			"id": "2",
+			"firstname": "Matteo Collina",
+			"surname": "",
+			"twitter": "matteocollina"
+		},
+		"question": {
+			"id": "2",
+			"title": null
+		}
+	}, {
+		"id": "1",
+		"user_id": "3",
+		"question_id": "2",
+		"user": {
+			"id": "3",
+			"firstname": "Chritchen",
+			"surname": "",
+			"twitter": "Chritchen"
+		},
+		"question": {
+			"id": "2",
+			"title": null
+		}
+	}],
+  "3": [{
+		"id": "1",
+		"user_id": "1",
+		"question_id": "3",
+		"user": {
+			"id": "1",
+			"firstname": "Nzo",
+			"surname": "",
+			"twitter": "lorenzograndi4"
+		},
+		"question": {
+			"id": "3",
+			"title": null
+		}
+	}, {
+		"id": "1",
+		"user_id": "2",
+		"question_id": "3",
+		"user": {
+			"id": "2",
+			"firstname": "Dorka",
+			"surname": "",
+			"twitter": "lelylan"
+		},
+		"question": {
+			"id": "3",
+			"title": null
+		}
+	}]
+}

@@ -44,4 +44,3 @@ run lambda {
     }, File.read(errorFile)
   ]
 }
-
