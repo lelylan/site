@@ -1,54 +1,56 @@
-# betterspecs.org
+# Lelylan Site
 
-Source code for [betterspecs.org](http://betterspecs.org)
+Source code for [lelylan.com](http://lelylan.com).
+
 
 ## Requirements
 
-RSpec Best Practices website is tested against MRI 1.9.3.
+Devices API is tested against MRI 1.9.3.
 
 
-## Installation
+## Installation 
 
-    git clone git@github.com:lelylan/betterspecs.git
-    cd betterspecs
-    bundle install
-    nanoc3 aco
+    $ git clone git@github.com:lelylan/site.git && cd site
+    $ gem install bundler
+    $ bundle install 
+    $ foreman start
 
-## Resources
-
-[betterspecs.org](http://betterspecs.org)
 
 ## Contributing
 
-Fork the repo on github and send a pull requests with topic branches.
+Fork the repo on github and send a pull requests with topic branches. 
+
+
+## Coding guidelines
+
+Follow [github](https://github.com/styleguide/) guidelines.
 
 
 ## Feedback
 
-Use the [issue tracker](https://github.com/lelylan/betterspecs/issues) for bugs.
-[Mail](mailto:andrea.reginato@gmail.com) or [Tweet](http://twitter.com/lelylan)
-us with any idea that can improve the project.
+Use the [issue tracker](http://github.com/lelylan/site/issues) for bugs or [stack overflow](http://stackoverflow.com/questions/tagged/lelylan) for questions. [Mail](mailto:dev@lelylan.com) or [Tweet](http://twitter.com/lelylan) us for any idea that can improve the project.
 
 
 ## Links
 
-* [GIT Repository](https://github.com/lelylan/betterspecs)
-* [Betterspecs website](http://betterspecs.org)
+* [GIT Repository](http://github.com/lelylan/site)
+* [Lelylan Dev Center](http://dev.lelylan.com)
+* [Lelylan Site](http://lelylan.com)
 
 
 ## Authors
 
-[Andrea Reginato](http://twitter.com/lelylan)
+[Andrea Reginato](https://www.linkedin.com/in/andreareginato)
 
 
 ## Contributors
 
-Special thanks to the [following people](https://github.com/lelylan/betterspecs/contributors) for submitting patches.
+Special thanks to [all people](https://github.com/lelylan/site/graphs/contributors) helping to make the project real.
 
 
 ## Changelog
 
-See CHANGELOG
+See [CHANGELOG](https://github.com/lelylan/site/blob/master/CHANGELOG.md)
 
 
 ## License

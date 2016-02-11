@@ -1,16 +1,24 @@
 source 'https://rubygems.org'
 
-gem 'rack'
-gem 'rake'
-gem 'nanoc3'
-gem 'builder'
-gem 'adsf'
-gem 'foreman'
+ruby '1.9.3'
 
-# Thin to serve content from Heroku
-gem 'thin'
-gem 'rack-rewrite', :require => 'rack-rewrite'
-gem 'rack-contrib', :require => 'rack/contrib'
+gem 'rails', '3.2.13'
+gem 'unicorn'
+gem 'high_voltage'
+# gem 'bootstrap-sass'
+gem 'sass'
+gem 'jquery'
+# gem 'sass-rails'
+# gem 'sprockets'
 
-# Mime-types for handling mime types
-gem 'mime-types', :require => 'mime/types'
+group :development, :test do
+  gem 'foreman'
+end
+
+group :test do
+
+end
+
+group :production do
+  gem 'rails_12factor'
+end

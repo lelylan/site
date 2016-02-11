@@ -3499,3 +3499,55 @@ Started GET "/assets/header-site.png" for 127.0.0.1 at 2016-02-11 11:34:34 +0100
 Started GET "/assets/logo.png" for 127.0.0.1 at 2016-02-11 11:34:34 +0100
 Served asset /header-site.png - 304 Not Modified (0ms)
 Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-11 11:53:39 +0100
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"index"}
+  Rendered pages/index.html.erb within layouts/application (2.8ms)
+Compiled externals/bootstrap.min.css  (0ms)  (pid 92451)
+Compiled externals/default.min.css  (0ms)  (pid 92451)
+Compiled externals/people.min.css  (0ms)  (pid 92451)
+Compiled externals/prettify.min.css  (0ms)  (pid 92451)
+Completed 500 Internal Server Error in 47ms
+
+ActionView::Template::Error (cannot load such file -- sass
+  (in /Users/andreareginato/dev/projects/lelylan/site/app/assets/stylesheets/main.css.scss)):
+    30:     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:300,400,700">
+    31:     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    32: 
+    33:     <%= stylesheet_link_tag    'application', :media => "all" %>
+    34:     <%= javascript_include_tag 'application' %>
+    35: 
+    36:     <meta http-equiv="cleartype" content="on">
+  app/views/layouts/application.html.erb:33:in `_app_views_layouts_application_html_erb__2002532491017079965_70260650079440'
+
+
+  Rendered /Users/andreareginato/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/andreareginato/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/andreareginato/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-11 11:55:21 +0100
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"index"}
+  Rendered pages/index.html.erb within layouts/application (2.5ms)
+Compiled main.css  (80ms)  (pid 92504)
+Compiled application.css  (94ms)  (pid 92504)
+Completed 500 Internal Server Error in 128ms
+
+ActionView::Template::Error (couldn't find file 'jquery'
+  (in /Users/andreareginato/dev/projects/lelylan/site/app/assets/javascripts/application.js:13)):
+    31:     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    32: 
+    33:     <%= stylesheet_link_tag    'application', :media => "all" %>
+    34:     <%= javascript_include_tag 'application' %>
+    35: 
+    36:     <meta http-equiv="cleartype" content="on">
+    37:   </head>
+  app/views/layouts/application.html.erb:34:in `_app_views_layouts_application_html_erb__197462981771062362_70140988092900'
+
+
+  Rendered /Users/andreareginato/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Users/andreareginato/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/andreareginato/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.1ms)
