@@ -1,16 +1,16 @@
 source 'https://rubygems.org'
-ruby   '1.9.3'
 
-gem 'rails', '3.2.13'
-gem 'flutie'
-gem 'high_voltage'
-gem 'unicorn'
-gem 'newrelic_rpm'
+gem 'rack'
+gem 'rake'
+gem 'nanoc3'
+gem 'builder'
+gem 'adsf'
+gem 'foreman'
 
-group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-  gem 'uglifier', '>= 1.0.3'
-end
+# Thin to serve content from Heroku
+gem 'thin'
+gem 'rack-rewrite', :require => 'rack-rewrite'
+gem 'rack-contrib', :require => 'rack/contrib'
 
-gem 'jquery-rails'
+# Mime-types for handling mime types
+gem 'mime-types', :require => 'mime/types'

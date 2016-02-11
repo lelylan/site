@@ -1,10 +1,15 @@
 # Changelog
 
-## v0.2.0 (2016.01.01)
+## v0.1.1 (15 August 2013)
 
-* Lelylan Open Source.
- 
+* Updated all code samples to use expect
+* Translations in russian
+* Translations in korean
+* Translations in japanese
+* Translations in brasilian
+* Translations in chinese
+* Translations in spanish
 
-## v0.1.0 (2013.05.23)
+## v0.1.0 (01 September 2012)
 
-* First version Lelylan Beta.
+* First betterspecs.org version

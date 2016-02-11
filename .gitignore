@@ -9,31 +9,15 @@
 *.swo
 *.DS_Store
 
-# Ignore bundler config.
-/.bundle
-
-# Ignore the database configurations.
-/db/*.sqlite3
-
-# Ignore all logfiles and tempfiles.
-/log/*.log
-/tmp
 
 # Ignore .rvmrc file.
 /.rvmrc
 
-# Config files
-/config/settings.local.yml
-/config/settings/*.local.yml
-/config/environments/*.local.yml
+# Ignore nanoc files
+/tmp/*
 
-# Assets
-/public/assets
+# Ignore compiled files
+/public
 
-# Procfile env config
+# Ignore .env
 .env
-.production.env
-
-config/settings.local.yml
-config/settings/*.local.yml
-config/environments/*.local.yml

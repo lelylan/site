@@ -1,71 +1,54 @@
-# Lelylan Site
+# betterspecs.org
 
-[Lelylan Web Site](http://lelylan.com) source code.
-
+Source code for [betterspecs.org](http://betterspecs.org)
 
 ## Requirements
 
-Lelylan Web Site is tested against MRI 1.9.3.
+RSpec Best Practices website is tested against MRI 1.9.3.
 
 
 ## Installation
 
-Clone the repository.
-
-    git clone git@github.com:lelylan/site.git
-
+    git clone git@github.com:lelylan/betterspecs.git
+    cd betterspecs
+    bundle install
+    nanoc3 aco
 
 ## Resources
 
-* [Lelylan Site](http://lelylan.com)
-
+[betterspecs.org](http://betterspecs.org)
 
 ## Contributing
 
 Fork the repo on github and send a pull requests with topic branches.
 
 
-## Usage
-
-* Fork and clone the repository.
-* Run `gem install bundler` to get the latest for the gemset.
-* Run `bundle install` for dependencies.
-* Run `foreman start` for dependencies.
-
-
-## Guidelines
-
-* Duplicated content is not accepted.
-* New sections should be placed in the right section.
-* Update the CHANGELOG.
-
-
 ## Feedback
 
-Use the [issue tracker](http://github.com/lelylan/site/issues) for bugs or [stack overflow](http://stackoverflow.com/questions/tagged/lelylan) for questions.
-[Mail](mailto:dev@lelylan.com) or [Tweet](http://twitter.com/lelylan) us for any idea that can improve the project.
+Use the [issue tracker](https://github.com/lelylan/betterspecs/issues) for bugs.
+[Mail](mailto:andrea.reginato@gmail.com) or [Tweet](http://twitter.com/lelylan)
+us with any idea that can improve the project.
 
 
 ## Links
 
-* [GIT Repository](http://github.com/lelylan/site)
-* [Lelylan Dev Center](http://dev.lelylan.com)
-* [Lelylan Site](http://lelylan.com)
+* [GIT Repository](https://github.com/lelylan/betterspecs)
+* [Betterspecs website](http://betterspecs.org)
 
 
 ## Authors
 
-[Andrea Reginato](https://www.linkedin.com/in/andreareginato)
+[Andrea Reginato](http://twitter.com/lelylan)
 
 
 ## Contributors
 
-Special thanks to [all people](https://github.com/lelylan/site/graphs/contributors) helping to make the project real.
+Special thanks to the [following people](https://github.com/lelylan/betterspecs/contributors) for submitting patches.
 
 
 ## Changelog
 
-See [CHANGELOG](https://github.com/lelylan/site/blob/master/CHANGELOG.md)
+See CHANGELOG
 
 
 ## License
