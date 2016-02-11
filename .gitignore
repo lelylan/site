@@ -20,4 +20,4 @@
 /public
 
 # Ignore .env
-.env
+.production.env
