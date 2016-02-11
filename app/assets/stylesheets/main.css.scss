@@ -53,7 +53,6 @@ $lelylanLineColor: #e8e8e8 !default;
   height: 395px;
 }
 
-
 .featurebanner .bannercontent {
   padding: 135px 40px;
 }
@@ -196,6 +195,27 @@ a {
   font-size: 18px;
   font-weight: 200;
   color: #333;
+}
+
+.notice {
+  background-color: #6D3CAB !important;
+}
+
+.notice .inner {
+  padding: 25px 25px !important;
+}
+
+.notice .inner p {
+  font-size: 1.3em;
+}
+
+.notice .label {
+  background-color: #9351E5;
+  border-radius: 3px;
+  padding: 2px 5px;
+  margin-right: 5px;
+  font-size: .75em;
+  text-transform: uppercase;
 }
 
 .button-add {
