@@ -6,9 +6,9 @@ gem 'rails', '3.2.13'
 gem 'unicorn'
 gem 'high_voltage'
 # gem 'bootstrap-sass'
-gem 'sass'
-gem 'jquery'
-# gem 'sass-rails'
+gem 'sass-rails'
+gem 'jquery-rails'
+gem 'nokogiri'
 # gem 'sprockets'
 
 group :development, :test do

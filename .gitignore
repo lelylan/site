@@ -9,14 +9,17 @@
 *.swo
 *.DS_Store
 
+# SASS
+.sass-cache
+
 # Ignore logs
-/log/*
+/log
 
 # Ignore .rvmrc file.
 /.rvmrc
 
 # Ignore nanoc files
-/tmp/*
+/tmp
 
 # Ignore compiled files
 /public
